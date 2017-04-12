@@ -29,7 +29,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #c9c9c9;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -39,6 +39,7 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    background-color: #636363;
 }
 
 ul.posts li {
