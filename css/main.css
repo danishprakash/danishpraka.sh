@@ -23,7 +23,7 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    background-color: #e5e5e5;
+    color: #e5e5e5;
 
 }
 p {
@@ -39,7 +39,7 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
-    background-color: #636363;
+    color: #636363;
 }
 
 ul.posts li {
