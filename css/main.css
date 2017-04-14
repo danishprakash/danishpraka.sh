@@ -4,7 +4,7 @@ body {
     background-color: #232323;
 }
 nav ul, footer ul {
-    font-family:'Lucida Console', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
