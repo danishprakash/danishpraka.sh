@@ -22,13 +22,13 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
 
 }
 p {
-    font-size: 1.5em;
+    font-size: 2.5em;
     line-height: 1.4em;
     color: #c9c9c9;
 }
