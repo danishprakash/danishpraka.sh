@@ -18,12 +18,14 @@ a {
     text-decoration: none;
     color: #999;
 }
-a:hover {
+
+/*a:hover {
     text-decoration: underline;
-}
+}*/
+
 h1 {
     font-size: 5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Lucida Console', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
 
 }
