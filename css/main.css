@@ -18,13 +18,13 @@ nav ul li, footer ul li {
     
 }
 
-.content { 
-    border-top: 2px double #3f3f3f; 
-    margin-top: 30px;
+.blurb { 
+    border-bottom: 2px double #3f3f3f; 
+    margin-bottom: 30px;
     
 }
 
-.blurb {
+.content {
     padding: 10px;
 
 }
