@@ -16,7 +16,7 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    text-align: center;
+    
 }
 
 .blurb { 
@@ -44,6 +44,7 @@ h1 {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    
 
 }
 p {
