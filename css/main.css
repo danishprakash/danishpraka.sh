@@ -1,10 +1,9 @@
 body {
-    margin: 60px;
+    margin: 60px auto;
     width: 600px;
     height: 350;
     background-color: #232323;    
     border: 2px double #3f3f3f;
-    text-align: center;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -62,6 +61,9 @@ b {
     color: #c9c9c9;
     text-align: center;
     margin: 25px;
+    text-align: justify;
+    text-align: center;
+
 
 }
 
