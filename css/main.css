@@ -4,6 +4,7 @@ body {
     height: 350;
     background-color: #232323;    
     border: 2px double #3f3f3f;
+    padding: 10px;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -74,7 +75,7 @@ footer {
 }
 
 ul.posts { 
-    margin: 20px;
+    margin-right: 20px;
     font-size: 1.5em;
     color: #636363;
     text-align: center;
