@@ -60,7 +60,9 @@ b {
     line-height: 0.3em;
     color: #c9c9c9;
     text-align: center;
-    margin: 25px;
+    margin: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
 
 
@@ -69,7 +71,6 @@ b {
 
 footer {
     border-top: 2px double #3f3f3f;
-    margin-top: 25px;
     font-size: .8em;
     
 }
