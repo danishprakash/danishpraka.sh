@@ -19,7 +19,10 @@ nav ul li, footer ul li {
     text-align: center;
 }
 
-.blurb { border-bottom: 2px double #3f3f3f; }
+.blurb { 
+    border-bottom: 2px double #3f3f3f; 
+    margin-top: 25px;
+}
 
 
 a {
@@ -39,6 +42,7 @@ h1 {
     line-height: 1.4em;    
     text-align: center;
     padding: 0px;
+    margin: 0px;
 
 }
 p {
@@ -46,6 +50,7 @@ p {
     line-height: 0.4em;
     color: #c9c9c9;
     text-align: center;
+    margin: 0px;
 }
 
 b {
@@ -61,6 +66,7 @@ b {
 
 footer {
     border-top: 2px double #3f3f3f;
+    margin-top: 25px;
     font-size: .8em;
     
 }
