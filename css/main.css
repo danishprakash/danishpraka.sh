@@ -14,9 +14,10 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    /*margin-right: 20px;*/
+    /*margin-right: 20px;
+    margin: 30px;*/
     text-align: center;
-    margin: 30px;
+    
 
 }
 a {
@@ -50,7 +51,7 @@ b {
     font-size: 1em;
     line-height: 0.2em;
     color: #c9c9c9;
-    margin: 3px;
+    margin: 20px;
     text-align: center;
 }
 
