@@ -1,5 +1,5 @@
 body {
-    margin: 0px auto;
+    margin: 50px auto;
     width: 600px;
     height: 350;
     background-color: #232323;    
@@ -20,7 +20,7 @@ nav ul li, footer ul li {
 
 .blurb { 
     border-bottom: 2px double #3f3f3f; 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     
 }
 
