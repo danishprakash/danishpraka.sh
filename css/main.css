@@ -1,7 +1,7 @@
 body {
-    margin: 60px auto;
+    margin: 60px;
     width: 600px;
-    height: 400px;
+    height: 350;
     background-color: #232323;    
     border: 2px double #3f3f3f;
 }
@@ -21,6 +21,7 @@ nav ul li, footer ul li {
 
 .blurb { 
     border-bottom: 2px double #3f3f3f; 
+    margin-bottom: 25px;
     
 }
 
@@ -55,7 +56,7 @@ p {
 
 b {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: .8em;
+    font-size: .9em;
     line-height: 0.2em;
     color: #c9c9c9;
     text-align: center;
