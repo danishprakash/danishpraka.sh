@@ -21,7 +21,7 @@ nav ul li, footer ul li {
 
 .blurb { 
     border-bottom: 2px double #3f3f3f; 
-    margin-top: 25px;
+    
 }
 
 
@@ -55,11 +55,11 @@ p {
 
 b {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1em;
+    font-size: .8em;
     line-height: 0.2em;
     color: #c9c9c9;
-    padding: 25px;
     text-align: center;
+    margin: 25px;
 
 }
 
