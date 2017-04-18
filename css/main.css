@@ -18,7 +18,7 @@ nav ul li, footer ul li {
     text-align: center;
 }
 
-div.border { border-top: 2px solid #3f3f3f; }
+.blurb { border-top: 2px double #3f3f3f; }
 
 
 a {
