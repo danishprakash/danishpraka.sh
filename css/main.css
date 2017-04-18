@@ -42,6 +42,15 @@ p {
     color: #c9c9c9;
     text-align: center;
 }
+
+b {
+    font-size: 1em;
+    line-height: 0.2em;
+    color: #c9c9c9;
+    text-align: center;
+}
+
+
 footer {
     border-top: 2px solid #3f3f3f;
     font-size: .8em;
