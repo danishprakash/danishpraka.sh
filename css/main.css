@@ -53,7 +53,8 @@ b {
     margin-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    border-top: 2px solid #3f3f3f;
+    border-bottom: 2px solid #3f3f3f;
+
 }
 
 
