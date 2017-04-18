@@ -44,9 +44,11 @@ p {
 }
 
 b {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1em;
     line-height: 0.2em;
     color: #c9c9c9;
+    padding: 1px;
     text-align: center;
 }
 
