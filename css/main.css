@@ -1,12 +1,9 @@
-html {
-    border: 2px double #3f3f3f;
-}
-
 body {
     margin: 60px auto;
     width: 600px;
     height: 600px;
-    background-color: #232323;
+    background-color: #232323;    
+    border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -22,7 +19,7 @@ nav ul li, footer ul li {
     text-align: center;
 }
 
-.container { border-top: 2px double #3f3f3f; }
+.blurb { border-bottom: 2px double #3f3f3f; }
 
 
 a {
