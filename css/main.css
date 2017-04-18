@@ -1,12 +1,12 @@
 body {
     margin: 60px auto;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     background-color: #232323;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
-    margin: 30px;
+    margin: 20px;
     list-style: none;
     font-weight: bold;
     color: #636363;
@@ -51,13 +51,16 @@ b {
     line-height: 0.2em;
     color: #c9c9c9;
     margin-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
+    border-top: 2px solid #3f3f3f;
 }
 
 
 footer {
     border-top: 2px solid #3f3f3f;
     font-size: .8em;
+    margin-top: 10px;
 }
 
 ul.posts { 
