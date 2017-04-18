@@ -6,7 +6,7 @@ body {
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
-    margin: 2px;
+    margin: 30px;
     list-style: none;
     font-weight: bold;
     color: #636363;
@@ -14,8 +14,10 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     text-align: center;
+    margin: 30px;
+
 }
 a {
     text-decoration: none;
