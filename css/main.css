@@ -20,7 +20,7 @@ nav ul li, footer ul li {
 
 .blurb { 
     border-bottom: 2px double #3f3f3f; 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     
 }
 
@@ -67,15 +67,13 @@ b {
     color: #c9c9c9;
     text-align: center;
     text-align: left;
-
-
 }
 
 
 footer {
     border-top: 2px double #3f3f3f;
     font-size: .8em;
-    margin-top:30px;
+    margin-top:25px;
     text-align: center;   
 }
 
