@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 0px auto;
     width: 600px;
     height: 350;
     background-color: #232323;    
@@ -11,7 +11,6 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     color: #636363;
-    text-align: center;
 }
 nav ul li, footer ul li {
     display: inline;
