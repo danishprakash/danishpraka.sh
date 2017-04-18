@@ -4,6 +4,7 @@ body {
     height: 350;
     background-color: #232323;    
     border: 2px double #3f3f3f;
+    text-align: center;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -51,7 +52,7 @@ p {
     line-height: 0.4em;
     color: #c9c9c9;
     text-align: center;
-    margin: 0px;
+    margin-bottom: 25px;
 }
 
 b {
