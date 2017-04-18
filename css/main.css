@@ -45,9 +45,6 @@ p {
     line-height: 0.4em;
     color: #c9c9c9;
     text-align: center;
-    border-bottom: 2px solid #3f3f3f;
-    margin-bottom: 20px;
-
 }
 
 b {
@@ -56,14 +53,14 @@ b {
     line-height: 0.2em;
     color: #c9c9c9;
     margin-bottom: 20px;
-    padding-top: 20px;
+    margin-top: 20px;
     text-align: center;
 
 }
 
 
 footer {
-    border-top: 2px solid #3f3f3f;
+    border-top: 2px double #3f3f3f;
     font-size: .8em;
     margin-top: 10px;
 }
