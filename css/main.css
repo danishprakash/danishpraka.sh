@@ -1,11 +1,18 @@
+ @font-face {
+    font-family: OpenSansPro;
+    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+}
+
 body {
-    margin: 60px auto;
-    width: 70%;
-    background-color: #232323;
+    margin: 50px auto;
+    width: 600px;
+    height: 350;
+    background-color: #232323;    
+    border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    margin: 20px;
     list-style: none;
     font-weight: bold;
     color: #636363;
@@ -13,10 +20,27 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    
 }
+
+.blurb { 
+    border-bottom: 2px double #3f3f3f; 
+    margin-bottom: 25px;
+    
+}
+
+.matter {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+
+
 a {
     text-decoration: none;
     color: #999;
+    text-align: center;
 }
 
 /*a:hover {
@@ -24,26 +48,48 @@ a {
 }*/
 
 h1 {
-    font-size: 5em;
-    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
+    font-size: 2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    
 
 }
 p {
-    font-size: 2.5em;
+    font-size: 1.2em;
     line-height: 0.4em;
     color: #c9c9c9;
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: none;
+
 }
+
+b {
+    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #c9c9c9;
+    text-align: center;
+    text-align: left;
+}
+
+
 footer {
-    border-top: 1px solid #3f3f3f;
+    border-top: 2px double #3f3f3f;
     font-size: .8em;
+    margin-top:25px;
+    text-align: center;   
 }
 
 ul.posts { 
-    margin: 20px auto 40px; 
+    margin-right: 20px;
     font-size: 1.5em;
     color: #636363;
+    text-align: center;
 }
 
 ul.posts li {
