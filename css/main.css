@@ -6,7 +6,7 @@ body {
 }
 nav ul, footer ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    margin: 2px;
     list-style: none;
     font-weight: bold;
     color: #636363;
