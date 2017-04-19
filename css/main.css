@@ -28,7 +28,12 @@ nav ul li, footer ul li {
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
-
+    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    line-height: 0.8em;
+    color: #c9c9c9;
+    text-align: center;
+    text-align: left;
 }
 
 
@@ -45,7 +50,7 @@ a {
 
 h1 {
     font-size: 2em;
-    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -64,14 +69,14 @@ p {
 
 }
 
-b {
+/*b {
     font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
     font-size: 1em;
     line-height: 0.8em;
     color: #c9c9c9;
     text-align: center;
     text-align: left;
-}
+}*/
 
 
 footer {
