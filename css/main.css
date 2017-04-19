@@ -14,7 +14,7 @@
 
 body {
     margin: 50px auto;
-    width: 600px;
+    width: 520px;
     height: 350;
     background-color: #232323;    
     border: 2px double #3f3f3f;
@@ -80,8 +80,8 @@ p {
 
 b {
     font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.15em;
+    line-height: 1.8em;
     color: #c9c9c9;
     text-align: center;
     text-align: left;
