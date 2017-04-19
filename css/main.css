@@ -61,7 +61,7 @@ p {
     margin-bottom: 25px;
 }
 
-b {
+s, b {
     font-family:'Helvetica', 'Sans-Serif';
     font-size: .9em;
     line-height: 0.3em;
