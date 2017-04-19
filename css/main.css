@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #3fa4fc;
 }
 
 h1 {
@@ -102,7 +102,7 @@ ul.posts {
     text-align: center;
 }
 
-ul:hover {
+li:hover {
      border-bottom: 1px solid #636363;
 }
 
