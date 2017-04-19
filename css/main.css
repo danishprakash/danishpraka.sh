@@ -7,6 +7,11 @@
     src: url('SourceSansPro-Regular.ttf');
 }
 
+ @font-face {
+    font-family: OpenSansProBold;
+    src: url('SourceSansPro-Bold.ttf');
+}
+
 body {
     margin: 50px auto;
     width: 600px;
@@ -47,13 +52,13 @@ a {
     text-align: center;
 }
 
-/*a:hover {
-    text-decoration: underline;
-}*/
+a:hover {
+    border-bottom: 1px solid #3fa4fc;
+}
 
 h1 {
     font-size: 2em;
-    font-family:'OpenSansProRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansProBold', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
