@@ -27,12 +27,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
-    font-size: 1em;
-    line-height: 0.8em;
-    color: #c9c9c9;
-    text-align: center;
-    text-align: left;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 
@@ -68,14 +63,14 @@ p {
 
 }
 
-/*b {
-    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
+b {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1em;
-    line-height: 0.8em;
+    line-height: 1.5em;
     color: #c9c9c9;
     text-align: center;
     text-align: left;
-}*/
+}
 
 
 footer {
