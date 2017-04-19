@@ -1,6 +1,10 @@
  @font-face {
-    font-family: OpenSansPro;
+    font-family: OpenSansProLight;
     src: url('SourceSansPro-Light.ttf');
+}
+ @font-face {
+    font-family: OpenSansProRegular;
+    src: url('SourceSansPro-Regular.ttf');
 }
 
 body {
@@ -11,7 +15,7 @@ body {
     border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
-    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: bold;
@@ -32,7 +36,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 
@@ -49,7 +53,7 @@ a {
 
 h1 {
     font-size: 2em;
-    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansProRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -59,7 +63,7 @@ h1 {
 
 }
 p {
-    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif'; 
+    font-family:'OpenSansProRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
     color: #c9c9c9;
@@ -70,7 +74,7 @@ p {
 }
 
 b {
-    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1em;
     line-height: 1.5em;
     color: #c9c9c9;
