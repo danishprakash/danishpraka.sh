@@ -1,6 +1,6 @@
  @font-face {
     font-family: OpenSansPro;
-    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+    src: url('SourceSansPro-Regular.ttf');
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
-    font-family:'Trebuchet MS', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: bold;
@@ -32,7 +32,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'OpenSansPro', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 
