@@ -101,7 +101,7 @@ ul.posts {
     text-align: center;
 }
 
-ul:hover {
+ul.posts:hover {
      border-bottom: 1px solid #636363;
 }
 
