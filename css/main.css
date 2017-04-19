@@ -58,7 +58,7 @@ a:hover {
 
 h1 {
     font-size: 2em;
-    font-family:'OpenSansProBold', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Helvetica', 'OpenSansProRegular', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -68,7 +68,7 @@ h1 {
 
 }
 p {
-    font-family:'OpenSansProRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
+    font-family:'Helvetica', 'OpenSansProRegular', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
     color: #c9c9c9;
