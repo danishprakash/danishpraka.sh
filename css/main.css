@@ -47,10 +47,8 @@ nav ul li, footer ul li {
 
 
 a {
-    text-decoration: none;
     color: #999;
     text-align: center;
-    
 }
 
 a:hover {
@@ -101,6 +99,10 @@ ul.posts {
     font-size: 1.5em;
     color: #636363;
     text-align: center;
+}
+
+ul:hover {
+     border-bottom: 1px solid #636363;
 }
 
 ul.posts li {
