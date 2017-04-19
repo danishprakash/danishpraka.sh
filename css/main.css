@@ -62,9 +62,9 @@ p {
 }
 
 s {
-    font-family:'Helvetica', 'Sans-Serif';
+    font-family:'Helvetica', 'Lucida Console', 'Arial', 'Sans-Serif';
     font-size: 1.1em;
-    line-height: 0.3em;
+    line-height: 0.4em;
     color: #c9c9c9;
     text-align: center;
     text-align: left;
