@@ -50,7 +50,7 @@ nav ul li, footer ul li {
 
 .matter a {
     text-decoration: none;
-    color: #86B4CF;
+    color: #80B9F2;
     text-align: center;
 }
 
@@ -66,7 +66,7 @@ nav ul li, footer ul li {
 }
 
 .matter a:hover {
-    border-bottom: 1px solid #86B4CF;
+    border-bottom: 1px solid #80B9F2;
 }
 
 
@@ -96,7 +96,7 @@ b {
     font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 0.95em;
     line-height: 1.6em;
-    color: #c9c9c9;
+    color: #e5e5e5;       /*earlier was #c9c9c9*/
     text-align: center;
     text-align: left;
 }
