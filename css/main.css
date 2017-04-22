@@ -48,13 +48,13 @@ nav ul li, footer ul li {
 
 
 
-a.matter {
+.matter a {
     text-decoration: none;
     color: #86B4CF;
     text-align: center;
 }
 
-a.footerLinks {
+.footerLinks a {
     text-decoration: none;
     color: #969696;
     text-align: center;
