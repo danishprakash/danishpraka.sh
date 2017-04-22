@@ -61,11 +61,11 @@ nav ul li, footer ul li {
 }
 
 
-a.footerLinks:hover {
+.footerLinks a:hover {
     border-bottom: 1px solid #969696;
 }
 
-a.matter:hover {
+.matter a:hover {
     border-bottom: 1px solid #86B4CF;
 }
 
