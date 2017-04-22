@@ -16,6 +16,10 @@
   background: #80B9F2; /* WebKit/Blink Browsers */
 }
 
+::-moz-selection {
+  background: #80B9F2; /* Gecko Browsers */
+}
+
 body {
     margin: 50px auto;
     width: 580px;
