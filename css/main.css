@@ -1,15 +1,29 @@
  @font-face {
-    font-family: OpenSansProLight;
-    src: url('SourceSansPro-Light.ttf');
+    font-family: RobotoSlabLight;
+    src: url('fonts/RobotoSlab-Light.ttf');
 }
  @font-face {
-    font-family: OpenSansProRegular;
-    src: url('SourceSansPro-Regular.ttf');
+    font-family: RobotoSlabRegular;
+    src: url('fonts/RobotoSlab-Regular.ttf');
 }
 
  @font-face {
-    font-family: OpenSansProBold;
-    src: url('SourceSansPro-Bold.ttf');
+    font-family: RobotoSlabBold;
+    src: url('fonts/RobotoSlab-Bold.ttf');
+}
+
+::selection {
+  background: #80B9F2; /* WebKit/Blink Browsers */
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #80B9F2; /* Gecko Browsers */
+  color: #ffffff;
+}
+
+html {
+  height: 100%
 }
 
 body {
@@ -20,7 +34,7 @@ body {
     border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: bold;
@@ -41,24 +55,43 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 
 
-a {
+.matter a {
     text-decoration: none;
-    color: #999;
+    color: #80B9F2;
     text-align: center;
 }
 
-a:hover {
-    border-bottom: 1px solid #3fa4fc;
+.footerLinks a {
+    text-decoration: none;
+    color: #969696;
+    text-align: center;
 }
+
+.footerLinks p {
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.0em;
+    color: #969696;
+
+}
+
+
+.footerLinks a:hover {
+    border-bottom: 1px solid #969696;
+}
+
+.matter a:hover {
+    border-bottom: 1px solid #80B9F2;
+}
+
 
 h1 {
     font-size: 2em;
-    font-family:'Helvetica', 'OpenSansProRegular', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -68,7 +101,7 @@ h1 {
 
 }
 p {
-    font-family:'Helvetica', 'OpenSansProRegular', 'Arial', 'Sans-Serif'; 
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
     color: #c9c9c9;
@@ -79,10 +112,10 @@ p {
 }
 
 b {
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1.05em;
+    font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 0.95em;
     line-height: 1.6em;
-    color: #c9c9c9;
+    color: #d8d8d8;       /*earlier was #c9c9c9*/
     text-align: center;
     text-align: left;
 }
@@ -97,13 +130,13 @@ footer {
 
 ul.posts { 
     margin-right: 20px;
-    font-size: 1.5em;
+    font-size: 0.8em;
     color: #636363;
     text-align: center;
 }
 
 li:hover {
-     border-bottom: 1px solid #636363;
+     /*border-bottom: 1px solid #636363;*/
 }
 
 ul.posts li {
