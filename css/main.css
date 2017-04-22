@@ -14,10 +14,12 @@
 
 ::selection {
   background: #80B9F2; /* WebKit/Blink Browsers */
+  color: #ffffff;
 }
 
 ::-moz-selection {
   background: #80B9F2; /* Gecko Browsers */
+  color: #ffffff;
 }
 
 body {
