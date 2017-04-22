@@ -12,7 +12,9 @@
     src: url('fonts/RobotoSlab-Bold.ttf');
 }
 
-
+::selection {
+  background: #80B9F2; /* WebKit/Blink Browsers */
+}
 
 body {
     margin: 50px auto;
