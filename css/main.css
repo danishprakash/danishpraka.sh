@@ -1,14 +1,14 @@
  @font-face {
-    font-family: OpenSansProLight;
-    src: url('SourceSansPro-Light.ttf');
+    font-family: RobotoSlabLight;
+    src: url('fonts/RobotoSlab-Light.ttf');
 }
  @font-face {
-    font-family: OpenSansProRegular;
-    src: url('SourceSansPro-Regular.ttf');
+    font-family: RobotoSlabRegular;
+    src: url('fonts/RobotoSlab-Regular.ttf');
 }
 
  @font-face {
-    font-family: OpenSansProBold;
+    font-family: RobotoSlabBold;
     src: url('fonts/RobotoSlab-Bold.ttf');
 }
 
@@ -22,7 +22,7 @@ body {
     border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: bold;
@@ -43,7 +43,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 
@@ -60,7 +60,7 @@ a:hover {
 
 h1 {
     font-size: 2em;
-    font-family:'OpenSansProBold', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -70,7 +70,7 @@ h1 {
 
 }
 p {
-    font-family:'Helvetica', 'OpenSansProRegular', 'Arial', 'Sans-Serif'; 
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
     color: #c9c9c9;
@@ -81,7 +81,7 @@ p {
 }
 
 b {
-    font-family:'OpenSansProLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.05em;
     line-height: 1.6em;
     color: #c9c9c9;
