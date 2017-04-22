@@ -60,6 +60,11 @@ nav ul li, footer ul li {
     text-align: center;
 }
 
+.footerLinks p {
+    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: .8em;
+}
+
 
 .footerLinks a:hover {
     border-bottom: 1px solid #969696;
@@ -111,7 +116,7 @@ footer {
 
 ul.posts { 
     margin-right: 20px;
-    font-size: 1.5em;
+    font-size: 0.8em;
     color: #636363;
     text-align: center;
 }
