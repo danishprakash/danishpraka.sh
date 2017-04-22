@@ -48,15 +48,27 @@ nav ul li, footer ul li {
 
 
 
-a {
+a.matter {
     text-decoration: none;
-    color: #FF8040;
+    color: #86B4CF;
     text-align: center;
 }
 
-a:hover {
-    border-bottom: 1px solid #FF8040;
+a.footerLinks {
+    text-decoration: none;
+    color: #969696;
+    text-align: center;
 }
+
+
+a.footerLinks:hover {
+    border-bottom: 1px solid #969696;
+}
+
+a.matter:hover {
+    border-bottom: 1px solid #86B4CF;
+}
+
 
 h1 {
     font-size: 2em;
