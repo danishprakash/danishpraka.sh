@@ -48,14 +48,14 @@ nav ul li, footer ul li {
 
 
 
-a {
+/*a {
     text-decoration: none;
     color: #999;
     text-align: center;
-}
+}*/
 
 a:hover {
-    border-bottom: 1px solid #3fa4fc;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 h1 {
@@ -82,7 +82,7 @@ p {
 
 b {
     font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1.05em;
+    font-size: 0.95em;
     line-height: 1.6em;
     color: #c9c9c9;
     text-align: center;
