@@ -63,7 +63,7 @@ nav ul li, footer ul li {
 
 .matter a {
     text-decoration: none;
-    color: #80B9F2;
+    color: #BF616A;
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ nav ul li, footer ul li {
 }
 
 .matter a:hover {
-    border-bottom: 1px solid #80B9F2;
+    border-bottom: 1px solid #BF616A;
 }
 
 
