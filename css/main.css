@@ -3,8 +3,8 @@
     src: url('fonts/Merriweather-Light.ttf');
 }
  @font-face {
-    font-family: RobotoSlabRegular;
-    src: url('fonts/RobotoSlab-Regular.ttf');
+    font-family: MerriweatherRegular;
+    src: url('fonts/Merriweather-Regular.ttf');
 }
 
  @font-face {
@@ -28,7 +28,7 @@ html {
 
 body {
     margin: 50px auto;
-    width: 550px;
+    width: 530px;
     height: 400;
     background-color: #2E3440;    
     border: 2px double #5c677c;
@@ -75,7 +75,7 @@ nav ul li, footer ul li {
 }
 
 .footerLinks p {
-    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.0em;
     color: #E5E9F0;
     font-weight: 300;
@@ -93,7 +93,7 @@ nav ul li, footer ul li {
 
 h1 {
     font-size: 2em;
-    font-family: 'MerriweatherBold', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherRegular', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #ECEFF4;
     line-height: 1.4em;    
     text-align: center;
@@ -103,7 +103,7 @@ h1 {
 
 }
 p {
-    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
+    font-family 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
     color: #E5E9F0;
