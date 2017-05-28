@@ -38,7 +38,7 @@ nav ul, footer ul {
     margin: 20px;
     list-style: none;
     font-weight: bold;
-    color: #636363;
+    color: #E5E9F0;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -76,7 +76,7 @@ nav ul li, footer ul li {
 .footerLinks p {
     font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.0em;
-    color: #969696;
+    color: #E5E9F0;
 
 }
 
@@ -93,7 +93,7 @@ nav ul li, footer ul li {
 h1 {
     font-size: 2em;
     font-family: 'MerriweatherBold', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #e5e5e5;
+    color: #ECEFF4;
     line-height: 1.4em;    
     text-align: center;
     padding: 0px;
@@ -105,7 +105,7 @@ p {
     font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
-    color: #c9c9c9;
+    color: #E5E9F0;
     text-align: center;
     margin-bottom: 25px;
     text-decoration: none;
@@ -116,7 +116,7 @@ b {
     /*font-family: 'MerriweatherL', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';*/
     font-size: 0.95em;
     line-height: 1.6em;
-    color: #d8d8d8;       /*earlier was #c9c9c9*/
+    color: #ECEFF4;       /*earlier was #c9c9c9*/
     text-align: center;
     text-align: left;
 }
@@ -132,7 +132,7 @@ footer {
 ul.posts { 
     margin-right: 20px;
     font-size: 0.8em;
-    color: #636363;
+    color: #E5E9F0;
     text-align: center;
 }
 
