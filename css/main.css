@@ -45,7 +45,7 @@ body {
     border: 2px double #5c677c;
 }
 nav ul, footer ul {
-    font-family: 'MontserratRegular', 'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: 300;
