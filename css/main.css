@@ -12,6 +12,17 @@
     src: url('fonts/RobotoSlab-Bold.ttf');
 }
 
+@font-face {
+    font-family: MontserratThin;
+    src: url('fonts/Montserrat-Thin.ttf');
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+
 ::selection {
   background: #80B9F2; /* WebKit/Blink Browsers */
   color: #ffffff;
@@ -34,11 +45,12 @@ body {
     border: 2px double #5c677c;
 }
 nav ul, footer ul {
-    font-family:'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MontserratRegular', 'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: 300;
     color: #E5E9F0;
+    text-transform: uppercase;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -55,7 +67,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MontserratThin', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
 }
 
@@ -114,7 +126,7 @@ p {
 }
 
 b {
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';*/
+    font-family: 'MontserratThin', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 0.95em;
     line-height: 1.6em;
     color: #ECEFF4;       /*earlier was #c9c9c9*/
