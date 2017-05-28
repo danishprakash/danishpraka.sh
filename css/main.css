@@ -49,7 +49,7 @@ nav ul, footer ul {
     margin: 20px;
     list-style: none;
     font-weight: 300;
-    color: #E5E9F0;
+    color: #d2d6dd;
     text-transform: uppercase;
 }
 nav ul li, footer ul li {
@@ -67,7 +67,7 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family: 'MontserratThin', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
 }
 
@@ -82,20 +82,20 @@ nav ul li, footer ul li {
 
 .footerLinks a {
     text-decoration: none;
-    color: #E5E9F0;
+    color: #d2d6dd;
     text-align: center;
 }
 
 .footerLinks p {
     font-family: 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.0em;
-    color: #E5E9F0;
+    color: #d2d6dd;
     font-weight: 300;
 }
 
 
 .footerLinks a:hover {
-    border-bottom: 1px solid #E5E9F0;
+    border-bottom: 1px solid #d2d6dd;
 }
 
 .matter a:hover {
@@ -126,7 +126,7 @@ p {
 }
 
 b {
-    font-family: 'MontserratThin', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 0.95em;
     line-height: 1.6em;
     color: #ECEFF4;       /*earlier was #c9c9c9*/
