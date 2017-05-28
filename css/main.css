@@ -62,10 +62,10 @@ nav ul li, footer ul li {
 
 
 .matter a {
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     text-decoration: none;
     color: #BF616A;
-    text-align: center;
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 300;
 }
 
 .footerLinks a {
@@ -114,7 +114,7 @@ p {
 }
 
 b {
-    /*font-family: 'MerriweatherL', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';*/
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';*/
     font-size: 0.95em;
     line-height: 1.6em;
     color: #ECEFF4;       /*earlier was #c9c9c9*/
