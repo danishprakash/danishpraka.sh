@@ -34,7 +34,7 @@ body {
     border: 2px double #3f3f3f;
 }
 nav ul, footer ul {
-    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: bold;
