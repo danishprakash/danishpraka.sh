@@ -37,7 +37,7 @@ nav ul, footer ul {
     font-family:'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
-    font-weight: bold;
+    font-weight: 300;
     color: #E5E9F0;
 }
 nav ul li, footer ul li {
@@ -78,7 +78,7 @@ nav ul li, footer ul li {
     font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.0em;
     color: #E5E9F0;
-
+    font-weight: 300;
 }
 
 
@@ -128,6 +128,8 @@ footer {
     font-size: .8em;
     margin-top:25px;
     text-align: center;   
+    font-weight: 300;
+
 }
 
 ul.posts { 
