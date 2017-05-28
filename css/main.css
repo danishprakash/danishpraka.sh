@@ -65,11 +65,12 @@ nav ul li, footer ul li {
     text-decoration: none;
     color: #BF616A;
     text-align: center;
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 .footerLinks a {
     text-decoration: none;
-    color: #969696;
+    color: #E5E9F0;
     text-align: center;
 }
 
@@ -82,7 +83,7 @@ nav ul li, footer ul li {
 
 
 .footerLinks a:hover {
-    border-bottom: 1px solid #969696;
+    border-bottom: 1px solid #E5E9F0;
 }
 
 .matter a:hover {
