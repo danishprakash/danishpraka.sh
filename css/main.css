@@ -78,6 +78,8 @@ nav ul li, footer ul li {
     text-decoration: none;
     color: #BF616A;
     font-weight: 300;
+    font-size: 0.92em;
+
 }
 
 .footerLinks a {
@@ -127,7 +129,6 @@ p {
 
 b {
     font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 0.95em;
     line-height: 1.6em;
     color: #ECEFF4;       /*earlier was #c9c9c9*/
     text-align: center;
