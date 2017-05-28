@@ -8,8 +8,8 @@
 }
 
  @font-face {
-    font-family: RobotoSlabBold;
-    src: url('fonts/RobotoSlab-Bold.ttf');
+    font-family: MerriweatherBold;
+    src: url('fonts/Merriweather-Bold.ttf');
 }
 
 ::selection {
@@ -91,7 +91,7 @@ nav ul li, footer ul li {
 
 h1 {
     font-size: 2em;
-    font-family:'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherBold', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #e5e5e5;
     line-height: 1.4em;    
     text-align: center;
@@ -112,7 +112,7 @@ p {
 }
 
 b {
-    font-family:'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 0.95em;
     line-height: 1.6em;
     color: #d8d8d8;       /*earlier was #c9c9c9*/
