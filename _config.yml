@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://drive.google.com/file/d/0Byox2ef6F96OeGxYNlVwSUhQaEE
 
 url: https://prakashdanish.github.io/
 # your url: http://USERNAME.github.io
