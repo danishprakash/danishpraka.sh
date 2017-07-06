@@ -1,28 +1,3 @@
-@font-face {
-    font-family: MerriweatherLight;
-    src: url('fonts/Merriweather-Light.ttf');
-}
- @font-face {
-    font-family: MerriweatherRegular;
-    src: url('fonts/Merriweather-Regular.ttf');
-}
-
- @font-face {
-    font-family: RobotoSlabBold;
-    src: url('fonts/RobotoSlab-Bold.ttf');
-}
-
-@font-face {
-    font-family: MontserratThin;
-    src: url('fonts/Montserrat-Thin.ttf');
-}
-
-@font-face {
-    font-family: MontserratRegular;
-    src: url('fonts/Montserrat-Regular.ttf');
-}
-
-
 ::selection {
   background: #80B9F2; /* WebKit/Blink Browsers */
   color: #ffffff;
@@ -34,22 +9,21 @@
 }
 
 html {
-  height: 100%
+  height: 50px;
 }
 
 body {
-    margin: 50px auto;
-    width: 545px;
-    height: 400;
-    background-color: #2E3440;    
-    border: 2px double #5c677c;
+    margin: 100px auto;
+    width: 1200px;
+    height: 50px;
+    background-color: #f9f9f9;    
 }
 nav ul, footer ul {
     font-family: 'MerriweatherLight', 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px;
     list-style: none;
     font-weight: 300;
-    color: #d2d6dd;
+    color: #3d3d3d;
     text-transform: uppercase;
 }
 nav ul li, footer ul li {
@@ -59,7 +33,6 @@ nav ul li, footer ul li {
 }
 
 .blurb { 
-    border-bottom: 2px double #5c677c; 
     margin-bottom: 25px;
     
 }
@@ -67,48 +40,44 @@ nav ul li, footer ul li {
 .matter {
     padding-left: 15px;
     padding-right: 15px;
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Open Sans', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
+    font-size: 2.2em;
 }
 
 
 
 .matter a {
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
     text-decoration: none;
-    color: #BF616A;
-    font-weight: 300;
-    font-size: 0.92em;
-
 }
 
 .footerLinks a {
     text-decoration: none;
-    color: #d2d6dd;
+    color: #3d3d3d;
     text-align: center;
 }
 
 .footerLinks p {
     font-family: 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.0em;
-    color: #d2d6dd;
+    color: #3d3d3d;
     font-weight: 300;
 }
 
 
 .footerLinks a:hover {
-    border-bottom: 1px solid #d2d6dd;
+    border-bottom: 1px solid #3d3d3d;
 }
 
-.matter a:hover {
-    border-bottom: 1px solid #BF616A;
-}
+/*.matter a:hover {
+    border-bottom: 1px solid #3d3d3d;
+}*/
 
 
 h1 {
     font-size: 2em;
-    font-family: 'MerriweatherRegular', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #ECEFF4;
+    font-family: 'Open Sans', 'MerriweatherRegular', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #3d3d3d;
     line-height: 1.4em;    
     text-align: center;
     padding: 0px;
@@ -117,10 +86,10 @@ h1 {
 
 }
 p {
-    font-family: 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
+    font-family: 'Open Sans', 'MerriweatherLight', 'RobotoSlabRegular', 'Helvetica', 'Arial', 'Sans-Serif'; 
     font-size: 1.2em;
     line-height: 0.4em;
-    color: #E5E9F0;
+    color: #3d3d3d;
     text-align: center;
     margin-bottom: 25px;
     text-decoration: none;
@@ -128,16 +97,17 @@ p {
 }
 
 b {
-    font-family: 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    line-height: 1.6em;
-    color: #ECEFF4;       /*earlier was #c9c9c9*/
+    font-family: 'Open Sans', 'Merriweather', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #000000;       /*earlier was #c9c9c9*/
     text-align: center;
     text-align: left;
 }
 
 
 footer {
-    border-top: 2px double #5c677c;
+    border-top: 1px double #c9c9c9;
     font-size: .8em;
     margin-top:25px;
     text-align: center;   
@@ -148,7 +118,7 @@ footer {
 ul.posts { 
     margin-right: 20px;
     font-size: 0.8em;
-    color: #E5E9F0;
+    color: #3d3d3d;
     text-align: center;
 }
 
