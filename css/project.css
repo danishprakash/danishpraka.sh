@@ -1,0 +1,99 @@
+::selection {
+  background: #ffe944; /* WebKit/Blink Browsers */
+  color: #222233;
+}
+
+::-moz-selection {
+  background: #ffe944; /* Gecko Browsers */
+  color: #222233;
+}
+
+html, body {
+  height: 100;
+  width: 100;
+  background: #222233;
+}
+
+.nav a {
+  font-family: 'Open Sans',
+    'Merriweather',
+    'RobotoSlabLight',
+    'Helvetica',
+    'Arial',
+    'Sans-Serif';
+  text-decoration: none;
+  color: #E5F5FF;
+  text-align: center;
+  font-weight: 400;
+}
+
+ul {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.matter {
+  color: #E5F5FF;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Open Sans',
+    'MerriweatherLight',
+    'RobotoSlabLight',
+    'Helvetica',
+    'Arial',
+    'Sans-Serif';
+  font-weight: 300;
+  font-size: 55px;
+}
+
+#uni {
+  color: #DFC86D;
+}
+
+#gh {
+  color: #DFC86D;
+}
+
+#cv {
+  color: #DFC86D;
+}
+
+#linked {
+  color: #DFC86D;
+}
+
+#email {
+  color: #DFC86D;
+}
+
+.matter a {
+  text-decoration: none;
+  color: #E5F5FF;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+/*.matter a:hover {
+}*/
+
+.matter a{
+  color: #DFC86D;
+}
+
+ol {
+  color: #E5F5FF;
+  font-family: 'Open Sans',
+    'Merriweather',
+    'RobotoSlabLight',
+    'Helvetica',
+    'Arial',
+    'Sans-Serif';
+  font-weight: 300;
+  font-size: .5em;
+  line-height: 1.6em;
+}
+
