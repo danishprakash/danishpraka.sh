@@ -1,19 +1,17 @@
 ::selection {
-  background: #EBB43D; /* WebKit/Blink Browsers */
+  background: #42f4ce; /* WebKit/Blink Browsers */
   color: #1A1A1A;
 }
 
 ::-moz-selection {
-  background: #EBB43D; /* Gecko Browsers */
+  background: #42f4ce; /* Gecko Browsers */
   color: #1A1A1A;
 }
 
-@media (max-width:499px){
-    .matter{
-        font-size:100px !important;
-    }  
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=latin-ext') format('truetype');
 }
-
 
 html, body {
     height: 100%;
@@ -28,31 +26,27 @@ body {
     display: table-cell;
     vertical-align: middle;
     width: auto;
-    background: #1A1A1A;
-    text-align: justify;
+    background: #000000;
+    text-align: left;
 }
 
 .matter {
-    color: #E5F5FF;
-    padding-left: 10%;
-    padding-right: 10%;
+    color: #ffffff;
     font-family: 'Open Sans', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
-    font-size: 60px;
+    font-weight: 100;
+    font-size: 22px;
 }
 
 #links {
-  color: #CFCFCF;
+  color: #ffffff;
   border-bottom: 1.5px dashed;
-  border-color: #404040;
-
+  border-color: #606060;
   transition: color .5s ease-in-out, border-bottom .9s;
 }
 
 #links:hover {
-    color: #EBB43D;
+    color: #42f4ce;
     border-bottom: 1.5px dashed;
-
 }
 
 #gh {
@@ -73,7 +67,7 @@ body {
 
 .matter a {
     text-decoration: none;
-    color: #E5F5FF;
+    color: #ffffff;
 
 }
 
@@ -84,13 +78,10 @@ body {
 }
 
 
-/*.matter a:hover {
-}*/
-
 b {
-    color: #CFCFCF;
-    font-family: 'Open Sans', 'Merriweather', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
-    line-height: 1.3em;
+    color: #ffffff;
+    font-family:  font-family: 'Open Sans', 'MerriweatherLight', 'RobotoSlabLight', 'Helvetica', 'Arial', 'Sans-Serif', serif;
+    font-weight: 100;
+    line-height: 1.5em;
+  
 }
-
