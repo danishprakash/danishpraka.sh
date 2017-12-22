@@ -2,9 +2,9 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Tale
+title:          Danish Prakash
 paginate:       5
-baseurl:        "/tale"
+baseurl:        "/"
 url:            "https://prakashdanish.github.io"
 
 # Assets
