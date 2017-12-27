@@ -1,31 +1,21 @@
-# Permalinks
-permalink:      /:year-:month-:day/:title
+# My variables
+name: Danish Prakash
+description: ~
 
-# Setup
-title:          Danish Prakash
-paginate:       5
-baseurl:        "/"
-url:            "https://prakashdanish.github.io"
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
 
-# Assets
+
+# Sass
 sass:
-  sass_dir:     _sass
-  style:        :compressed
+  style: :compressed
+  sass_dir: _sass
 
-# Build settings
-markdown:       kramdown
 
-# About
-author:
-  name:         Danish Prakash 
-  url:          https://prakashdanish.github.io
-  email:        danishprakash@outlook.com
-
-# Custom vars
-version:        3.4.1
-github:
-  repo:         https://prakashdanish.github.io
-
-# Gems
-plugins:
-  - jekyll-paginate
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
