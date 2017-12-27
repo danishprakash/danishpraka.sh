@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.name }}</title>
-    {% endif %}
+    
+        <title>Finally, a blog.</title>
+    
 
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="">
 
     <link rel="icon" href="/assets/img/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Merriweather" rel="stylesheet" type="text/css">
@@ -22,7 +20,18 @@
 <body>
 
     <div class="wrapper">
-        {{ content }}
+        <div class="post">
+	<a class="post__back" href="/">home</a>
+    <h1 class="post__title">Finally, a blog.</h1>
+    <p class="post__date">June 23, 2016</p>
+    <div class="post__content"?>
+        <h1 id="hello-world">Hello World</h1>
+
+<p>&lt;–wip–&gt;</p>
+
+    </div>
+</div>
+
     </div>
 
 </body>

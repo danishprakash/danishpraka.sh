@@ -4,10 +4,15 @@
 @import "reset";
 @import "config";
 
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=latin-ext') format('truetype');
+}
+
 body {
     color: $color-fg;
     background: $color-bg;
-    font-family: 'Inconsolata', ;
+	font-family: 'Cormorant Garamond', serif;
     font-size: 100%;
     font-weight: 400;
 }
@@ -76,6 +81,7 @@ ul {
             padding-left: 5px;
         }
     }
+
 }
 
 
@@ -91,10 +97,16 @@ ul {
 
 .blog {
     padding-bottom: 30px;
+
     h1 {
         font-size: 1.4em;
         margin-bottom: 5px;
     }
+	li {
+		.date{
+			text-align: right;
+		}
+	}
 }
 
 
@@ -103,7 +115,7 @@ ul {
     &__title {
         font-size: 1.6em;
         font-weight: 700;
-        text-decoration: underline;
+        // text-decoration: underline;
         margin-top: 20px;
         margin-bottom: 5px;
     }
