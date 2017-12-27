@@ -99,7 +99,7 @@ ul {
     }
 	li {
 		.date{
-			text-align: right;
+			float:right;
 		}
 	}
 }
@@ -107,6 +107,11 @@ ul {
 
 .post {
     padding-bottom: 30px;
+
+	&__back {
+		display: block;
+		text-align: center;
+	}
     &__title {
         font-size: 1.6em;
         font-weight: 700;
@@ -195,6 +200,12 @@ ul {
 }
 
 .about {
+
+	&__back {
+		display: block;
+		text-align: center;
+	}
+
     &__title {
         font-size: 1.6em;
         font-weight: 700;
