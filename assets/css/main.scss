@@ -4,15 +4,10 @@
 @import "reset";
 @import "config";
 
-@font-face {
-	font-family: 'Playfair Display';
-	src: url('https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=latin-ext') format('truetype');
-}
-
 body {
     color: $color-fg;
     background: $color-bg;
-    font-family: 'Mate', serif;
+    font-family: 'Crimson Text', serif;
     font-size: 100%;
     font-weight: 400;
 }
