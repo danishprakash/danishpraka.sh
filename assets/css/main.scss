@@ -174,13 +174,14 @@ ul {
             }
         }
         code {
-            padding: 3px;
-            font-size: 0.9em;
+            padding: 5px;
+            font-size: 0.95em;
             border-radius: 3px;
-            background: $color-grey;
+            background: $color-bg;
+			font-family: courier;
         }
         .highlight {
-            margin: 10px;
+            // margin: 10px;
             margin-bottom: 15px;
             padding: 10px;
             line-height: 1.5;
