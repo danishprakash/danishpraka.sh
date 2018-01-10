@@ -86,6 +86,96 @@ In the final conditional statement, we check if the size of `buffer` is equal to
 
 The `if(!buffer)` checks are for making sure memory was allocated to `buffer` successfully otherwise `malloc` and `realloc` return `NULL` in unsuccessfull memory allocation attempts. If that happens, our function returns with an error.
 
+# Tokenizing Input
+Once we have the command entered by the user as a char pointer array. We'd tokenize (read split) it making it easier for us to execute them. We define the function `split_lin()` with one a character pointer as an argument. In this function, we'll do memory mangement in the same way we did it in the `read_line()` function. Other variables here include `**tokens` and `*token`. We will be using the `strtok()` function for the task. It takes two arguments, the string to be tokenized and the delimiters. 
+
+For instance, consider this:
+
+```
+str1 = strtok("this is it!", " ");
+// str1 -> "this"
+
+str1 = strtok(NULL, " ");
+//str1 = "is"
+
+str1 = strtok(NULL, " ");
+//str1 = "it!"
+```
+
+First call to the `strtok` function returns the first token and every subsequent call expects the input as `NULL` and starts from where it left off in the previous iteration. Now, the code for `split_line` should be easily understood.
+
+```C
+char * * split_line(char * line) {
+  int buffsize = TK_BUFF_SIZE, position = 0;
+  char * * tokens = malloc(buffsize * sizeof(char * ));
+  char * token;
+
+  if (!tokens) {
+    fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
+    exit(EXIT_FAILURE);
+  }
+  token = strtok(line, TOK_DELIM);
+  while (token != NULL) {
+    tokens[position] = token;
+    position++;
+
+    if (position >= buffsize) {
+      buffsize += TK_BUFF_SIZE;
+      tokens = realloc(tokens, buffsize * sizeof(char * ));
+
+      if (!tokens) {
+        fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
+        exit(EXIT_FAILURE);
+      }
+    }
+
+    token = strtok(NULL, TOK_DELIM);
+  }
+
+  tokens[position] = NULL;
+
+  return tokens;
+}
+```
+
+After every iteration, we update the `tokens` variable by assigining the `token` in it's respective `position`. And finally return the `tokens` variable.
+
 # Executing commands
 
+After all the hard work above, the last step is rather trivial, thanks to the syscalls `execvp` `fork`.
+
+```c
+int dash_execute(char * * args) {
+  pid_t cpid;
+  int status;
+  
+  cpid = fork();
+
+  if (cpid == 0) {
+    if (execvp(args[0], args) < 0)
+      printf("dash: command not found: %s\n", args[0]);
+    exit(EXIT_FAILURE);
+
+  } else if (cpid < 0)
+    printf(RED "Error forking"
+      RESET "\n");
+  else {
+    waitpid(cpid, & status, WUNTRACED);
+  }
+  
+  return 1;
+}
+```
+
+`fork` allows us to create a new process by duplicating the current process, referring it to as the child process. The current process is thereby referred to as the parent process. The child process is a duplicate of the current(parent) process except for the process ID. When we invoke the `fork` system call, it returns the process ID of the child in the parent process. In the child process, the process ID is `0`. So, after invoking the `fork` call, we check the value returned by it to make sure we are in the child process or the `fork` syscall executed successfully. 
+
+If the fork was successfull, we will use the `execvp` command to execute the command. This plays out well for us because the way `execvp` works is, it replaces the current process with a new process image which in this case is the 
+command that needs to be executed. It returns `-1` only if there is an error. Lastly, with the `waitpid` function, we are making sure the child process finishes successfully.
+
+___
+
+# Finishing notes
+This post was more inclined towards a learning outcome rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells are working under the hood. 
+
+I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/prakashdanish/dash).
 
