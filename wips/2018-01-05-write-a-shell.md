@@ -140,6 +140,19 @@ char * * split_line(char * line) {
 
 After every iteration, we update the `tokens` variable by assigining the `token` in it's respective `position`. And finally return the `tokens` variable.
 
+# Exiting the shell
+Since it is a simple program, a simple `return 0` statement would be enough for us to exit the program successfully. Let's create a trivial function which returns 0.
+
+
+```c
+int dash_exit(char **args)
+{
+	return 0;
+}
+```
+
+We'll later on check if the user has entered `exit` and invoke this function appropriately.
+
 # Executing commands
 
 After all the hard work above, the last step is rather trivial, thanks to the syscalls `execvp` `fork`.
@@ -148,6 +161,11 @@ After all the hard work above, the last step is rather trivial, thanks to the sy
 int dash_execute(char * * args) {
   pid_t cpid;
   int status;
+  
+  if (strcmp(args[0], "exit") == 0)
+  {
+  	return dash_exit();
+  }
   
   cpid = fork();
 
@@ -171,6 +189,140 @@ int dash_execute(char * * args) {
 
 If the fork was successfull, we will use the `execvp` command to execute the command. This plays out well for us because the way `execvp` works is, it replaces the current process with a new process image which in this case is the 
 command that needs to be executed. It returns `-1` only if there is an error. Lastly, with the `waitpid` function, we are making sure the child process finishes successfully.
+
+Note here that we are doing a check for the `exit` command. It doesn't matter if the `**args` variable has more items than just the string `exit`. It'll simply return the function `dash_exit` which in turn will return `0`. We could've had returned 0 right inside the check but this makes it much more understandable and makes for a good practice.
+
+# Code
+
+```c
+#
+include < stdio.h > #include < string.h > #include < stdlib.h >
+
+  #define RL_BUFF_SIZE 1024# define TK_BUFF_SIZE 64# define TOK_DELIM " \t\r\n\a"
+
+#
+define RED "\033[0;31m"#
+define RESET "\e[0m"
+
+int dash_exit(char * * );
+char * * split_line(char * );
+char * read_line();
+int dash_execute(char * * );
+
+int dash_execute(char * * args) {
+  pid_t cpid;
+  int status;
+
+  if (strcmp(args[0], "exit") == 0) {
+    return dash_exit(args);
+  }
+
+  cpid = fork();
+
+  if (cpid == 0) {
+    if (execvp(args[0], args) < 0)
+      printf("dash: command not found: %s\n", args[0]);
+    exit(EXIT_FAILURE);
+
+  } else if (cpid < 0)
+    printf(RED "Error forking"
+      RESET "\n");
+  else {
+    waitpid(cpid, & status, WUNTRACED);
+  }
+
+  return 1;
+}
+
+int dash_exit(char * * args) {
+  return 0;
+}
+
+char * * split_line(char * line) {
+  int buffsize = TK_BUFF_SIZE, position = 0;
+  char * * tokens = malloc(buffsize * sizeof(char * ));
+  char * token;
+
+  if (!tokens) {
+    fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
+    exit(EXIT_FAILURE);
+  }
+  token = strtok(line, TOK_DELIM);
+  while (token != NULL) {
+    tokens[position] = token;
+    position++;
+
+    if (position >= buffsize) {
+      buffsize += TK_BUFF_SIZE;
+      tokens = realloc(tokens, buffsize * sizeof(char * ));
+
+      if (!tokens) {
+        fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
+        exit(EXIT_FAILURE);
+      }
+    }
+
+    token = strtok(NULL, TOK_DELIM);
+  }
+
+  tokens[position] = NULL;
+
+  return tokens;
+}
+
+char * read_line() {
+  int buffsize = 1024;
+  int position = 0;
+  char * buffer = malloc(sizeof(char) * buffsize);
+  int c;
+
+  if (!buffer) {
+    fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
+    exit(EXIT_FAILURE);
+  }
+
+  while (1) {
+    c = getchar();
+    if (c == EOF || c == '\n') {
+      buffer[position] = '\0';
+      return buffer;
+    } else {
+      buffer[position] = c;
+    }
+    position++;
+
+    if (position >= buffsize) {
+      buffsize += 1024;
+      buffer = realloc(buffer, buffsize);
+
+      if (!buffer) {
+        fprintf(stderr, "dash: Allocation error\n");
+        exit(EXIT_FAILURE);
+      }
+    }
+  }
+}
+
+void loop() {
+  char * line;
+  char * * args;
+  int status = 1;
+
+  do {
+    printf("> ");
+    line = read_line();
+    args = split_line(line);
+    status = dash_execute(args);
+    free(line);
+    free(args);
+  } while (status);
+}
+
+int main() {
+  loop();
+  return 0;
+}
+```
 
 ___
 
