@@ -193,23 +193,26 @@ command that needs to be executed. It returns `-1` only if there is an error. La
 Note here that we are doing a check for the `exit` command. It doesn't matter if the `**args` variable has more items than just the string `exit`. It'll simply return the function `dash_exit` which in turn will return `0`. We could've had returned 0 right inside the check but this makes it much more understandable and makes for a good practice.
 
 # Code
+Here's the complete code for our basic shell.
 
 ```c
-#
-include < stdio.h > #include < string.h > #include < stdlib.h >
+#include <stdio.h> 
+#include <string.h> 
+#include <stdlib.h>
 
-  #define RL_BUFF_SIZE 1024# define TK_BUFF_SIZE 64# define TOK_DELIM " \t\r\n\a"
+# define RL_BUFF_SIZE 1024
+# define TK_BUFF_SIZE 64
+# define TOK_DELIM " \t\r\n\a"
 
-#
-define RED "\033[0;31m"#
-define RESET "\e[0m"
+#define RED "\033[0;31m"
+#define RESET "\e[0m"
 
-int dash_exit(char * * );
-char * * split_line(char * );
-char * read_line();
-int dash_execute(char * * );
+int dash_exit(char **);
+char **split_line(char *);
+char *read_line();
+int dash_execute(char **);
 
-int dash_execute(char * * args) {
+int dash_execute(char **args) {
   pid_t cpid;
   int status;
 
@@ -234,14 +237,14 @@ int dash_execute(char * * args) {
   return 1;
 }
 
-int dash_exit(char * * args) {
+int dash_exit(char **args) {
   return 0;
 }
 
-char * * split_line(char * line) {
+char **split_line(char * line) {
   int buffsize = TK_BUFF_SIZE, position = 0;
-  char * * tokens = malloc(buffsize * sizeof(char * ));
-  char * token;
+  char **tokens = malloc(buffsize * sizeof(char *));
+  char *token;
 
   if (!tokens) {
     fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
@@ -270,10 +273,10 @@ char * * split_line(char * line) {
   return tokens;
 }
 
-char * read_line() {
+char *read_line() {
   int buffsize = 1024;
   int position = 0;
-  char * buffer = malloc(sizeof(char) * buffsize);
+  char *buffer = malloc(sizeof(char) * buffsize);
   int c;
 
   if (!buffer) {
@@ -304,8 +307,8 @@ char * read_line() {
 }
 
 void loop() {
-  char * line;
-  char * * args;
+  char *line;
+  char **args;
   int status = 1;
 
   do {
@@ -330,4 +333,6 @@ ___
 This post was more inclined towards a learning outcome rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells are working under the hood. 
 
 I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/prakashdanish/dash).
+
+If you find any errors or if you think this article can be improved in any way, ping me.
 
