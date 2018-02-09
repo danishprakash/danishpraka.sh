@@ -3,7 +3,7 @@ layout: post
 title: Write a shell in C
 ---
 
-I had a deep interest in Linux and when I got an opportunity to develop a shell, I was really excited. Over the course of the next month, I delved into reading about different shells in different languages, with different feature sets, aimed at different users. I finally wrote a shell in C with some basic but crucial functionalities such as piping, history etc.
+Ever wondered how that terminal just works? A more correct question would be how that shell just works? I had one of those too and It took me a couple of searches and a lot of reading to figure out how. I wrote a shell in C, first a basic and then added few more features on top of it. I've written the process for writing a basic shell in C.
 
 # Shell  
 What is a shell? In a very simple way, it could be defined as a tool or a program through which you can(should) interact with the operating system. This definition is very vague but it gives the idea.
@@ -87,7 +87,8 @@ In the final conditional statement, we check if the size of `buffer` is equal to
 The `if(!buffer)` checks are for making sure memory was allocated to `buffer` successfully otherwise `malloc` and `realloc` return `NULL` in unsuccessfull memory allocation attempts. If that happens, our function returns with an error.
 
 # Tokenizing Input
-Once we have the command entered by the user as a char pointer array. We'd tokenize (read split) it making it easier for us to execute them. We define the function `split_lin()` with one a character pointer as an argument. In this function, we'll do memory mangement in the same way we did it in the `read_line()` function. Other variables here include `**tokens` and `*token`. We will be using the `strtok()` function for the task. It takes two arguments, the string to be tokenized and the delimiters. 
+Once we have the command entered by the user as a char pointer array. We'd tokenize (read split) it making it easier for us to execute them. We define the function `split_line()` with one a character pointer as an argument. In this function, we'll do memory mangement in the same way we did it in the `read_line()` function. Other variables here include `**tokens` and `*token`. 
+We will be using the `strtok()` function for the task. It takes two arguments, the string to be tokenized and the delimiters. We've specified 4 del
 
 For instance, consider this:
 
@@ -106,7 +107,7 @@ First call to the `strtok` function returns the first token and every subsequent
 
 ```C
 char * * split_line(char * line) {
-  int buffsize = TK_BUFF_SIZE, position = 0;
+  int buffsize = 1024, position = 0;
   char * * tokens = malloc(buffsize * sizeof(char * ));
   char * token;
 
@@ -192,17 +193,15 @@ command that needs to be executed. It returns `-1` only if there is an error. La
 
 Note here that we are doing a check for the `exit` command. It doesn't matter if the `**args` variable has more items than just the string `exit`. It'll simply return the function `dash_exit` which in turn will return `0`. We could've had returned 0 right inside the check but this makes it much more understandable and makes for a good practice.
 
-# Code
-Here's the complete code for our basic shell.
+# Everything that we've done
+Here's the complete code for our basic shell. The code still has some on the things that aren't explained in the article but they are crucial to the functioning of our shell for instance, color-coded errors and warnings.
 
 ```c
 #include <stdio.h> 
 #include <string.h> 
 #include <stdlib.h>
 
-# define RL_BUFF_SIZE 1024
-# define TK_BUFF_SIZE 64
-# define TOK_DELIM " \t\r\n\a"
+# define TOK_DELIM " \t\r\n"
 
 #define RED "\033[0;31m"
 #define RESET "\e[0m"
@@ -329,10 +328,12 @@ int main() {
 
 ___
 
-# Finishing notes
-This post was more inclined towards a learning outcome rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells are working under the hood. 
+# Conclusion
+This post is more inclined as a learning exercise rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells work under the hood. 
 
 I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/prakashdanish/dash).
 
+
+# Contribute
 If you find any errors or if you think this article can be improved in any way, ping me.
 
