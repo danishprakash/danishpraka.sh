@@ -6,9 +6,10 @@
 
 body {
     color: $color-fg;
-    background: $color-bg;
-	font-family: 'Frank Ruhl Libre', serif;
-    font-size: 100%;
+    // background: $color-bg;
+    background: #efefef;
+	font-family: 'Mate', serif;
+    font-size: 95%;
     font-weight: 400;
 }
 h1 {
@@ -60,16 +61,17 @@ ul {
 
 
 .header {
-    display: flex;
+    display: inline;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     @media screen and (max-width: $br) {
         display: block;
     }
     h1 {
-        font-size: 1.7em;
-        margin-bottom: 0;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+		text-align: center;
     }
     ul {
         margin-top: 10px;
@@ -94,6 +96,7 @@ ul {
 	p {
 		font-size: 1.16em;
 		text-align: justify;
+		line-height: 1.7;
 	}
 }
 
