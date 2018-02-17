@@ -8,7 +8,7 @@ body {
     color: $color-fg;
     // background: $color-bg;
     background: #efefef;
-	font-family: 'Mate', serif;
+	font-family: 'Zilla Slab', serif;
     font-size: 95%;
     font-weight: 400;
 }
@@ -70,6 +70,7 @@ ul {
     }
     h1 {
         font-size: 1.5em;
+		font-weight: 600;
         margin-bottom: 30px;
 		text-align: center;
     }
@@ -94,7 +95,7 @@ ul {
 	}
 
 	p {
-		font-size: 1.16em;
+		font-size: 1.2em;
 		text-align: justify;
 		line-height: 1.7;
 	}
@@ -253,3 +254,11 @@ ul {
 		}
     }
 }
+
+// .footer {
+// 	border-top: thin;
+// 	p {
+// 		font-size: 1em;
+// 		text-align: center;
+// 	}
+// }
