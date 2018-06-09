@@ -337,3 +337,4 @@ I've written a more advanced version of this shell including piping, history and
 # Contribute
 If you find any errors or if you think this article can be improved in any way, ping me.
 
+---
