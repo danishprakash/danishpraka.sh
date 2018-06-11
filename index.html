@@ -4,17 +4,6 @@ layout: default
 
 {% include header.html %}
 
-<!-- <div class="portfolio"> -->
-<!--     <h1>Projects:</h1> -->
-<!--     <ul> -->
-<!--         {% for project in site.data.projects %} -->
-<!--         <li> -->
-<!--             {{ project.name }} - <a href="{{ project.url }}">{{ project.url }}</a> -->
-<!--         </li> -->
-<!--         {% endfor %} -->
-<!--     </ul> -->
-<!-- </div> -->
-
 <div class="desc">
 	<p>
 	Hi, I'm Danish I’m a computer science undergraduate at Amity University. I like writing <a href="https://github.com/prakashdanish" target="_blank">software</a> among other things. I've previously interned at <a href="https://socialcops.com" target="_blank">SocialCops</a> and <a href="https://www.att.com" target="_blank">AT&T</a>. I've also worked at <a href="https://www.sportido.com" target="_blank">Sportido</a> as a UX Designer. I'm an Open Source Software (OSS) and GNU/Linux enthusiast.<br><br> You can find my resume <a href="assets/danish_31-05-18.pdf" target="_blank">here</a> or contact me via email. </p><br><br><br>
@@ -25,13 +14,9 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li>
-		<span>»&emsp;<a href="{{ post.url }}">{{ post.title }}</a><span class="date">&emsp;{{ post.date | date: '%d %b %y' }}
+		<span>»&emsp;<a href="{{ post.url }}">{{ post.title }}</a><span class="date">&emsp;{{ post.date | date: '%B %Y' }}
         </li>
         {% endfor %}
     </ul>
 </div>
 
-<!-- <div class="footer"> -->
-<!-- 	<hr> -->
-<!-- 	<p> © Danish Prakash 2018 </p> -->
-<!-- </div> -->
