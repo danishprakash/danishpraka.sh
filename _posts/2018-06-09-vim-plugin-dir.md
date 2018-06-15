@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manually installing vim plugins
+title: Installing Vim plugins manually
 ---
 
 ![img](https://res.cloudinary.com/practicaldev/image/fetch/s--NIE-92PW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgflip.com/1teh21.jpg)

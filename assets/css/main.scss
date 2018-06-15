@@ -4,24 +4,34 @@
 @import "reset";
 @import "config";
 
+::selection {
+  background: #ffffaa; /* WebKit/Blink Browsers */
+  color: #000000;
+}
+
+::-moz-selection {
+  background: #ffffaa; /* Gecko Browsers */
+  color: #000000;
+}
+
 body {
     color: $color-fg;
-    background: #f7f7f7;
-	font-family: 'Zilla Slab', serif;
-    font-size: 95%;
+    background: #ffffff;
+	font-family: 'IBM Plex Serif', serif;
+    font-size: 85%;
     font-weight: 400;
 }
 h1 {
+    font-weight: 400;
     margin-bottom: 5px;
 }
 
 p {
     font-size: 1.3em;
-    line-height: 150%;
+    line-height: 20px;
 }
 a {
   color: $color-link;
-  text-decoration: none;
 
   &:visited {
     color: $color-link;
@@ -29,8 +39,8 @@ a {
   }
   &:hover {
     color: $color-link;
-	// border-bottom: 1.5px dashed;
-    text-decoration: none;
+    border-bottom: 1.5px dashed;
+    // text-decoration: none;
   }
   &:active {
     color: $color-link;
@@ -69,8 +79,8 @@ ul {
     }
     h1 {
         font-size: 1.5em;
-		font-weight: 600;
-        margin-bottom: 30px;
+		font-weight: 400;
+        margin-bottom: 10px;
 		text-align: center;
     }
     ul {
@@ -96,7 +106,7 @@ ul {
 	p {
 		font-size: 1.2em;
 		text-align: justify;
-		line-height: 1.7;
+		line-height: 1.9;
 	}
 }
 
@@ -131,8 +141,8 @@ ul {
     padding-bottom: 30px;
 
 	&__back {
-		display: block;
-		text-align: center;
+		display: in-line;
+		text-align: left;
 	}
     &__title {
         font-size: 1.8em;
@@ -158,13 +168,14 @@ ul {
         }
         p {
             font-size: 1.2em;
-            line-height: 150%;
+            line-height: 25px;
             margin-bottom: 15px;
+            text-align: justify;
         }
         a {
-            text-decoration: underline;
+            text-decoration: none;
             &:hover {
-                font-weight: bold;
+                // font-weight: bold;
             }
         }
         strong {
@@ -204,6 +215,7 @@ ul {
             border-radius: 3px;
             background: $color-bg;
 			font-family: courier;
+            overflow: scroll;
         }
         .highlight {
             // margin: 10px;

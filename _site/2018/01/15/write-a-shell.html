@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    
-        <title>Write a shell in C</title>
-    
+        
+        <title>Writing a shell in C</title>
+        
 
-    <meta name="description" content="">
+        <meta name="description" content="">
 
-    <link rel="icon" href="/assets/img/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Sanchez|Zilla+Slab:400,600" rel="stylesheet"> 
-     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-</head>
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="wrapper">
-        <div class="post">
-	<a class="post__back" href="/">home</a>
-    <h1 class="post__title">Write a shell in C</h1>
+        <div class="wrapper">
+            <div class="post">
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Writing a shell in C</h1>
     <p class="post__date">January 15, 2018</p>
     <div class="post__content"?>
         <p>Ever wondered how that terminal just works? A more correct question would be how that shell just works? I had one of those too and It took me a couple of searches and a lot of reading to figure out how. I wrote a shell in C, first a basic and then added few more features on top of it. I’ve written the process for writing a basic shell in C.</p>
@@ -128,38 +128,39 @@ str1 = strtok(NULL, " ");
 
 <p>First call to the <code class="highlighter-rouge">strtok</code> function returns the first token and every subsequent call expects the input as <code class="highlighter-rouge">NULL</code> and starts from where it left off in the previous iteration. Now, the code for <code class="highlighter-rouge">split_line</code> should be easily understood.</p>
 
-<pre><code class="language-C">char * * split_line(char * line) {
-  int buffsize = 1024, position = 0;
-  char * * tokens = malloc(buffsize * sizeof(char * ));
-  char * token;
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="nf">split_line</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="n">line</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">buffsize</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">position</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">tokens</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">buffsize</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="p">));</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">token</span><span class="p">;</span>
 
-  if (!tokens) {
-    fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
-    exit(EXIT_FAILURE);
-  }
-  token = strtok(line, TOK_DELIM);
-  while (token != NULL) {
-    tokens[position] = token;
-    position++;
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tokens</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"%sdash: Allocation error%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">RESET</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">token</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">TOK_DELIM</span><span class="p">);</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">token</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tokens</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">token</span><span class="p">;</span>
+    <span class="n">position</span><span class="o">++</span><span class="p">;</span>
 
-    if (position &gt;= buffsize) {
-      buffsize += TK_BUFF_SIZE;
-      tokens = realloc(tokens, buffsize * sizeof(char * ));
+    <span class="k">if</span> <span class="p">(</span><span class="n">position</span> <span class="o">&gt;=</span> <span class="n">buffsize</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">buffsize</span> <span class="o">+=</span> <span class="n">TK_BUFF_SIZE</span><span class="p">;</span>
+      <span class="n">tokens</span> <span class="o">=</span> <span class="n">realloc</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">buffsize</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="p">));</span>
 
-      if (!tokens) {
-        fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
-        exit(EXIT_FAILURE);
-      }
-    }
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tokens</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"%sdash: Allocation error%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">RESET</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
 
-    token = strtok(NULL, TOK_DELIM);
-  }
+    <span class="n">token</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">TOK_DELIM</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  tokens[position] = NULL;
+  <span class="n">tokens</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
 
-  return tokens;
-}
+  <span class="k">return</span> <span class="n">tokens</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 <p>After every iteration, we update the <code class="highlighter-rouge">tokens</code> variable by assigining the <code class="highlighter-rouge">token</code> in it’s respective <code class="highlighter-rouge">position</code>. And finally return the <code class="highlighter-rouge">tokens</code> variable.</p>
 
@@ -362,8 +363,8 @@ command that needs to be executed. It returns <code class="highlighter-rouge">-1
     </div>
 </div>
 
-    </div>
+        </div>
 
-</body>
+    </body>
 
 </html>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Write a shell in C
+title: Writing a shell in C
 ---
 
 Ever wondered how that terminal just works? A more correct question would be how that shell just works? I had one of those too and It took me a couple of searches and a lot of reading to figure out how. I wrote a shell in C, first a basic and then added few more features on top of it. I've written the process for writing a basic shell in C.
@@ -105,7 +105,7 @@ str1 = strtok(NULL, " ");
 
 First call to the `strtok` function returns the first token and every subsequent call expects the input as `NULL` and starts from where it left off in the previous iteration. Now, the code for `split_line` should be easily understood.
 
-```C
+```c
 char * * split_line(char * line) {
   int buffsize = 1024, position = 0;
   char * * tokens = malloc(buffsize * sizeof(char * ));

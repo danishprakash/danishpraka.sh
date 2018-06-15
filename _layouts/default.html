@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    {% if page.title %}
+        {% if page.title %}
         <title>{{ page.title }}</title>
-    {% else %}
+        {% else %}
         <title>{{ site.name }}</title>
-    {% endif %}
+        {% endif %}
 
-    <meta name="description" content="{{ site.description }}">
+        <meta name="description" content="{{ site.description }}">
 
-    <link rel="icon" href="/assets/img/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Sanchez|Zilla+Slab:400,600" rel="stylesheet"> 
-     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-</head>
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="wrapper">
-        {{ content }}
-    </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
 
-</body>
+    </body>
 
 </html>
