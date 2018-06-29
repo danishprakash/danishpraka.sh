@@ -30,7 +30,8 @@ What really goes behind the curtains when you install a vim plugin is essentiall
 
 - You write or download a vim plugin.
 - place it in a folder, preferably `~/.vim/plugins/`
-- finally you add this path to the vim `runtimepath`
+- Now add this path to the vim `runtimepath`
+- Finally, source the plugin file
 
 
 # Installation
@@ -41,20 +42,21 @@ We'll be using one of my [plugin](https://github.com/prakashdanish/vimport) for 
 1 Clone the plugin to the appropriate vim directory.
 
 ```bash
-git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins
+git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
 ```
 
 2 Update the vim runtime path. The easiest way to do this is by appending the 
-plugin dir path to the runtimepath.
+plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable. 
 
 ```vim
 :set rtp+=~/.vim/plugins/vimport
+:echo &rtp
 ```
 
-And you can verify this using 
+3 Finally, let's source the plugin file.
 
 ```vim
-:echo &rtp
+:source ~/vim/plugins/vimport/plugins/vimport.vim
 ```
 
 Now you should be able to run the plugin, try this command.
@@ -63,8 +65,6 @@ Now you should be able to run the plugin, try this command.
 :Vimport requests
 ```
 
-This maybe a rude awakening as to how plugins are managed by the so called plugin managers out there, it was for me.
-Nonetheless, plugin managers provide us with one command substitutions for all of the above
-and a lot more.
+As it turns out, it's pretty simple to actually install a vim plugin. But if you are one of those who use quite a number of plugins, the management of these could turn into a nightmare pretty quick. And for the same reason, I'd rather use a plugin manager and so should you.
 
 ---

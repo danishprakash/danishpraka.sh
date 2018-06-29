@@ -52,7 +52,8 @@ commands or auto commands.</p>
 <ul>
   <li>You write or download a vim plugin.</li>
   <li>place it in a folder, preferably <code class="highlighter-rouge">~/.vim/plugins/</code></li>
-  <li>finally you add this path to the vim <code class="highlighter-rouge">runtimepath</code></li>
+  <li>Now add this path to the vim <code class="highlighter-rouge">runtimepath</code></li>
+  <li>Finally, source the plugin file</li>
 </ul>
 
 <h1 id="installation">Installation</h1>
@@ -62,20 +63,21 @@ We’ll be using one of my <a href="https://github.com/prakashdanish/vimport">pl
 
 <p>1 Clone the plugin to the appropriate vim directory.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
 </code></pre>
 </div>
 
 <p>2 Update the vim runtime path. The easiest way to do this is by appending the 
-plugin dir path to the runtimepath.</p>
+plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable.</p>
 
 <div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span><span class="k">set</span> rtp<span class="p">+=~</span><span class="sr">/.vim/</span>plugins/vimport
+<span class="p">:</span>echo &amp;rtp
 </code></pre>
 </div>
 
-<p>And you can verify this using</p>
+<p>3 Finally, let’s source the plugin file.</p>
 
-<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>echo &amp;rtp
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>source <span class="p">~</span><span class="sr">/vim/</span>plugins<span class="sr">/vimport/</span>plugins/vimport<span class="p">.</span><span class="k">vim</span>
 </code></pre>
 </div>
 
@@ -85,9 +87,7 @@ plugin dir path to the runtimepath.</p>
 </code></pre>
 </div>
 
-<p>This maybe a rude awakening as to how plugins are managed by the so called plugin managers out there, it was for me.
-Nonetheless, plugin managers provide us with one command substitutions for all of the above
-and a lot more.</p>
+<p>As it turns out, it’s pretty simple to actually install a vim plugin. But if you are one of those who use quite a number of plugins, the management of these could turn into a nightmare pretty quick. And for the same reason, I’d rather use a plugin manager and so should you.</p>
 
 <hr />
 
