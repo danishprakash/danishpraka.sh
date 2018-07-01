@@ -65,6 +65,9 @@ Now you should be able to run the plugin, try this command.
 :Vimport requests
 ```
 
+--
+
+# Conclusion
 As it turns out, it's pretty simple to actually install a vim plugin. But if you are one of those who use quite a number of plugins, the management of these could turn into a nightmare pretty quick. And for the same reason, I'd rather use a plugin manager and so should you.
 
 ---

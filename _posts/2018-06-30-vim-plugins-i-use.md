@@ -27,9 +27,7 @@ Works in a similar way as vim-surround but instead, as the name suggest, it comm
 For instance, `gcG` -> comments out contents of the file from current cursor position to end of file. You can use it with a lot of other motions.
 
 6. [__morhetz/gruvbox__](https://github.com/morhetz/gruvbox)<br>
-This is the colorscheme that I've been using for quite a while now. I'm using the same scheme with iTerm2 as well. This is how it looks with a vimscript file open.
-
-<img src="https://imgur.com/TQpjlUI.png" alt="drawing" width="600px"/>
+This is the colorscheme that I've been using for quite a while now. I'm using the same scheme with iTerm2 as well. This is how it looks with a vimscript file open. <img src="https://imgur.com/TQpjlUI.png" alt="drawing" width="600px"/>
 
 
 7. [__junegunn/fzf__](https://github.com/junegunn/fzf)<br>
@@ -44,6 +42,14 @@ This allows you to use `Tab` to autocomplete keywords. Note that this uses vim's
 10. [__prakashdanish/vimport__](https://github.com/prakashdanish/vimport)<br>
 This plugin helps you quickly import and drop python packages and/or modules that you've imported in your project. I use it when I'm working on python projects wherein I'm adding and removing modules on a rolling basis.
 
+--
+
 # Updates 
 I'll keep this list updated with new plugins that I install or remove plugins from the list above if I find a good enough alternate for it within vim itself or another plugin which might offer better features. 
 
+--
+
+*Head over to the discussion over at [Hacker News](https://news.ycombinator.com/item?id=17430546), there's quite a lot of good advice there.*
+
+
+---
