@@ -41,12 +41,12 @@ We'll be using one of my [plugin](https://github.com/prakashdanish/vimport) for 
 
 1 Clone the plugin to the appropriate vim directory.
 
-```bash
-git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
+```sh
+$ git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
 ```
 
 2 Update the vim runtime path. The easiest way to do this is by appending the 
-plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable. 
+plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable.
 
 ```vim
 :set rtp+=~/.vim/plugins/vimport
