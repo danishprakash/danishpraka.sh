@@ -24,6 +24,7 @@ body {
 }
 h1 {
     font-weight: 400;
+    font-family: 'IBM Plex Serif', serif;
     margin-bottom: 5px;
 }
 
@@ -33,7 +34,6 @@ p {
 }
 a {
   color: $color-link;
-
   &:visited {
     color: $color-link;
     text-decoration: none;
@@ -80,7 +80,8 @@ ul {
     }
     h1 {
         font-size: 1.5em;
-		font-weight: 400;
+        font-family: 'Playfair Display', serif;
+		font-weight: 700;
         margin-bottom: 10px;
 		text-align: center;
     }
@@ -146,22 +147,20 @@ ul {
 		text-align: left;
 	}
     &__title {
-        font-size: 1.8em;
+        font-size: 2.4em;
+        font-family: 'Playfair Display', serif;
         font-weight: 700;
-        // text-decoration: underline;
-        margin-top: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 		text-align: center;
     }
     &__date {
         font-size: 1em;
 		text-align: center;
-        font-style: italic;
     }
     &__content {
         padding-top: 30px;
         h1 {
-            font-size: 1.25em;
+            font-size: 1.5em;
             font-weight: 700;
             margin-top: 30px;
             margin-bottom: 5px;
@@ -174,6 +173,7 @@ ul {
             text-align: justify;
         }
         a {
+            font-family: 'Playfair Display', serif;
             text-decoration: none;
             &:hover {
                 // font-weight: bold;
@@ -181,6 +181,7 @@ ul {
         }
         strong {
             font-weight: 700;
+            font-family: 'Playfair Display', serif;
         }
         em {
             font-style: italic;
@@ -217,7 +218,7 @@ ul {
             color: #333333;
             background: #e8e8e8;
             font-family: courier;
-            overflow: scroll;
+            overflow: hidden;
         }
         // inline code blocks
         .highlight {
@@ -226,14 +227,14 @@ ul {
             line-height: 1.5;
             border-radius: 3px;
             background: #3d3d3d;
+            overflow-x: scroll;
             // syntax highlighted code blocks
             code {
                 padding: 0px;
-                font-size: 0.95em;
+                font-size: 1em;
                 font-family: 'courier new';
                 color: #ffffff;
                 background: none;
-                overflow: scroll;
             }
         }
         .codebreak {
