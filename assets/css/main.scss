@@ -50,12 +50,17 @@ a {
 }
 ul {
     list-style: none;
+    align-items: baseline;
     li {
         padding: 5px;
         padding-left: 10px;
+        color: #a8a8a8;
         @media screen and (max-width: $br) {
             padding: 10px 0 10px 0;
         }
+    }
+    li:hover {
+        color: #000000;
     }
 }
 
@@ -165,6 +170,7 @@ ul {
             margin-top: 30px;
             margin-bottom: 5px;
 			padding-bottom: 5px;
+            font-family: 'Playfair Display', serif;
         }
         p {
             font-size: 1.2em;
@@ -232,7 +238,8 @@ ul {
             code {
                 padding: 0px;
                 font-size: 1em;
-                font-family: 'courier new';
+                // font-family: 'courier new';
+                font-family: courier;
                 color: #ffffff;
                 background: none;
             }
