@@ -14,7 +14,7 @@
 
         <link rel="icon" href="/assets/img/favicon.png">
         <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,700" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Playfair+Display:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400|Playfair+Display:700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     </head>
 
@@ -26,9 +26,7 @@
     <h1 class="post__title">Installing Vim plugins manually</h1>
     <p class="post__date">June 9, 2018</p>
     <div class="post__content"?>
-        <p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NIE-92PW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgflip.com/1teh21.jpg" alt="img" /></p>
-
-<p>When I started out with vim over an year ago, I made sure not to mess with plugins
+        <p>When I started out with vim over an year ago, I made sure not to mess with plugins
 because installing plugins seemed like such an arcane task that only a handfull of
 people over at r/vim knew. This went on until I came across Pathogen, a plugin manager 
 which was seemed somewhat sophisticated. I tried Pathogen and learned it enough 
@@ -43,7 +41,7 @@ This is where vim plugins and autoload files are stored just to make everything
 more organized and easy to use. Your colorschemes, plugins, and even plugin
 managers are kept in this directory.</p>
 
-<p><strong>2. runtimepath</strong> - If you are familiar with what <code class="highlighter-rouge">$PYTHONPATH</code> in python dev environment does or
+<p><strong>2. <code class="highlighter-rouge">runtimepath</code></strong> - If you are familiar with what <code class="highlighter-rouge">$PYTHONPATH</code> in python dev environment does or
 what <code class="highlighter-rouge">$PATH</code> in Unix does, then this is quite similar to these two. The <code class="highlighter-rouge">runtimepath</code>
 or <code class="highlighter-rouge">rtp</code> is where vim looks for commands which are not defined natively such as plugin
 commands or auto commands.</p>

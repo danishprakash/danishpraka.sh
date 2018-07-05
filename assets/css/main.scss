@@ -54,13 +54,9 @@ ul {
     li {
         padding: 5px;
         padding-left: 10px;
-        color: #a8a8a8;
         @media screen and (max-width: $br) {
             padding: 10px 0 10px 0;
         }
-    }
-    li:hover {
-        color: #000000;
     }
 }
 
@@ -156,6 +152,7 @@ ul {
         font-family: 'Playfair Display', serif;
         font-weight: 700;
         margin-bottom: 10px;
+        margin-top: 20px;
 		text-align: center;
     }
     &__date {
@@ -174,6 +171,7 @@ ul {
         }
         p {
             font-size: 1.2em;
+            font-weight: 300;
             line-height: 25px;
             margin-bottom: 15px;
             text-align: justify;

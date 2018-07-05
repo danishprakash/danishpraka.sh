@@ -3,8 +3,6 @@ layout: post
 title: Installing Vim plugins manually
 ---
 
-![img](https://res.cloudinary.com/practicaldev/image/fetch/s--NIE-92PW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgflip.com/1teh21.jpg)
-
 When I started out with vim over an year ago, I made sure not to mess with plugins
 because installing plugins seemed like such an arcane task that only a handfull of
 people over at r/vim knew. This went on until I came across Pathogen, a plugin manager 
@@ -20,7 +18,7 @@ This is where vim plugins and autoload files are stored just to make everything
 more organized and easy to use. Your colorschemes, plugins, and even plugin
 managers are kept in this directory.
 
-**2. runtimepath** - If you are familiar with what `$PYTHONPATH` in python dev environment does or
+**2. `runtimepath`** - If you are familiar with what `$PYTHONPATH` in python dev environment does or
 what `$PATH` in Unix does, then this is quite similar to these two. The `runtimepath`
 or `rtp` is where vim looks for commands which are not defined natively such as plugin
 commands or auto commands.
