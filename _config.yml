@@ -12,6 +12,8 @@ sass:
   style: :compressed
   sass_dir: _sass
 
+# Google analytics tracking ID
+google_analytics: "UA-101783497-1"
 
 # Markdown
 markdown: kramdown
