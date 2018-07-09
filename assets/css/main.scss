@@ -217,11 +217,12 @@ ul {
         }
         code {
             padding: 3px;
-            font-size: 1em;
+            font-size: 0.9em;
             border-radius: 2px;
             color: #333333;
             background: #e8e8e8;
-            font-family: courier;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 500;
             overflow: hidden;
         }
         // inline code blocks
@@ -236,8 +237,8 @@ ul {
             code {
                 padding: 0px;
                 font-size: 1em;
-                // font-family: 'courier new';
-                font-family: courier;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: 400;
                 color: #ffffff;
                 background: none;
             }
