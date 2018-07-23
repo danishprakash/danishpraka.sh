@@ -1,0 +1,66 @@
+<p>When I started out with vim over an year ago, I made sure not to mess with plugins
+because installing plugins seemed like such an arcane task that only a handfull of
+people over at r/vim knew. This went on until I came across Pathogen, a plugin manager 
+which was seemed somewhat sophisticated. I tried Pathogen and learned it enough 
+to install a plugin which turned out to be quite easy.
+Up until recently, while working on a personal project of mine, I came across an issue
+of manually installing a plugin which intrigued me quite a bit.</p>
+
+<p>First, let’s understand some of the terms used in this context.</p>
+
+<p><strong>1. Vim directory</strong> - For GNU/Linux and macOS, it’s generally <code class="highlighter-rouge">~/.vim</code>.
+This is where vim plugins and autoload files are stored just to make everything
+more organized and easy to use. Your colorschemes, plugins, and even plugin
+managers are kept in this directory.</p>
+
+<p><strong>2. <code class="highlighter-rouge">runtimepath</code></strong> - If you are familiar with what <code class="highlighter-rouge">$PYTHONPATH</code> in python dev environment does or
+what <code class="highlighter-rouge">$PATH</code> in Unix does, then this is quite similar to these two. The <code class="highlighter-rouge">runtimepath</code>
+or <code class="highlighter-rouge">rtp</code> is where vim looks for commands which are not defined natively such as plugin
+commands or auto commands.</p>
+
+<p>What really goes behind the curtains when you install a vim plugin is essentially just this.</p>
+
+<ul>
+  <li>You write or download a vim plugin.</li>
+  <li>place it in a folder, preferably <code class="highlighter-rouge">~/.vim/plugins/</code></li>
+  <li>Now add this path to the vim <code class="highlighter-rouge">runtimepath</code></li>
+  <li>Finally, source the plugin file</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+<p>If you’ve been following along, you probably have an idea now how to manually install 
+a vim plugin. If not, it’s alright, keep reading.
+We’ll be using one of my <a href="https://github.com/prakashdanish/vimport">plugin</a> for this example.</p>
+
+<p>1 Clone the plugin to the appropriate vim directory.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
+</code></pre>
+</div>
+
+<p>2 Update the vim runtime path. The easiest way to do this is by appending the 
+plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable.</p>
+
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span><span class="k">set</span> rtp<span class="p">+=~</span><span class="sr">/.vim/</span>plugins/vimport
+<span class="p">:</span>echo &amp;rtp
+</code></pre>
+</div>
+
+<p>3 Finally, let’s source the plugin file.</p>
+
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>source <span class="p">~</span><span class="sr">/vim/</span>plugins<span class="sr">/vimport/</span>plugins/vimport<span class="p">.</span><span class="k">vim</span>
+</code></pre>
+</div>
+
+<p>Now you should be able to run the plugin, try this command.</p>
+
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>Vimport requests
+</code></pre>
+</div>
+
+<p>–</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>As it turns out, it’s pretty simple to actually install a vim plugin. But if you are one of those who use quite a number of plugins, the management of these could turn into a nightmare pretty quick. And for the same reason, I’d rather use a plugin manager and so should you.</p>
+
+<hr />

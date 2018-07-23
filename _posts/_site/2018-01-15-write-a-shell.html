@@ -101,38 +101,39 @@ str1 = strtok(NULL, " ");
 
 <p>First call to the <code class="highlighter-rouge">strtok</code> function returns the first token and every subsequent call expects the input as <code class="highlighter-rouge">NULL</code> and starts from where it left off in the previous iteration. Now, the code for <code class="highlighter-rouge">split_line</code> should be easily understood.</p>
 
-<pre><code class="language-C">char * * split_line(char * line) {
-  int buffsize = 1024, position = 0;
-  char * * tokens = malloc(buffsize * sizeof(char * ));
-  char * token;
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="nf">split_line</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="n">line</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">buffsize</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">position</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">tokens</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">buffsize</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="p">));</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">token</span><span class="p">;</span>
 
-  if (!tokens) {
-    fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
-    exit(EXIT_FAILURE);
-  }
-  token = strtok(line, TOK_DELIM);
-  while (token != NULL) {
-    tokens[position] = token;
-    position++;
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tokens</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"%sdash: Allocation error%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">RESET</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">token</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">TOK_DELIM</span><span class="p">);</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">token</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tokens</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">token</span><span class="p">;</span>
+    <span class="n">position</span><span class="o">++</span><span class="p">;</span>
 
-    if (position &gt;= buffsize) {
-      buffsize += TK_BUFF_SIZE;
-      tokens = realloc(tokens, buffsize * sizeof(char * ));
+    <span class="k">if</span> <span class="p">(</span><span class="n">position</span> <span class="o">&gt;=</span> <span class="n">buffsize</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">buffsize</span> <span class="o">+=</span> <span class="n">TK_BUFF_SIZE</span><span class="p">;</span>
+      <span class="n">tokens</span> <span class="o">=</span> <span class="n">realloc</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">buffsize</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="p">));</span>
 
-      if (!tokens) {
-        fprintf(stderr, "%sdash: Allocation error%s\n", RED, RESET);
-        exit(EXIT_FAILURE);
-      }
-    }
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tokens</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"%sdash: Allocation error%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">RESET</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
 
-    token = strtok(NULL, TOK_DELIM);
-  }
+    <span class="n">token</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">TOK_DELIM</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  tokens[position] = NULL;
+  <span class="n">tokens</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
 
-  return tokens;
-}
+  <span class="k">return</span> <span class="n">tokens</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 <p>After every iteration, we update the <code class="highlighter-rouge">tokens</code> variable by assigining the <code class="highlighter-rouge">token</code> in it’s respective <code class="highlighter-rouge">position</code>. And finally return the <code class="highlighter-rouge">tokens</code> variable.</p>
 
@@ -330,3 +331,4 @@ command that needs to be executed. It returns <code class="highlighter-rouge">-1
 <h1 id="contribute">Contribute</h1>
 <p>If you find any errors or if you think this article can be improved in any way, ping me.</p>
 
+<hr />
