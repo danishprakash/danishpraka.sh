@@ -54,8 +54,15 @@
 
 
 <script>
+// "no spams please"
 function changeText() {
-	document.getElementById('email').innerHTML = 'danishprakash@outlook.com';
+	currentText = document.getElementById('email').innerHTML;
+    if (currentText == 'email') {
+        document.getElementById('email').innerHTML = 'danishprakash@outlook.com';
+    }
+    else {
+        document.getElementById('email').innerHTML = 'email';
+    }
 }
 </script>
 
