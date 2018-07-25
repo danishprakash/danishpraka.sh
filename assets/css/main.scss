@@ -6,13 +6,13 @@
 @import "config";
 
 ::selection {
-  background: #d3f0ff; /* WebKit/Blink Browsers */
-  color: #000000;
+    background: #d3f0ff; /* WebKit/Blink Browsers */
+    color: #000000;
 }
 
 ::-moz-selection {
-  background: #282828; /* Gecko Browsers */
-  color: #efefef;
+    background: #d3f0ff; /* Gecko Browsers */
+    color: #000000;
 }
 
 body {
