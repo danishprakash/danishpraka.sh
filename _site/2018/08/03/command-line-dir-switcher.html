@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Switching directories on Unix quickly</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400|Playfair+Display:700|IBM+Plex+Mono:400,500" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Switching directories on Unix quickly</h1>
+    <p class="post__date">August 3, 2018</p>
+    <div class="post__content"?>
+        <p>How often do you find yourself bashing <code class="highlighter-rouge">..</code> at the prompt in hopes of getting to the correct directory? I don’t know about you but I used to do this a lot, I used to constantly switch directories only to find out I was in the wrong one or I’m a level deep and I had to immediately back-up <code class="highlighter-rouge">..</code>.
+So, I started looking for ways that would help me switch directories more easily. I came across this tool <a href="https://github.com/rupa/z"><code class="highlighter-rouge">z</code></a> which is a good alternative but It didn’t felt intuitive enough, you had to hope it would guess the right directory.</p>
+
+<p>I came up with a simple trick which has worked good enough for me for quite some time now, it’s intuitive and is configurable enough the commands involved in it.</p>
+
+<h1 id="function">Function</h1>
+<p>This is a simple bash function with <code class="highlighter-rouge">find</code> and <code class="highlighter-rouge">fzf</code>. Load this up in your <code class="highlighter-rouge">.zshrc</code>. Follow along to get a grip on how this actually works.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>quick_find <span class="o">()</span> <span class="o">{</span>
+    <span class="nv">dir</span><span class="o">=</span><span class="k">$(</span>find ~/programming -type d -not-path <span class="s1">'*/\.*'</span> -maxdepth 1 | fzf<span class="k">)</span>
+    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$dir</span><span class="s2">"</span>
+    <span class="nb">cd</span> <span class="nv">$dir</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<p>Let’s go over each and every element in the function defined above.</p>
+
+<p>1 <code class="highlighter-rouge">find</code>: find helps you find files and directories on your system. Here, we’re doing a search for all the directories (<code class="highlighter-rouge">-type d</code>) in the <code class="highlighter-rouge">programming</code> directory (this is just me, you can add more directories in which you want to lookup). Next, we’re making sure that hidden directories don’t show up (<code class="highlighter-rouge">-not-path '*/\.*</code>). And finally we make it a rule that the depth to which find should look for directories is just 1 level deep, that means it won’t go into a subdirectory, say <code class="highlighter-rouge">subdir</code> which resides <code class="highlighter-rouge">~/programming/dir/subdir</code>, which is actually 2 levels deep.</p>
+
+<p>2 <a href="https://github.com/junegunn/fzf"><code class="highlighter-rouge">fzf</code></a>: You probably already know about <code class="highlighter-rouge">fzf</code> but if you don’t, it’s a fuzzy file finder and it is really fast. We pass the results from <code class="highlighter-rouge">find</code> which is nothing but a list of directories to <code class="highlighter-rouge">fzf</code> which opens up a nice little interface where we can get suggestions as soon as we start typing, refer to the <a href="#conclusion">gif</a> below.</p>
+
+<p>3 <code class="highlighter-rouge">echo "$dir"</code>: We print the directory we have selected shortlisted in fzf back to the prompt so as to be sure we’re “cd’ing” into the right directory.</p>
+
+<p>4 <code class="highlighter-rouge">cd $dir</code>: Finally, <code class="highlighter-rouge">cd</code> into the selected directory. A note here, you need to hit the control return (enter) key for the cd to actually take effect, I’ve been looking into the why of this but couldn’t find a plausible explanation. Hit me up if you have something of value in this context.</p>
+
+<h1 id="creating-a-shortcut">Creating a shortcut</h1>
+<p>Now, we would like to have a handy key combination to open our switcher, how about <code class="highlighter-rouge">Ctrl-p</code>? We would want our function to fire up as soon as we type <code class="highlighter-rouge">Ctrl-p</code>, so a simple bindkey should do, right? Well, no, zsh doesn’t allow you to bind keys to a function, instead we would create a widget which maps to the function and finally bind that widget to the key combination. We can do that by creating a widget using the zsh line editor, <code class="highlighter-rouge">zle</code> and then we can specify our key combination mapped to this widget we just created.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>zle -N quick_find_widget quick_find
+bindkey <span class="s2">"^p"</span> quick_find_widget
+</code></pre>
+</div>
+
+<p>That’s about it, simply put the <a href="#function">function</a> and these two lines in your <code class="highlighter-rouge">.zshrc</code> and you’re good to go.</p>
+
+<p>–</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>If all goes well, you should have something like the gif below making it easier for you to switch between directories easily.</p>
+
+<p><img src="https://i.imgur.com/r8eWY0L.gif" alt="img" /></p>
+
+<p>Also, if you can think of improvements to this, please open an issue and/or a PR on <a href="https://github.com/prakashdanish/dotfiles">this</a> repository, there is more stuff there. Or if you have other such handy tricks, do let me know. Feel free to contact me via email.</p>
+
+<hr />
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
