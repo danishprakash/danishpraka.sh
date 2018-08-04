@@ -13,9 +13,9 @@ This is a simple bash function with `find` and `fzf`. Load this up in your `.zsh
 
 ```sh
 function quick_find () {
-    dir=$(find ~/programming -type d -not-path '*/\.*' -maxdepth 1 | fzf)
-    echo "$dir"
+    dir=$(find ~/programming -type d -not -path '*/\.*' -maxdepth 1 | fzf)
     cd $dir
+    zle reset-prompt
 }
 ```
 
@@ -25,9 +25,11 @@ Let's go over each and every element in the function defined above.
 
 2 [`fzf`](https://github.com/junegunn/fzf): You probably already know about `fzf` but if you don't, it's a fuzzy file finder and it is really fast. We pass the results from `find` which is nothing but a list of directories to `fzf` which opens up a nice little interface where we can get suggestions as soon as we start typing, refer to the [gif](#conclusion) below.
 
-3 `echo "$dir"`: We print the directory we have selected shortlisted in fzf back to the prompt so as to be sure we're "cd'ing" into the right directory.
+3 `cd $dir`: Finally, `cd` into the selected directory. A note here, you need to hit the control return (enter) key for the cd to actually take effect, I've been looking into the why of this but couldn't find a plausible explanation. Hit me up if you have something of value in this context. 
 
-4 `cd $dir`: Finally, `cd` into the selected directory. A note here, you need to hit the control return (enter) key for the cd to actually take effect, I've been looking into the why of this but couldn't find a plausible explanation. Hit me up if you have something of value in this context.
+__Update__: Thanks to [/u/maji_yabakune](https://www.reddit.com/user/maji_yabakune) for helping with a solution to `cd`ing into the directory without hitting the return key, explained below.
+
+4 `zle reset-prompt`: This redraws the prompt to take into immediate effect the new working directory so you don't need to hit the enter key anymore.
 
 
 # Creating a shortcut

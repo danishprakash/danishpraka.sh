@@ -57,9 +57,9 @@ So, I started looking for ways that would help me switch directories more easily
 <p>This is a simple bash function with <code class="highlighter-rouge">find</code> and <code class="highlighter-rouge">fzf</code>. Load this up in your <code class="highlighter-rouge">.zshrc</code>. Follow along to get a grip on how this actually works.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>quick_find <span class="o">()</span> <span class="o">{</span>
-    <span class="nv">dir</span><span class="o">=</span><span class="k">$(</span>find ~/programming -type d -not-path <span class="s1">'*/\.*'</span> -maxdepth 1 | fzf<span class="k">)</span>
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$dir</span><span class="s2">"</span>
+    <span class="nv">dir</span><span class="o">=</span><span class="k">$(</span>find ~/programming -type d -not -path <span class="s1">'*/\.*'</span> -maxdepth 1 | fzf<span class="k">)</span>
     <span class="nb">cd</span> <span class="nv">$dir</span>
+    zle reset-prompt
 <span class="o">}</span>
 </code></pre>
 </div>
@@ -70,9 +70,11 @@ So, I started looking for ways that would help me switch directories more easily
 
 <p>2 <a href="https://github.com/junegunn/fzf"><code class="highlighter-rouge">fzf</code></a>: You probably already know about <code class="highlighter-rouge">fzf</code> but if you don’t, it’s a fuzzy file finder and it is really fast. We pass the results from <code class="highlighter-rouge">find</code> which is nothing but a list of directories to <code class="highlighter-rouge">fzf</code> which opens up a nice little interface where we can get suggestions as soon as we start typing, refer to the <a href="#conclusion">gif</a> below.</p>
 
-<p>3 <code class="highlighter-rouge">echo "$dir"</code>: We print the directory we have selected shortlisted in fzf back to the prompt so as to be sure we’re “cd’ing” into the right directory.</p>
+<p>3 <code class="highlighter-rouge">cd $dir</code>: Finally, <code class="highlighter-rouge">cd</code> into the selected directory. A note here, you need to hit the control return (enter) key for the cd to actually take effect, I’ve been looking into the why of this but couldn’t find a plausible explanation. Hit me up if you have something of value in this context.</p>
 
-<p>4 <code class="highlighter-rouge">cd $dir</code>: Finally, <code class="highlighter-rouge">cd</code> into the selected directory. A note here, you need to hit the control return (enter) key for the cd to actually take effect, I’ve been looking into the why of this but couldn’t find a plausible explanation. Hit me up if you have something of value in this context.</p>
+<p><strong>Update</strong>: Thanks to <a href="https://www.reddit.com/user/maji_yabakune">/u/maji_yabakune</a> for helping with a solution to <code class="highlighter-rouge">cd</code>ing into the directory without hitting the return key, explained below.</p>
+
+<p>4 <code class="highlighter-rouge">zle reset-prompt</code>: This redraws the prompt to take into immediate effect the new working directory so you don’t need to hit the enter key anymore.</p>
 
 <h1 id="creating-a-shortcut">Creating a shortcut</h1>
 <p>Now, we would like to have a handy key combination to open our switcher, how about <code class="highlighter-rouge">Ctrl-p</code>? We would want our function to fire up as soon as we type <code class="highlighter-rouge">Ctrl-p</code>, so a simple bindkey should do, right? Well, no, zsh doesn’t allow you to bind keys to a function, instead we would create a widget which maps to the function and finally bind that widget to the key combination. We can do that by creating a widget using the zsh line editor, <code class="highlighter-rouge">zle</code> and then we can specify our key combination mapped to this widget we just created.</p>
