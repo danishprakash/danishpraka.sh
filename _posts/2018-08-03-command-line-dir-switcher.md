@@ -6,7 +6,7 @@ title: Switching directories on Unix quickly
 How often do you find yourself bashing `..` at the prompt in hopes of getting to the correct directory? I don't know about you but I used to do this a lot, I used to constantly switch directories only to find out I was in the wrong one or I'm a level deep and I had to immediately back-up `..`.
 So, I started looking for ways that would help me switch directories more easily. I came across this tool [`z`](https://github.com/rupa/z) which is a good alternative but It didn't felt intuitive enough, you had to hope it would guess the right directory.
 
-I came up with a simple trick which has worked good enough for me for quite some time now, it's intuitive and is configurable enough the commands involved in it.
+I came up with a simple trick which has worked good enough for me for quite some time now, it's intuitive and configurable.
 
 # Function
 This is a simple bash function with `find` and `fzf`. Load this up in your `.zshrc`. Follow along to get a grip on how this actually works. 
