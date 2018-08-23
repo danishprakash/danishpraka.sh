@@ -18,36 +18,35 @@
 body {
     color: $color-fg;
     background: #ffffff;
-	font-family: 'IBM Plex Serif', serif;
+	font-family: 'IBM Plex Sans', serif;
     font-size: 85%;
     font-weight: 400;
 }
+
+a {
+    color: $color-fg;
+    border-bottom: 1.5px dotted #afafaf;
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: #fcffaa;
+    }
+}
+
 h1 {
     font-weight: 400;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'IBM Plex Sans', serif;
     margin-bottom: 5px;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 20px;
 }
-a {
-  color: $color-link;
-  &:visited {
-    color: $color-link;
-    text-decoration: none;
-  }
-  &:hover {
-    color: $color-link;
-    border-bottom: 1.5px dashed;
-    // text-decoration: none;
-  }
-  &:active {
-    color: $color-link;
-    text-decoration: none;
-  }
-}
+
 ul {
     list-style: none;
     align-items: baseline;
@@ -80,10 +79,10 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 1.7em;
-        font-family: 'Playfair Display', serif;
-		font-weight: 700;
-        margin-bottom: 10px;
+        font-size: 1.5em;
+        font-family: 'IBM Plex Sans', serif;
+		font-weight: 500;
+        padding-bottom: 2px;
 		text-align: center;
     }
     ul {
@@ -93,23 +92,23 @@ ul {
             padding: 0;
             padding-left: 5px;
         }
-
-		a {
-			text-decoration: none;
-		}
     }
 
 }
 
+// description
 .desc {
 	h2 {
 		font-size: 2em;
 	}
 
 	p {
-		font-size: 1.2em;
-		text-align: justify;
-		line-height: 1.6;
+        font-family: 'IBM Plex Sans', serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 15px;
+        text-align: justify;
 	}
 }
 
@@ -124,11 +123,12 @@ ul {
 
 
 
+// archive section
 .blog {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-bottom: 5px;
     }
 	li {
@@ -148,9 +148,9 @@ ul {
 		text-align: left;
 	}
     &__title {
-        font-size: 2.4em;
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
+        font-size: 2.5em;
+        font-family: 'IBM Plex Sans', serif;
+        font-weight: 400;
         margin-bottom: 10px;
         margin-top: 20px;
 		text-align: center;
@@ -164,44 +164,40 @@ ul {
     &__content {
         padding-top: 30px;
         h1 {
-            font-size: 1.5em;
-            font-weight: 700;
+            font-size: 1.8em;
+            font-weight: 400;
             margin-top: 30px;
             margin-bottom: 5px;
 			padding-bottom: 5px;
-            font-family: 'Playfair Display', serif;
+            font-family: 'IBM Plex Sans', serif;
         }
         p {
-            font-size: 1.2em;
-            font-weight: 300;
+            font-family: 'IBM Plex Sans', serif;
+            font-size: 16px;
+            font-weight: 400;
             line-height: 25px;
             margin-bottom: 15px;
             text-align: justify;
         }
-        a {
-            font-family: 'Playfair Display', serif;
-            text-decoration: none;
-            &:hover {
-                // font-weight: bold;
-            }
-        }
         strong {
-            font-weight: 700;
-            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-family: 'IBM Plex Sans', serif;
         }
         em {
             font-style: italic;
         }
         ul {
             font-size: 1.2em;
-            list-style: circle;
+            list-style: square;
             margin-left: 30px;
-            margin-top: -5px;
-            margin-bottom: 5px;
+            line-height: 20px;
+            margin-top: -10px;
+            padding-bottom: 15px;
             li {
+                margin: 0 10px 10px 0;
                 padding: 5px;
-                line-height: 20px;
                 padding-left: 5px;
+                line-height: 20px;
                 @media screen and (max-width: $br) {
                     padding: 10px 0 10px 0;
                 }
@@ -225,23 +221,22 @@ ul {
             color: #333333;
             background: #e8e8e8;
             font-family: 'IBM Plex Mono', monospace;
-            font-weight: 500;
             overflow: hidden;
         }
-        // inline code blocks
+        // syntax-highlighted code blocks
         .highlight {
             margin-bottom: 15px;
             padding: 10px;
             line-height: 1.5;
             border-radius: 3px;
-            background: #3d3d3d;
+            font-weight: 400;
             overflow-x: scroll;
-            // syntax highlighted code blocks
+            // inline code blocks
             code {
                 padding: 0px;
+                font-weight: 300;
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
-                font-weight: 400;
                 color: #ffffff;
                 background: none;
             }
