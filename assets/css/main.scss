@@ -1,18 +1,16 @@
 ---
 ---
 
-@import url(monokai.css);
+@import url(bw.css);
 @import "reset";
 @import "config";
 
 ::selection {
-    // background: #d3f0ff; /* WebKit/Blink Browsers */
     background: #fcffaa;
     color: #000000;
 }
 
 ::-moz-selection {
-    // background: #d3f0ff; /* Gecko Browsers */
     background: #fcffaa;
     color: #000000;
 }
@@ -35,6 +33,8 @@ a {
 
     &:hover {
         background-color: #fcffaa;
+        border-bottom: 1.5px dotted #fcffaa;
+
     }
 }
 
@@ -72,6 +72,7 @@ ul {
 }
 
 
+// header (name)
 .header {
     display: inline;
     justify-content: space-between;
@@ -143,6 +144,7 @@ ul {
 }
 
 
+// blog-post
 .post {
     padding-bottom: 30px;
 
@@ -232,16 +234,18 @@ ul {
             padding: 10px;
             line-height: 1.5;
             border-radius: 3px;
-            font-weight: 400;
+            font-weight: 300;
             overflow-x: scroll;
+            color: #ffffff;
+            background: #e8e8e8;
             // inline code blocks
             code {
                 padding: 0px;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
-                color: #ffffff;
-                background: none;
+                color: #000000;
+                background: #e8e8e8;
             }
         }
         .codebreak {
