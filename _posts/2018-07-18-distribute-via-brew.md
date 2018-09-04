@@ -86,7 +86,7 @@ $ brew tap prakashdanish/homebrew-formulae
 $ brew install goodreadsh
 ```
 
-Another upside to having a designated formula repo (tap) of your own is the simple fact that you can simply add another formula in the future and have it installed in the same way. So this acts like a collection (repo?) of all your application's formulae making it easier to maintain to update.
+Another upside to having a designated formula repo (tap) of your own is the simple fact that you can simply add another formula in the future and have it installed in the same way. So this acts like a collection (repo?) of all your application's formulae making it easier to maintain and update.
 
 --
 

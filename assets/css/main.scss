@@ -33,6 +33,7 @@ a {
     }
 
     &:hover {
+        // background-color: #fcffaa;
         background-color: #fcffaa;
         padding: 2px;
         border-bottom: 1.5px dotted #fcffaa;
@@ -84,7 +85,7 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 21px;
+        font-size: 20px;
         font-family: 'IBM Plex Sans', serif;
 		font-weight: 400;
         padding-bottom: 2px;
@@ -158,7 +159,7 @@ ul {
 		text-align: left;
 	}
     &__title {
-        font-size: 3em;
+        font-size: 42px;
         font-family: 'IBM Plex Sans', serif;
         font-weight: 300;
         margin-bottom: 10px;
@@ -170,6 +171,7 @@ ul {
         font-size: 1em;
 		text-align: center;
         color: #878585;
+        font-weight: 300;
     }
     &__content {
         padding-top: 30px;
@@ -177,8 +179,7 @@ ul {
             font-size: 1.8em;
             font-weight: 400;
             margin-top: 30px;
-            margin-bottom: 5px;
-			padding-bottom: 5px;
+            margin-bottom: 10px;
             font-family: 'IBM Plex Sans', serif;
         }
         p {
