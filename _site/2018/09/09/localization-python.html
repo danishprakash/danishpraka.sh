@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Localization in Python</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500|IBM+Plex+Mono:300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Localization in Python</h1>
+    <p class="post__date">September 9, 2018</p>
+    <div class="post__content"?>
+        <p>Localization is a big deal especially when your application is being used by a lot of people from different parts of the world. It is the process of making your application available in a local language. You don’t want to exclude a specific portion of your ever growing user base just because your application does not support their native language. Localization is a great way to show your users that you care about them. I mean, it strikes a personal chord. This can be exemplified by the recent <a href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/browse-in-hindi-on-amazon-india/articleshow/65679424.cms">hullabaloo</a> over Amazon releasing a hindi version of their application in order to provide an extremely personalized experience to their Indian users and to target the next 100 million.</p>
+
+<p>I’ve been writing Python for a while now and I was working on this big open source project recently, trying to fix a trivial issue which ended up failing the builds. When I inquired about it, it turns out that the builds failed because I forgot to make the strings in my changes <strong>translatable</strong>. So, I set about looking for answers and there it was, Localization. In this post, we’ll walk our way towards providing translations to a simple python program.</p>
+
+<h1 id="gnu-gettext">GNU gettext</h1>
+<p>There are other ways with which you can provide localization for your applications. But we’ll use the <code class="highlighter-rouge">gettext</code> module for the purpose of this post. It provides internationalization and localization services for your applications and comes bundled with the standard python installation. It exposes two different API’s for you to work with, a more standard <code class="highlighter-rouge">gettext</code> API which affects your entire application’s translations and a class-based API which is more suitable for Python modules and applications. We’ll make use of the latter.</p>
+
+<h1 id="hello-world">Hello World!</h1>
+<p>We’ll use this <a href="https://blog.hackerrank.com/the-history-of-hello-world/">legendary</a> hello world program in this post with a simple addition.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Localization is fun!"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="s">'__main__'</span> <span class="o">==</span> <span class="n">__name__</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<h1 id="translations">Translations</h1>
+<p>In order to provide the translations which could be read by the <code class="highlighter-rouge">gettext</code> module, we need to create a separate directory named <code class="highlighter-rouge">locales</code>, this can be named anything as long as it’s intuitive. For the sake of keeping this post brief, we’ll be providing a German(Deutsch) translation for our <code class="highlighter-rouge">Hello World</code> program. For the same, our <code class="highlighter-rouge">locales</code> directory would look something like this.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>locales/
+├── de
+│   └── LC_MESSAGES
+└── en
+    └── LC_MESSAGES
+</code></pre>
+</div>
+
+<p>Where <code class="highlighter-rouge">de</code> and <code class="highlighter-rouge">en</code> are language codes for german and english respectively. You can find a list of all the languages and their respective language codes <a href="https://www.science.co.il/language/Codes.php">here</a>.</p>
+
+<p>Now we need to provide translations for each of the strings in our program in German. We can do this by marking all the strings in our program that we need translated and for which we have provided proper translations. The standard accepted way to do this is to surround your strings with <code class="highlighter-rouge">_()</code>. Don’t worry if this seems arcane, refer to the example below.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gettext</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">gettext</span><span class="o">.</span><span class="n">gettext</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">"Localization is fun!"</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="s">'__main__'</span> <span class="o">==</span> <span class="n">__name__</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>Since functions in Python are first-class objects, we can move them or pass them around or even assign them to variables. This is what we’re doing here. We’re assigning the <code class="highlighter-rouge">gettext</code> function of the <code class="highlighter-rouge">gettext</code> module to <code class="highlighter-rouge">_</code> which we call later in our programs while passing our strings as arguments. You can think of this as writing <code class="highlighter-rouge">print(gettext.gettext("Hello World"))</code>. Nifty, right?</p>
+
+<p>Now that we’ve marked the strings we will provide translations for, let’s provide actual translations for them.</p>
+
+<h1 id="pygettext">pygettext</h1>
+<p>We’ll create a template with all of the strings which we’ve marked in our program so that it’s easier for us to write the translations for the strings. This template is a POT with a <code class="highlighter-rouge">.pot</code> extension which stands for portable object template. To generate the template for our program, we can use the <code class="highlighter-rouge">pygettext.py</code> module which also comes bundled with the standard installation of python.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="k">$(</span>locate pygettext<span class="k">)</span> -o locales/template.pot hello_world.py
+</code></pre>
+</div>
+
+<p>This will generate our template file <code class="highlighter-rouge">template.pot</code> in the locales directory. If you view the contents of this file, you’ll see metadata about the file and at the end, we can see our two strings which we had wrapped using the <code class="highlighter-rouge">gettext</code> function.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code># SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-09-09 09:23+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"
+"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: hello_locales:13
+msgid "Hello World"
+msgstr ""
+
+#: hello_locales:14
+msgid "Localization if fun!"
+msgstr ""
+</code></pre>
+</div>
+
+<p>Here, <code class="highlighter-rouge">msgid</code> denotes the original string and <code class="highlighter-rouge">msgstr</code> contains the translated string. Note that it also provides some info about the string, namely the filename and the line number. Next, we can just copy this file to <code class="highlighter-rouge">locales/de/LC_MESSAGES</code> and provide the appropriate translations. It should look like this minus the metadata.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>#: hello_locales:13
+msgid "Hello World"
+msgstr "Halo Welt"
+
+#: hello_locales:14
+msgid "Localization if fun!"
+msgstr "Lokalisierung macht Spaß"
+</code></pre>
+</div>
+
+<p>For the english translation (<code class="highlighter-rouge">en/</code>), we can make do by simply copying <code class="highlighter-rouge">template.pot</code> to <code class="highlighter-rouge">locales/en/LC_MESSAGES</code>. We can think of this template as a global template we can use for every locale or language we wish to provide a translation for, all that’s required is to copy this template to the proper directory as shown in the directory convention above.</p>
+
+<h1 id="msgfmt">msgfmt</h1>
+<p>There’s one more step to this before we fire up das program. <code class="highlighter-rouge">gettext</code> module cannot directly use the <code class="highlighter-rouge">.po</code> files and hence we are required to convert these files to their equivalent <code class="highlighter-rouge">.mo</code> files. These <code class="highlighter-rouge">.mo</code> files are binary machine-object files that are parsed by <code class="highlighter-rouge">gettext</code>. We can use the <code class="highlighter-rouge">msgfmt</code> tool to generate these, which also comes with the standard python installation.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>$ $(locate msgfmt) locales/de/LC_MESSAGES/template.po
+$ $(locate msgfmt) locales/en/LC_MESSAGES/template.po
+</code></pre>
+</div>
+
+<p>This would create an equivalent <code class="highlighter-rouge">.mo</code> file to be used by the <code class="highlighter-rouge">gettext</code> module. At this point of time, our <code class="highlighter-rouge">locales</code> directory should look like this.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>locales
+└── en
+    └── LC_MESSAGES
+        ├── template.mo
+        └── template.po
+└── de
+    └── LC_MESSAGES
+        ├── template.mo
+        └── template.po
+</code></pre>
+</div>
+
+<h1 id="putting-it-together">Putting it together</h1>
+<p>Let’s modify our program to use the appropriate translations or more aptly, to use the <code class="highlighter-rouge">.mo</code> files we have generated.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gettext</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">LOCALE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s">'LANG'</span><span class="p">,</span> <span class="s">'en'</span><span class="p">)</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">gettext</span><span class="o">.</span><span class="n">translation</span><span class="p">(</span>
+        <span class="s">'template'</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="s">'locales'</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="p">[</span><span class="n">LOCALE</span><span class="p">])</span><span class="o">.</span><span class="n">gettext</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">"Localization if fun!"</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="s">'__main__'</span> <span class="o">==</span> <span class="n">__name__</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>Here we invoke the gettext.translation function which returns a <code class="highlighter-rouge">Translation</code> instance on which we call the <code class="highlighter-rouge">gettext</code> function and assign it to <code class="highlighter-rouge">_</code>. We pass the name of our template file as a string, also called the <code class="highlighter-rouge">domain</code>. Then we specify the directory which has all our translations for different locales, <code class="highlighter-rouge">locales</code>. Next, we provide a list of lanugages(language codes) that we wish to be parsed by <code class="highlighter-rouge">gettext</code>. Finally, we have used an environment variable to easily switch locales from the command line.</p>
+
+<p>We can now test our program.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>python hello_world.py
+Hello World
+Localization is fun!
+
+<span class="gp">$ </span><span class="nv">LANG</span><span class="o">=</span>de python hello_world.py
+Halo Welt
+Lokalisierung macht Spaß
+</code></pre>
+</div>
+
+<p>It works as expected for both english and german locales, look at how we’ve used the environment variable to switch to German(de) locale.</p>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+<p>In this post, we’ve seen how to localize our application. We learned how to use the <code class="highlighter-rouge">gettext</code> module and a bit about portable objects and portable object templates. We also used environment variables to switch locales of our application.</p>
+
+<p>If there’s something you’d like to improve in this article or if you’ve found something that’s not correctly stated, feel free to contact me.</p>
+
+<hr />
+
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
