@@ -6,13 +6,13 @@
 @import "config";
 
 ::selection {
-    background: #fcffaa;
-    color: #000000;
+    background: #3f3f3f;
+    color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #fcffaa;
-    color: #000000;
+    background: #3f3f3f;
+    color: #ffffff;
 }
 
 body {
@@ -33,10 +33,9 @@ a {
     }
 
     &:hover {
-        // background-color: #fcffaa;
-        background-color: #fcffaa;
+        background-color: #3f3f3f;
+        color: #ffffff;
         padding: 2px;
-        border-bottom: 1.5px dotted #fcffaa;
 
     }
 }
@@ -50,6 +49,7 @@ h1 {
 p {
     font-size: 1.2em;
     line-height: 20px;
+
 }
 
 ul {
@@ -69,6 +69,7 @@ ul {
     max-width: 600px;
     margin: auto;
     padding: 60px 30px 60px 30px;
+    overflow: hidden;
     @media screen and (max-width: $br) {
         padding: 20px;
     }
@@ -290,11 +291,3 @@ ul {
 		}
     }
 }
-
-// .footer {
-// 	border-top: thin;
-// 	p {
-// 		font-size: 1em;
-// 		text-align: center;
-// 	}
-// }
