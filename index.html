@@ -27,7 +27,7 @@ function changeText() {
     <ul>
         {% for post in site.posts %}
         <li>
-		<span>»&emsp;<a href="{{ post.url }}">{{ post.title }}</a><span class="date">&emsp;{{ post.date | date: '%B %Y' }}
+		<span>»&emsp;<a href="{{ post.url }}">{{ post.title }}</a><span class="date">&emsp;{{ post.date | date: '%m %y' }}
         </li>
         {% endfor %}
     </ul>
