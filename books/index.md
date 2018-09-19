@@ -57,6 +57,45 @@ This was an amazing read. Steve Wozniak is such a genius, if it weren't for him,
 <br>
 This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
 
+- __[And Then There Were None](https://www.goodreads.com/book/show/16299.And_Then_There_Were_None)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[The Girl with the Dragon Tattoo](https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[The Alchemist](https://www.goodreads.com/book/show/865.The_Alchemist)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[5/3/1: The Simplest and Most Effective Training System for Raw Strength](https://www.goodreads.com/book/show/6381430-5-3-1)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[The Girl Who Played with Fire](https://www.goodreads.com/book/show/5060378-the-girl-who-played-with-fire)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[Ghost in the Wires](https://www.goodreads.com/book/show/10256723-ghost-in-the-wires)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[The Girl on the Train](https://www.goodreads.com/book/show/22557272-the-girl-on-the-train)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[Automate the Boring Stuff with Python](https://www.goodreads.com/book/show/22514127-automate-the-boring-stuff-with-python)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[The Monk Who Sold His Ferrari](https://www.goodreads.com/book/show/43877.The_Monk_Who_Sold_His_Ferrari)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- __[A Thousand Splendid Suns](https://www.goodreads.com/book/show/128029.A_Thousand_Splendid_Suns)__
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
 
 ---
 
