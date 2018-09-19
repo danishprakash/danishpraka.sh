@@ -152,8 +152,8 @@ msgstr "Lokalisierung macht Spaß"
 <h1 id="msgfmt">msgfmt</h1>
 <p>There’s one more step to this before we fire up das program. <code class="highlighter-rouge">gettext</code> module cannot directly use the <code class="highlighter-rouge">.po</code> files and hence we are required to convert these files to their equivalent <code class="highlighter-rouge">.mo</code> files. These <code class="highlighter-rouge">.mo</code> files are binary machine-object files that are parsed by <code class="highlighter-rouge">gettext</code>. We can use the <code class="highlighter-rouge">msgfmt</code> tool to generate these, which also comes with the standard python installation.</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>$ $(locate msgfmt) locales/de/LC_MESSAGES/template.po
-$ $(locate msgfmt) locales/en/LC_MESSAGES/template.po
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/de/LC_MESSAGES/template.po
+<span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/en/LC_MESSAGES/template.po
 </code></pre>
 </div>
 

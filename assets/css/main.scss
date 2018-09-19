@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url(bw.css);
+@import url(nord.css);
 @import "reset";
 @import "config";
 
@@ -236,11 +236,12 @@ ul {
             padding: 3px;
             font-size: 0.9em;
             border-radius: 2px;
-            color: #333333;
+            // color: #333333;
             background: #e8e8e8;
             font-family: 'IBM Plex Mono', monospace;
             overflow: hidden;
         }
+
         // syntax-highlighted code blocks
         .highlight {
             margin-bottom: 15px;
@@ -249,16 +250,18 @@ ul {
             border-radius: 3px;
             font-weight: 300;
             overflow-x: scroll;
-            color: #ffffff;
-            background: #e8e8e8;
+            // color: #ffffff;
+            // background: #e8e8e8;
+            background: #2E3440;
+
             // inline code blocks
             code {
                 padding: 0px;
                 font-weight: 400;
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
-                color: #000000;
-                background: #e8e8e8;
+                color: #D8DEE9;
+                background: #2E3440;
             }
         }
         .codebreak {

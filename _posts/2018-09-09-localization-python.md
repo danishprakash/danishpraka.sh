@@ -108,7 +108,7 @@ For the english translation (`en/`), we can make do by simply copying `template.
 # msgfmt
 There's one more step to this before we fire up das program. `gettext` module cannot directly use the `.po` files and hence we are required to convert these files to their equivalent `.mo` files. These `.mo` files are binary machine-object files that are parsed by `gettext`. We can use the `msgfmt` tool to generate these, which also comes with the standard python installation.
 
-```text
+```shell
 $ $(locate msgfmt) locales/de/LC_MESSAGES/template.po
 $ $(locate msgfmt) locales/en/LC_MESSAGES/template.po
 ```
