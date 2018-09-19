@@ -12,17 +12,21 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 <br>
 One of the best book I've read on modern Indian history. Talks about one of the greatest leaders of our country with some flaws. There are certain bits that you'll read twice before you even begin to understand what had happened. Must read.
 
+- [The Linux Command Line](https://www.goodreads.com/book/show/11724436-the-linux-command-line)
+<br>
+Can't say much about this one, it's a great book about the linux command line. Covers a bunch of commands and gives you a subtle intro to shell scripting. Loved reading this. It's divided into three logical units, so you can pick any one of them and start off if you want to. It's a long read but very informative nonetheless.
+
 - [The Little Book of Hygge: The Danish Way to Live Well](https://www.goodreads.com/book/show/30045683-the-little-book-of-hygge)
 <br>
 Not because it had my name one, I read it because I'm interested in the European culture and how they do things. This books talks `Hygge` which is an important part of the Danish culture, there may not be a concrete definition of it but it refers to the feeling of being happy, cosy and comfortable with a close circle of friends with coffee in one hand while the thunder rumbles outside. Read it if you are interested in such things.
 
 - [When Breath Becomes Air \*](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air)
 <br>
-Amazing, thrilling yet saddening in so many ways. You can tell when the author picks up the pace because he knows if he doesn't then there might not be enough time to finish the book. Must read.
+Amazing, thrilling yet saddening in so many ways. You can tell when the author picks up the pace because he knows if he doesn't then there might not be enough time to finish the book. Touches upon so many elements of the human life in such a way, it carries you through the whole journey. Must read.
 
 - [Norwegian Wood](https://www.goodreads.com/book/show/11297.Norwegian_Wood)
 <br>
-Easy, relaxing, this gives you an insight about the japanese culture. Also talks about death, life and relationships. Overall, a good book and a fun read.
+Easy, relaxing, this gives you an insight about the japanese culture. All those talks about evening strolls and the japanese coffee places feels like an experience itself. It also talks about death, life and relationships. Overall, a good book and a fun read.
 
 - [1984](https://www.goodreads.com/book/show/5470.1984)
 <br>
@@ -46,6 +50,15 @@ Apart from the usual stuff about Gandhiji that we find almost everywhere, this b
 - [Animal Farm](https://www.goodreads.com/book/show/7613.Animal_Farm)
 <br>
 A pure genius that George Orwell is, this is a masterpiece. It makes you stop and think about the society every few pages. A small but an interesting and humorous read.
+
+- [iWoz: Computer Geek to Cult Icon](https://www.goodreads.com/book/show/798635.iWoz)
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
+- [The Google Story](https://www.goodreads.com/book/show/164323.The_Google_Story)
+<br>
+This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all.
+
 
 ---
 
