@@ -3,10 +3,7 @@ layout: post
 title: Projects
 ---
 
-I love building tools for the command line. Also, I'm paranoid about my workflow so you'll often find me fiddling with my [dotfiles](https://github.com/prakashdanish/dotfiles). I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/prakashdanish) including this website.
-<br>
-
-These are some of the things I've worked on in the past:
+I love building tools for the command line. Also, I'm paranoid about my workflow so you'll often find me fiddling with my [dotfiles](https://github.com/prakashdanish/dotfiles). I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/prakashdanish) including this website. These are some of the things I've worked on in the past:
 
 - [vim-zen](https://github.com/prakashdanish/vim-zen): Barebones vim plugin manager
 - [goodreadsh](https://github.com/prakashdanish/goodreadsh): Command line interface for goodreads.com
