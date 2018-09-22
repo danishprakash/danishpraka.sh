@@ -50,6 +50,6 @@ If all goes well, you should have something like the gif below making it easier 
 
 ![img](https://i.imgur.com/r8eWY0L.gif)
 
-Also, if you can think of improvements to this, please open an issue and/or a PR on [this](https://github.com/prakashdanish/dotfiles) repository, there is more stuff there. Or if you have other such handy tricks, do let me know. Feel free to contact me via email.
+Also, if you can think of improvements to this, please open an issue and/or a PR on [this](https://github.com/danishprakash/dotfiles) repository, there is more stuff there. Or if you have other such handy tricks, do let me know. Feel free to contact me via email.
 
 ---

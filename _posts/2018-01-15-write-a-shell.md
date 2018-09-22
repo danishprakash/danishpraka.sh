@@ -331,7 +331,7 @@ ___
 # Conclusion
 This post is more inclined as a learning exercise rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells work under the hood. 
 
-I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/prakashdanish/dash).
+I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/danishprakash/dash).
 
 
 # Contribute

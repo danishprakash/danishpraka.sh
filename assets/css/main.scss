@@ -27,6 +27,7 @@ a {
     color: $color-fg;
     border-bottom: 1.5px dotted #afafaf;
     padding: 2px;
+    transition: .2s;
 
     &:visited {
         text-decoration: none;
@@ -208,9 +209,7 @@ ul {
         ul {
             font-size: 1.2em;
             list-style: square;
-            // margin-left: 30px;
             line-height: 20px;
-            padding-top: 10px;
             padding-bottom: 10px;
             li {
                 margin: 0 0px 0px 0;

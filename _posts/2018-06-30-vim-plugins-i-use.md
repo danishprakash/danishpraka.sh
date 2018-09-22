@@ -7,7 +7,7 @@ I'm an advocate of using vanilla vim or neovim. But there are times wherein you 
 
 This post should not be seen as one of those *"Must have plugins for vim"* but rather as a post describing the plugins I use and why I use them, and how they help me with my developer workflow. Using or not using these plugins is something for you to decide. 
 
-__Note:__ I'm using [vim-zen](https://github.com/prakashdanish/vim-zen) as my plugin manager, It's a lightweight barebones vim plugin manager with multithreading (python). You can learn more about it [here](https://github.com/prakashdanish/vim-zen).
+__Note:__ I'm using [vim-zen](https://github.com/danishprakash/vim-zen) as my plugin manager, It's a lightweight barebones vim plugin manager with multithreading (python). You can learn more about it [here](https://github.com/danishprakash/vim-zen).
 
 1. [__junegunn/goyo.vim__](https://github.com/junegunn/goyo.vim)<br>
 It helps transform vim into a minmalistic looking note taking application. I mostly use it while write markdown for my blog. In essence, this plugins disables numbers, the statusline and other elements from the editing window leaving you with just the text.
@@ -39,7 +39,7 @@ It's a file system explorer that sits inside your vim editor. Think of this as t
 9. [__ervandew/supertab__](https://github.com/ervandew/supertab)<br>
 This allows you to use `Tab` to autocomplete keywords. Note that this uses vim's native completion feature and not any of it's own. This is not similar to YCM in any way.
 
-10. [__prakashdanish/vimport__](https://github.com/prakashdanish/vimport)<br>
+10. [__danishprakash/vimport__](https://github.com/danishprakash/vimport)<br>
 This plugin helps you quickly import and drop python packages and/or modules that you've imported in your project. I use it when I'm working on python projects wherein I'm adding and removing modules on a rolling basis.
 
 --

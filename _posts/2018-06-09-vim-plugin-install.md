@@ -35,12 +35,12 @@ What really goes behind the curtains when you install a vim plugin is essentiall
 # Installation
 If you've been following along, you probably have an idea now how to manually install 
 a vim plugin. If not, it's alright, keep reading.
-We'll be using one of my [plugin](https://github.com/prakashdanish/vimport) for this example.
+We'll be using one of my [plugin](https://github.com/danishprakash/vimport) for this example.
 
 1 Clone the plugin to the appropriate vim directory.
 
 ```sh
-$ git clone https://github.com/prakashdanish/vimport.git ~/vim/plugins/
+$ git clone https://github.com/danishprakash/vimport.git ~/vim/plugins/
 ```
 
 2 Update the vim runtime path. The easiest way to do this is by appending the 

@@ -48,7 +48,7 @@
     <h1 class="post__title">Distribute your application via Homebrew</h1>
     <p class="post__date">July 18, 2018</p>
     <div class="post__content"?>
-        <p>I was confronted with a problem when I was writing the documentation of a command-line application I recently wrote, <a href="https://github.com/prakashdanish/goodreadsh"><code class="highlighter-rouge">goodreadsh</code></a>. The problem was how to allow users to install my application, should I ask them to <code class="highlighter-rouge">curl</code> the script and add it to their <code class="highlighter-rouge">PATH</code> and finally give it executable permissions? Because that is precisely how I’ve done it for a few applications I’ve built in the past. Then it hit me, I could atleast do my fellow mac users a favor and have my application available via homebrew. Not that there’s anything wrong with having to install an application manually, I still do that often but typing 2 trivial commands instead of 4 seems like a sensible move.</p>
+        <p>I was confronted with a problem when I was writing the documentation of a command-line application I recently wrote, <a href="https://github.com/danishprakash/goodreadsh"><code class="highlighter-rouge">goodreadsh</code></a>. The problem was how to allow users to install my application, should I ask them to <code class="highlighter-rouge">curl</code> the script and add it to their <code class="highlighter-rouge">PATH</code> and finally give it executable permissions? Because that is precisely how I’ve done it for a few applications I’ve built in the past. Then it hit me, I could atleast do my fellow mac users a favor and have my application available via homebrew. Not that there’s anything wrong with having to install an application manually, I still do that often but typing 2 trivial commands instead of 4 seems like a sensible move.</p>
 
 <p>There are essentialy two steps in this process:</p>
 
@@ -60,17 +60,17 @@
 <p>Don’t worry about the terminology just yet, we’ll get to know them as and when required.</p>
 
 <h1 id="your-applications-tar-archive">Your application’s <code class="highlighter-rouge">tar</code> archive</h1>
-<p>Homebrew accepts a tar archive of your application in order to process it. We can generate one by simple creating a new release on your project’s github repository. Once you’ve successfully created a release, click on the releases tab and find the link to the tar archive below the release label. My application’s <a href="https://github.com/prakashdanish/goodreadsh/releases">release(s)</a> for example.</p>
+<p>Homebrew accepts a tar archive of your application in order to process it. We can generate one by simple creating a new release on your project’s github repository. Once you’ve successfully created a release, click on the releases tab and find the link to the tar archive below the release label. My application’s <a href="https://github.com/danishprakash/goodreadsh/releases">release(s)</a> for example.</p>
 
 <h1 id="write-your-formula">Write your formula</h1>
 <p>Homebrew formulae are essentially ruby scripts which stores information about your application. It tells homebrew important information regarding the installation of your application like where and how your app is going to be installed. This is what a simple formula for an application written in bash would look like.</p>
 
 <div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Goodreadsh</span> <span class="o">&lt;</span> <span class="no">Formula</span>
 	<span class="n">desc</span> <span class="s2">"Command-line interface for Goodreads"</span>
-	<span class="n">homepage</span> <span class="s2">"https://github.com/prakashdanish/goodreadsh"</span>
-	<span class="n">url</span> <span class="s2">"https://github.com/prakashdanish/goodreadsh/archive/1.0.1.tar.gz"</span>
+	<span class="n">homepage</span> <span class="s2">"https://github.com/danishprakash/goodreadsh"</span>
+	<span class="n">url</span> <span class="s2">"https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz"</span>
 	<span class="n">sha256</span> <span class="s2">"63d1de17449611f1490b1930e63cc8890f9f10c7e317f02c901e6a79236c10e2"</span>
-	<span class="n">head</span> <span class="s2">"https://github.com/prakashdanish/goodreadsh.git"</span>
+	<span class="n">head</span> <span class="s2">"https://github.com/danishprakash/goodreadsh.git"</span>
 
 	<span class="k">def</span> <span class="nf">install</span>
 		<span class="n">bin</span><span class="p">.</span><span class="nf">install</span> <span class="s2">"goodreads"</span>
@@ -96,7 +96,7 @@
 <p><br />
 You can use this template or you can generate a formula of your own. Homebrew provides a simple command for this. <code class="highlighter-rouge">brew create &lt;URL&gt;</code></p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew create https://github.com/prakashdanish/goodreadsh/archive/1.0.1.tar.gz
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew create https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz
 </code></pre>
 </div>
 
@@ -124,11 +124,11 @@ You can use this template or you can generate a formula of your own. Homebrew pr
 <h1 id="putting-it-together">Putting it together</h1>
 <p>Before moving one, there’s one thing I’d like to make clear. There are more than one way to allow users to allow installing your application via homebrew. First, having your application formula in the <code class="highlighter-rouge">homebrew-core</code> repository and the second is creating a tap. Having your application formula accepted in <code class="highlighter-rouge">homebrew-core</code> isn’t very straightforward since there are various rules that determine whether a package should be in the <code class="highlighter-rouge">homebrew-core</code> repo, for instance, your application’s Github repo should have more than 30 watchers, 75 stars and 30 watchers and should be more than 30 days old.</p>
 
-<p>Taps on the other hand are your own personal formula repository where formula(e) for your applications can be stored. Homebrew can look up formula(e) from this repo and allow you to install the said application. In this tutorial, we’ll be creating a tap. Now, let’s create a repository where we’ll store our homebrew formulae, let’s call it <a href="https://github.com/prakashdanish/homebrew-formulae"><code class="highlighter-rouge">homebrew-formulae</code></a> and add our formula file here.</p>
+<p>Taps on the other hand are your own personal formula repository where formula(e) for your applications can be stored. Homebrew can look up formula(e) from this repo and allow you to install the said application. In this tutorial, we’ll be creating a tap. Now, let’s create a repository where we’ll store our homebrew formulae, let’s call it <a href="https://github.com/danishprakash/homebrew-formulae"><code class="highlighter-rouge">homebrew-formulae</code></a> and add our formula file here.</p>
 
 <p>We can now install the application via homebrew. But before doing that, we need to tell homebrew where to find our application since it is not there in the <code class="highlighter-rouge">homebrew-core</code> repository. We can do this by the tap command. And installing our application afterwards.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew tap prakashdanish/homebrew-formulae
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew tap danishprakash/homebrew-formulae
 <span class="gp">$ </span>brew install goodreadsh
 </code></pre>
 </div>
