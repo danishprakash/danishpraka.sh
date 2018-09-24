@@ -8,6 +8,10 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 # 2018
 ---
 
+- __[Milk and Honey](https://www.goodreads.com/book/show/23513349-milk-and-honey)__
+<br>
+Very different from the stuff that I've been reading lately. The author gives a very crude account of her childhood with some disturbing yet not so uncommon details. Also, lots of vexed issues are discussed throughout the book and it's pretty evident why this book is all the talk amongst people lately.
+
 - __[Indira: The Life of Indira Nehru Gandhi \*](https://www.goodreads.com/book/show/290376.Indira)__
 <br>
 One of the best book I've read on modern Indian history. Talks about one of the greatest leaders of our country, with some flaws. There are certain bits that you'll read twice before you even begin to understand what had happened. Must read.
