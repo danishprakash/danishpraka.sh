@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Writing a shell in Python</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500|IBM+Plex+Mono:300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Writing a shell in Python</h1>
+    <p class="post__date">September 23, 2018</p>
+    <div class="post__content"?>
+        <p>One of the first posts I wrote on this blog of mine was <a href="https://danishprakash.github.io/2018/01/15/write-a-shell.html">Write a shell in C</a>. It described how to write a functional shell for *nix based systems. When I was undertaking that project, I wanted to do the same in Python and for some reason that I can’t remember right now, I chose C when in reality I was working on Python almost all the time. A recent discussion with a friend of mine lead me to write this post and since I started, it turns out that it is really easy to do this in Python which is true for most of the things with Python.</p>
+
+<p>We’ll write a simple shell that that will support almost all the basic commands. We’ll also implement piping for our shell which will allow us to pipe the output of a command as an input to another command.</p>
+
+<h1 id="flow">Flow</h1>
+<p>In the <code class="highlighter-rouge">main</code> function, we’ll handle the program flow.  First, let’s get the user input, pretty simple, we’ll run an infinite loop and prompt the user for an input.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"$ "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s">"exit"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">command</span> <span class="o">==</span> <span class="s">"help"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"psh: a simple shell written in Python"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">execute_commands</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>We can handle <code class="highlighter-rouge">exit</code> command simply by breaking out of the loop. Next, we need to execute the command entered by the user. We’ll manage the execution in a separate function, let’s call that <code class="highlighter-rouge">execute_commands(command)</code>. Also, while we’re at it, let’s add a simple <code class="highlighter-rouge">help</code> function to let the user know what’s actually happening.</p>
+
+<h1 id="executing-commands">Executing commands</h1>
+<p>Let’s execute the commands entered by the user. As stated earlier, we are going to be doing this in a separate function. We are going to be using the <code class="highlighter-rouge">subprocess</code> builtin module, <code class="highlighter-rouge">import subprocess</code> and we’re good to go. The <code class="highlighter-rouge">run</code> function in particular is used to run system commands in a subshell. For the C people, this saves us from going about forking and creating a child process and then waiting for the child to finish execution, let Python take care of that this one time.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">execute_commands</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">command</span><span class="p">))</span>
+</code></pre>
+</div>
+<p>We’re going to make sure that our shell doesn’t come crashing down if the user enters <code class="highlighter-rouge">cs</code> instead of <code class="highlighter-rouge">cd</code> by mistake hence the <code class="highlighter-rouge">try/except</code> mechanism. Note that there are many other methods to run system commands from within Python including <code class="highlighter-rouge">os.system</code> and <code class="highlighter-rouge">commands</code> etc but using <code class="highlighter-rouge">subprocess</code> is the <a href="https://docs.python.org/2/library/commands.html">preferred</a> <a href="https://docs.python.org/3/library/os.html?%20system#os.system">way</a> of doing this.</p>
+
+<h1 id="changing-the-directory">Changing the directory</h1>
+
+<h1 id="pipes">Pipes!</h1>
+
+<h1 id="help-and-exit">Help and Exit</h1>
+
+<h1 id="conclusion">Conclusion</h1>
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
