@@ -40,7 +40,7 @@
 .highlight .nn { color: #D8DEE9;} /* Name.Namespace */
 .highlight .nt { color: #D8DEE9; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #D8DEE9 } /* Name.Variable */
-.highlight .ow { color: #4C566A; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #81A1C1; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #E5E9F0 } /* Text.Whitespace */
 .highlight .mb { color: #FF6600 } /* Literal.Number.Bin */
 .highlight .mf { color: #FF6600 } /* Literal.Number.Float */

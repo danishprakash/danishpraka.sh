@@ -225,8 +225,11 @@ ul {
             }
         }
         img {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            display: block;
+            margin: 0 auto;
+            // width: 100%;
             @media screen and (max-width: $br) {
                 width: 100%;
                 margin: auto;
@@ -241,7 +244,21 @@ ul {
             font-family: 'IBM Plex Mono', monospace;
             overflow: hidden;
         }
-
+        .lineno { 
+            color: #768096; 
+            // display: inline-block; 
+            // padding: 0 5px; 
+            padding-right: 8px;
+            border-right:1px solid #768096;
+            margin-right: 10px;
+            // avoid selection of line numbers
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
         // syntax-highlighted code blocks
         .highlight {
             margin-bottom: 15px;
@@ -250,8 +267,6 @@ ul {
             border-radius: 3px;
             font-weight: 300;
             overflow-x: scroll;
-            // color: #ffffff;
-            // background: #e8e8e8;
             background: #2E3440;
 
             // inline code blocks
