@@ -14,14 +14,14 @@ There are other ways with which you can provide localization for your applicatio
 # Hello World!
 We'll use this [legendary](https://blog.hackerrank.com/the-history-of-hello-world/) hello world program in this post with a simple addition.
 
-```python
+{% highlight python linenos %}
 def main():
     print("Hello World!")
     print("Localization is fun!")
 
 if '__main__' == __name__:
     main()
-```
+{% endhighlight %}
 
 # Translations
 In order to provide the translations which could be read by the `gettext` module, we need to create a separate directory named `locales`, this can be named anything as long as it's intuitive. For the sake of keeping this post brief, we'll be providing a German(Deutsch) translation for our `Hello World` program. For the same, our `locales` directory would look something like this.
@@ -38,7 +38,7 @@ Where `de` and `en` are language codes for german and english respectively. You 
 
 Now we need to provide translations for each of the strings in our program in German. We can do this by marking all the strings in our program that we need translated and for which we have provided proper translations. The standard accepted way to do this is to surround your strings with `_()`. Don't worry if this seems arcane, refer to the example below.
 
-```python
+{% highlight python linenos %}
 import gettext
 
 _ = gettext.gettext
@@ -49,7 +49,7 @@ def main():
 
 if '__main__' == __name__:
     main()
-```
+{% endhighlight %}
 
 Since functions in Python are first-class objects, we can move them or pass them around or even assign them to variables. This is what we're doing here. We're assigning the `gettext` function of the `gettext` module to `_` which we call later in our programs while passing our strings as arguments. You can think of this as writing `print(gettext.gettext("Hello World"))`. Nifty, right?    
 
@@ -130,7 +130,7 @@ locales
 # Putting it together
 Let's modify our program to use the appropriate translations or more aptly, to use the `.mo` files we have generated.
 
-```python
+{% highlight python linenos %}
 import gettext
 import os
 
@@ -147,7 +147,7 @@ def main():
 
 if '__main__' == __name__:
     main()
-```
+{% endhighlight %}
 
 Here we invoke the gettext.translation function which returns a `Translation` instance on which we call the `gettext` function and assign it to `_`. We pass the name of our template file as a string, also called the `domain`. Then we specify the directory which has all our translations for different locales, `locales`. Next, we provide a list of lanugages(language codes) that we wish to be parsed by `gettext`. Finally, we have used an environment variable to easily switch locales from the command line. 
 

@@ -241,6 +241,21 @@ ul {
             font-family: 'IBM Plex Mono', monospace;
             overflow: hidden;
         }
+        .lineno { 
+             color: #768096; 
+             // display: inline-block; 
+             // padding: 0 5px; 
+             padding-right: 8px;
+             border-right:1px solid #768096;
+             margin-right: 10px;
+             // avoid selection of line numbers
+             -webkit-touch-callout: none;
+             -webkit-user-select: none;
+             -khtml-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+         }
 
         // syntax-highlighted code blocks
         .highlight {
