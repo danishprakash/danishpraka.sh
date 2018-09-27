@@ -65,7 +65,21 @@
 <h1 id="write-your-formula">Write your formula</h1>
 <p>Homebrew formulae are essentially ruby scripts which stores information about your application. It tells homebrew important information regarding the installation of your application like where and how your app is going to be installed. This is what a simple formula for an application written in bash would look like.</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Goodreadsh</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Goodreadsh</span> <span class="o">&lt;</span> <span class="no">Formula</span>
 	<span class="n">desc</span> <span class="s2">"Command-line interface for Goodreads"</span>
 	<span class="n">homepage</span> <span class="s2">"https://github.com/danishprakash/goodreadsh"</span>
 	<span class="n">url</span> <span class="s2">"https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz"</span>
@@ -79,9 +93,8 @@
 	<span class="nb">test</span> <span class="k">do</span>
 		<span class="nb">system</span> <span class="s2">"</span><span class="si">#{</span><span class="n">bin</span><span class="si">}</span><span class="s2">/goodreads"</span>
 	<span class="k">end</span>
-<span class="k">end</span>
-</code></pre>
-</div>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Now, almost all of the fields here are pretty much self-explanatory but we’ll go through them quickly.</p>
 

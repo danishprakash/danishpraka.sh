@@ -98,23 +98,29 @@ Now that we have our output sanitized, let’s get this onto our prompt.</p>
 <h1 id="updating-prompt">Updating prompt</h1>
 <p>Now that we have all the inputs ready, let’s put these together to get it working. Add this function in your <code class="highlighter-rouge">.zshrc</code>, preferably on the top so that it becomes easier for you to re-use it.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>git_branch<span class="o">()</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="code"><pre><span class="k">function </span>git_branch<span class="o">()</span> <span class="o">{</span>
     <span class="nv">branch</span><span class="o">=</span><span class="k">$(</span>git symbolic-ref HEAD 2&gt; /dev/null | awk <span class="s1">'BEGIN{FS="/"} {print $NF}'</span><span class="k">)</span>
     <span class="k">if</span> <span class="o">[[</span> <span class="nv">$branch</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]]</span>; <span class="k">then</span>
         :
     <span class="k">else
         </span><span class="nb">echo</span> <span class="s1">' ('</span> <span class="nv">$branch</span> <span class="s1">') '</span>
     <span class="k">fi</span>
-<span class="o">}</span>
-</code></pre>
-</div>
+<span class="o">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Here, we initialize a <code class="highlighter-rouge">branch</code> variable with the value of the output of the command we put together in the steps above. If you are wondering why we have the command enclosed inside <code class="highlighter-rouge">$()</code>, this is called command substitution wherein a command is replaced by it’s output. So we’ll be left with the actual branch name in the variable <code class="highlighter-rouge">branch</code>. The conditional logic after that is used to handle cases where the current directory isn’t really a git repository and in which case we want the prompt untouched.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>setopt prompt_subst
-<span class="nv">PROMPT</span><span class="o">=</span><span class="s1">'%~ $(git_branch) &gt;'</span>
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>setopt prompt_subst
+<span class="nv">PROMPT</span><span class="o">=</span><span class="s1">'%~ $(git_branch) &gt;'</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Here, we set the <code class="highlighter-rouge">prompt_subst</code> option in our zsh, this allows command substitution to be able to be performed in prompts. In other words, when we defined the function <code class="highlighter-rouge">git_branch</code> above, we actually defined a custom command named <code class="highlighter-rouge">git_branch</code> which is used in our shell prompt since functions in shell scripts are essentially commands that can be executed from the shell. Now the shell performs command substitution everytime the prompt appears on the terminal. After this we set the prompt using the <code class="highlighter-rouge">PROMPT</code> shell variable. The <code class="highlighter-rouge">%~</code> will be expanded to the current working directory. Read more about prompt expansions in zsh <a href="http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html">here</a>.</p>
 
@@ -128,7 +134,19 @@ This is how it looks on my machine.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>So, having the current branch displayed on your zsh prompt was all in all a simple <code class="highlighter-rouge">git</code> command with a pint of <code class="highlighter-rouge">awk</code> in it and an even simpler shell script. For those restless souls who landed here in search of the solution, here it is.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># function to return current branch name while suppressing errors.</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="c"># function to return current branch name while suppressing errors.</span>
 <span class="k">function </span>git_branch<span class="o">()</span> <span class="o">{</span>
     <span class="nv">branch</span><span class="o">=</span><span class="k">$(</span>git symbolic-ref HEAD 2&gt; /dev/null | awk <span class="s1">'BEGIN{FS="/"} {print $NF}'</span><span class="k">)</span>
     <span class="k">if</span> <span class="o">[[</span> <span class="nv">$branch</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]]</span>; <span class="k">then</span>
@@ -140,9 +158,8 @@ This is how it looks on my machine.</p>
 
 
 setopt prompt_subst             <span class="c"># allow command substitution inside the prompt</span>
-<span class="nv">PROMPT</span><span class="o">=</span><span class="s1">'%~ $(git_branch) &gt;'</span>     <span class="c"># set the prompt value</span>
-</code></pre>
-</div>
+<span class="nv">PROMPT</span><span class="o">=</span><span class="s1">'%~ $(git_branch) &gt;'</span>     <span class="c"># set the prompt value</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <hr />
 

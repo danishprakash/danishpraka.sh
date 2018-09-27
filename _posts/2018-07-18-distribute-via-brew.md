@@ -18,7 +18,7 @@ Homebrew accepts a tar archive of your application in order to process it. We ca
 # Write your formula
 Homebrew formulae are essentially ruby scripts which stores information about your application. It tells homebrew important information regarding the installation of your application like where and how your app is going to be installed. This is what a simple formula for an application written in bash would look like.
 
-```ruby
+{% highlight ruby linenos %}
 class Goodreadsh < Formula
 	desc "Command-line interface for Goodreads"
 	homepage "https://github.com/danishprakash/goodreadsh"
@@ -34,7 +34,7 @@ class Goodreadsh < Formula
 		system "#{bin}/goodreads"
 	end
 end
-```
+{% endhighlight %}
 
 
 Now, almost all of the fields here are pretty much self-explanatory but we'll go through them quickly.

@@ -53,7 +53,7 @@ Now that we have our output sanitized, let's get this onto our prompt.
 # Updating prompt
 Now that we have all the inputs ready, let's put these together to get it working. Add this function in your `.zshrc`, preferably on the top so that it becomes easier for you to re-use it.
 
-```bash
+{% highlight bash linenos %}
 function git_branch() {
     branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
     if [[ $branch == "" ]]; then
@@ -62,14 +62,14 @@ function git_branch() {
         echo ' (' $branch ') '
     fi
 }
-```
+{% endhighlight %}
 
 Here, we initialize a `branch` variable with the value of the output of the command we put together in the steps above. If you are wondering why we have the command enclosed inside `$()`, this is called command substitution wherein a command is replaced by it's output. So we'll be left with the actual branch name in the variable `branch`. The conditional logic after that is used to handle cases where the current directory isn't really a git repository and in which case we want the prompt untouched.
 
-```bash
+{% highlight bash linenos %}
 setopt prompt_subst
 PROMPT='%~ $(git_branch) >'
-```
+{% endhighlight %}
 
 Here, we set the `prompt_subst` option in our zsh, this allows command substitution to be able to be performed in prompts. In other words, when we defined the function `git_branch` above, we actually defined a custom command named `git_branch` which is used in our shell prompt since functions in shell scripts are essentially commands that can be executed from the shell. Now the shell performs command substitution everytime the prompt appears on the terminal. After this we set the prompt using the `PROMPT` shell variable. The `%~` will be expanded to the current working directory. Read more about prompt expansions in zsh [here](http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html).
 
@@ -83,7 +83,7 @@ This is how it looks on my machine.
 # Conclusion
 So, having the current branch displayed on your zsh prompt was all in all a simple `git` command with a pint of `awk` in it and an even simpler shell script. For those restless souls who landed here in search of the solution, here it is.
 
-```bash
+{% highlight bash linenos %}
 # function to return current branch name while suppressing errors.
 function git_branch() {
     branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
@@ -97,6 +97,6 @@ function git_branch() {
 
 setopt prompt_subst             # allow command substitution inside the prompt
 PROMPT='%~ $(git_branch) >'     # set the prompt value
-```
+{% endhighlight %}
 
 ---
