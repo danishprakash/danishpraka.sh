@@ -67,7 +67,7 @@ ul {
 
 
 .wrapper {
-    max-width: 600px;
+    max-width: 620px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     overflow: hidden;
@@ -211,6 +211,7 @@ ul {
             list-style: square;
             line-height: 20px;
             padding-bottom: 10px;
+            margin-top: -5px;
             li {
                 margin: 0 0px 0px 0;
                 padding: 0px;
@@ -225,8 +226,10 @@ ul {
             }
         }
         img {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            display: block;
+            margin: 0 auto;
             @media screen and (max-width: $br) {
                 width: 100%;
                 margin: auto;
@@ -264,8 +267,6 @@ ul {
             line-height: 1.5;
             font-weight: 300;
             overflow-x: scroll;
-            // color: #ffffff;
-            // background: #e8e8e8;
             background: #2E3440;
 
             // inline code blocks

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Write a shell in Python</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500|IBM+Plex+Mono:300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Write a shell in Python</h1>
+    <p class="post__date">September 27, 2018</p>
+    <div class="post__content"?>
+        <p>One of the first post I wrote here - <a href="https://danishprakash.github.io/2018/01/15/write-a-shell.html">Write a shell in C</a> - described how to write a functional shell for *nix based systems. When I was undertaking that project, I wanted to write it in Python but I ended up choosing C for the task. A recent discussion with a friend of mine lead me to write this post and since I started, it turns out that it is really easy to write a shell in Python.</p>
+
+<p>We’ll write a simple shell that that will support almost all the basic commands. We’ll also implement piping for our shell which will allow us to pipe the output of a command as input to another command, more on that later.</p>
+
+<h1 id="program-flow">Program flow</h1>
+<p>We’ll start off with our <code class="highlighter-rouge">main</code> function where we will handle the program flow. First, let’s get the user input which is quite trivial, we’ll just run an infinite loop and prompt the user for input.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"$ "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s">"exit"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">command</span> <span class="o">==</span> <span class="s">"help"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"psh: a simple shell written in Python"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">execute_commands</span><span class="p">(</span><span class="n">command</span><span class="p">)</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>We’re handling the <code class="highlighter-rouge">exit</code> command simply by breaking out of the loop. The next most important task is to execute the command entered by the user which we’ll manage in a separate function, let’s call that <code class="highlighter-rouge">execute_commands(command)</code>. We’ve also added a simple <code class="highlighter-rouge">help</code> function to let the user know what’s actually happening.</p>
+
+<h1 id="executing-commands">Executing commands</h1>
+<p>Let’s execute the commands entered by the user. We’re using the <code class="highlighter-rouge">subprocess</code> builtin module here, so <code class="highlighter-rouge">import subprocess</code> and we’re good to go. The <code class="highlighter-rouge">run</code> function in particular is used here to execute commands in a subshell. For those coming from C, this saves us from going about forking and creating a child process and then waiting for the child to finish execution, let Python take care of that this one time.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">execute_commands</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">command</span><span class="p">))</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>We’re making sure that our shell doesn’t come crashing down if the user enters <code class="highlighter-rouge">cs</code> instead of <code class="highlighter-rouge">cd</code> by mistake, hence the <code class="highlighter-rouge">try/except</code> mechanism. Just a heads up, there are many other ways to execute system commands from within Python including <code class="highlighter-rouge">os.system</code> and <code class="highlighter-rouge">commands</code> etc but using <code class="highlighter-rouge">subprocess</code> is the <a href="https://docs.python.org/2/library/commands.html">preferred</a> <a href="https://docs.python.org/3/library/os.html?%20system#os.system">way</a> of doing it.</p>
+
+<h1 id="changing-the-directory">Changing the directory</h1>
+<p>While all our commands would work using the <code class="highlighter-rouge">subprocess</code> module, the <code class="highlighter-rouge">cd</code> command would not work this way. This is because subprocess runs the command in a subshell and when you try to change the directory, it actually changes the directory but does so in the subshell instead of in the original process and hence we get the impression that the command didn’t work. We’ll handle this separately in a different function and add a conditional in our <code class="highlighter-rouge">main</code> function.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">psh_cd</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="s">"""convert to absolute path and change directory"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"cd: no such file or directory: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="p">))</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here, we’re using <code class="highlighter-rouge">os.chdir</code> to change the directory and we also make sure to convert the path entered by the user to an absolute path before passing it to <code class="highlighter-rouge">os.chdir</code>. Note that we’ll have to edit our main function to add this condition.</p>
+
+<h1 id="pipes">Pipes!</h1>
+<p>Let’s get to the fun part. Pipes allow us to transfer output of one process as input to another and so on, in a chained manner. Consider this image[<a href="http://web.cse.ohio-state.edu/~mamrak.1/CIS762/pipes_lab_notes.html">1</a>] which shows how pipes are used and what they do.</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~mamrak.1/CIS762/unix_pipes.gif" alt="img" /></p>
+
+<p>You can think of a pipe <code class="highlighter-rouge">|</code> as a pair of file descriptors. For instance, If we create a pipe, we’ll get two file descriptors reserved for our usage, for e.g. <code class="highlighter-rouge">f1</code> and <code class="highlighter-rouge">f2</code> wherein we can write data to <code class="highlighter-rouge">f2</code> and read the same from <code class="highlighter-rouge">f1</code>. Python allows us to create pipes using <code class="highlighter-rouge">os.pipe</code> which returns a tuple containing the integer value which refer to the file descriptors. Consider the implementation of our <code class="highlighter-rouge">execute_commands</code> function with piping below:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="s">"""execute commands and handle piping"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s">"|"</span> <span class="ow">in</span> <span class="n">command</span><span class="p">:</span>
+            <span class="c"># save for restoring later on</span>
+            <span class="n">s_in</span><span class="p">,</span> <span class="n">s_out</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">s_in</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">s_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="c"># first command takes commandut from stdin</span>
+            <span class="n">fdin</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="n">s_in</span><span class="p">)</span>
+
+            <span class="c"># iterate over all the commands that are piped</span>
+            <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"|"</span><span class="p">):</span>
+                <span class="c"># fdin will be stdin if it's the first iteration</span>
+                <span class="c"># and the readable end of the pipe if not.</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">fdin</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fdin</span><span class="p">)</span>
+
+                <span class="c"># restore stdout if this is the last command</span>
+                <span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"|"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">fdout</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="n">s_out</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">fdin</span><span class="p">,</span> <span class="n">fdout</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+
+                <span class="c"># redirect stdout to pipe</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">fdout</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fdout</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+                <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+                    <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
+
+            <span class="c"># restore stdout and stdin</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s_in</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s_out</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">s_in</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">s_out</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">))</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">command</span><span class="p">))</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here, we have created a pipe with the values <code class="highlighter-rouge">fdin</code> and <code class="highlighter-rouge">fdout</code>. We’re manipulating our file descriptors using the pipe we’ve created, so the input and output of every sub-command(each of the piped commands) executed during the loop will depend on the value of <code class="highlighter-rouge">fdin</code> and <code class="highlighter-rouge">fdout</code>.</p>
+
+<p>Don’t fret if that seemed confusing, let’s see what’s happening in the above snippet of code line-by-line.</p>
+
+<ul>
+  <li><strong>Lines 6-7:</strong> We’re creating temporary variables, <code class="highlighter-rouge">s_in</code>, <code class="highlighter-rouge">s_out</code> to hold the original values of <code class="highlighter-rouge">stdout</code> and <code class="highlighter-rouge">stdin</code> to restore them later on.</li>
+  <li><strong>Line 11:</strong> Create a duplicate of <code class="highlighter-rouge">stdin</code> and set <code class="highlighter-rouge">fdin</code> to it so that the first sub-command recieves input from <code class="highlighter-rouge">stdin</code> when we later redirect the standard input to <code class="highlighter-rouge">fdin</code>.</li>
+  <li><strong>Line 14:</strong> The loop iterates over the sub-commands.</li>
+  <li><strong>Line 17-18:</strong> Redirecting <code class="highlighter-rouge">stdin</code> to <code class="highlighter-rouge">fdin</code>. There can be two cases here. First, if the sub-command is the first in series, then <code class="highlighter-rouge">fdin</code> would be pointing to <code class="highlighter-rouge">stdin</code> . Second, if the sub-command is not the first, in which case, the value of <code class="highlighter-rouge">fdin</code> would be storing the value of the readable end of the pipe we have created in the previous iteration of the loop.</li>
+  <li><strong>Lines 21-28:</strong> Redirecting <code class="highlighter-rouge">stdout</code> to <code class="highlighter-rouge">fdout</code>. There are two possibilites here as well. First, if the sub-command is the last in series, in that case, <code class="highlighter-rouge">fdout</code> would be redirected to <code class="highlighter-rouge">s_out</code>, which is the original <code class="highlighter-rouge">stdout</code> we stored. Second, if the sub-command is not the last in series, in which case, we would redirect <code class="highlighter-rouge">fdout</code> to the writable end of of the pipe we have created in this very iteration of the loop. Note that in line 24, we are creating the pipe.</li>
+  <li><strong>Lines 30-33:</strong> We’re executing the sub-command here. It will read input from <code class="highlighter-rouge">fdin</code> and will write it’s output to <code class="highlighter-rouge">fdout</code> theoretically since we redirected both <code class="highlighter-rouge">stdin</code> and <code class="highlighter-rouge">stdout</code> accordingly.</li>
+  <li><strong>Lines 36-39:</strong> We’re restoring the values of <code class="highlighter-rouge">stdin</code> and <code class="highlighter-rouge">stdout</code> to their original values that we had stored earlier.</li>
+  <li><strong>Lines 40:</strong> Execute the command normally if no pipe operators are present.</li>
+</ul>
+
+<h1 id="putting-it-together">Putting it together</h1>
+<p>We have all the pieces figured out now. Let’s put them together to get this shell working. I’ve made some additions here and there which are too trivial to explain before putting it out here. You can also see the sample output below the code.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</pre></td><td class="code"><pre><span class="c">#!/usr/bin/env python3</span>
+
+<span class="s">"""psh: a simple shell written in Python"""</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+
+<span class="k">def</span> <span class="nf">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="s">"""execute commands and handle piping"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s">"|"</span> <span class="ow">in</span> <span class="n">command</span><span class="p">:</span>
+            <span class="c"># save for restoring later on</span>
+            <span class="n">s_in</span><span class="p">,</span> <span class="n">s_out</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">s_in</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">s_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="c"># first command takes commandut from stdin</span>
+            <span class="n">fdin</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="n">s_in</span><span class="p">)</span>
+
+            <span class="c"># iterate over all the commands that are piped</span>
+            <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"|"</span><span class="p">):</span>
+                <span class="c"># fdin will be stdin if it's the first iteration</span>
+                <span class="c"># and the readable end of the pipe if not.</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">fdin</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fdin</span><span class="p">)</span>
+
+                <span class="c"># restore stdout if this is the last command</span>
+                <span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"|"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">fdout</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="n">s_out</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">fdin</span><span class="p">,</span> <span class="n">fdout</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+
+                <span class="c"># redirect stdout to pipe</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">fdout</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fdout</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+                <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+                    <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
+
+            <span class="c"># restore stdout and stdin</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s_in</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s_out</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">s_in</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">s_out</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">))</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"psh: command not found: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">command</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">psh_cd</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="s">"""convert to absolute path and change directory"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+    <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"cd: no such file or directory: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">psh_help</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"""psh: shell implementation in Python.
+          Supports all basic shell commands."""</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"$ "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">inp</span> <span class="o">==</span> <span class="s">"exit"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">inp</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">"cd "</span><span class="p">:</span>
+            <span class="n">psh_cd</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
+        <span class="k">elif</span> <span class="n">inp</span> <span class="o">==</span> <span class="s">"help"</span><span class="p">:</span>
+            <span class="n">psh_help</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">execute_command</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="s">'__main__'</span> <span class="o">==</span> <span class="n">__name__</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># running the shell</span>
+<span class="gp">$ </span>python3 psh.py
+
+<span class="c"># prompt from our shell</span>
+<span class="gp">$ </span><span class="nb">pwd</span>
+/home/psh
+
+<span class="c"># pipe multiple commands </span>
+<span class="gp">$ </span>cat psh | wc -l
+      81
+</code></pre>
+</div>
+<p><br />
+–</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>So we’ve written a functional shell in Python in about ~80 lines of code, that’s not too bad considering we’ve got piping sorted out here. There are a lot of features missing from this shell but the intent behind this was not turning this into a daily driver but to rather see the implementation of a shell in Python. In the process, we learned how to execute system commands from within Python the right way, we also learned how to manipulate file descriptors in Python to redirect input/output of a command as per our needs.</p>
+
+<p>For further practice, you can try implementing the following features in this shell</p>
+
+<ul>
+  <li>Implement the <code class="highlighter-rouge">history</code> command, see <a href="https://github.com/danishprakash/dash">this</a> for reference.</li>
+  <li>Add <a href="http://tldp.org/LDP/abs/html/globbingref.html">globbing</a> support.</li>
+  <li>Add comment support at the prompt.Comments are disregarded by the shell so this should be fairly trivial.</li>
+</ul>
+
+<p>If you find any issues/mistakes in this post, contact me or open an issue on this project’s <a href="https://github.com/danishprakash/psh">repository</a>.</p>
+
+<hr />
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
