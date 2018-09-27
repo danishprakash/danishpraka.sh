@@ -67,7 +67,7 @@ ul {
 
 
 .wrapper {
-    max-width: 600px;
+    max-width: 620px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     overflow: hidden;
@@ -211,10 +211,12 @@ ul {
             list-style: square;
             line-height: 20px;
             padding-bottom: 10px;
+            // padding-left: 20px;
+            margin-top: -10px;
             li {
-                margin: 0 0px 0px 0;
                 padding: 0px;
                 padding-bottom: 10px;
+                padding-top: -10px;
                 line-height: 25px;
                 @media screen and (max-width: $br) {
                     padding: 10px 0 10px 0;

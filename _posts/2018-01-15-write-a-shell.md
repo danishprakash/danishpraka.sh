@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing a shell in C
+title: Write a shell in C
 ---
 
 Ever wondered how that terminal just works? A more correct question would be how that shell just works? I had one of those too and It took me a couple of searches and a lot of reading to figure out how. I wrote a shell in C, first a basic and then added few more features on top of it. I've written the process for writing a basic shell in C.
