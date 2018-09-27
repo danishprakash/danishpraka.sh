@@ -39,29 +39,29 @@ We'll be using one of my [plugin](https://github.com/danishprakash/vimport) for 
 
 1 Clone the plugin to the appropriate vim directory.
 
-```sh
+{% highlight shell %}
 $ git clone https://github.com/danishprakash/vimport.git ~/vim/plugins/
-```
+{% endhighlight %}
 
 2 Update the vim runtime path. The easiest way to do this is by appending the 
 plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable.
 
-```vim
+{% highlight vim %}
 :set rtp+=~/.vim/plugins/vimport
 :echo &rtp
-```
+{% endhighlight %}
 
 3 Finally, let's source the plugin file.
 
-```vim
+{% highlight vim %}
 :source ~/vim/plugins/vimport/plugins/vimport.vim
-```
+{% endhighlight %}
 
 Now you should be able to run the plugin, try this command.
 
-```vim
+{% highlight vim %}
 :Vimport requests
-```
+{% endhighlight %}
 
 --
 

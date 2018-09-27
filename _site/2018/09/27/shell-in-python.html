@@ -385,7 +385,7 @@
     <span class="n">main</span><span class="p">()</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># running the shell</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># running the shell</span>
 <span class="gp">$ </span>python3 psh.py
 
 <span class="c"># prompt from our shell</span>
@@ -394,11 +394,9 @@
 
 <span class="c"># pipe multiple commands </span>
 <span class="gp">$ </span>cat psh | wc -l
-      81
-</code></pre>
-</div>
-<p><br />
-–</p>
+      81</code></pre></figure>
+
+<h2 id="br"><br /></h2>
 
 <h1 id="conclusion">Conclusion</h1>
 <p>So we’ve written a functional shell in Python in about ~80 lines of code, that’s not too bad considering we’ve got piping sorted out here. There are a lot of features missing from this shell but the intent behind this was not turning this into a daily driver but to rather see the implementation of a shell in Python. In the process, we learned how to execute system commands from within Python the right way, we also learned how to manipulate file descriptors in Python to redirect input/output of a command as per our needs.</p>

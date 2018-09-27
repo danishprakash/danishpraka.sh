@@ -204,7 +204,7 @@ if '__main__' == __name__:
     main()
 {% endhighlight %}
 
-```shell
+{% highlight shell %}
 # running the shell
 $ python3 psh.py
 
@@ -215,7 +215,7 @@ $ pwd
 # pipe multiple commands 
 $ cat psh | wc -l
       81
-```
+{% endhighlight %}
 <br>
 --
 

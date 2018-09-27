@@ -74,13 +74,11 @@
 <h1 id="translations">Translations</h1>
 <p>In order to provide the translations which could be read by the <code class="highlighter-rouge">gettext</code> module, we need to create a separate directory named <code class="highlighter-rouge">locales</code>, this can be named anything as long as it’s intuitive. For the sake of keeping this post brief, we’ll be providing a German(Deutsch) translation for our <code class="highlighter-rouge">Hello World</code> program. For the same, our <code class="highlighter-rouge">locales</code> directory would look something like this.</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>locales/
+<figure class="highlight"><pre><code class="language-text" data-lang="text">locales/
 ├── de
 │   └── LC_MESSAGES
 └── en
-    └── LC_MESSAGES
-</code></pre>
-</div>
+    └── LC_MESSAGES</code></pre></figure>
 
 <p>Where <code class="highlighter-rouge">de</code> and <code class="highlighter-rouge">en</code> are language codes for german and english respectively. You can find a list of all the languages and their respective language codes <a href="https://www.science.co.il/language/Codes.php">here</a>.</p>
 
@@ -114,13 +112,34 @@
 <h1 id="pygettext">pygettext</h1>
 <p>We’ll create a template with all of the strings which we’ve marked in our program so that it’s easier for us to write the translations for the strings. This template is a POT with a <code class="highlighter-rouge">.pot</code> extension which stands for portable object template. To generate the template for our program, we can use the <code class="highlighter-rouge">pygettext.py</code> module which also comes bundled with the standard installation of python.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="k">$(</span>locate pygettext<span class="k">)</span> -o locales/template.pot hello_world.py
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="gp">$ </span><span class="k">$(</span>locate pygettext<span class="k">)</span> -o locales/template.pot hello_world.py</code></pre></figure>
 
 <p>This will generate our template file <code class="highlighter-rouge">template.pot</code> in the locales directory. If you view the contents of this file, you’ll see metadata about the file and at the end, we can see our two strings which we had wrapped using the <code class="highlighter-rouge">gettext</code> function.</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code># SOME DESCRIPTIVE TITLE.
+<figure class="highlight"><pre><code class="language-text" data-lang="text"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></td><td class="code"><pre># SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.
 #
@@ -143,35 +162,37 @@ msgstr ""
 
 #: hello_locales:14
 msgid "Localization if fun!"
-msgstr ""
-</code></pre>
-</div>
+msgstr ""<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Here, <code class="highlighter-rouge">msgid</code> denotes the original string and <code class="highlighter-rouge">msgstr</code> contains the translated string. Note that it also provides some info about the string, namely the filename and the line number. Next, we can just copy this file to <code class="highlighter-rouge">locales/de/LC_MESSAGES</code> and provide the appropriate translations. It should look like this minus the metadata.</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>#: hello_locales:13
+<figure class="highlight"><pre><code class="language-text" data-lang="text"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre>#: hello_locales:13
 msgid "Hello World"
 msgstr "Halo Welt"
 
 #: hello_locales:14
 msgid "Localization if fun!"
-msgstr "Lokalisierung macht Spaß"
-</code></pre>
-</div>
+msgstr "Lokalisierung macht Spaß"<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>For the english translation (<code class="highlighter-rouge">en/</code>), we can make do by simply copying <code class="highlighter-rouge">template.pot</code> to <code class="highlighter-rouge">locales/en/LC_MESSAGES</code>. We can think of this template as a global template we can use for every locale or language we wish to provide a translation for, all that’s required is to copy this template to the proper directory as shown in the directory convention above.</p>
 
 <h1 id="msgfmt">msgfmt</h1>
 <p>There’s one more step to this before we fire up das program. <code class="highlighter-rouge">gettext</code> module cannot directly use the <code class="highlighter-rouge">.po</code> files and hence we are required to convert these files to their equivalent <code class="highlighter-rouge">.mo</code> files. These <code class="highlighter-rouge">.mo</code> files are binary machine-object files that are parsed by <code class="highlighter-rouge">gettext</code>. We can use the <code class="highlighter-rouge">msgfmt</code> tool to generate these, which also comes with the standard python installation.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/de/LC_MESSAGES/template.po
-<span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/en/LC_MESSAGES/template.po
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/de/LC_MESSAGES/template.po
+<span class="gp">$ </span><span class="k">$(</span>locate msgfmt<span class="k">)</span> locales/en/LC_MESSAGES/template.po</code></pre></figure>
 
 <p>This would create an equivalent <code class="highlighter-rouge">.mo</code> file to be used by the <code class="highlighter-rouge">gettext</code> module. At this point of time, our <code class="highlighter-rouge">locales</code> directory should look like this.</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>locales
+<figure class="highlight"><pre><code class="language-text" data-lang="text">locales
 └── en
     └── LC_MESSAGES
         ├── template.mo
@@ -179,9 +200,7 @@ msgstr "Lokalisierung macht Spaß"
 └── de
     └── LC_MESSAGES
         ├── template.mo
-        └── template.po
-</code></pre>
-</div>
+        └── template.po</code></pre></figure>
 
 <h1 id="putting-it-together">Putting it together</h1>
 <p>Let’s modify our program to use the appropriate translations or more aptly, to use the <code class="highlighter-rouge">.mo</code> files we have generated.</p>
@@ -223,15 +242,13 @@ msgstr "Lokalisierung macht Spaß"
 
 <p>We can now test our program.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>python hello_world.py
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="gp">$ </span>python hello_world.py
 Hello World
 Localization is fun!
 
 <span class="gp">$ </span><span class="nv">LANG</span><span class="o">=</span>de python hello_world.py
 Halo Welt
-Lokalisierung macht Spaß
-</code></pre>
-</div>
+Lokalisierung macht Spaß</code></pre></figure>
 
 <p>It works as expected for both english and german locales, look at how we’ve used the environment variable to switch to German(de) locale.</p>
 

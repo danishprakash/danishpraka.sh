@@ -13,39 +13,39 @@ __Note__: If you are just looking for the solution, jump to [Conclusion](#conclu
 # Git branch
 Before I started looking for solutions to this particular problem, I only knew one way to echo the current branch in a directory which is the good old `git branch` command. But turns out there's one more and possibly others.
 
-```bash
+{% highlight shell %}
 $ git symbolic-ref HEAD
-```
+{% endhighlight %}
 
 From the official documentation, `git symbolic-ref <name>` reads which branch head the given symbolic reference refers to and returns the path to it relative to the `.git` directory. In other words, when you give `HEAD` as an argument to `git symbolic-ref`, we could figure out the name of our current branch.
 
-```bash
+{% highlight shell %}
 $ git symbolic-ref HEAD
 refs/heads/master
-```
+{% endhighlight %}
 
 I'm using the latter version since it will give us a rather brief and static output than `git branch` which would list all the branches there are in your current working tree.
 
 # Suppressing errors
 In directories which are not git repositories, our command will throw an error. To supress such errors, we could simply redirect the error. Our updated command:
 
-```bash
+{% highlight shell %}
 $ git symbolic-ref HEAD
 fatal: Not a git repository (or any of the parent directories): .git
 
 $ git symbolic-ref HEAD 2> /dev/null
 $ 
-```
+{% endhighlight %}
 
 The `2> /dev/null` redirects the `stderr` or standard error to a special file `/dev/null` which takes input but doesn't really do anything with it. So we're sorted here. Read more about standard streams [here](http://www.learnlinux.org.za/courses/build/shell-scripting/ch01s04.html).
 
 # Comes in `awk`
 You certainly don't need `ref/heads/master` in your prompt, let's filter the unwanted stuff out. We'll use a simple awk script (command really) to do the job.
 
-```bash
+{% highlight shell %}
 $ git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}'
 master
-```
+{% endhighlight %}
 
 In the `awk` command above, first of all we specify the field separator (`FS="/"`) since our git command returns a path which is separated by a forward slash and finally we print the last column in the separated list. `$NF` here means the number of fields and subsequently points to the last column.
 Now that we have our output sanitized, let's get this onto our prompt.
