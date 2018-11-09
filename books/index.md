@@ -8,6 +8,10 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 # 2018
 ---
 
+- __[Free as in Freedom 2.0](https://www.goodreads.com/book/show/11343000-free-as-in-freedom-2-0)__
+<br>
+Being a GNU/Linux enthusiast, I was always curious about the GNU project and this led me to read this book. It is evident that the work done by the FSF has been undermined greatly and probably the only reason why many of us don't realize the contributions of the GNU project and the FSF community. Also, think twice before you refer to that distro on your system as Linux.
+
 - __[Milk and Honey](https://www.goodreads.com/book/show/23513349-milk-and-honey)__
 <br>
 Very different from the stuff that I've been reading lately. The author gives a very crude account of her childhood with some disturbing yet not so uncommon details. Also, lots of vexed issues are discussed throughout the book and it's pretty evident why this book is all the talk amongst people lately.
