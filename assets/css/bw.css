@@ -2,28 +2,28 @@
 .highlight  { background: #ffffff; }
 .highlight .c { font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
-.highlight .k { font-weight: 600 } /* Keyword */
+.highlight .k { font-weight: 300 } /* Keyword */
 .highlight .ch { font-style: italic } /* Comment.Hashbang */
 .highlight .cm { font-style: italic } /* Comment.Multiline */
 .highlight .cpf { font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { font-style: italic } /* Comment.Single */
 .highlight .cs { font-style: italic } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gh { font-weight: 600 } /* Generic.Heading */
-.highlight .gp { font-weight: 600 } /* Generic.Prompt */
-.highlight .gs { font-weight: 600 } /* Generic.Strong */
-.highlight .gu { font-weight: 600 } /* Generic.Subheading */
-.highlight .kc { font-weight: 600 } /* Keyword.Constant */
-.highlight .kd { font-weight: 600 } /* Keyword.Declaration */
-.highlight .kn { font-weight: 600 } /* Keyword.Namespace */
-.highlight .kr { font-weight: 600 } /* Keyword.Reserved */
+.highlight .gh { font-weight: 300 } /* Generic.Heading */
+.highlight .gp { font-weight: 300 } /* Generic.Prompt */
+.highlight .gs { font-weight: 300 } /* Generic.Strong */
+.highlight .gu { font-weight: 300 } /* Generic.Subheading */
+.highlight .kc { font-weight: 300 } /* Keyword.Constant */
+.highlight .kd { font-weight: 300 } /* Keyword.Declaration */
+.highlight .kn { font-weight: 300 } /* Keyword.Namespace */
+.highlight .kr { font-weight: 300 } /* Keyword.Reserved */
 /* .highlight .s { font-style: italic } /1* Literal.String *1/ */
-.highlight .nc { font-weight: 600 } /* Name.Class */
-.highlight .ni { font-weight: 600 } /* Name.Entity */
-.highlight .ne { font-weight: 600 } /* Name.Exception */
-.highlight .nn { font-weight: 600 } /* Name.Namespace */
-.highlight .nt { font-weight: 600 } /* Name.Tag */
-.highlight .ow { font-weight: 600 } /* Operator.Word */
+.highlight .nc { font-weight: 300 } /* Name.Class */
+.highlight .ni { font-weight: 300 } /* Name.Entity */
+.highlight .ne { font-weight: 300 } /* Name.Exception */
+.highlight .nn { font-weight: 300 } /* Name.Namespace */
+.highlight .nt { font-weight: 300 } /* Name.Tag */
+.highlight .ow { font-weight: 300 } /* Operator.Word */
 /* .highlight .sa { font-style: italic } /1* Literal.String.Affix *1/ */
 /* .highlight .sb { font-style: italic } /1* Literal.String.Backtick *1/ */
 /* .highlight .sc { font-style: italic } /1* Literal.String.Char *1/ */

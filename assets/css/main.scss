@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url(nord.css);
+@import url(bw.css);
 @import "reset";
 @import "config";
 
@@ -27,7 +27,7 @@ a {
     color: $color-fg;
     border-bottom: 1.5px dotted #afafaf;
     padding: 2px;
-    transition: .2s;
+    transition: .1s;
 
     &:visited {
         text-decoration: none;
@@ -50,7 +50,6 @@ h1 {
 p {
     font-size: 1.2em;
     line-height: 20px;
-
 }
 
 ul {
@@ -238,19 +237,15 @@ ul {
         code {
             padding: 3px;
             font-size: 0.9em;
-            // color: #333333;
             background: #e8e8e8;
             font-family: 'IBM Plex Mono', monospace;
             overflow: hidden;
         }
         .lineno { 
-             color: #768096; 
-             // display: inline-block; 
-             // padding: 0 5px; 
+             color: #b0b0b0; 
              padding-right: 8px;
-             border-right:1px solid #768096;
+             border-right:1px solid #b0b0b0;
              margin-right: 10px;
-             // avoid selection of line numbers
              -webkit-touch-callout: none;
              -webkit-user-select: none;
              -khtml-user-select: none;
@@ -267,16 +262,16 @@ ul {
             line-height: 1.5;
             font-weight: 300;
             overflow-x: scroll;
-            background: #2E3440;
+            background: #e8e8e8;
 
             // inline code blocks
             code {
                 padding: 0px;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
-                color: #D8DEE9;
-                background: #2E3440;
+                color: #000000;
+                background: #ffffff;
             }
         }
         .codebreak {
