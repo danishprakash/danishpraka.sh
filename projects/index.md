@@ -24,6 +24,7 @@ __CLI Tools__
 <br>
 __Others__
 
+- [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall
 - [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection
 - [githubfs](https://github.com/danishprakash/githubfs): Read-only virtual file-system for Github using FUSE
 - [Vim Tricks](https://www.amazon.com/gp/product/B07JC7SDT1): Amazon Alexa skill for that helps you learn new vim tips and tricks
