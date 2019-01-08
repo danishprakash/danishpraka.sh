@@ -6,11 +6,18 @@ title: Books
 This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it. This was inspired by [rakhim's](https://rakhim.org/bookshelf/) much cooler bookshelf with all the book covers and authors. Anyway, here goes:
 
 # 2018
----
+
+- __[ The Ramayana](https://www.goodreads.com/book/show/129876.The_Ramayana)__
+<br>
+I'm not religious but I've been meaning to read this for a while. Since childhood, I've heard the Ramayana in one form or another, in parts and slots. I never had a chance to read it or watch the whole thing. R.K. Narayan writes does a really good job putting Kamban's poetic version into a prose. There's a lot to learn from this epic, such as the importance of being true to your own self, being disciplined and having principles.
+
+- __[Functional Programming in Python](https://www.goodreads.com/book/show/25977827-functional-programming-in-python)__
+<br>
+I'm curious about functional programming. It's helps to look at things from a different perspective. Although, this is not a conventional book on functional programming as it talks about writing functional code in Python, which in itself, is a multi-paradigm language, but it does forces you to think functionally while writing Python code. It also goes on to talk about 3rd party libraries which allow you to write functional Python code.
 
 - __[Free as in Freedom 2.0](https://www.goodreads.com/book/show/11343000-free-as-in-freedom-2-0)__
 <br>
-Being a GNU/Linux enthusiast, I was always curious about the GNU project and this led me to read this book. It is evident that the work done by the FSF has been undermined greatly and probably the only reason why many of us don't realize the contributions of the GNU project and the FSF community. Also, think twice before you refer to that distro on your system as Linux.
+Being a GNU/Linux enthusiast, I was always curious about the GNU project and this lead me to read this book. It is evident that the work done by the FSF has been greatly undermined and probably the only reason why many of us don't realize the contributions of the GNU project and the FSF community. Also, think twice before you refer to that distro on your system as "Linux".
 
 - __[Milk and Honey](https://www.goodreads.com/book/show/23513349-milk-and-honey)__
 <br>
@@ -57,7 +64,6 @@ Some very important life lessons coupled with the transition of Microsoft from t
 Apart from the usual stuff about Gandhiji that we find almost everywhere, this book talks about Gandhiji as a person, a student, a family man and later a father figure of our nation. There are accounts of his peculiar diet, his preferred method of medication and therapy and his immense love for reading. Must read.
 
 # 2017
----
 
 - __[Animal Farm](https://www.goodreads.com/book/show/7613.Animal_Farm)__
 <br>
@@ -108,7 +114,6 @@ A very different kind of story-telling. You are taken introduced to the plight o
 This was an amazing read. Steve Wozniak is such a genius, if it weren't for him, there'd be nothing for Steve Jobs to sell. That's what I understand from the book. Classic hacking anecdotes, university pranks and the rise of the personal computer, it has it all. 
 
 # 2009
----
 
 - __[Charlie and the Chocolate Factory](https://www.goodreads.com/book/show/6310.Charlie_and_the_Chocolate_Factory)__
 <br>

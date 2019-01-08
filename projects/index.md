@@ -20,9 +20,8 @@ __CLI Tools__
 - [amizone-cli](https://github.com/danishprakash/amizone-cli): Command line interface for amizone.net
 - [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal
 
-
 <br>
-__Others__
+__Uncategorized__
 
 - [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall
 - [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection
