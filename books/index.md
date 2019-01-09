@@ -9,7 +9,7 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 - __[ The Ramayana](https://www.goodreads.com/book/show/129876.The_Ramayana)__
 <br>
-I'm not religious but I've been meaning to read this for a while. Since childhood, I've heard the Ramayana in one form or another, in parts and slots. I never had a chance to read it or watch the whole thing. R.K. Narayan writes does a really good job putting Kamban's poetic version into a prose. There's a lot to learn from this epic, such as the importance of being true to your own self, being disciplined and having principles.
+I'm not religious but I've been meaning to read this for a while. Since childhood, I've heard the Ramayana in one form or another, in parts and slots. I never had a chance to read it or watch the whole thing. R.K. Narayan does a really good job putting Kamban's poetic version into a prose. There's a lot to learn from this epic, such as the importance of being true to your own self, being disciplined and having principles.
 
 - __[Functional Programming in Python](https://www.goodreads.com/book/show/25977827-functional-programming-in-python)__
 <br>
