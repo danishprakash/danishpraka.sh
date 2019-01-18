@@ -58,7 +58,7 @@ Now that we've marked the strings we will provide translations for, let's provid
 # pygettext
 We'll create a template with all of the strings which we've marked in our program so that it's easier for us to write the translations for the strings. This template is a POT with a `.pot` extension which stands for portable object template. To generate the template for our program, we can use the `pygettext.py` module which also comes bundled with the standard installation of python.
 
-{% highlight shell %}
+{% highlight shell linenos %}
 $ $(locate pygettext) -o locales/template.pot hello_world.py
 {% endhighlight %}
 
@@ -108,14 +108,14 @@ For the english translation (`en/`), we can make do by simply copying `template.
 # msgfmt
 There's one more step to this before we fire up das program. `gettext` module cannot directly use the `.po` files and hence we are required to convert these files to their equivalent `.mo` files. These `.mo` files are binary machine-object files that are parsed by `gettext`. We can use the `msgfmt` tool to generate these, which also comes with the standard python installation.
 
-{% highlight shell %}
+{% highlight shell linenos %}
 $ $(locate msgfmt) locales/de/LC_MESSAGES/template.po
 $ $(locate msgfmt) locales/en/LC_MESSAGES/template.po
 {% endhighlight %}
 
 This would create an equivalent `.mo` file to be used by the `gettext` module. At this point of time, our `locales` directory should look like this.
 
-{% highlight text %}
+{% highlight text linenos %}
 locales
 └── en
     └── LC_MESSAGES
@@ -153,7 +153,7 @@ Here we invoke the gettext.translation function which returns a `Translation` in
 
 We can now test our program.
 
-{% highlight shell %}
+{% highlight text linenos %}
 $ python hello_world.py
 Hello World
 Localization is fun!
