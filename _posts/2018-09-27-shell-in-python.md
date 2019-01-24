@@ -204,7 +204,7 @@ if '__main__' == __name__:
     main()
 {% endhighlight %}
 
-{% highlight shell %}
+{% highlight shell linenos%}
 # running the shell
 $ python3 psh.py
 

@@ -26,7 +26,7 @@ if '__main__' == __name__:
 # Translations
 In order to provide the translations which could be read by the `gettext` module, we need to create a separate directory named `locales`, this can be named anything as long as it's intuitive. For the sake of keeping this post brief, we'll be providing a German(Deutsch) translation for our `Hello World` program. For the same, our `locales` directory would look something like this.
 
-{% highlight text%}
+{% highlight text linenos%}
 locales/
 ├── de
 │   └── LC_MESSAGES

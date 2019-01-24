@@ -48,7 +48,7 @@ Now, almost all of the fields here are pretty much self-explanatory but we'll go
 <br>
 You can use this template or you can generate a formula of your own. Homebrew provides a simple command for this. `brew create <URL>`
 
-{% highlight shell %}
+{% highlight shell linenos%}
 $ brew create https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz
 {% endhighlight %}
 
@@ -56,13 +56,13 @@ The `URL` in question is the link to the tar archive of your application. I'm us
 
 You can check whether your formula is working or not by installing your application from specifying the formula.
 
-{% highlight shell %}
+{% highlight shell linenos%}
 $ brew install --build-from-source <formula.rb>
 {% endhighlight %}
 
 If it works, good enough. Now make sure your formula abides by the guidelines defined by homebrew using this command. Rectify any errors or warnings if there.
 
-{% highlight shell %}
+{% highlight shell linenos%}
 $ brew audit --strict <formula.rb>
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ Taps on the other hand are your own personal formula repository where formula(e)
 
 We can now install the application via homebrew. But before doing that, we need to tell homebrew where to find our application since it is not there in the `homebrew-core` repository. We can do this by the tap command. And installing our application afterwards.
 
-{% highlight shell %}
+{% highlight shell linenos%}
 $ brew tap danishprakash/homebrew-formulae
 $ brew install goodreadsh
 {% endhighlight %}
