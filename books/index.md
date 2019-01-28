@@ -7,59 +7,59 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2018
 
-- __[ The Ramayana](https://www.goodreads.com/book/show/129876.The_Ramayana)__
+- __[The Ramayana by R.K. Narayan](https://www.goodreads.com/book/show/129876.The_Ramayana)__
 <br>
 I'm not religious but I've been meaning to read this for a while. Since childhood, I've heard the Ramayana in one form or another, in parts and slots. I never had a chance to read it or watch the whole thing. R.K. Narayan does a really good job putting Kamban's poetic version into a prose. There's a lot to learn from this epic, such as the importance of being true to your own self, being disciplined and having principles.
 
-- __[Functional Programming in Python](https://www.goodreads.com/book/show/25977827-functional-programming-in-python)__
+- __[Functional Programming in Python by David Mertz](https://www.goodreads.com/book/show/25977827-functional-programming-in-python)__
 <br>
 I'm curious about functional programming. It's helps to look at things from a different perspective. Although, this is not a conventional book on functional programming as it talks about writing functional code in Python, which in itself, is a multi-paradigm language, but it does forces you to think functionally while writing Python code. It also goes on to talk about 3rd party libraries which allow you to write functional Python code.
 
-- __[Free as in Freedom 2.0](https://www.goodreads.com/book/show/11343000-free-as-in-freedom-2-0)__
+- __[Free as in Freedom 2.0 by Sam Williams](https://www.goodreads.com/book/show/11343000-free-as-in-freedom-2-0)__
 <br>
 Being a GNU/Linux enthusiast, I was always curious about the GNU project and this lead me to read this book. It is evident that the work done by the FSF has been greatly undermined and probably the only reason why many of us don't realize the contributions of the GNU project and the FSF community. Also, think twice before you refer to that distro on your system as "Linux".
 
-- __[Milk and Honey](https://www.goodreads.com/book/show/23513349-milk-and-honey)__
+- __[Milk and Honey by Rupi Kaur](https://www.goodreads.com/book/show/23513349-milk-and-honey)__
 <br>
 Very different from the stuff that I've been reading lately. The author gives a very crude account of her childhood with some disturbing yet not so uncommon details. Also, lots of vexed issues are discussed throughout the book and it's pretty evident why this book is all the talk amongst people lately.
 
-- __[Indira: The Life of Indira Nehru Gandhi \*](https://www.goodreads.com/book/show/290376.Indira)__
+- __[Indira: The Life of Indira Nehru Gandhi by Katherine Frank \*](https://www.goodreads.com/book/show/290376.Indira)__
 <br>
 One of the best book I've read on modern Indian history. Talks about one of the greatest leaders of our country, with some flaws. There are certain bits that you'll read twice before you even begin to understand what had happened. Must read.
 
-- __[The Linux Command Line](https://www.goodreads.com/book/show/11724436-the-linux-command-line)__
+- __[The Linux Command Line by William E. Shotts Jr.](https://www.goodreads.com/book/show/11724436-the-linux-command-line)__
 <br>
 Can't say much about this one, it's a great book about the linux command line. Covers a bunch of commands and gives you a subtle intro to shell scripting. Loved reading this. It's divided into three logical units, so you can pick any one of them and start right off. It's a long read but very informative nonetheless.
 
-- __[The Little Book of Hygge: The Danish Way to Live Well](https://www.goodreads.com/book/show/30045683-the-little-book-of-hygge)__
+- __[The Little Book of Hygge: The Danish Way to Live Well by Meik Wiking](https://www.goodreads.com/book/show/30045683-the-little-book-of-hygge)__
 <br>
 Not because it had my name on it, I read it because I'm interested in European culture and how they do things. It talks about Hygge, which is an important part of the Danish culture, there may not be a concrete definition of it but it refers to the feeling of being happy, cosy and comfortable with a close circle of friends with coffee in one hand while the thunder rumbles outside. Read it if you are interested in such things.
 
-- __[When Breath Becomes Air \*](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air)__
+- __[When Breath Becomes Air \* by Paul Kalanithi](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air)__
 <br>
 Amazing, thrilling yet saddening in so many ways. You can tell when the author picks up the pace because he knows if he doesn't then there might not be enough time to finish the book. Touches upon so many elements of the human life in such a way, it carries you through the whole journey. Must read.
 
-- __[Norwegian Wood](https://www.goodreads.com/book/show/11297.Norwegian_Wood)__
+- __[Norwegian Wood by Haruki Murakami ](https://www.goodreads.com/book/show/11297.Norwegian_Wood)__
 <br>
 Easy and relaxing, it gives you an insight about the japanese culture. All those talks about evening strolls and the japanese coffee places feels like an experience itself. It also talks about death, life and relationships. Overall, a good book and a fun read.
 
-- __[1984](https://www.goodreads.com/book/show/5470.1984)__
+- __[1984 by George Orwell ](https://www.goodreads.com/book/show/5470.1984)__
 <br>
 How fortunate we are to live in a society like this, this makes you think not once or twice, but thrice about the society and how it functions. Although, it's a dystopian vision, there are instance where you can't help but relate it to your current situation.
 
-- __[5/3/1: The Simplest and Most Effective Training System for Raw Strength](https://www.goodreads.com/book/show/6381430-5-3-1)__
+- __[5/3/1 by Jim Wendler](https://www.goodreads.com/book/show/6381430-5-3-1)__
 <br>
 A great routine. But it was better off as a blog post, although I can understand the benefits of having a book. Anyway, read it if lifting is your thing, I learnt a fair bit about lifting from this book.
 
-- __[The Subtle Art of Not Giving a F\*ck](https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck)__
+- __[The Subtle Art of Not Giving a F\*ck by Mark Manson](https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck)__
 <br>
 This book is basically the title being paraphrased repeatedly in different ways. Could have been a blogpost and done much better. I don't get the hype around this, it was average.
 
-- __[Hit Refresh](https://www.goodreads.com/book/show/30835567-hit-refresh)__
+- __[Hit Refresh by Satya Nadella](https://www.goodreads.com/book/show/30835567-hit-refresh)__
 <br>
 Some very important life lessons coupled with the transition of Microsoft from the old evil corp to the new community friendly organization, this was a delight to read. The part about Satya Nadella's childhood and his growth was particularly interesting. 
 
-- __[The Story of My Experiments With Truth \*](https://www.goodreads.com/book/show/112803.The_Story_of_My_Experiments_With_Truth)__
+- __[The Story of My Experiments With Truth \* by Mahatma Gandhi](https://www.goodreads.com/book/show/112803.The_Story_of_My_Experiments_With_Truth)__
 <br>
 Apart from the usual stuff about Gandhiji that we find almost everywhere, this book talks about Gandhiji as a person, a student, a family man and later a father figure of our nation. There are accounts of his peculiar diet, his preferred method of medication and therapy and his immense love for reading. Must read.
 
