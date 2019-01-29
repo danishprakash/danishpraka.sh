@@ -64,7 +64,7 @@
     <p><code class="highlighter-rouge">git fsck --lost-found</code>: It identifies all the dangling commits and writes them to the directory <code class="highlighter-rouge">.git/lost-found/commit</code> and to <code class="highlighter-rouge">stdout</code>. It may not be the best way to identify dangling commits since it just shows the commit hash and not the commit message.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">git reflog</code>: It keeps track of all the <code class="highlighter-rouge">refs</code>, which are references to commits, in your local directory. Hence the name <code class="highlighter-rouge">reflog</code>. It is highly unnlikely that your lost commit wouldn’t here. You can sift through the output to find your lost commit and then copy it’s hash.</p>
+    <p><code class="highlighter-rouge">git reflog</code>: It keeps track of all the <code class="highlighter-rouge">refs</code>, which are references to commits, in your local directory. Hence the name <code class="highlighter-rouge">reflog</code>. It is highly unlikely that you won’t find your lost commit here. You can sift through the output to find your lost commit and then copy it’s hash.</p>
   </li>
 </ol>
 
