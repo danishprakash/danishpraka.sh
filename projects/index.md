@@ -26,7 +26,7 @@ __Uncategorized__
 - [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall
 - [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection
 - [githubfs](https://github.com/danishprakash/githubfs): Read-only virtual file-system for Github using FUSE
-- [Vim Tricks](https://www.amazon.com/gp/product/B07JC7SDT1): Amazon Alexa skill for that helps you learn new vim tips and tricks
+- [Vim Tricks](https://www.amazon.com/gp/product/B07JC7SDT1): Amazon Alexa skill that helps you learn new vim tricks
 - [Chapelle Wisdom](https://www.amazon.com/Danish-Prakash-Chapelle-Wisdom/dp/B07B3YT38D): Amazon Alexa skill that helps uplift your mood
 
 <br>

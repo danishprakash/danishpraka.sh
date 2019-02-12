@@ -24,12 +24,12 @@ function changeText() {
 <div class="blog">
     <h1>archive</h1>
 	<hr>
-    <ul>
+    <ol>
         {% for post in site.posts %}
         <li>
-		<span>»&emsp;<a href="{{ post.url }}">{{ post.title }}</a><span class="date">&emsp;{{ post.date | date: '%b %y' }}
+            <a href="{{ post.url }}">{{ post.title }}</a><span class="date"> {{ post.date | date: '%b %y' }}
         </li>
         {% endfor %}
-    </ul>
+    </ol>
 </div>
 
