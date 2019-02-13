@@ -3,25 +3,17 @@ layout: post
 title: Projects
 ---
 
-I love building tools for the command line. Also, I'm paranoid about my workflow so you'll often find me fiddling with my [dotfiles](https://github.com/danishprakash/dotfiles). I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/danishprakash) including this website. These are some of the things I've worked on in the past:
+I love building tools for the command line. Also, I'm paranoid about my workflow so you'll often find me fiddling with my [dotfiles](https://github.com/danishprakash/dotfiles). I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/danishprakash) including this website. These are some of the things I've worked on in the past, loosely grouped by 3 categories, namely vim plugins, cli tools and others:
 
-<br>
-__Vim plugins__
 
 - [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager
 - [vim-githubinator](https://github.com/danishprakash/vim-githubinator): Quickly show selected text on Github
 - [vimport](https://github.com/danishprakash/vimport): Vim plugin to quickly import and drop modules
 
-<br>
-__CLI Tools__
-
 - [goodreadsh](https://github.com/danishprakash/goodreadsh): Command line interface for goodreads.com
 - [pip-name](): Check whether a package name is available on PyPi
 - [amizone-cli](https://github.com/danishprakash/amizone-cli): Command line interface for amizone.net
 - [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal
-
-<br>
-__Uncategorized__
 
 - [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall
 - [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection

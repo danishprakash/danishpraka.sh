@@ -86,26 +86,29 @@ We’ll be using one of my <a href="https://github.com/danishprakash/vimport">pl
 
 <p>1 Clone the plugin to the appropriate vim directory.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>git clone https://github.com/danishprakash/vimport.git ~/vim/plugins/<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git clone https://github.com/danishprakash/vimport.git ~/vim/plugins/
+</code></pre>
+</div>
 
 <p>2 Update the vim runtime path. The easiest way to do this is by appending the 
 plugin dir path to the runtimepath. And you can verify this by checking the value of the rtp variable.</p>
 
-<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="p">:</span><span class="k">set</span> rtp<span class="p">+=~</span><span class="sr">/.vim/</span>plugins/vimport
-<span class="p">:</span>echo &amp;rtp<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span><span class="k">set</span> rtp<span class="p">+=~</span><span class="sr">/.vim/</span>plugins/vimport
+<span class="p">:</span>echo &amp;rtp
+</code></pre>
+</div>
 
 <p>3 Finally, let’s source the plugin file.</p>
 
-<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="p">:</span>source <span class="p">~</span><span class="sr">/vim/</span>plugins<span class="sr">/vimport/</span>plugins/vimport<span class="p">.</span><span class="k">vim</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>source <span class="p">~</span><span class="sr">/vim/</span>plugins<span class="sr">/vimport/</span>plugins/vimport<span class="p">.</span><span class="k">vim</span>
+</code></pre>
+</div>
 
 <p>Now you should be able to run the plugin, try this command.</p>
 
-<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="p">:</span>Vimport requests<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-vim highlighter-rouge"><pre class="highlight"><code><span class="p">:</span>Vimport requests
+</code></pre>
+</div>
 
 <p>–</p>
 

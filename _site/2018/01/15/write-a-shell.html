@@ -66,21 +66,7 @@
 <p>This is the driving function of the loop. Let us see how things are implemented and how they work when the shell starts.
 First things first, a prompt lets the user know that the terminal is ready to accept commands from the user. A prompt can be heavily customized but for the sake of simplicity, we’ll set our prompt as a very basic yet popular <code class="highlighter-rouge">&gt;</code> symbol. Consider the code below.</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
    <span class="kt">char</span> <span class="o">*</span> <span class="n">line</span><span class="p">;</span>
    <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">args</span><span class="p">;</span>
    <span class="kt">int</span> <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
@@ -94,46 +80,15 @@ First things first, a prompt lets the user know that the terminal is ready to ac
       <span class="n">free</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
       <span class="n">free</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">status</span><span class="p">);</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>Now, let’s actually focus on the more important parts. We declare a char pointer and 2d char pointer, <code class="highlighter-rouge">line</code> and <code class="highlighter-rouge">args</code> respectively. The <code class="highlighter-rouge">line</code> char pointer will hold the command(string) entered by the user using the <code class="highlighter-rouge">read_line()</code> function which is explained below. The <code class="highlighter-rouge">status</code> variable stores the return value of functions invoked during command execution. It will determine the termination of the loop i.e If the user enters the <code class="highlighter-rouge">exit</code> command, the <code class="highlighter-rouge">exit</code> function will return <code class="highlighter-rouge">0</code> which will force the control to break out of the loop and the shell would terminate. The last two lines of the do-while loop basically frees the memory used by the two pointer variables using the <code class="highlighter-rouge">free()</code> function, freeing up memory explicitly is required in C and is a good practice.</p>
 
 <h1 id="reading-user-commands">Reading user commands</h1>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33</pre></td><td class="code"><pre><span class="kt">char</span> <span class="o">*</span> <span class="nf">read_line</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">char</span> <span class="o">*</span> <span class="nf">read_line</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">int</span> <span class="n">buffsize</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">position</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="kt">char</span> <span class="o">*</span> <span class="n">buffer</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span> <span class="o">*</span> <span class="n">buffsize</span><span class="p">);</span>
@@ -165,8 +120,9 @@ First things first, a prompt lets the user know that the terminal is ready to ac
       <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">}</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>Let’s see what’s happening here, first of all, we declare an int variable, <code class="highlighter-rouge">buffsize</code>, and initialized it to <code class="highlighter-rouge">1024</code> bytes. Next, a char pointer, <code class="highlighter-rouge">buffer</code> variable is allocated memory through malloc the size of <code class="highlighter-rouge">buffsize</code>.</p>
 
@@ -184,56 +140,20 @@ We will be using the <code class="highlighter-rouge">strtok()</code> function fo
 
 <p>For instance, consider this:</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8</pre></td><td class="code"><pre><span class="n">str1</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="s">"this is it!"</span><span class="p">,</span> <span class="s">" "</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="n">str1</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="s">"this is it!"</span><span class="p">,</span> <span class="s">" "</span><span class="p">);</span>
 <span class="c1">// str1 -&gt; "this"
 </span>
 <span class="n">str1</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">" "</span><span class="p">);</span>
 <span class="c1">//str1 = "is"
 </span>
 <span class="n">str1</span> <span class="o">=</span> <span class="n">strtok</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">" "</span><span class="p">);</span>
-<span class="o">//</span><span class="n">str1</span> <span class="o">=</span> <span class="s">"it!"</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="c1">//str1 = "it!"
+</span></code></pre>
+</div>
 
 <p>First call to the <code class="highlighter-rouge">strtok</code> function returns the first token and every subsequent call expects the input as <code class="highlighter-rouge">NULL</code> and starts from where it left off in the previous iteration. Now, the code for <code class="highlighter-rouge">split_line</code> should be easily understood.</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre></td><td class="code"><pre><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="nf">split_line</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="n">line</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="nf">split_line</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="n">line</span><span class="p">)</span> <span class="p">{</span>
   <span class="kt">int</span> <span class="n">buffsize</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">position</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">tokens</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">buffsize</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="p">));</span>
   <span class="kt">char</span> <span class="o">*</span> <span class="n">token</span><span class="p">;</span>
@@ -263,22 +183,21 @@ We will be using the <code class="highlighter-rouge">strtok()</code> function fo
   <span class="n">tokens</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
 
   <span class="k">return</span> <span class="n">tokens</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>After every iteration, we update the <code class="highlighter-rouge">tokens</code> variable by assigining the <code class="highlighter-rouge">token</code> in it’s respective <code class="highlighter-rouge">position</code>. And finally return the <code class="highlighter-rouge">tokens</code> variable.</p>
 
 <h1 id="exiting-the-shell">Exiting the shell</h1>
 <p>Since it is a simple program, a simple <code class="highlighter-rouge">return 0</code> statement would be enough for us to exit the program successfully. Let’s create a trivial function which returns 0.</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">dash_exit</span><span class="p">(</span><span class="kt">char</span> <span class="o">**</span><span class="n">args</span><span class="p">)</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">dash_exit</span><span class="p">(</span><span class="kt">char</span> <span class="o">**</span><span class="n">args</span><span class="p">)</span>
 <span class="p">{</span>
 	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>We’ll later on check if the user has entered <code class="highlighter-rouge">exit</code> and invoke this function appropriately.</p>
 
@@ -286,31 +205,7 @@ We will be using the <code class="highlighter-rouge">strtok()</code> function fo
 
 <p>After all the hard work above, the last step is rather trivial, thanks to the syscalls <code class="highlighter-rouge">execvp</code> <code class="highlighter-rouge">fork</code>.</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">dash_execute</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">dash_execute</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">pid_t</span> <span class="n">cpid</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">status</span><span class="p">;</span>
   
@@ -334,8 +229,9 @@ We will be using the <code class="highlighter-rouge">strtok()</code> function fo
   <span class="p">}</span>
   
   <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p><code class="highlighter-rouge">fork</code> allows us to create a new process by duplicating the current process, referring it to as the child process. The current process is thereby referred to as the parent process. The child process is a duplicate of the current(parent) process except for the process ID. When we invoke the <code class="highlighter-rouge">fork</code> system call, it returns the process ID of the child in the parent process. In the child process, the process ID is <code class="highlighter-rouge">0</code>. So, after invoking the <code class="highlighter-rouge">fork</code> call, we check the value returned by it to make sure we are in the child process or the <code class="highlighter-rouge">fork</code> syscall executed successfully.</p>
 
@@ -347,129 +243,7 @@ command that needs to be executed. It returns <code class="highlighter-rouge">-1
 <h1 id="everything-that-weve-done">Everything that we’ve done</h1>
 <p>Here’s the complete code for our basic shell. The code still has some on the things that aren’t explained in the article but they are crucial to the functioning of our shell for instance, color-coded errors and warnings.</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123</pre></td><td class="code"><pre><span class="cp">#include &lt;stdio.h&gt; 
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt; 
 #include &lt;string.h&gt; 
 #include &lt;stdlib.h&gt;
 </span>
@@ -591,8 +365,9 @@ command that needs to be executed. It returns <code class="highlighter-rouge">-1
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">loop</span><span class="p">();</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <hr />
 

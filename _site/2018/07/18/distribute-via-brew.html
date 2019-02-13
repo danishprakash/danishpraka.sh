@@ -67,21 +67,7 @@
 <h1 id="write-your-formula">Write your formula</h1>
 <p>Homebrew formulae are essentially ruby scripts which stores information about your application. It tells homebrew important information regarding the installation of your application like where and how your app is going to be installed. This is what a simple formula for an application written in bash would look like.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Goodreadsh</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Goodreadsh</span> <span class="o">&lt;</span> <span class="no">Formula</span>
 	<span class="n">desc</span> <span class="s2">"Command-line interface for Goodreads"</span>
 	<span class="n">homepage</span> <span class="s2">"https://github.com/danishprakash/goodreadsh"</span>
 	<span class="n">url</span> <span class="s2">"https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz"</span>
@@ -95,8 +81,9 @@
 	<span class="nb">test</span> <span class="k">do</span>
 		<span class="nb">system</span> <span class="s2">"</span><span class="si">#{</span><span class="n">bin</span><span class="si">}</span><span class="s2">/goodreads"</span>
 	<span class="k">end</span>
-<span class="k">end</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="k">end</span>
+</code></pre>
+</div>
 
 <p>Now, almost all of the fields here are pretty much self-explanatory but we’ll go through them quickly.</p>
 
@@ -111,20 +98,23 @@
 <p><br />
 You can use this template or you can generate a formula of your own. Homebrew provides a simple command for this. <code class="highlighter-rouge">brew create &lt;URL&gt;</code></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>brew create https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew create https://github.com/danishprakash/goodreadsh/archive/1.0.1.tar.gz
+</code></pre>
+</div>
 
 <p>The <code class="highlighter-rouge">URL</code> in question is the link to the tar archive of your application. I’m using the one created automatically by Github when you create a new release and/or tag. As soon as you execute this command, an editor will open up with the formula.</p>
 
 <p>You can check whether your formula is working or not by installing your application from specifying the formula.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>brew install --build-from-source &lt;formula.rb&gt;<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew install --build-from-source &lt;formula.rb&gt;
+</code></pre>
+</div>
 
 <p>If it works, good enough. Now make sure your formula abides by the guidelines defined by homebrew using this command. Rectify any errors or warnings if there.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>brew audit --strict &lt;formula.rb&gt;<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew audit --strict &lt;formula.rb&gt;
+</code></pre>
+</div>
 
 <h1 id="install--test">Install &amp; Test</h1>
 <p>Since this is a rather trivial application that we’re writing a formula for, the formula for this would also be a simple one. You can have multiple things defined in your formula depending upon what you expect it to do.</p>
@@ -140,10 +130,10 @@ You can use this template or you can generate a formula of your own. Homebrew pr
 
 <p>We can now install the application via homebrew. But before doing that, we need to tell homebrew where to find our application since it is not there in the <code class="highlighter-rouge">homebrew-core</code> repository. We can do this by the tap command. And installing our application afterwards.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="gp">$ </span>brew tap danishprakash/homebrew-formulae
-<span class="gp">$ </span>brew install goodreadsh<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brew tap danishprakash/homebrew-formulae
+<span class="gp">$ </span>brew install goodreadsh
+</code></pre>
+</div>
 
 <p>Another upside to having a designated formula repo (tap) of your own is the simple fact that you can simply add another formula in the future and have it installed in the same way. So this acts like a collection (repo?) of all your application’s formulae making it easier to maintain and update.</p>
 

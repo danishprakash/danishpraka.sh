@@ -58,16 +58,13 @@ So, I started looking for ways that would help me switch directories more easily
 <h1 id="function">Function</h1>
 <p>This is a simple bash function with <code class="highlighter-rouge">find</code> and <code class="highlighter-rouge">fzf</code>. Load this up in your <code class="highlighter-rouge">.zshrc</code>. Follow along to get a grip on how this actually works.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="k">function </span>quick_find <span class="o">()</span> <span class="o">{</span>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>quick_find <span class="o">()</span> <span class="o">{</span>
     <span class="nv">dir</span><span class="o">=</span><span class="k">$(</span>find ~/programming -type d -not -path <span class="s1">'*/\.*'</span> -maxdepth 1 | fzf<span class="k">)</span>
     <span class="nb">cd</span> <span class="nv">$dir</span>
     zle reset-prompt
-<span class="o">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="o">}</span>
+</code></pre>
+</div>
 
 <p>Let’s go over each and every element in the function defined above.</p>
 
@@ -84,10 +81,10 @@ So, I started looking for ways that would help me switch directories more easily
 <h1 id="creating-a-shortcut">Creating a shortcut</h1>
 <p>Now, we would like to have a handy key combination to open our switcher, how about <code class="highlighter-rouge">Ctrl-p</code>? We would want our function to fire up as soon as we type <code class="highlighter-rouge">Ctrl-p</code>, so a simple bindkey should do, right? Well, no, zsh doesn’t allow you to bind keys to a function, instead we would create a widget which maps to the function and finally bind that widget to the key combination. We can do that by creating a widget using the zsh line editor, <code class="highlighter-rouge">zle</code> and then we can specify our key combination mapped to this widget we just created.</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre>zle -N quick_find_widget quick_find
-bindkey <span class="s2">"^p"</span> quick_find_widget<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>zle -N quick_find_widget quick_find
+bindkey <span class="s2">"^p"</span> quick_find_widget
+</code></pre>
+</div>
 
 <p>That’s about it, simply put the <a href="#function">function</a> and these two lines in your <code class="highlighter-rouge">.zshrc</code> and you’re good to go.</p>
 
