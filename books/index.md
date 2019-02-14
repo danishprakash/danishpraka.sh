@@ -5,6 +5,12 @@ title: Books
 
 This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it. This was inspired by [rakhim's](https://rakhim.org/bookshelf/) much cooler bookshelf with all the book covers and authors. Anyway, here goes:
 
+# 2019 ---------
+
+__[Factfulness by Hans, Ola and Anna Rosling *](https://www.goodreads.com/book/show/34890015-factfulness)__
+<br>
+This book proves you wrong at multiple levels, it shows you how wrong you think of the world you are living in. Also, the fact that the world is not divided between "us and them" anymore and that the correct way to categorize nations is by income levels. It also teaches you how to look at data, numbers, facts and graphs altogether and how not to draw incorrect conclusions from them. I particularly loved the anecdotes the author used throughout the book to convey his thoughts. One interesting thing about this book is how Ola mentions the fact that his father spent the last few days of his life with the drafts of this book, it tells you the love of that man towards his work.
+
 # 2018 ---------
 
 __[The Ramayana by R.K. Narayan](https://www.goodreads.com/book/show/129876.The_Ramayana)__
