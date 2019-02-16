@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Vim macros and the magic of recursion</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:500,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Vim macros and the magic of recursion</h1>
+    <p class="post__date">February 16, 2019</p>
+    <div class="post__content"?>
+        <p>The other day, a friend of mine asked me for a list of Indian states and their capitals in JSON format. We looked around the internet but couldn’t find one. Finally, he copied a list from this page which was rendered as an HTML table and upon copying, it messed up. I quickly copied this list to a vim buffer to try something out.</p>
+
+<h1 id="vim-macros">Vim macros</h1>
+<p>Macros in vim are defined as recordings of commands which you save to a particular register. You can also think of them as functions in a way because they offer you to avoid doing repeatable tasks. Coming back to the list of states, it looked something like this:</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>Andra Pradesh
+	
+
+Hyderabad, Amaravati
+
+Arunachal Pradesh
+	
+
+Itangar
+
+Assam
+	
+
+Dispur
+
+Bihar
+	
+
+Patna
+
+Chhattisgarh
+	
+
+Raipur
+</code></pre>
+</div>
+
+<p>I’ve snipped the whole output of this for brevity but you get the idea. Essentially, what we have here is the name of the city, followed by two newlines and then the name of it’s capital, repeated for all of the 27 states. Nevermind the mess, let’s get to it.</p>
+
+<p>You alread know that a macro is a sequence of commands which you can execute again and again by specifying the register to which the command is spaced. So, all I need to do is come up with a sequence and then repeat it <code class="highlighter-rouge">n</code> times.</p>
+
+<p>Start recording the macro by hitting the <code class="highlighter-rouge">q</code>. For the first state, we can build a key value pair using what we have using the following sequence of commands, assuming you are on the first line of the file:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">0</code>: move cursor to first char</li>
+  <li><code class="highlighter-rouge">4J</code>: join the 3 lines below the current one</li>
+  <li><code class="highlighter-rouge">hi:Esc</code>: move cursor one position left and insert colon</li>
+  <li><code class="highlighter-rouge">I"Esc</code>: insert cursor before the first char on line</li>
+  <li><code class="highlighter-rouge">t:a"Esc</code>: insert quote before the colon char</li>
+  <li><code class="highlighter-rouge">wi"Esc</code>: insert quote on the beg of the next word</li>
+  <li><code class="highlighter-rouge">A",Esc</code>: insert quote and a comma to the end of line</li>
+  <li><code class="highlighter-rouge">j</code>: move cursor to the next line</li>
+</ol>
+
+<p>That might seem like a lot but it really is just a sequence of easy to understand vim commands. See the gif below to see these commands in action.</p>
+
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
