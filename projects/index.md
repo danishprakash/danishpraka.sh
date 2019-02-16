@@ -3,7 +3,7 @@ layout: post
 title: Projects
 ---
 
-I love building tools for the command line. Also, I'm paranoid about my workflow so you'll often find me fiddling with my [dotfiles](https://github.com/danishprakash/dotfiles). I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/danishprakash) including this website. These are some of the things I've worked on in the past, loosely grouped by 3 categories, namely vim plugins, cli tools and others:
+I love building tools for the command line. I use (n)vim for all things writing and tmux for managing sessions. All my code is hosted on [Github](https://github.com/danishprakash) including this website. These are some of the things I've worked on in the past, loosely grouped by 3 categories, namely vim plugins, cli tools and others:
 
 
 - [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager

@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
-    ffi (1.9.5)
+    ffi (1.11.1)
     jekyll (3.1.6)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -24,8 +24,8 @@ GEM
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
     rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (= 1.9.5)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -38,4 +38,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   1.16.0
+   2.0.2
