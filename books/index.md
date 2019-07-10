@@ -7,6 +7,11 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019 ---------
 
+__[Benjamin Franklin: An American Life by Walter Isaacson](https://www.goodreads.com/book/show/10883.Benjamin_Franklin)__
+<br>
+This was a very long read. Walter Isaacson provides insights and corrections at times in the book. It is a somewhat neutral view of one of the founding fathers of America. It talks about how America was built, the importance of industriousness, frugality and civic sense in a society and nation in general. There's also the quintessential underlying story of rags to riches but in a more serious context. I especially liked Franklin's habit of writing things down, having a schedule and a process for even the most mundane of things. If you don't intend to read the whole thing, I suggest you read up on Franklin's 12 virtues which he talks about in great detail in his autobiography. 
+
+
 __[Factfulness by Hans, Ola and Anna Rosling *](https://www.goodreads.com/book/show/34890015-factfulness)__
 <br>
 This book proves you wrong at multiple levels, it shows you how wrong you think of the world you are living in. Also, the fact that the world is not divided between "us and them" anymore and that the correct way to categorize nations is by income levels. It also teaches you how to look at data, numbers, facts and graphs altogether and how not to draw incorrect conclusions from them. I particularly loved the anecdotes the author used throughout the book to convey his thoughts. One interesting thing about this book is how Ola mentions the fact that his father spent the last few days of his life with the drafts of this book, it tells you the love of that man towards his work.
