@@ -7,6 +7,11 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019 ---------
 
+__[Food Rules: An Eater's Manual by Michael Pollan](https://www.goodreads.com/book/show/7015635-food-rules)__
+<br>
+A very short read. This book puts forth the fact that nutritional science is very young compared to other sciences and that we still don't have answers to questions arising from the effects a particular nutrient on our body. With that aside, there are a total of 64 simple and easy to remember rules that one should follow while eating. Some of these rules are based on science and some are based on what has been proven to be useful to us humans hitherto (नानी के नुस्खे). All in all a quick and goodread.
+
+
 __[Benjamin Franklin: An American Life by Walter Isaacson](https://www.goodreads.com/book/show/10883.Benjamin_Franklin)__
 <br>
 This was a very long read. Walter Isaacson provides insights and corrections at times in the book. It is a somewhat neutral view of one of the founding fathers of America. It talks about how America was built, the importance of industriousness, frugality and civic sense in a society and nation in general. There's also the quintessential underlying story of rags to riches but in a more serious context. I especially liked Franklin's habit of writing things down, having a schedule and a process for even the most mundane of things. If you don't intend to read the whole thing, I suggest you read up on Franklin's 12 virtues which he talks about in great detail in his autobiography. 
