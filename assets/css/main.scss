@@ -253,7 +253,7 @@ ul {
             // padding-right: 5px;
             font-size: 0.9em;
             background: #f2f2f2;
-            border-radius: 2px;
+            border-radius: 3px;
             font-family:  'IBM Plex Mono', monospace;
             font-weight: 400;
             overflow: hidden;
@@ -275,7 +275,7 @@ ul {
         .highlight {
             margin-bottom: 15px;
             border-radius: 3px;
-            padding: 10px;
+            padding: 15px;
             line-height: 1.25;
             font-weight: 300;
             overflow-x: scroll;
@@ -283,7 +283,7 @@ ul {
 
             inline code blocks
             code {
-                padding: 0px;
+                padding: 5px;
                 font-weight: 400;
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
@@ -292,6 +292,7 @@ ul {
             }
         }
         .codebreak {
+            padding: 5px;
             margin: 15px;
             border: 0;
             border-bottom: 1px dashed $color-fg;

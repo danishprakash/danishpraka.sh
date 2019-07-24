@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+        <title>Why you should learn a little Make</title>
+        
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="/assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:500,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="post">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101783497-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<a class="post__back" href="/">←</a>
+    <h1 class="post__title">Why you should learn a little Make</h1>
+    <p class="post__date">July 21, 2019</p>
+    <div class="post__content"?>
+        <p><code class="highlighter-rouge">make</code> is a simple utility which detects which part of a large project needs to be recompiled and executes user-defined commands to carry out compilation or other required actions. Think of a large C program which has a bunch of files. Now, you made changes to a single file and but you don’t want to compile all the other files in your tree. <code class="highlighter-rouge">make</code> helps avoid this and recompile only the edited parts of the code. <code class="highlighter-rouge">make</code> was written by Richard Stallman and Roland McGrath.</p>
+
+<h1 id="makefile">Makefile</h1>
+
+<p>For <code class="highlighter-rouge">make</code> to work, there has to be a <code class="highlighter-rouge">Makefile</code> in the top level of the project. A Makefile typically has the following structure:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>target: prerequisite
+    recipe
+</code></pre>
+</div>
+
+<ul>
+  <li>
+    <p><em>target</em> is generally a file but often times you would want to use a generalized action name as a target, we’ll talk about such targets in a while.</p>
+  </li>
+  <li>
+    <p><em>prerequisite</em> is a file or another target which acts as a dependency for the current target. A target can have multiple prerequisites. It is optional to have prerequisites.</p>
+  </li>
+  <li>
+    <p><em>recipe</em> is an action that make carries out when the target file has been modified and/or either of the prerequisites have been. It can be a single command or a collection of commands. These are usually shell commands but there’s also special syntax provided by make which you can use.</p>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">make</code> has a lot of features and your Makefile can get rather complex over time with lots of new syntax. What you have above is how targets are defined in a Makefile and it will remain more or less the same everywhere.</p>
+
+<h1 id="first-target">First target</h1>
+<p>Suppose you are working on a very trivial C program which has a source file and a header file, and your <code class="highlighter-rouge">Makefile</code> consists of the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>main.c: header.h
+    gcc main.c -o main
+</code></pre>
+</div>
+
+<p>Now when you run the following command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>make
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">make</code> will automatically determine whether the file <code class="highlighter-rouge">main.c</code> or any of it’s prerequisites, <code class="highlighter-rouge">header.h</code> has changed or not and if they have, it will carry out the recipe specified and build an executable <code class="highlighter-rouge">main</code>. If neither of the files have not changed, on the other hand, <code class="highlighter-rouge">make</code> won’t do anything.</p>
+
+<ul>
+  <li>targets and phony targets</li>
+  <li>variables and environment variables</li>
+  <li>preprocessors</li>
+  <li>conditional statements</li>
+  <li>recursive make targets</li>
+  <li>printing and not printing the commands</li>
+  <li>
+    <p>creating a help target for your Makefile</p>
+  </li>
+  <li>references and resources at the end</li>
+</ul>
+
+    </div>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
