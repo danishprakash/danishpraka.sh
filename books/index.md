@@ -7,6 +7,11 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019 ---------
 
+__["Surely You're Joking, Mr. Feynman!": Adventures of a Curious Character](https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman)__
+<br>
+This was not what I expected at all. I mean sure, It's a book about the life experiences of a nobel prize winner Physicist but Dr. Richard Feynman is much more than that. Apart from being really interested in Physics, he pursued various interests throughout his life. For instance, he learnt Portugese, he learned how to play drums and played at shows, learnt drawing and had his own art show and even played in a samba band and a bunch of other things. At the end, the author also talks about how science is being affected by the mindset of people who think less about the essence of it and rather the fame they hope to get out of it. One thing that I took away from this book was to put in efforts learning about things that truly interest you.
+
+
 __[Food Rules: An Eater's Manual by Michael Pollan](https://www.goodreads.com/book/show/7015635-food-rules)__
 <br>
 A very short read. This book puts forth the fact that nutritional science is very young compared to other sciences and that we still don't have answers to questions arising from the effects a particular nutrient on our body. With that aside, there are a total of 64 simple and easy to remember rules that one should follow while eating. Some of these rules are based on science and some are based on what has been proven to be useful to us humans hitherto (नानी के नुस्खे). All in all a quick and goodread.
