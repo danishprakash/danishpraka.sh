@@ -3,9 +3,13 @@ layout: post
 title: Books
 ---
 
-This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it. This was inspired by [rakhim's](https://rakhim.org/bookshelf/) much cooler bookshelf with all the book covers and authors. Anyway, here goes:
+This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it. This was inspired by [rakhim's](https://rakhim.org/bookshelf/) much fancier bookshelf. Anyway, here goes:
 
 # 2019 ---------
+
+__[Deep Work by Cal Newport](https://www.goodreads.com/book/show/25744928-deep-work)__
+<br>
+Cal Newport broadly puts forward two ground rules for a focused life, intense concentration and avoiding distractions. He mentions the positive effects of choosing "network tools" and the importance of deep work today. He also lays out strategies that have worked for professionals and academicians, including himself, which aim to help you do productive deep work and to get rid of distractions in this modern and connected lifestyle. Some of these strategies, such as alloting specific time for internet usage and scheduling your whole day and no shop talk after a specific time in the evening, are backed by examples and are worth trying.
 
 __["Surely You're Joking, Mr. Feynman!": Adventures of a Curious Character](https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman)__
 <br>
