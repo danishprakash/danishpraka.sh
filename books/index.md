@@ -7,6 +7,10 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019 ---------
 
+__[In Other Words by Jhumpa Lahiri](https://www.goodreads.com/book/show/25614298-in-other-words)__
+<br>
+Picked this up for two reasons, 1) It talks about the author's journey towards trying to master a new language which she fell in love with, and 2) She moves to Italy to delve into a new/foreign culture to be more close to it's language. It was a relatively short read but yet very insightful. The author shows both the good and the bad side of being a foreigner in a foreign land. She recounts her encounters, her struggle while settling in Italy. This books is originally written in Italian and the translator, Ann Goldstein, did a great job translating the subtle emotions and feelings the author tries to convey in her somewhat "childlike" hold of the Italian language.
+
 __[Deep Work by Cal Newport](https://www.goodreads.com/book/show/25744928-deep-work)__
 <br>
 Cal Newport broadly puts forward two ground rules for a focused life, intense concentration and avoiding distractions. He mentions the positive effects of choosing "network tools" and the importance of deep work today. He also lays out strategies that have worked for professionals and academicians, including himself, which aim to help you do productive deep work and to get rid of distractions in this modern and connected lifestyle. Some of these strategies, such as alloting specific time for internet usage and scheduling your whole day and no shop talk after a specific time in the evening, are backed by examples and are worth trying.
@@ -18,7 +22,7 @@ This was not what I expected at all. I mean sure, It's a book about the life exp
 
 __[Food Rules: An Eater's Manual by Michael Pollan](https://www.goodreads.com/book/show/7015635-food-rules)__
 <br>
-A very short read. This book puts forth the fact that nutritional science is very young compared to other sciences and that we still don't have answers to questions arising from the effects a particular nutrient on our body. With that aside, there are a total of 64 simple and easy to remember rules that one should follow while eating. Some of these rules are based on science and some are based on what has been proven to be useful to us humans hitherto (नानी के नुस्खे). All in all a quick and goodread.
+A very short read. This book puts forth the fact that nutritional science is very young compared to other sciences and that we still don't have answers to questions arising from the effects a particular nutrient on our body. With that aside, there are a total of 64 simple and easy to remember rules that one should follow while eating. Some of these rules are based on science and some are based on what has been proven to be useful to us humans hitherto (नुस्खे). All in all a quick and goodread.
 
 
 __[Benjamin Franklin: An American Life by Walter Isaacson](https://www.goodreads.com/book/show/10883.Benjamin_Franklin)__
