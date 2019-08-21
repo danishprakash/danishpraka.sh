@@ -7,17 +7,17 @@
 
 ::selection {
     color: #000000;
-    background-color: #FFFFB3;
+    background-color: #525252;
 }
 
 ::-moz-selection {
     color: #000000;
-    background-color: #FFFFB3;
+    background-color: #a6cee3;
 }
 
 body {
     color: $color-fg;
-    background: #ffffff;
+    background: #f6f6f6;
     font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
     // font-size: 85%;
     font-weight: 500;
@@ -68,7 +68,7 @@ ul {
 
 
 .wrapper {
-    max-width: 620px;
+    max-width: 550px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     overflow: hidden;
@@ -215,24 +215,26 @@ ul {
         ul {
             padding-top: -10px;
             font-size: 1em;
-            list-style: square;
+            list-style: disc;
             padding-bottom: 10px;
             line-height: 1.65em;
+            margin-left: 15px;
         }
         ol {
             font-size: 1em;
-            list-style: square;
+            list-style: disc;
             padding-bottom: 10px;
             line-height: 1.65em;
+            margin-left: 15px;
         }
         li {
             font-size: 1em;
-            list-style: square;
-            padding-bottom: 10px;
-            line-height: 1.65em;
-            margin: 0 0px 0px 0;
-            padding: 0px;
-            // padding-bottom: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 1.5em;
+            // margin: 0 0px 0px 0;
+            // padding: 0px;
+            // margin-left: 30px;
             @media screen and (max-width: $br) {
                 padding: 10px 0 10px 0;
             }
@@ -252,7 +254,7 @@ ul {
             // padding-left: 5px;
             // padding-right: 5px;
             font-size: 0.9em;
-            background: #f2f2f2;
+            background: #ebebeb;
             border-radius: 2px;
             font-family:  'IBM Plex Mono', monospace;
             font-weight: 400;
@@ -279,7 +281,7 @@ ul {
             line-height: 1.25;
             font-weight: 300;
             overflow-x: scroll;
-            background: #f2f2f2;
+            background: #ebebeb;
 
             inline code blocks
             code {
@@ -288,7 +290,7 @@ ul {
                 font-size: 1em;
                 font-family: 'IBM Plex Mono', monospace;
                 line-height: 1.25em;
-                background: #e8e8e8;
+                background: #ebebeb;
             }
         }
         .codebreak {

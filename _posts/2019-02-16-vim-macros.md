@@ -40,31 +40,31 @@ You alread know that a macro is a sequence of commands which you can execute aga
 
 Start recording the macro by hitting the `q`. For the first state, we can build a key value pair using what we have using the following sequence of commands, assuming you are on the first line of the file:
 
-0. `qq`: start recording the macro into register `q`
-1. `0`: move cursor to first char
-2. `4J`: join the 3 lines below the current one
-2. `hi:Esc`: move cursor one position left and insert colon
-4. `I"Esc`: insert quote before the first char on line
-5. `t:a"Esc`: insert quote before the colon char
-6. `wi"Esc`: insert quote on the beg of the next word
-7. `A",Esc`: insert quote and a comma to the end of line
-8. `jdd`: delete the next empty line and put the cursor on the next non-empty line
+- `qq`: start recording the macro into register `q`
+- `0`: move cursor to first char
+- `4J`: join the 3 lines below the current one
+- `hi:Esc`: move cursor one position left and insert colon
+- `I"Esc`: insert quote before the first char on line
+- `t:a"Esc`: insert quote before the colon char
+- `wi"Esc`: insert quote on the beg of the next word
+- `A",Esc`: insert quote and a comma to the end of line
+- `jdd`: delete the next empty line and put the cursor on the next non-empty line
 
 That might seem like a lot but it really is just a sequence of easy to understand Vim commands. You can hit `q` again to stop recording the macro. When you are done recording, you would have ended up on a new line, a new state. You can hit `@q` to replay the commands stored in the `q` register. It will instantly repeat the commands we just tried out. `@@` is a shortcut to run previously run macro.
 
 # Recursive Vim macros
 Now, you don't want to go about hitting `@q` or `@@` 26 times. You can make use of recursive Vim macros to get away with repetitive tasks which involve macros. We will make a small addition to the list of commands that we ran previously. All we need to do is to repeat the macro when we are on a new line and as already discussed previously, we can use `@<register>` to replay the macro stored in <register>. So, our new set of commands would be 
 
-0. `qq`: start recording the macro into register `q`
-1. `0`: move cursor to first char
-2. `4J`: join the 3 lines below the current one
-2. `hi:Esc`: move cursor one position left and insert colon
-4. `I"Esc`: insert quote before the first char on line
-5. `t:a"Esc`: insert quote before the colon char
-6. `wi"Esc`: insert quote on the beg of the next word
-7. `A",Esc`: insert quote and a comma to the end of line
-8. `jdd`: delete the next empty line and put the cursor on the next non-empty line
-9. `@q`: To replay this macro at the beginning of a new line assuming the fact that we have used `q` to save our macro.
+- `qq`: start recording the macro into register `q`
+- `0`: move cursor to first char
+- `4J`: join the 3 lines below the current one
+- `hi:Esc`: move cursor one position left and insert colon
+- `I"Esc`: insert quote before the first char on line
+- `t:a"Esc`: insert quote before the colon char
+- `wi"Esc`: insert quote on the beg of the next word
+- `A",Esc`: insert quote and a comma to the end of line
+- `jdd`: delete the next empty line and put the cursor on the next non-empty line
+- `@q`: To replay this macro at the beginning of a new line assuming the fact that we have used `q` to save our macro.
 
 Once you enter this somewhat arcane list of normal commands while being on the first non-empty line of the buffer, you will see that Vim "magically" arranges everything for you and now you have this almost JSON-like file which you can read using Python and whatnot. I said almost JSON-like because it is missing the opening and closing parenthesis at the end and beginning of the file which you can just go ahead and put in manually. Your buffer should now look something like this:
 

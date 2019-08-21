@@ -26,8 +26,8 @@
 
         <link rel="icon" href="/assets/img/favicon.png">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:500,600,700" rel="stylesheet"> 
+
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     </head>
 
@@ -88,7 +88,7 @@ Raipur
 
 <p>Start recording the macro by hitting the <code class="highlighter-rouge">q</code>. For the first state, we can build a key value pair using what we have using the following sequence of commands, assuming you are on the first line of the file:</p>
 
-<ol>
+<ul>
   <li><code class="highlighter-rouge">qq</code>: start recording the macro into register <code class="highlighter-rouge">q</code></li>
   <li><code class="highlighter-rouge">0</code>: move cursor to first char</li>
   <li><code class="highlighter-rouge">4J</code>: join the 3 lines below the current one</li>
@@ -98,14 +98,14 @@ Raipur
   <li><code class="highlighter-rouge">wi"Esc</code>: insert quote on the beg of the next word</li>
   <li><code class="highlighter-rouge">A",Esc</code>: insert quote and a comma to the end of line</li>
   <li><code class="highlighter-rouge">jdd</code>: delete the next empty line and put the cursor on the next non-empty line</li>
-</ol>
+</ul>
 
 <p>That might seem like a lot but it really is just a sequence of easy to understand Vim commands. You can hit <code class="highlighter-rouge">q</code> again to stop recording the macro. When you are done recording, you would have ended up on a new line, a new state. You can hit <code class="highlighter-rouge">@q</code> to replay the commands stored in the <code class="highlighter-rouge">q</code> register. It will instantly repeat the commands we just tried out. <code class="highlighter-rouge">@@</code> is a shortcut to run previously run macro.</p>
 
 <h1 id="recursive-vim-macros">Recursive Vim macros</h1>
 <p>Now, you don’t want to go about hitting <code class="highlighter-rouge">@q</code> or <code class="highlighter-rouge">@@</code> 26 times. You can make use of recursive Vim macros to get away with repetitive tasks which involve macros. We will make a small addition to the list of commands that we ran previously. All we need to do is to repeat the macro when we are on a new line and as already discussed previously, we can use <code class="highlighter-rouge">@&lt;register&gt;</code> to replay the macro stored in <register>. So, our new set of commands would be</register></p>
 
-<ol>
+<ul>
   <li><code class="highlighter-rouge">qq</code>: start recording the macro into register <code class="highlighter-rouge">q</code></li>
   <li><code class="highlighter-rouge">0</code>: move cursor to first char</li>
   <li><code class="highlighter-rouge">4J</code>: join the 3 lines below the current one</li>
@@ -116,7 +116,7 @@ Raipur
   <li><code class="highlighter-rouge">A",Esc</code>: insert quote and a comma to the end of line</li>
   <li><code class="highlighter-rouge">jdd</code>: delete the next empty line and put the cursor on the next non-empty line</li>
   <li><code class="highlighter-rouge">@q</code>: To replay this macro at the beginning of a new line assuming the fact that we have used <code class="highlighter-rouge">q</code> to save our macro.</li>
-</ol>
+</ul>
 
 <p>Once you enter this somewhat arcane list of normal commands while being on the first non-empty line of the buffer, you will see that Vim “magically” arranges everything for you and now you have this almost JSON-like file which you can read using Python and whatnot. I said almost JSON-like because it is missing the opening and closing parenthesis at the end and beginning of the file which you can just go ahead and put in manually. Your buffer should now look something like this:</p>
 
