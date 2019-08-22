@@ -7,6 +7,10 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019
 
+0. __[The Year of Living Danishly by Helen Russell](https://www.goodreads.com/book/show/23282062-the-year-of-living-danishly)__
+<br>
+I'm interested in reading about different cultures and I picked this up for the same reason. The author has a very witty way of writing, very humorous. In terms of the content, the author talks about her life in Denmark for a year studying the traits of the Danish people trying to figure out why Danes are the happiest people on the planet. Early on in the book, it was conveyed that while people in the US fight for more money, the Scandinavians fight for more time, for themselves and for their families, which I think is the perfect analogy.
+
 0. __[In Other Words by Jhumpa Lahiri](https://www.goodreads.com/book/show/25614298-in-other-words)__
 <br>
 Picked this up for two reasons, 1) It talks about the author's journey towards trying to master a new language which she fell in love with, and 2) She moves to Italy to delve into a new/foreign culture to be more close to it's language. It was a relatively short read but yet very insightful. The author shows both the good and the bad side of being a foreigner in a foreign land. She recounts her encounters, her struggle while settling in Italy. This books is originally written in Italian and the translator, Ann Goldstein, did a great job translating the subtle emotions and feelings the author tries to convey in her somewhat "childlike" hold of the Italian language.
