@@ -18,9 +18,9 @@
 body {
     color: $color-fg;
     background: #f6f6f6;
-    font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
+    font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
     // font-size: 85%;
-    font-weight: 500;
+    font-weight: 300;
     word-wrap: break-word;
 }
 
@@ -35,17 +35,17 @@ a {
 
     &:hover {
         // background-color: #000000;
-        border-bottom: solid #505050;
+        // border-bottom: 1px solid #505050;
         // color: #ffffff;
-        transition: .1s;
+        // transition: .15s;
         // padding: 1px;
 
     }
 }
 
 h1 {
-    font-weight: 500;
-    font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
+    font-weight: 300;
+    font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
     margin-bottom: 5px;
 }
 
@@ -89,8 +89,8 @@ ul {
     }
     h1 {
         font-size: 1.25em;
-        font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
-		font-weight: 700;
+        font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
+		font-weight: 500;
         padding-bottom: 5px;
 		text-align: left;
     }
@@ -112,9 +112,9 @@ ul {
 	}
 
 	p {
-        font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
+        font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 300;
         line-height: 1.45em;
         margin-bottom: 15px;
         // text-align: justify;
@@ -138,7 +138,7 @@ ul {
 
     h1 {
         font-size: 1.15em;
-        font-weight: 500;
+        font-weight: 300;
         margin-bottom: 5px;
     }
 	li {
@@ -172,8 +172,8 @@ ul {
 	}
     &__title {
         font-size: 2.2em;
-        font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
-        font-weight: 600;
+        font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
+        font-weight: 500;
         margin-bottom: 10px;
         margin-top: 25px;
 		text-align: left;
@@ -183,30 +183,30 @@ ul {
         font-size: 0.85em;
 		text-align: left;
         color: #878585;
-        font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
-        font-weight: 500;
+        font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
+        font-weight: 400;
         margin-bottom: 5px;
     }
     &__content {
         padding-top: 30px;
         h1 {
             font-size: 1.2em;
-            font-weight: 700;
-            margin-top: 35px;
+            font-weight: 500;
+            margin-top: 10px;
             margin-bottom: 10px;
-            font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
+            font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
         }
         p {
-            font-family:  'Noto Serif KR', 'IBM Plex Sans', serif;
+            font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
             font-size: 1em;
-            font-weight: 500;
+            font-weight: 300;
             line-height: 1.45em;
             padding-bottom: 15px;
             // text-align: justify;
         }
         strong {
-            font-weight: 700;
-            font-family: 'Noto Serif KR', 'IBM Plex Sans', serif;
+            font-weight: 500;
+            font-family: 'Noto Serif JP', 'IBM Plex Sans', serif;
             padding-bottom: 10px;
         }
         em {
@@ -229,15 +229,15 @@ ul {
         }
         li {
             font-size: 1em;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
             line-height: 1.5em;
             // margin: 0 0px 0px 0;
             // padding: 0px;
             // margin-left: 30px;
-            @media screen and (max-width: $br) {
-                padding: 10px 0 10px 0;
-            }
+            // @media screen and (max-width: $br) {
+            //     padding: 10px 0 10px 0;
+            // }
         }
         img {
             padding-top: 10px;
@@ -310,7 +310,7 @@ ul {
 
     &__title {
         font-size: 1.5em;
-        font-weight: 700;
+        font-weight: 500;
         margin-top: 20px;
         margin-bottom: 10px;
     }
