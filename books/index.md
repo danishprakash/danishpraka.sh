@@ -7,6 +7,14 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019
 
+0. __[36 Views of Mount Fuji by Cathy N. Davidson](https://www.goodreads.com/book/show/473464.36_Views_of_Mount_Fuji)__
+<br>
+Another book on Japanese culture, this talks much more about the Japanese life and it's people than the one by Donald Keene. There was an equal divide in this book wherein one part talks about what's so good about Japan that so many people admire it. And the second part talks about the lesser known darker secrets of the Japanese society which is at times, tough to read but nevertheless, insightful. A very good book and a very laid back style of writing. A good read.
+
+0. __[Why We Sleep by Matthew Walker](https://www.goodreads.com/book/show/34466963-why-we-sleep)__
+<br>
+One of the best book I've read until now. Simply talks about how sleep is one of the most important part of life. Everything stated in this book is backed by research, there's also reasoning to many of the phenomenon which many thought were inexplicable. Do yourself a favor and read this gem of a book, can't stress enough.
+
 0. __[Chronicles of My Life by Donald Keene](https://www.goodreads.com/book/show/2530094)__
 <br>
 Another book on foreign culture, Japanese this time. The author by accident gets interested in Asian culture, first Chinese and then Japanese. He tries very hard to go to Japan and when he eventually does, he's struck by the sheer simplicity of the Japanese people. He talks worryingly about the westernization of Japan, how the native Japanese art, music and literature is getting lost among the youngsters. He's visibly worried about too much cars on the streets, too much fashion in the Japanese societies, the diminishing interest of people/tourists in Japanese temples. A good read.
