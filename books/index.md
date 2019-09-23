@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Books
+date: 20th September 2019
 ---
 
 This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it. This was inspired by [rakhim's](https://rakhim.org/bookshelf/) much fancier bookshelf. Anyway, here goes:

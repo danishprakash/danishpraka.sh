@@ -83,7 +83,6 @@ ul {
     display: inline;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 80px;
     @media screen and (max-width: $br) {
         display: block;
     }
@@ -171,7 +170,7 @@ ul {
 		text-align: left;
 	}
     &__title {
-        font-size: 2.2em;
+        font-size: 2em;
         font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
         font-weight: 500;
         margin-bottom: 10px;
@@ -188,7 +187,7 @@ ul {
         margin-bottom: 5px;
     }
     &__content {
-        padding-top: 30px;
+        padding-top: 20px;
         h1 {
             font-size: 1.2em;
             font-weight: 500;
@@ -201,7 +200,7 @@ ul {
             font-size: 1em;
             font-weight: 300;
             line-height: 1.45em;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
             // text-align: justify;
         }
         strong {
