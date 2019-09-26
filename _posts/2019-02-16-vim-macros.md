@@ -8,7 +8,7 @@ The other day, a friend of mine asked me for a list of Indian states and their c
 Macros in Vim are defined as recordings of commands which you can save to a particular register and replay later on. You can also think of them as functions in a way because they offer you to avoid doing repeatable tasks. Coming back to the list of states, it looked something like this:
 
 ```text
-Andra Pradesh
+Andhra Pradesh
 	
 
 Hyderabad, Amaravati
@@ -102,6 +102,7 @@ Once you enter this somewhat arcane list of normal commands while being on the f
     "West Bengal": "Kolkata",
 }
 ```
+<br>
 
 # Other uses
 This might have been trivial for some of you reading but if you think about the underlying idea this article proposes, you can put Vim macros to a variety of uses. I've used Vim macros often times, in fact whenever I see myself repeating normal mode commands, I try to do the same using recursive macros. Some of my recent uses involving Vim macros are:

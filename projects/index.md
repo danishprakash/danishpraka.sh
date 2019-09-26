@@ -23,7 +23,7 @@ Here's some of the stuff I've written:
 <br>
 
 # Dotfiles
-I'm "passionate" about my setup, It has equal amounts of aesthetics and efficiency. I'd love to talk more about it but this is not the right place, maybe a post of it's own someday. Until then, here's the [repo](https://github.com/danishprakash/dotfiles).
+I'm "passionate" about my setup, It has equal amounts of aesthetics and efficiency. I'd love to talk more about it but this is not the right place, maybe a post of it's own someday. Until then, check out the [repo](https://github.com/danishprakash/dotfiles).
 
 ```text
 editor      : nvim
@@ -35,7 +35,7 @@ shell       : zsh
 os          : macOS
 ```
 
-<img src="https://imgur.com/SehOajN.png" height="350" width="550">
+<img src="https://imgur.com/SehOajN.png" height="350" width="500">
 
 That's about it, feel free to [reach out](https://danishprakash.github.io).
 
