@@ -8,6 +8,10 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019
 
+0. __[I Will Teach You to Be Rich by Ramit Sethi](https://www.goodreads.com/book/show/40591670-i-will-teach-you-to-be-rich)__
+<br>
+ Apart from the trite title, the book has a lot of good information on handling your personal finances, especially for someone who doesn’t know anything about the topic. The book expects you to follow through with 6 actionable items. The author can be very casual at times but in general, ends up giving you a sensible piece of information on which you can act upon. There are also anecdotal evidences of the mentioned plan along with the required facts and figures. A good read.
+
 0. __[36 Views of Mount Fuji by Cathy N. Davidson](https://www.goodreads.com/book/show/473464.36_Views_of_Mount_Fuji)__
 <br>
 Another book on Japanese culture, this talks much more about the Japanese life and it's people than the one by Donald Keene. There was an equal divide in this book wherein one part talks about what's so good about Japan that so many people admire it. And the second part talks about the lesser known darker secrets of the Japanese society which is at times, tough to read but nevertheless, insightful. A very good book and a very laid back style of writing. A good read.
