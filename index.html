@@ -25,9 +25,15 @@ function changeText() {
     <h1>archive</h1>
 	<hr>
     <ol>
+        <li>
+        </li>
         {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a><span class="date"> {{ post.date | date: '%b %y' }}
+            {% if post.type == "external" %}
+                <a href="{{ post.link }}" target="_blank">{{ post.title }}</a><span class="date"> {{ post.date | date: '%b %y' }}
+            {% else %}
+                <a href="{{ post.url }}">{{ post.title }}</a><span class="date"> {{ post.date | date: '%b %y' }}
+            {% endif %}
         </li>
         {% endfor %}
     </ol>
