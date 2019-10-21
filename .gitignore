@@ -3,5 +3,4 @@
 .sass-cache/*
 _site
 _includes
-_sass
 install.sh
