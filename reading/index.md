@@ -8,6 +8,18 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019
 
+0. __[Seven Brief Lessons on Physics by Carlo Rovelli](https://www.goodreads.com/book/show/25734172-seven-brief-lessons-on-physics)__
+<br>
+The author briefly explains the most important theories in Physics that have led us to our understanding of the world and beyond. He explains such concepts as black holes, generaly relativity, quantum mechanics, the cosmos talking about the history, the current status and it's future. He also questions our understanding of time. At the end, the author talks about humans, how we perceive the world around us, how and why we devis the theories we devise, the relation between myth and science, and the demise of humans, our species. A really good read.
+
+0. __[Siddhartha by Hermann Hesse](https://www.goodreads.com/book/show/52036.Siddhartha)__
+<br>
+Heard a lot about this book before finally deciding to read it. It makes you stop and think about things that you can relate to directly. The pleasures in life, how we succumb to them and finally there's the realization, but it's too late by then, which is one of the underlying lessons of this book, i.e the importance of time. A good book.
+
+0. __[Ikigai: The Japanese Secret to a Long and Happy Life by Hector Garcia](https://www.goodreads.com/book/show/33357041-ikigai)__
+<br>
+This book is about the Japanese concept known as Ikigai which roughly translates to "the happiness of always being busy". It follows with a visit by the authors to the island of Okinawa which has the highest life expectancy in the world and discovering the secrets of the people living there, It talks about how the Japanese people don't stop working and moving regardless of their age. The authors visit various people in the town of Ogimi, Okinawa who are above 100 years of age to talk about some of their habits. These include examples such as eating until you are 80% full, practicing mindfullness, the Okinawan diet, doing yoga, taichi and drinking green tea. A good read.
+
 0. __[I Will Teach You to Be Rich by Ramit Sethi](https://www.goodreads.com/book/show/40591670-i-will-teach-you-to-be-rich)__
 <br>
  Apart from the trite title, the book has a lot of good information on handling your personal finances, especially for someone who doesn’t know anything about the topic. The book expects you to follow through with 6 actionable items. The author can be very casual at times but in general, ends up giving you a sensible piece of information on which you can act upon. There are also anecdotal evidences of the mentioned plan along with the required facts and figures. A good read.
