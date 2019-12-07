@@ -50,7 +50,7 @@ a {
 h1 {
     font-weight: 400;
     font-family:  'Noto Serif JP', 'IBM Plex Sans', serif;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 p {

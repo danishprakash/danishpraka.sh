@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Reading
-date: 20th September 2019
 ---
 
 This is sort of a virtual bookshelf where I keep a record of books I've read with a small review. I don't talk about what the book is about in-depth here, I have linked them to Goodreads for that, but rather what I think of it.
@@ -20,7 +19,7 @@ The author briefly explains the most important theories in Physics that have led
 <br>
 Heard a lot about this book before finally deciding to read it. It makes you stop and think about things that you can relate to directly. The pleasures in life, how we succumb to them and finally there's the realization, but it's too late by then, which is one of the underlying lessons of this book, i.e the importance of time. A good book.
 
-0. <a name="hector-garcia">__[Ikigai: The Japanese Secret to a Long and Happy Life by Hector Garcia](https://www.goodreads.com/book/show/33357041-ikigai)__
+0. <a name="hector-garcia">__[Ikigai by Hector Garcia](https://www.goodreads.com/book/show/33357041-ikigai)__
 <br>
 This book is about the Japanese concept known as Ikigai which roughly translates to "the happiness of always being busy". It follows with a visit by the authors to the island of Okinawa which has the highest life expectancy in the world and discovering the secrets of the people living there, It talks about how the Japanese people don't stop working and moving regardless of their age. The authors visit various people in the town of Ogimi, Okinawa who are above 100 years of age to talk about some of their habits. These include examples such as eating until you are 80% full, practicing mindfullness, the Okinawan diet, doing yoga, taichi and drinking green tea. A good read.
 
@@ -52,7 +51,7 @@ Picked this up for two reasons, 1) It talks about the author's journey towards t
 <br>
 Cal Newport broadly puts forward two ground rules for a focused life, intense concentration and avoiding distractions. He mentions the positive effects of choosing "network tools" and the importance of deep work today. He also lays out strategies that have worked for professionals and academicians, including himself, which aim to help you do productive deep work and to get rid of distractions in this modern and connected lifestyle. Some of these strategies, such as alloting specific time for internet usage and scheduling your whole day and no shop talk after a specific time in the evening, are backed by examples and are worth trying.
 
-0. <a name="richard-feynman">__["Surely You're Joking, Mr. Feynman!": Adventures of a Curious Character](https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman)__
+0. <a name="richard-feynman">__["Surely You're Joking, Mr. Feynman!" by Richard Feynman](https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman)__
 <br>
 This was not what I expected at all. I mean sure, It's a book about the life experiences of a nobel prize winner Physicist but Dr. Richard Feynman is much more than that. Apart from being really interested in Physics, he pursued various interests throughout his life. For instance, he learnt Portugese, he learned how to play drums and played at shows, learnt drawing and had his own art show and even played in a samba band and a bunch of other things. At the end, the author also talks about how science is being affected by the mindset of people who think less about the essence of it and rather the fame they hope to get out of it. One thing that I took away from this book was to put in efforts learning about things that truly interest you.
 
