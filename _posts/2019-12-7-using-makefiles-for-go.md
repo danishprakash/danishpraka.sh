@@ -215,7 +215,7 @@ run:
 	go run -race main.go
 
 .PHONY: clean
-## clean: runs go clean and removes binary, profiler out
+## clean: cleans the binary
 clean:
     @echo "Cleaning"
     @rm -rf ${APP}
@@ -262,7 +262,6 @@ GO11MODULES=on
 APP?=application
 REGISTRY?=gcr.io/images
 COMMIT_SHA=$(shell git rev-parse --short HEAD)
-UNCOMMITED_CHANGES=$(shell git diff-index --quiet HEAD --; echo $$?)
 
 
 
@@ -278,7 +277,7 @@ run:
 	go run -race main.go
 
 .PHONY: clean
-## clean: runs go clean and removes binary, profiler out
+## clean: cleans the binary
 clean:
     @echo "Cleaning"
     @rm -rf ${APP}
