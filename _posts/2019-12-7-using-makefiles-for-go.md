@@ -3,15 +3,18 @@ layout: post
 title: Using Makefile(s) for Go
 ---
 
-We've been using `make` as a build tool for one of our project at HackerRank which is written in Go and it has been working out fairly well. In this post, I'll point out a few features and intricacies of GNU Make we've used which eventually improved the overall productivity of members in our team.
+
+<span class="note">UPDATE: Upon receiving suggestions from readers via Email, [Hacker News](https://news.ycombinator.com/item?id=21735176) and [Reddit](https://www.reddit.com/r/golang/comments/e7t2be/using_makefiles_for_go/), I've updated the article with improvements and fixes. Subsequently a word of thanks to the readers for the suggestions.</span>
+
+We've been using `make` as a build tool for one of our projects at HackerRank which is written in Go and it has been working out fairly well. In this post, I'll point out a few features and intricacies of GNU Make we've used which eventually improved the overall productivity of members of our team.
 
 # Introduction
-`make` is a simple utility which detects which part of a large project needs to be recompiled and executes user-defined commands to carry out compilation or other required actions. It's also widely used a build tool wherein you specify a set of commands to be run which you inherently used to write on the command-line repeatedly. The latter is what the rest of this post is about.
+`make` is a simple utility which detects which part of a large project needs to be recompiled and executes user-defined commands to carry out compilation or other required actions. It's also widely used as a build tool wherein you specify a set of commands to be run which you inherently used to write on the command-line, often times repeatedly. The latter is what the rest of this post is about.
 
-For the purpose of this post, we'll assume we are working on a Go project, `stringifier` and will be writing a Makefile for the same which is also named `Makefile`.
+For the purposes of this post, we'll assume we're working on a Go project, `stringifier` and will be writing a Makefile for the same which is also named `Makefile`.
 
 # Build and Run
-These are two actions that go programmers use pretty frequently, so let's add these targets to our Makefile:
+These are two actions that Go programmers use quite frequently, so let's add these targets to our Makefile:
 
 ```make
 build:
@@ -20,7 +23,7 @@ build:
 run:
 	go run -race main.go
 ```
-I added the `-race` flag to the run command because it detects race conditions in your go code when you run it which is an otherwise unpleasent exercise.
+I added the `-race` flag to the run command because it detects race conditions in your Go code when you run it which is an otherwise unpleasent exercise.
 
 # Cleaning and DRYing
 After building the binary and running the application just fine, let's make sure we are cleaning the binaries before proceeding with anything else. Our updated Makefile should look something like this:
@@ -33,7 +36,7 @@ run:
 	go run -race main.go
 
 clean:
-	rm -rf stringifier
+	go clean
 ```
 There are two things we can improve upon here, first, we are explicitly reusing our application name, it's natural that our application name will be used in a myriad of places throughout our Makefile, we should reuse that. Second, we need to run the `clean` rule before we go ahead and `build` our application every time, let's fix these:
 
@@ -48,14 +51,17 @@ run:
 	go run -race main.go
 
 clean:
-	rm -rf ${APP}
+	go clean
 ```
-Looks much cleaner, doesn't it? You can define Makefile variables at the top and make will automatically expands them when you invoke the `make` command.
+
+__UPDATE__: This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.
+
+Looks much cleaner, doesn't it? You can define Makefile variables at the top and make will automatically expand them when you invoke the `make` command.
 
 # PHONY targets
 By design, make executes the rule if one of the prerequisites or the target file has been changed. But since we are are not relying on the ability of make to detect file changes, we are putting ourselves in a potential pit. 
 
-Imagine that there's a file in our project directory named `build`, again this is a hypothetical situation. In this case, when you run `make build`, make will check for changes to the file `build` and it's prerequisites which there are none and hence won't execute the recipe which is not what we want. We might end up using the existing binary for our use, which is misleading and a road to a lot of confusion down the road.
+Imagine that there's a file in our project directory named `build`, again this is a hypothetical situation. In this case, when you run `make build`, make will check for changes to the file `build` and its prerequisites which there are none and hence won't execute the recipe which is not what we want. We might end up using the existing binary for our use, which is misleading and a road to a lot of confusion down the road.
 
 To avoid this problem, you can specify the target in question to be "phony" by specifying it as a prerequisite to the special target `.PHONY`:
 
@@ -73,7 +79,7 @@ run:
 
 .PHONY: clean
 clean:
-	rm -rf ${APP}
+	go clean
 ```
 
 Now that you've specified all the above targets as phony, make will run the recipes inside of the rules every time you invoke any of the phony targets. You can also specify all the targets you want to specify as phony at once like so:
@@ -126,7 +132,7 @@ run:
 
 .PHONY: clean
 clean:
-	rm -rf ${APP}
+	go clean
 
 .PHONY: build-tokenizer
 build-tokenizer:
@@ -142,7 +148,7 @@ Now, you have the following rules defined for the docker commands:
 
 ```make
 .PHONY: docker-build
-docker-push: build
+docker-build: build
 	docker build -t stringifier .
 	docker tag stringifier stringifier:tag
 
@@ -159,7 +165,7 @@ REGISTRY?=gcr.io/images
 COMMIT_SHA=$(shell git rev-parse --short HEAD)
 
 .PHONY: docker-build
-docker-push: build
+docker-build: build
 	docker build -t ${APP} .
 	docker tag ${APP} ${APP}:${COMMIT_SHA}
 
@@ -218,7 +224,7 @@ run:
 ## clean: cleans the binary
 clean:
     @echo "Cleaning"
-    @rm -rf ${APP}
+    @go clean
 
 .PHONY: setup
 ## setup: setup go modules
@@ -253,13 +259,13 @@ Usage:
 Well, that looks quite helpful. It will most certainly come in handy for a lot of people and even for you at times.
 
 # Conclusion
-Make is a simple yet a highly configurable tool. In this post, you ran through a host of configurations and features offerred by make to write an effective and productive Makefile for your go application.
+Make is a simple yet a highly configurable tool. In this post, you ran through a host of configurations and features offerred by make to write an effective and productive Makefile for your Go application.
 
 Here's the complete Makefile after adding a few trivial rules and variables for completeness's sake:
 
 ```make
 GO11MODULES=on
-APP?=application
+APP?=stringifier
 REGISTRY?=gcr.io/images
 COMMIT_SHA=$(shell git rev-parse --short HEAD)
 
@@ -280,7 +286,7 @@ run:
 ## clean: cleans the binary
 clean:
     @echo "Cleaning"
-    @rm -rf ${APP}
+    @go clean
 
 .PHONY: test
 ## test: runs go test with default values
@@ -308,7 +314,7 @@ endif
 
 .PHONY: docker-build
 ## docker-build: builds the stringifier docker image to registry
-docker-push: build
+docker-build: build
 	docker build -t ${APP}:${COMMIT_SHA} .
 
 .PHONY: docker-push
