@@ -7,6 +7,14 @@ This is sort of a virtual bookshelf where I keep a record of books I've read wit
 
 # 2019
 
+0. <a name="hans-heleffe"></a>__[84, Charing Cross Road by Helene Hanff](https://www.goodreads.com/book/show/953718)__
+<br>
+A collection of letters between a struggling writer in the US and a book dealer in London. The correspondence starts off very formal but soon after, it evolves into a friendship that is cherished by parties on either sides. It also gives the reader an account of life in London in the post-war era and also the immense love for reading in some people. A delightful short read.
+
+0. <a name="marie-kondo"></a>__[The Life-Changing Magic of Tidying Up by Marie Kondō](https://www.goodreads.com/book/show/22318578)__
+<br>
+Honestly, way too repetitive and boring at times, too much hype around it. Sure, I learnt a thing or two but disagreed with most of what it said. Most of the suggestions seemed very bizarre and not practical at all.
+
 0. <a name="michelle-obama"></a>__[Becoming by Michelle Obama \*](https://www.goodreads.com/book/show/38746485-becoming)__
 <br>
 Michelle Obama talks about the struggles you have to face for being a minority and how she and Barack, both, overcame the obstacles to be successfull in life. Despite what we know about the Obama family, the book talks about growing up in an african-american neighborhood with a family that pushed for good education and a practical yet meaningful approach to life. A must read.

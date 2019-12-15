@@ -264,7 +264,7 @@ Make is a simple yet a highly configurable tool. In this post, you ran through a
 Here's the complete Makefile after adding a few trivial rules and variables for completeness's sake:
 
 ```make
-GO11MODULES=on
+GO111MODULES=on
 APP?=stringifier
 REGISTRY?=gcr.io/images
 COMMIT_SHA=$(shell git rev-parse --short HEAD)
