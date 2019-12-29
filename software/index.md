@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Projects
-date: 22nd September 2019
+title: Software
 ---
 
 Here's some of the stuff I've written:
@@ -18,26 +17,5 @@ Here's some of the stuff I've written:
 - [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection
 - [vimport](https://github.com/danishprakash/vimport): Vim plugin to import and drop modules
 - [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal
-- [Vim Tricks](https://www.amazon.com/gp/product/B07JC7SDT1): Amazon Alexa skill that helps you learn new vim tricks
-- [Chapelle Wisdom](https://www.amazon.com/Danish-Prakash-Chapelle-Wisdom/dp/B07B3YT38D): Amazon Alexa skill that uplift your mood
-
-<br>
-
-# Dotfiles
-I'm "passionate" about my setup, It has equal amounts of aesthetics and efficiency. I'd love to talk more about it but this is not the right place, maybe a post of it's own someday. Until then, check out the [repo](https://github.com/danishprakash/dotfiles).
-
-```text
-editor      : nvim
-colorscheme : vim-yami
-terminal    : iTerm2
-font        : Fira Mono
-mux         : tmux
-shell       : zsh
-os          : macOS
-```
-
-<img src="https://imgur.com/SehOajN.png" height="350" width="500">
 
 That's about it, feel free to [reach out](https://danishprakash.github.io).
-
----

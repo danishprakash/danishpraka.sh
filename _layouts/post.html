@@ -5,8 +5,15 @@ layout: default
 <div class="post">
     {% include analytics.html %}
 	<a class="post__back" href="/">←</a>
-    <h1 class="post__title">{{ page.title }}</h1>
-    <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+
+	{% if page.title %}
+		<h1 class="post__title">{{ page.title }}</h1>
+	{% endif %}
+
+	{% if page.date %}
+		<p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+	{% endif %}
+
     <div class="post__content"?>
         {{ content }}
     </div>
