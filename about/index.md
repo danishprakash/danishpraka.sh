@@ -1,9 +1,12 @@
 ---
 layout: post
+title: About
 ---
 
-# About
-I'm an Engineer at HackerRank where I mostly spend my time writing and maintaing backend services written in Golang. Before this, I interned at SocialCops where I also worked on developing tooling for internal use mostly in Python.
+I'm an Engineer at HackerRank where I mostly spend my time writing and maintaining backend services written in Golang. Before this, I interned at SocialCops where I also worked on developing tooling for internal use mostly in Python.
+
+[LinkedIn](https://linkedin.com/in/danishprakash), [Github](https://github.com/danishprakash), [Instagram](https://instagram.com/danishprakash)
+
 
 # Colophon
 A lot of people message me asking about the theme of this website and what I used to built it. It's your typical static website with quite some time spent fiddling with the design to get it to where it is right now. You can find the source for this website on [Github](https://github.com/danishprakash/danishprakash.github.io).
@@ -22,4 +25,6 @@ shell       : zsh
 os          : macOS
 ```
 
-That's about it, feel free to [reach out](https://danishprakash.github.io).
+<br>
+
+---
