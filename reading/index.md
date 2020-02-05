@@ -7,6 +7,10 @@ This is where I keep tracks of the books I've read with a few lines on what I th
 
 # 2020
 
+<a name="cant-hurt-me"></a>__[Can't Hurt Me by David Goggins](https://www.goodreads.com/book/show/41721428-can-t-hurt-me)__
+<br>
+A very inspiring personal account of an individual with a harsh childhood resulting in little to no self-confidence in himself which eventually led him to a life many despise yet live today, a life with no virtue and no goals. David Goggins turned his whole life around with sheer determination. He mentions a goal in every chapter which will help the reader to pursue his/her goal in life. But apart from these goals what really stood out were the incidents of his struggle, failures and eventual success.
+
 <a name="e-jaiwant-paul"></a>__[The Story Of Tea by E. Jaiwant Paul](https://www.goodreads.com/book/show/4436947-the-story-of-tea)__
 <br>
 A beautiful, short and interesting read on tea. Being a big fan of tea especially the lighter themed ones, this book presents you with quite a bit of trivia, both historical and modern, on tea. It talks about the history of tea since it's accidental inception, to the modern day tea industry.
