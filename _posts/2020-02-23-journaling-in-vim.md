@@ -136,7 +136,7 @@ This is purely subjective, you may or may not decide to read this but I decided 
 
 I don't use syntax highlighting, I've come to realize that It's much easier to focus for me without the colors and text formatting involved. I made a [monochrome theme](https://github.com/danishprakash/vim-yami) just to help me with the transition from a lot of colors to none and shortly after, I disabled syntax highlighting altogether. Aside from that, here's how my setup looks once I enter the `journal` command in the respective directory:
 
-<img src="./../../../assets/img/posts/journaling-in-vim-preview.png" width="500px"/>
+<img src="./../../../assets/img/posts/journaling-in-vim-preview.png" width="550px"/>
 
 # Conclusion
 This is just a way to remove a little resistance from the process of daily journaling by automating some of the parts in a way that all that is required from you is just the writing part which is how it should be. But again, this varies widely from person to person but I'm sure there's something or the other you can pickup from this post. There are bound to be errors/mistakes in the article or a way to better the process, if that's the case, reach out!

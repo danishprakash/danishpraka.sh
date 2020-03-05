@@ -2,13 +2,14 @@
 ---
 
 @import url(bw.css);
+@import url('https://rsms.me/inter/inter.css');
 @import "reset";
 @import "config";
 
 .site-title {
     font-size: 1em;
     padding-bottom: 8px;
-    font-family: 'IBM Plex Sans', cursive;
+    font-family: 'Inter', cursive;
     text-align: left
 }
 
@@ -20,7 +21,7 @@
 body {
     color: #303030;
     background: #fffef7;
-    font-family:  'IBM Plex Sans', sans-serif;
+    font-family:  'Inter', sans-serif;
     // font-size: 85%;
     font-weight: 300;
     word-wrap: break-word;
@@ -51,7 +52,7 @@ a {
 
 h1 {
     font-weight: 400;
-    font-family:  'IBM Plex Sans', sans-serif;
+    font-family:  'Inter', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -74,7 +75,7 @@ ul {
 
 
 .wrapper {
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     overflow: hidden;
@@ -94,7 +95,7 @@ ul {
     }
     h1 {
         font-size: 1.25em;
-        font-family:  'IBM Plex Sans', sans-serif;
+        font-family:  'Inter', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
 		text-align: left;
@@ -137,7 +138,7 @@ i {
 	}
 
     p {
-        font-family:  'IBM Plex Sans', sans-serif;
+        font-family:  'Inter', sans-serif;
         font-size: 1em;
         font-weight: 300;
         line-height: 1.65em;
@@ -201,17 +202,17 @@ i {
 
     &__title {
         font-size: 2em;
-        font-family:  'IBM Plex Sans', sans-serif;
-        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
         margin-bottom: 10px;
 		text-align: left;
-        line-height: 1.2em; 
+        line-height: 1.1em; 
     }
     &__date {
         font-size: 0.75em;
 		text-align: left;
         color: #878585;
-        font-family:  'IBM Plex Sans', sans-serif;
+        font-family:  'Inter', sans-serif;
         font-weight: 300;
         margin-bottom: 20px;
     }
@@ -224,25 +225,25 @@ i {
 
         h1 {
             font-size: 1.2em;
-            font-weight: 400;
+            font-weight: 600;
             margin-top: 10px;
-            margin-bottom: 10px;
-            font-family:  'IBM Plex Sans', sans-serif;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
         }
 
         p {
-            font-family:  'IBM Plex Sans', sans-serif;
-            font-size: 1em;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.05em;
 
             font-weight: 300;
-            line-height: 1.65em;
+            line-height: 1.5em;
             padding-bottom: 15px;
             word-wrap: break-word;
 			color: #303030;
         }
         strong {
             font-weight: 400;
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             padding-bottom: 10px;
         }
         em {
@@ -251,7 +252,7 @@ i {
         ul {
             padding-top: -10px;
             font-size: 1em;
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.65em;
@@ -296,14 +297,32 @@ i {
             padding: 3px;
             padding-left: 5px;
             padding-right: 5px;
-            font-size: 0.90em;
+            font-size: 0.85em;
             background: #efeee8;
+            word-wrap: break-word;
             border-radius: 2px;
             font-family:  'IBM Plex Mono', monospace;
             font-weight: 400;
 			color: #606060;
             overflow: hidden;
             margin-bottom: 10px;
+        }
+
+        // syntax-highlighted code blocks
+        .highlight {
+            border-radius: 3px;
+            padding: 10px;
+            line-height: 1.25;
+            font-weight: 400;
+            overflow-x: scroll;
+            background: #efeee8;
+
+            font-size: 1em;
+            background: #efeee8;
+            border-radius: 2px;
+            font-family:  'IBM Plex Mono', monospace;
+            font-weight: 400;
+			color: #606060;
         }
 
         .lineno { 
@@ -319,17 +338,6 @@ i {
              user-select: none;
          }
 
-        // syntax-highlighted code blocks
-        .highlight {
-            border-radius: 3px;
-            padding: 10px;
-            line-height: 1.25;
-            font-weight: 400;
-            overflow-x: scroll;
-            background: #efeee8;
-            font-size: 1em;
-
-        }
         .codebreak {
             margin: 15px;
             border: 0;
