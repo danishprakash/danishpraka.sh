@@ -2,14 +2,14 @@
 ---
 
 @import url(bw.css);
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://rsms.me/verdana/verdana.css');
 @import "reset";
 @import "config";
 
 .site-title {
     font-size: 1em;
     padding-bottom: 8px;
-    font-family: 'Inter', cursive;
+    font-family: 'verdana', cursive;
     text-align: left
 }
 
@@ -20,8 +20,8 @@
 
 body {
     color: #303030;
-    background: #fffef7;
-    font-family:  'Inter', sans-serif;
+    background: #ffffff;
+    font-family:  'verdana', sans-serif;
     // font-size: 85%;
     font-weight: 300;
     word-wrap: break-word;
@@ -32,8 +32,9 @@ hr {
 }
 
 a {
-    color: $color-fg;
-    border-bottom: 1px dotted #B9B9B9;
+    // color: $color-fg;
+    // border-bottom: 1px dotted #B9B9B9;
+    text-decoration: underline;
     // padding: 1px;
 
     &:visited {
@@ -52,7 +53,7 @@ a {
 
 h1 {
     font-weight: 400;
-    font-family:  'Inter', sans-serif;
+    font-family:  'verdana', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -78,6 +79,8 @@ ul {
     max-width: 550px;
     margin: auto;
     padding: 60px 30px 60px 30px;
+    // margin-left: 10px;
+    // margin-top: 5px;
     overflow: hidden;
     @media screen and (max-width: $br) {
         padding: 20px;
@@ -95,7 +98,7 @@ ul {
     }
     h1 {
         font-size: 1.25em;
-        font-family:  'Inter', sans-serif;
+        font-family:  'verdana', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
 		text-align: left;
@@ -138,10 +141,10 @@ i {
 	}
 
     p {
-        font-family:  'Inter', sans-serif;
-        font-size: 1em;
+        font-family:  'verdana', sans-serif;
+        font-size: 0.95em;
         font-weight: 300;
-        line-height: 1.65em;
+        line-height: 1.5em;
         margin-bottom: 5px;
         // text-align: justify;
     }
@@ -152,7 +155,7 @@ i {
 .portfolio {
     padding-bottom: 30px;
     h1 {
-        font-size: 1.1em;
+        font-size: 1em;
         margin-bottom: 5px;
     }
 }
@@ -164,20 +167,22 @@ i {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 300;
         margin-bottom: 5px;
     }
 	li {
-        font-size: 1em;
+        font-size: 0.95em;
         margin: 0 1.5px 1.5px 0;
         padding-right: 0px;
         list-style: none;
-        line-height: 1.65em;
+        line-height: 1.5em;
 		.date{
-			// float:right;
-            font-size: 0.75em;
-            color: #c0c0c0;
+			float: inline-start;
+            padding-right: 10px;
+            text-decoration: underline;
+            font-size: 0.95em;
+            color: #616161;
             text-transform: lowercase;
 		}
 
@@ -196,13 +201,13 @@ i {
 	&__back {
 		display: in-line;
 		text-align: left;
-		display: ruby-text; // don't ask me why!
+		display: block;
         margin-bottom: 25px; 
 	}
 
     &__title {
-        font-size: 2em;
-        font-family: 'Inter', sans-serif;
+        font-size: 2.2em;
+        font-family: 'verdana', sans-serif;
         font-weight: 700;
         margin-bottom: 10px;
 		text-align: left;
@@ -211,8 +216,8 @@ i {
     &__date {
         font-size: 0.75em;
 		text-align: left;
-        color: #878585;
-        font-family:  'Inter', sans-serif;
+        color: #616161;
+        font-family:  'verdana', sans-serif;
         font-weight: 300;
         margin-bottom: 20px;
     }
@@ -224,16 +229,16 @@ i {
         }
 
         h1 {
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: 600;
             margin-top: 10px;
             margin-bottom: 8px;
-            font-family: 'Inter', sans-serif;
+            font-family: 'verdana', sans-serif;
         }
 
         p {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.05em;
+            font-family: 'verdana', sans-serif;
+            font-size: 1em;
 
             font-weight: 300;
             line-height: 1.5em;
@@ -242,8 +247,7 @@ i {
 			color: #303030;
         }
         strong {
-            font-weight: 400;
-            font-family: 'Inter', sans-serif;
+            font-family: 'verdana', sans-serif;
             padding-bottom: 10px;
         }
         em {
@@ -251,11 +255,11 @@ i {
         }
         ul {
             padding-top: -10px;
-            font-size: 1em;
-            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            font-family: 'verdana', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
-            line-height: 1.65em;
+            line-height: 1.3em;
             margin-left: 15px;
         }
         ol {
@@ -295,34 +299,30 @@ i {
         // inline code blocks
         .highlighter-rouge {
             padding: 3px;
-            padding-left: 5px;
-            padding-right: 5px;
-            font-size: 0.85em;
-            background: #efeee8;
+            font-size: 1.2em;
+            background: #f0f0f0;
+
             word-wrap: break-word;
             border-radius: 2px;
-            font-family:  'IBM Plex Mono', monospace;
+            font-family:  monospace;
             font-weight: 400;
-			color: #606060;
+			color: #000000;
             overflow: hidden;
             margin-bottom: 10px;
         }
 
         // syntax-highlighted code blocks
         .highlight {
-            border-radius: 3px;
             padding: 10px;
             line-height: 1.25;
             font-weight: 400;
             overflow-x: scroll;
-            background: #efeee8;
+            background: #f0f0f0;
 
             font-size: 1em;
-            background: #efeee8;
-            border-radius: 2px;
-            font-family:  'IBM Plex Mono', monospace;
+            font-family:  monospace;
             font-weight: 400;
-			color: #606060;
+			color: #000000;
         }
 
         .lineno { 

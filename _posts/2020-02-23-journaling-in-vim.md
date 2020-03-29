@@ -111,7 +111,7 @@ function! JournalMode()
 endfunction
 ```
 
-We get the filename minus the extension, prepend a hash to that so that it formats as a markdown header and set that to the topmost line of our buffer. We then move on to the next line and then enter focus/zen mode provided by the [`junegunn/goyo`](https://github.com/junegunn/goyo.vim) plugin. Let's also add this to our journal augroup so that it does it's job at the right time:
+We get the filename minus the extension, prepend a hash to that so that it formats as a markdown header and set that to the topmost line of our buffer. We then move on to the next line and then enter focus/zen mode provided by the [junegunn/goyo](https://github.com/junegunn/goyo.vim) plugin. Let's also add this to our journal augroup so that it does it's job at the right time:
 
 ```vimscript
 " workflow for daily journal
