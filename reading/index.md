@@ -7,6 +7,18 @@ This is where I keep tracks of the books I've read with a few lines on what I th
 
 # 2020
 
+<a name="cant-hurt-me"></a>__[The Case Against Sugar by Gary Taubes](https://www.goodreads.com/book/show/29874881-the-case-against-sugar)__
+<br>
+We've all read how Sugar, processed in particular, is bad for health. I was in the same boat for quite a while but I didn't know why this was the case. This books goes back, way back into the advent of sugar in our diets. It then traces it's path while comparing the glaring increase in chronic diseases. It's quite frightening what all Sugar is capable of doing to us and at the same time, and it's quite surprising, the reason why it's one of the most widely used substance in almost all the processed foods, is how corporations work and lobby for their interests.
+
+<a name="henepola-gunaratana"></a>__[Mindfulness in Plain English by Henepola Gunaratana](https://www.goodreads.com/book/show/64369.Mindfulness_in_Plain_English)__
+<br>
+I've tried meditation on and off in the past 2 years but never got around to fully understanding what the fuss is all about and in order to get a more clear understanding, I picked this book up on recommendation from a friend. This books is a thorough practical guide to mindfulness, it talks about it's origins and specifically discusses "Vipassana" meditation. It also helps as a how-to guide if you're just starting with meditation. The author has a pretty good writing style. Recommended.
+
+<a name="william-b-irvine"></a>__[A Guide to the Good Life by William B Irvine](https://www.goodreads.com/book/show/5617966-a-guide-to-the-good-life)__
+<br>
+Gentle introduction to modern Stoicism. The author mentions various strategies, practices and ideas that you can take home with and implement in your daily lives. It also clears up a lot of misunderstanding around the Stoic philosophy of life. A good read on the topic.
+
 <a name="cant-hurt-me"></a>__[Can't Hurt Me by David Goggins](https://www.goodreads.com/book/show/41721428-can-t-hurt-me)__
 <br>
 A very inspiring personal account of an individual with a harsh childhood resulting in little to no self-confidence in himself which eventually led him to a life many despise yet live today, a life with no virtue and no goals. David Goggins turned his whole life around with sheer determination. He mentions a goal in every chapter which will help the reader to pursue his/her goal in life. But apart from these goals what really stood out were the incidents of his struggle, failures and eventual success.

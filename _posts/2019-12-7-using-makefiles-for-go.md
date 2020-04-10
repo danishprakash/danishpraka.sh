@@ -54,7 +54,7 @@ clean:
 	go clean
 ```
 
-__UPDATE__: This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.
+<span class="note">UPDATE: This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.</span>
 
 Looks much cleaner, doesn't it? You can define Makefile variables at the top and make will automatically expand them when you invoke the `make` command.
 

@@ -3,7 +3,9 @@ layout: post
 title: Journaling in Vim
 ---
 
-I (try to) journal daily but I'm not a fan of using pen and paper although they are supposed to be better at this task. There are two reasons for this, first, digital note taking is easier to organize and get back to and second, at some point in time, I'd like to do a textual analysis on my journalling data (r/dataisbeautiful).
+<span class="note">UPDATE: This post has been updated with some really good suggestions from people over at [r/vim](https://www.reddit.com/r/vim/comments/f8a3jf/journaling_in_vim/).</span>
+
+I journal daily(not anymore) but I'm not a fan of using pen and paper although they are supposed to be better at this task. There are two reasons for this, first, digital note taking is easier to organize and get back to and second, at some point in time, I'd like to do a textual analysis on my journalling data (r/dataisbeautiful).
 
 In order to make the process as painless as possible, I've created a setup for journalling using Vim which has been working really good for me lately. I'd walk you through my setup in this post.
 
@@ -21,7 +23,7 @@ A template in Vim is a simple `.skeleton` file which can be used to populate buf
 #!/usr/bin/env bash
 ```
 
-You can create your own templates and place them in a directory, I prefer the `.config/nvim` directory itself just so that all the configuration files remain together. I have kept my journal template very simple with the following contents:
+You can create your own templates and place them in a directory, I prefer the `~/.config/nvim/` directory itself just so that all the configuration files remain together. I have kept my journal template very simple with the following contents:
 
 ```text
 
@@ -67,13 +69,13 @@ augroup end
 
 That looks much more readable, we will add subsequent autocmds to this augroup.
 
-# Autocomplete
-Another important piece here is the autocompletion source. For instance, a month into your journaling journey, you will be repeating or referencing a lot of words whether that's names of people, places or some technical jargon related to work. In order to minimize the effort and keystrokes required to repeat such words, we can make use of vim's autocompletion feature which allows us to select custom sources. We can set a custom completion source by setting an appropriate value for the `complete` option:
+# Completion
+Another important piece here is the completion source. For instance, a month into your journaling journey, you will be repeating or referencing a lot of words whether that's names of people, places or some technical jargon related to work. In order to minimize the effort and keystrokes required to repeat such words, we can make use of vim's completion feature which allows us to select custom sources. We can set a custom completion source by setting an appropriate value for the `complete` option:
 
 ```vimscript
-autocmd VimEnter */journal/**   set complete=k/Users/danish/journal/**/*
+autocmd VimEnter */journal/**   setlocal complete=k/Users/danish/journal/**/*
 ```
-The interesting thing to note in the above command is the `set complete=...` command being triggered upon opening a new/existing file which matches the glob pattern specified. The `k` char before the file path tells vim to scan and source words for completion from the path that is specified. I urge you to read more about this on the [help document](http://vimdoc.sourceforge.net/htmldoc/options.html#'complete'), there are a bunch of potentially other useful flags for this option. 
+The interesting thing to note in the above command is the `setlocal complete=...` command being triggered upon opening a new/existing file which matches the glob pattern specified. The `k` char before the file path tells vim to scan and source words for completion from the path that is specified local to the buffer matching the pattern and event. I urge you to read more about this on the [help document](http://vimdoc.sourceforge.net/htmldoc/options.html#'complete'), there are a bunch of potentially other useful flags for this option. 
 
 Note: In order to get Vim to scan the files recursively, this [answer](https://stackoverflow.com/questions/12094708/include-a-directory-recursively-for-vim-autocompletion) pointed me to the right globbing pattern to use.
 

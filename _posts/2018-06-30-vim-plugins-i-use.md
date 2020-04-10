@@ -3,6 +3,10 @@ layout: post
 title: Vim plugins I use
 ---
 
+
+<span class="note">Head to the discussion over at [Hacker News](https://news.ycombinator.com/item?id=17430546), there's quite a lot of good advice there.</span>
+
+
 I'm an advocate of using vanilla vim or neovim. But there are times wherein you feel the need to install plugins, after working on vim for the past couple of months religiously, I've come across certain plugins that I feel help me in my dev workflow. Although there are some plugins that I've mentioned in this article whose functionality can easily be added by configuring my .vimrc but I think if a plugin helps you save time that'd be rather spent configuring the setup, you're better off using the plugin.
 
 This post should not be seen as one of those *"Must have plugins for vim"* but rather as a post describing the plugins I use and why I use them, and how they help me with my developer workflow. Using or not using these plugins is something for you to decide. 
@@ -46,10 +50,6 @@ This plugin helps you quickly import and drop python packages and/or modules tha
 
 # Updates 
 I'll keep this list updated with new plugins that I install or remove plugins from the list above if I find a good enough alternate for it within vim itself or another plugin which might offer better features. 
-
---
-
-*Head over to the discussion over at [Hacker News](https://news.ycombinator.com/item?id=17430546), there's quite a lot of good advice there.*
 
 
 ---
