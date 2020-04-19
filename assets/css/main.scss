@@ -76,7 +76,7 @@ ul {
 
 
 .wrapper {
-    max-width: 550px;
+    max-width: 570px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     // margin-left: 10px;
@@ -236,6 +236,15 @@ i {
             font-family: 'PT Serif', serif;
         }
 
+        h2 {
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 4px;
+            font-family: 'PT Serif', serif;
+        }
+
+
         p {
             font-family: 'verdana', sans-serif;
             font-size: 12pt;
@@ -305,6 +314,11 @@ i {
             font-weight: 400;
             overflow: hidden;
             margin-bottom: 10px;
+        }
+
+        sup {
+            vertical-align: super;
+            font-size: 8pt;
         }
 
         // syntax-highlighted code blocks

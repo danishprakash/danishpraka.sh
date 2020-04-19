@@ -7,6 +7,10 @@ This is where I keep tracks of the books I've read with a few lines on what I th
 
 # 2020
 
+<a name="fredrik-backman"></a>__[A Man Called Ove by Fredrik Backman](https://www.goodreads.com/book/show/18774964)__
+<br>
+Non-fiction after so long. This was a pleasant read to be honest. It's about a quirky, not-so-social old man set in Sweden. It's humorous a lot of times and turns to such subjects as life, loneliness and death. A good read if you're into non-fiction.
+
 <a name="cant-hurt-me"></a>__[The Case Against Sugar by Gary Taubes](https://www.goodreads.com/book/show/29874881-the-case-against-sugar)__
 <br>
 We've all read how Sugar, processed in particular, is bad for health. I was in the same boat for quite a while but I didn't know why this was the case. This books goes back, way back into the advent of sugar in our diets. It then traces it's path while comparing the glaring increase in chronic diseases. It's quite frightening what all Sugar is capable of doing to us and at the same time, and it's quite surprising, the reason why it's one of the most widely used substance in almost all the processed foods, is how corporations work and lobby for their interests.

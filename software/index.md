@@ -5,6 +5,7 @@ title: Software
 
 Here's some of the stuff I've written:
 
+- [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim.
 - [vim-docker](https://github.com/danishprakash/vim-docker): Docker development plugin for Vim
 - [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager
 - [vim-githubinator](https://github.com/danishprakash/vim-githubinator): Show selected text in Vim on Github
