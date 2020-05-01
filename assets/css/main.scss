@@ -6,21 +6,42 @@
 @import "reset";
 @import "config";
 
-.site-title {
-    font-size: 1em;
-    padding-bottom: 8px;
-    font-family: 'verdana', cursive;
-    text-align: left
+.nav {
+    font-size: 12pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.top-nav {
-    font-size: 1em;
-    padding-bottom: 16px;
+.nav .site-title {
+    font-family: 'Verdana', sans-serif;
+    text-align: left;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    flex: -1;
+    max-width: 300px;
+    align-items: center;
+    li {
+        padding: 0px;
+    }
+}
+
+.nav ul li:not(:last-child):after {
+  content: '/';
+  position: relative;
+  padding: 5px;
+  color: #000;
 }
 
 body {
     color: #303030;
-    background: #eeeeee;
+    background: #ffffff;
     font-family:  'verdana', sans-serif;
     // font-size: 85%;
     font-weight: 300;
@@ -32,7 +53,7 @@ hr {
 }
 
 a {
-    // color: $color-fg;
+    color: #303030;
     // border-bottom: 1px dotted #B9B9B9;
     text-decoration: underline;
     // padding: 1px;
@@ -58,7 +79,7 @@ h1 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 12pt;
     line-height: 1.25em;
 }
 
@@ -76,7 +97,7 @@ ul {
 
 
 .wrapper {
-    max-width: 570px;
+    max-width: 525px;
     margin: auto;
     padding: 60px 30px 60px 30px;
     // margin-left: 10px;
@@ -97,20 +118,20 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 1.25em;
+        font-size: 12pt;
         font-family:  'verdana', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
 		text-align: left;
     }
-    ul {
-        margin-top: 10px;
-        li {
-            display: inline;
-            padding: 0;
-            padding-left: 5px;
-        }
-    }
+    // ul {
+    //     margin-top: 10px;
+    //     li {
+    //         display: inline;
+    //         padding: 0;
+    //         padding-left: 5px;
+    //     }
+    // }
 
 }
 
@@ -137,16 +158,15 @@ i {
 // description
 .desc {
 	h2 {
-		font-size: 1.25em;
+        font-size: 12pt;
 	}
 
     p {
         font-family:  'verdana', sans-serif;
-        font-size: 0.95em;
+        font-size: 12pt;
         font-weight: 300;
         line-height: 1.5em;
         margin-bottom: 5px;
-        // text-align: justify;
     }
 
 }
@@ -167,21 +187,23 @@ i {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 1em;
+        font-size: 12pt;
         font-weight: 300;
         margin-bottom: 5px;
     }
+
 	li {
-        font-size: 0.95em;
+        font-size: 12pt;
         margin: 0 1.5px 1.5px 0;
         padding-right: 0px;
         list-style: none;
         line-height: 1.5em;
+
 		.date{
 			float: inline-start;
             padding-right: 10px;
             text-decoration: underline;
-            font-size: 0.95em;
+            font-size: 11pt;
             color: #616161;
             text-transform: lowercase;
 		}
@@ -202,16 +224,16 @@ i {
 		display: in-line;
 		text-align: left;
 		display: block;
-        margin-bottom: 25px; 
+        margin-bottom: 25px;
 	}
 
     &__title {
-        font-size: 2.2em;
-        font-family: 'PT Serif', serif;
+        font-size: 24pt;
+        font-family: 'Verdana', sans-serif;
         font-weight: 600;
         margin-bottom: 10px;
 		text-align: left;
-        line-height: 1.1em; 
+        line-height: 1.1em;
     }
     &__date {
         font-size: 0.75em;
@@ -229,24 +251,24 @@ i {
         }
 
         h1 {
-            font-size: 1.5em;
-            font-weight: 500;
+            font-size: 16pt;
+            font-weight: 600;
             margin-top: 10px;
             margin-bottom: 8px;
-            font-family: 'PT Serif', serif;
+            font-family: 'Verdana', sans-serif;
         }
 
         h2 {
-            font-size: 1.1em;
-            font-weight: 500;
+            font-size: 14pt;
+            font-weight: 600;
             margin-top: 5px;
-            margin-bottom: 4px;
-            font-family: 'PT Serif', serif;
+            margin-bottom: 10px;
+            font-family: 'Verdana', sans-serif;
         }
 
 
         p {
-            font-family: 'verdana', sans-serif;
+            font-family: 'Verdana', sans-serif;
             font-size: 12pt;
 
             font-weight: 300;
@@ -262,14 +284,19 @@ i {
             font-style: italic;
         }
         ul {
-            padding-top: -10px;
-            font-size: 0.95em;
-            font-family: 'verdana', sans-serif;
+            font-size: 12pt;
+            font-family: 'Verdana', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.3em;
             margin-left: 15px;
         }
+
+        p + ul {
+            margin-top: -8px;
+            margin-bottom: 10px;
+        }
+
         ol {
             list-style: disc;
             padding-bottom: 10px;
@@ -299,7 +326,7 @@ i {
         }
 
         .note {
-            background: #c6e4f0;
+            background: #d8f2fd;
             display: inline-block;
             padding: 10px;
         }
@@ -308,9 +335,9 @@ i {
         .highlighter-rouge {
             padding: 3px;
             font-size: 12pt;
-            background: #dfdfdf;
+            background: #f2f2f2;
             word-wrap: break-word;
-            font-family:  monospace;
+            font-family:  'IBM Plex Mono', monospace;
             font-weight: 400;
             overflow: hidden;
             margin-bottom: 10px;
@@ -323,29 +350,29 @@ i {
 
         // syntax-highlighted code blocks
         .highlight {
-            padding: 10px;
+            padding: 20px;
             line-height: 16pt;
             font-weight: 400;
             overflow-x: scroll;
-            background: #dfdfdf;
-
+            background: #f2f2f2;
             font-size: 12pt;
-            font-family:  monospace;
+            font-family: 'IBM Plex Mono', monospace;
             font-weight: 400;
-			color: #000000;
+            color: #000000;
+            margin-bottom: 10px;
         }
 
-        .lineno { 
-             color: #606060; 
-             padding-right: 8px;
-             border-right:1px solid #b0b0b0;
-             margin-right: 10px;
-             -webkit-touch-callout: none;
-             -webkit-user-select: none;
-             -khtml-user-select: none;
-             -moz-user-select: none;
-             -ms-user-select: none;
-             user-select: none;
+        .lineno {
+            color: #bebdbd;
+            padding-right: 8px;
+            border-right: 1px solid #bebdbd;
+            margin-right: 10px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
          }
 
         .codebreak {

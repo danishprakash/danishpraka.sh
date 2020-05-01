@@ -11,13 +11,13 @@ I came up with a simple trick which has worked good enough for me for quite some
 # Function
 This is a simple bash function with `find` and `fzf`. Load this up in your `.zshrc`. Follow along to get a grip on how this actually works. 
 
-```shell
+{% highlight shell linenos %}
 function quick_find () {
     dir=$(find ~/programming -type d -not -path '*/\.*' -maxdepth 1 | fzf)
     cd $dir
     zle reset-prompt
 }
-```
+{% endhighlight %}
 
 Let's go over each and every element in the function defined above.
 
@@ -35,10 +35,10 @@ __Update__: Thanks to [/u/maji_yabakune](https://www.reddit.com/user/maji_yabaku
 # Creating a shortcut
 Now, we would like to have a handy key combination to open our switcher, how about `Ctrl-p`? We would want our function to fire up as soon as we type `Ctrl-p`, so a simple bindkey should do, right? Well, no, zsh doesn't allow you to bind keys to a function, instead we would create a widget which maps to the function and finally bind that widget to the key combination. We can do that by creating a widget using the zsh line editor, `zle` and then we can specify our key combination mapped to this widget we just created.
 
-```shell
+{% highlight shell linenos %}
 zle -N quick_find_widget quick_find
 bindkey "^p" quick_find_widget
-```
+{% endhighlight %}
 
 
 That's about it, simply put the [function](#function) and these two lines in your `.zshrc` and you're good to go.

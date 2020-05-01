@@ -17,7 +17,7 @@ What is a shell? In a very simple way, it could be defined as a tool or a progra
 This is the driving function of the loop. Let us see how things are implemented and how they work when the shell starts.
 First things first, a prompt lets the user know that the terminal is ready to accept commands from the user. A prompt can be heavily customized but for the sake of simplicity, we'll set our prompt as a very basic yet popular `>` symbol. Consider the code below.
 
-```c
+{% highlight c linenos %}
 void loop() {
    char * line;
    char * * args;
@@ -33,14 +33,14 @@ void loop() {
       free(args);
    } while (status);
 }
-```
+{% endhighlight %}
 
 Now, let's actually focus on the more important parts. We declare a char pointer and 2d char pointer, `line` and `args` respectively. The `line` char pointer will hold the command(string) entered by the user using the `read_line()` function which is explained below. The `status` variable stores the return value of functions invoked during command execution. It will determine the termination of the loop i.e If the user enters the `exit` command, the `exit` function will return `0` which will force the control to break out of the loop and the shell would terminate. The last two lines of the do-while loop basically frees the memory used by the two pointer variables using the `free()` function, freeing up memory explicitly is required in C and is a good practice.
 
 
 # Reading user commands
 
-```c
+{% highlight c linenos %}
 char * read_line() {
   int buffsize = 1024;
   int position = 0;
@@ -74,7 +74,7 @@ char * read_line() {
     }
   }
 }
-```
+{% endhighlight %}
 
 Let's see what's happening here, first of all, we declare an int variable, `buffsize`, and initialized it to `1024` bytes. Next, a char pointer, `buffer` variable is allocated memory through malloc the size of `buffsize`. 
 
@@ -92,7 +92,7 @@ We will be using the `strtok()` function for the task. It takes two arguments, t
 
 For instance, consider this:
 
-```c
+{% highlight c linenos %}
 str1 = strtok("this is it!", " ");
 // str1 -> "this"
 
@@ -101,11 +101,11 @@ str1 = strtok(NULL, " ");
 
 str1 = strtok(NULL, " ");
 //str1 = "it!"
-```
+{% endhighlight %}
 
 First call to the `strtok` function returns the first token and every subsequent call expects the input as `NULL` and starts from where it left off in the previous iteration. Now, the code for `split_line` should be easily understood.
 
-```c
+{% highlight c linenos %}
 char * * split_line(char * line) {
   int buffsize = 1024, position = 0;
   char * * tokens = malloc(buffsize * sizeof(char * ));
@@ -137,7 +137,7 @@ char * * split_line(char * line) {
 
   return tokens;
 }
-```
+{% endhighlight %}
 
 After every iteration, we update the `tokens` variable by assigining the `token` in it's respective `position`. And finally return the `tokens` variable.
 
@@ -145,12 +145,12 @@ After every iteration, we update the `tokens` variable by assigining the `token`
 Since it is a simple program, a simple `return 0` statement would be enough for us to exit the program successfully. Let's create a trivial function which returns 0.
 
 
-```c
+{% highlight c linenos %}
 int dash_exit(char **args)
 {
 	return 0;
 }
-```
+{% endhighlight %}
 
 We'll later on check if the user has entered `exit` and invoke this function appropriately.
 
@@ -158,7 +158,7 @@ We'll later on check if the user has entered `exit` and invoke this function app
 
 After all the hard work above, the last step is rather trivial, thanks to the syscalls `execvp` `fork`.
 
-```c
+{% highlight c linenos %}
 int dash_execute(char * * args) {
   pid_t cpid;
   int status;
@@ -184,7 +184,7 @@ int dash_execute(char * * args) {
   
   return 1;
 }
-```
+{% endhighlight %}
 
 `fork` allows us to create a new process by duplicating the current process, referring it to as the child process. The current process is thereby referred to as the parent process. The child process is a duplicate of the current(parent) process except for the process ID. When we invoke the `fork` system call, it returns the process ID of the child in the parent process. In the child process, the process ID is `0`. So, after invoking the `fork` call, we check the value returned by it to make sure we are in the child process or the `fork` syscall executed successfully. 
 
@@ -196,7 +196,7 @@ Note here that we are doing a check for the `exit` command. It doesn't matter if
 # Everything that we've done
 Here's the complete code for our basic shell. The code still has some on the things that aren't explained in the article but they are crucial to the functioning of our shell for instance, color-coded errors and warnings.
 
-```c
+{% highlight c linenos %}
 #include <stdio.h> 
 #include <string.h> 
 #include <stdlib.h>
@@ -320,7 +320,7 @@ int main() {
   loop();
   return 0;
 }
-```
+{% endhighlight %}
 
 ___
 

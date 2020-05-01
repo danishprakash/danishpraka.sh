@@ -3,9 +3,17 @@ layout: post
 title: Reading
 ---
 
-This is where I keep tracks of the books I've read with a few lines on what I thought about the book and whether I'd recommend this to someone(probably you?) or not.
+This is where I keep track of the books I've read with a short description on what you can expect out of it:
 
-# 2020
+## 2020
+
+<a name="jake-adelstein"></a>__[Tokyo Vice by Jake Adelstein](https://www.goodreads.com/book/show/6658129-tokyo-vice)__
+<br>
+A rather refreshing read. Author talks about how the organized crime in Japan works. He shares stories from his time as a reporter for the police beat in Tokyo, his encounters with the Yakuza. Along the way, it touches upon the problems deeply rooted in Japanese culture concerning drugs, alcohol, and the booming sex industry. On the flipside, there's subtle mentions to how the Japanese value friendship, kinship and loyalty. Recommended.
+
+<a name="ramachandra-guha"></a>__[Gandhi Before India by Ramachandra Guha](https://www.goodreads.com/book/show/18310148)__ *
+<br>
+I've read Gandhiji's autobiography but Ramachandra Guha does an extraordinary job at putting forth the upbringing of the Mahatma. Our current political as well as social situation when juxtaposed with that of Gandhi's time, will force you to think how back in time we've come. The burning of his effigies, the comparison and often times, the blatant defamation of him just goes on to tell how well aware people are when it comes to our own history.
 
 <a name="fredrik-backman"></a>__[A Man Called Ove by Fredrik Backman](https://www.goodreads.com/book/show/18774964)__
 <br>

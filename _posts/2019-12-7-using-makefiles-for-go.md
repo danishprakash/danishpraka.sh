@@ -16,19 +16,20 @@ For the purposes of this post, we'll assume we're working on a Go project, `stri
 # Build and Run
 These are two actions that Go programmers use quite frequently, so let's add these targets to our Makefile:
 
-```make
+{% highlight make linenos %}
 build:
 	go build -o stringifier main.go
 
 run:
 	go run -race main.go
-```
+{% endhighlight %}
+
 I added the `-race` flag to the run command because it detects race conditions in your Go code when you run it which is an otherwise unpleasent exercise.
 
 # Cleaning and DRYing
 After building the binary and running the application just fine, let's make sure we are cleaning the binaries before proceeding with anything else. Our updated Makefile should look something like this:
 
-```make
+{% highlight make linenos %}
 build:
 	go build -o stringifier main.go
 
@@ -37,10 +38,11 @@ run:
 
 clean:
 	go clean
-```
+{% endhighlight %}
+
 There are two things we can improve upon here, first, we are explicitly reusing our application name, it's natural that our application name will be used in a myriad of places throughout our Makefile, we should reuse that. Second, we need to run the `clean` rule before we go ahead and `build` our application every time, let's fix these:
 
-```make
+{% highlight make linenos %}
 APP=stringifier
 
 
@@ -52,7 +54,7 @@ run:
 
 clean:
 	go clean
-```
+{% endhighlight %}
 
 <span class="note">UPDATE: This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.</span>
 
@@ -65,7 +67,7 @@ Imagine that there's a file in our project directory named `build`, again this i
 
 To avoid this problem, you can specify the target in question to be "phony" by specifying it as a prerequisite to the special target `.PHONY`:
 
-```make
+{% highlight make linenos %}
 APP=stringifier
 
 
@@ -80,20 +82,20 @@ run:
 .PHONY: clean
 clean:
 	go clean
-```
+{% endhighlight %}
 
 Now that you've specified all the above targets as phony, make will run the recipes inside of the rules every time you invoke any of the phony targets. You can also specify all the targets you want to specify as phony at once like so:
 
-```make
+{% highlight make linenos %}
 .PHONY: build clean run
-```
+{% endhighlight %}
 
 But for Makefiles which grow really big, this is not suggested as it could lead to ambiguity and unreadability, hence the preferred way is to explicitly set phony target right before the rule definition.
 
 # Recursive Make targets
 Let us now assume that we have another module `tokenizer` in our root directory that we use in our project. Our directory structure is now something like this:
 
-```text
+{% highlight text %}
 ~/programming/stringifier
 .
 ├── main.go
@@ -101,22 +103,22 @@ Let us now assume that we have another module `tokenizer` in our root directory 
 └── tokenizer/
       ├── main.go
       └── Makefile
-```
+{% endhighlight %}
 
 Quite naturally, at some point, we would like to build and test our `tokenizer` module as well. Since it's a separate module and a potentially separate project at some point, it makes sense for it to have a Makefile in it's directory (cue for the post title) with the following content:
 
-```make
+{% highlight make linenos %}
 # ~/programming/stringifier/tokenizer/Makefile
 
 APP=tokenizer
 
 build:
 	go build -o ${APP} main.go
-```
+{% endhighlight %}
 
 Now, anytime you are in the root directory of your `stringifier` project and want to build the tokenizer application, you wouldn't want to give in to hacky command-line tricks such as `cd tokenizer && make build && cd -` to invoke rules in Makefiles written in sub-directories. Thankfully, make can help you with that, you can invoke make targets in other directories using the `-C` flag and the special `${MAKE}` variable. This is the original Makefile from the `stringifier` project:
 
-```make
+{% highlight make linenos %}
 # ~/programming/stringifier/Makefile
 
 APP=stringifier
@@ -137,7 +139,7 @@ clean:
 .PHONY: build-tokenizer
 build-tokenizer:
 	${MAKE} -C tokenizer build
-```
+{% endhighlight %}
 
 Now, anytime you run `make build-tokenizer`, make will handle the directory switching for you and will invoke the right target in the right directory for you in a much more readable and robust manner.
 
@@ -146,7 +148,7 @@ Now you wish to [containerize](https://www.ibm.com/cloud/learn/containerization#
 
 Now, you have the following rules defined for the docker commands:
 
-```make
+{% highlight make linenos %}
 .PHONY: docker-build
 docker-build: build
 	docker build -t stringifier .
@@ -155,11 +157,11 @@ docker-build: build
 .PHONY: docker-push
 docker-push: docker-build
 	docker push gcr.io/stringifier/stringifier-staging/stringifier:tag
-```
+{% endhighlight %}
 
 Ok but now there's room for improvement yet again, for starters, you can reuse your `${APP}` variable again. Next, you need to be rather flexible and make sure you can easily control where you push your image, whether that's your private registry or some place else. Then, you would like to be able to push your image to two separate registries pertaining to staging and production environments respectively based on some input on the command-line from the user. Finally, like a sane developer, you would like to tag your images, with the current git commit sha, in your case. Let's fix things up:
 
-```make
+{% highlight make linenos %}
 APP?=application
 REGISTRY?=gcr.io/images
 COMMIT_SHA=$(shell git rev-parse --short HEAD)
@@ -177,7 +179,7 @@ check-environment:
 ifndef ENV
     $(error ENV not set, allowed values - `staging` or `production`)
 endif
-```
+{% endhighlight %}
 Okay now, let's go over the changes above:
 
 - You started using variables for the application name, the image registry and for the commit sha.
@@ -186,29 +188,29 @@ Okay now, let's go over the changes above:
 
 Expanding on the `check-environment` rule here:
 
-```make
+{% highlight make linenos %}
 check-environment:
 ifndef ENV
     $(error ENV not set, allowed values - `staging` or `production`)
 endif
-```
+{% endhighlight %}
 
 You are using the `ifndef` directive which checks whether the variable `ENV` has an empty value or not, and if it does, then you use another built-in function that make provides, `error` which, as it sounds, throws an error with the error message following the keyword.
 
-```shell
+{% highlight shell %}
 $ make docker-push
 Makefile:33: *** ENV not set, allowed values - `staging` or `production`.  Stop.
 
 $ ENV=staging make docker-push
 Success
-```
+{% endhighlight %}
 
 Essentially, you are making sure that the `docker-push` target has a safety net which checks that the user who invoked the target has specified a value for the `ENV` variable.
 
 # Help target
 A new member has joined the project and is wondering what all the rules do in the Makefile, to help them out, you can add a new target which will print all the target names along with a short description of what they do:
 
-```make
+{% highlight make linenos %}
 .PHONY: build
 ## build: build the application
 build: clean
@@ -238,13 +240,13 @@ setup:
 help:
 	@echo "Usage: \n"
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
-```
+{% endhighlight %}
 
 Focus on the last rule, `help`. Here, you are simply using some `sed` magic to parse and print on the command line. But to do that, you already wrote the target name and a short description before every rule as comments. Notice another special variable, `${MAKEFILE_LIST}` which is a list of all the Makefiles you have referred to, only `Makefile` in our case.
 
 You are passing the file `Makefile` as input to the `sed` command which is parsing all the help comments and printing them to the stdout in a tabular format so that's it's easier to read. Output for the `help` target for the previous snippet would look like the following:
 
-```shell
+{% highlight shell %}
 $ make help
 Usage:
 	build             Build the application
@@ -254,7 +256,7 @@ Usage:
 	docker-push       pushes the docker image
 	setup             set up modules
 	help              prints this help message
-```
+{% endhighlight %}
 
 Well, that looks quite helpful. It will most certainly come in handy for a lot of people and even for you at times.
 
@@ -263,7 +265,7 @@ Make is a simple yet a highly configurable tool. In this post, you ran through a
 
 Here's the complete Makefile after adding a few trivial rules and variables for completeness's sake:
 
-```make
+{% highlight make linenos %}
 GO111MODULES=on
 APP?=stringifier
 REGISTRY?=gcr.io/images
@@ -327,7 +329,7 @@ docker-push: check-environment docker-build
 help:
 	@echo "Usage: \n"
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
-```
+{% endhighlight %}
 
 If you found any issues/mistakes or have any suggestions or additions related to this post, please feel free to reach out to me.
 

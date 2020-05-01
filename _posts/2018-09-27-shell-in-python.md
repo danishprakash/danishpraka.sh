@@ -10,7 +10,7 @@ We'll write a simple shell that that will support almost all the basic commands.
 # Program flow
 We'll start off with our `main` function where we will handle the program flow. First, let's get the user input which is quite trivial, we'll just run an infinite loop and prompt the user for input.
 
-```python
+{% highlight python linenos %}
 def main():
     while True:
         command = input("$ ")
@@ -20,34 +20,34 @@ def main():
             print("psh: a simple shell written in Python")
         else:
             execute_commands(command)
-```
+{% endhighlight %}
 
 We're handling the `exit` command simply by breaking out of the loop. The next most important task is to execute the command entered by the user which we'll manage in a separate function, let's call that `execute_commands(command)`. We've also added a simple `help` function to let the user know what's actually happening.
 
 # Executing commands
 Let's execute the commands entered by the user. We're using the `subprocess` builtin module here, so `import subprocess` and we're good to go. The `run` function in particular is used here to execute commands in a subshell. For those coming from C, this saves us from going about forking and creating a child process and then waiting for the child to finish execution, let Python take care of that this one time.
 
-```python
+{% highlight python linenos %}
 def execute_commands(command):
     try:
         subprocess.run(command.split())
     except Exception:
         print("psh: command not found: {}".format(command))
-```
+{% endhighlight %}
 
 We're making sure that our shell doesn't come crashing down if the user enters `cs` instead of `cd` by mistake, hence the `try/except` mechanism. Just a heads up, there are many other ways to execute system commands from within Python including `os.system` and `commands` etc but using `subprocess` is the [preferred](https://docs.python.org/2/library/commands.html) [way](https://docs.python.org/3/library/os.html?%20system#os.system) of doing it.
 
 # Changing the directory
 While all our commands would work using the `subprocess` module, the `cd` command would not work this way. This is because subprocess runs the command in a subshell and when you try to change the directory, it actually changes the directory but does so in the subshell instead of in the original process and hence we get the impression that the command didn't work. We'll handle this separately in a different function and add a conditional in our `main` function.
 
-```python
+{% highlight python linenos %}
 def psh_cd(path):
     """convert to absolute path and change directory"""
     try:
         os.chdir(os.path.abspath(path))
     except Exception:
         print("cd: no such file or directory: {}".format(path))
-```
+{% endhighlight %}
 
 Here, we're using `os.chdir` to change the directory and we also make sure to convert the path entered by the user to an absolute path before passing it to `os.chdir`. Note that we'll have to edit our main function to add this condition.
 
@@ -58,7 +58,7 @@ Let's get to the fun part. Pipes allow us to transfer output of one process as i
 
 You can think of a pipe `|` as a pair of file descriptors. For instance, If we create a pipe, we'll get two file descriptors reserved for our usage, for e.g. `f1` and `f2` wherein we can write data to `f2` and read the same from `f1`. Python allows us to create pipes using `os.pipe` which returns a tuple containing the integer value which refer to the file descriptors. Consider the implementation of our `execute_commands` function with piping below:
 
-```python
+{% highlight python linenos %}
 def execute_command(command):
     """execute commands and handle piping"""
     try:
@@ -102,7 +102,7 @@ def execute_command(command):
             subprocess.run(command.split(" "))
     except Exception:
         print("psh: command not found: {}".format(command))
-```
+{% endhighlight %}
 
 Here, we have created a pipe with the values `fdin` and `fdout`. We're manipulating our file descriptors using the pipe we've created, so the input and output of every sub-command(each of the piped commands) executed during the loop will depend on the value of `fdin` and `fdout`.
 
@@ -120,7 +120,7 @@ Don't fret if that seemed confusing, let's see what's happening in the above sni
 # Putting it together
 We have all the pieces figured out now. Let's put them together to get this shell working. I've made some additions here and there which are too trivial to explain before putting it out here. You can also see the sample output below the code.
 
-```python
+{% highlight python linenos %}
 #!/usr/bin/env python3
 
 """psh: a simple shell written in Python"""
@@ -202,9 +202,9 @@ def main():
 
 if '__main__' == __name__:
     main()
-```
+{% endhighlight %}
 
-```shell
+{% highlight shell linenos %}
 # running the shell
 $ python3 psh.py
 
@@ -215,7 +215,7 @@ $ pwd
 # pipe multiple commands 
 $ cat psh | wc -l
       81
-```
+{% endhighlight %}
 <br>
 --
 

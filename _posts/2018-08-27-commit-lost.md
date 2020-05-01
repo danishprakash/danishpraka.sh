@@ -31,12 +31,12 @@ We can easily recover a lost commit using these steps. Although there might be o
 - Copy hash of the lost commit.
 - Do `git merge <commit_hash>`
 
-```shell
+{% highlight shell %}
 $ git reflog
 # copy lost commit's hash
 
 $ git merge <hash>
-```
+{% endhighlight %}
 
 You can repeat this process for a number of commits that you've "lost" but make sure you are on the correct branch before actually going ahead and merging the commits.
 <br>
