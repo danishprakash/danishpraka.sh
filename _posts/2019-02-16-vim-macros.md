@@ -7,7 +7,7 @@ The other day, a friend of mine asked me for a list of Indian states and their c
 # Vim macros
 Macros in Vim are defined as recordings of commands which you can save to a particular register and replay later on. You can also think of them as functions in a way because they offer you to avoid doing repeatable tasks. Coming back to the list of states, it looked something like this:
 
-```text
+{% highlight text %}
 Andhra Pradesh
 	
 
@@ -32,7 +32,7 @@ Chhattisgarh
 	
 
 Raipur
-```
+{% endhighlight %}
 
 I've snipped the whole output of this for brevity but you get the idea. Essentially, what we have here is the name of the city, followed by two newlines and then the name of it's capital, repeated for all of the 27 states. Nevermind the mess, let's get to it.
 
@@ -69,7 +69,7 @@ Now, you don't want to go about hitting `@q` or `@@` 26 times. You can make use 
 Once you enter this somewhat arcane list of normal commands while being on the first non-empty line of the buffer, you will see that Vim "magically" arranges everything for you and now you have this almost JSON-like file which you can read using Python and whatnot. I said almost JSON-like because it is missing the opening and closing parenthesis at the end and beginning of the file which you can just go ahead and put in manually. Your buffer should now look something like this:
 
 
-```text
+{% highlight text %}
 {
     "Andra Pradesh": "Hyderabad, Amaravati",
     "Arunachal Pradesh": "Itangar",
@@ -101,7 +101,7 @@ Once you enter this somewhat arcane list of normal commands while being on the f
     "Uttar Pradesh": "Lucknow",
     "West Bengal": "Kolkata",
 }
-```
+{% endhighlight %}
 <br>
 
 # Other uses

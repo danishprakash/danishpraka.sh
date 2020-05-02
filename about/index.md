@@ -1,8 +1,8 @@
 ---
 layout: post
+title: About
 ---
 
-# About
 I'm an Engineer at <a href="https://hackerrank.com/" target="_blank">HackerRank</a> where I mostly spend my time writing and maintaining backend services written in Golang. Before this, I interned at <a href="https://atlan.com" target="_blank">SocialCops (Atlan)<a/> where I also worked on developing tooling for internal use working mostly with Python.
 
 # Colophon
@@ -20,6 +20,6 @@ shell       : zsh
 os          : macOS
 {% endhighlight %}
 
-<img src="https://imgur.com/SehOajN.png" height="350" width="525">
+<img src="https://imgur.com/SehOajN.png" height="350" width="550">
 
 ---

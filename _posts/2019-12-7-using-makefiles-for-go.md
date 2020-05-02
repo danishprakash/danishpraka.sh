@@ -11,7 +11,7 @@ We've been using `make` as a build tool for one of our projects at HackerRank wh
 # Introduction
 `make` is a simple utility which detects which part of a large project needs to be recompiled and executes user-defined commands to carry out compilation or other required actions. It's also widely used as a build tool wherein you specify a set of commands to be run which you inherently used to write on the command-line, often times repeatedly. The latter is what the rest of this post is about.
 
-For the purposes of this post, we'll assume we're working on a Go project, `stringifier` and will be writing a Makefile for the same which is also named `Makefile`.
+For the purposes of this post, we'll assume we're working on a Go project, "stringifier" and will be writing a Makefile for the same which is also named `Makefile`.
 
 # Build and Run
 These are two actions that Go programmers use quite frequently, so let's add these targets to our Makefile:
