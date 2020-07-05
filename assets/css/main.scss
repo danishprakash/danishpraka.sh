@@ -16,6 +16,7 @@
 
 .nav .site-title {
     font-family: 'inter', sans-serif;
+    font-size: 12pt;
     text-align: left;
     align-self: center;
     text-decoration: underline;
@@ -296,8 +297,13 @@ i {
             margin-left: 15px;
         }
 
-        p + ul {
+        p + ol {
             margin-top: -8px;
+            margin-bottom: 10px;
+        }
+
+        p + ul {
+            margin-top: -10px;
             margin-bottom: 10px;
         }
 
@@ -310,13 +316,8 @@ i {
         li {
             padding-top: 3px;
             padding-bottom: 3px;
-            // line-height: 1.5em;
-            // margin: 0 0px 0px 0;
-            // padding: 0px;
-            // margin-left: 30px;
-            // @media screen and (max-width: $br) {
-            //     padding: 10px 0 10px 0;
-            // }
+            // list-style: decimal;
+            padding-left: 2px;
         }
         img {
             padding-top: 10px;
@@ -331,8 +332,21 @@ i {
 
         .note {
             background: #d8f2fd;
+            text-decoration: italic;
             display: inline-block;
             padding: 10px;
+            a {
+                line-height: 25px;
+                color: #656565;
+                text-decoration: underline;
+                text-decoration-color: currentcolor;
+                text-decoration-thickness: auto;
+                text-decoration-color: currentcolor;
+                text-decoration-thickness: auto;
+                text-decoration-color: #DADADA;
+                text-decoration-thickness: .125em;
+                text-underline-offset: 2.5px;
+            }
         }
 
         // inline code blocks
@@ -346,6 +360,10 @@ i {
             overflow: hidden;
             margin-bottom: 10px;
             color: #757575;
+
+            a {
+                text-decoration: none;
+            }
         }
 
         sup {
