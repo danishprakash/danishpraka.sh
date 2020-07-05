@@ -3,8 +3,7 @@ layout: post
 title: Using Makefile(s) for Go
 ---
 
-
-<span class="note">UPDATE: Upon receiving suggestions from readers via Email, [Hacker News](https://news.ycombinator.com/item?id=21735176) and [Reddit](https://www.reddit.com/r/golang/comments/e7t2be/using_makefiles_for_go/), I've updated the article with improvements and fixes. Subsequently a word of thanks to the readers for the suggestions.</span>
+<span class="note">Upon receiving suggestions from readers via Email, [Hacker News](https://news.ycombinator.com/item?id=21735176) and [Reddit](https://www.reddit.com/r/golang/comments/e7t2be/using_makefiles_for_go/), I've updated the article with improvements and fixes. Subsequently a word of thanks to the readers for the suggestions.</span>
 
 We've been using `make` as a build tool for one of our projects at HackerRank which is written in Go and it has been working out fairly well. In this post, I'll point out a few features and intricacies of GNU Make we've used which eventually improved the overall productivity of members of our team.
 
@@ -56,7 +55,7 @@ clean:
 	go clean
 {% endhighlight %}
 
-<span class="note">UPDATE: This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.</span>
+<span class="note">This example previously used to `rm -r ${APP}` but thanks to suggestions from readers, it now uses `go clean` now.</span>
 
 Looks much cleaner, doesn't it? You can define Makefile variables at the top and make will automatically expand them when you invoke the `make` command.
 
