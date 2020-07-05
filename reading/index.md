@@ -3,9 +3,53 @@ layout: post
 title: Reading
 ---
 
-This is where I keep track of the books I've read with a short description on what you can expect out of it:
+<br>
 
 # 2020
+
+<a name="sudha-murty"></a>__[Wise and Otherwise by Sudha Murty](https://www.goodreads.com/book/show/1184484.Wise_and_Otherwise)__
+<br>
+Not sure how I picked this book up but I'm glad I did. Sudha Murty has been doing philanthropy for quite some time now and naturally, she has had the opportunity to visit places we might not be able to point on a map. She shares stories involving deceit, love, charity, societal prejudices, issues pertaining to women and family etc. Often times an emotional roller coaster, this book can teach you a lot about human tendencies.
+
+<a name="derek-bose"></a>__[Kishore Kumar: Method in Madness by Derek Bose](https://www.goodreads.com/book/show/27294368-kishore-kumar)__
+<br>
+Ever since [this](https://techcrunch.com/2020/05/11/spotify-saregama-india/) happened, I've been listening to [classic bollywood songs](https://open.spotify.com/playlist/4podnuUgMNTjpJYLMYJYmg) especially those by Kishore Kumar, part of the credit goes to my dad for those passive listening sessions. This book is a short read but it gives you some idea of the tumultuous life of this person, his creative ways of doing things and his eccentricity.
+
+<a name="catherine-shanahan"></a>__[Deep Nutrition by Catherine Shanahan](https://www.goodreads.com/book/show/6400653-deep-nutrition)__
+<br>
+Quite an interesting and thorough read on nutrition. The author describes how the diet of our ancestors helped them and how our current diet has become nothing short of a man-made disaster in itself. Over the course of this book, she describes how certain physiological functions work in our body in terms you and I can understand. She puts forward a strong argument for a meat-based diet, a recommended read if you're interested in nutrition.
+
+<a name="jd-vance"></a>__[Hillbilly Elegy: A Memoir of a Family and Culture in Crisis by J.D. Vance](https://www.goodreads.com/book/show/27161156-hillbilly-elegy)__
+<br>
+Quite similar to [Educated](#tara-westover) in terms of the overall theme, this is the story of a boy from Kentucky, the countless number of struggles he and her sister faced and despite all this, how he and her sister beat all odds to have a "normal" life after all. There's also the underlying notion of the importance of education.
+
+<a name="malcolm-gladwell"></a>__[Talking to Strangers by Malcolm Gladwell](https://www.goodreads.com/book/show/43848929-talking-to-strangers)__
+<br>
+The author talks about how we, humans, are incapable of dealing with a stranger and uses some important events from the past to help corroborate his arguments. If you're interested in human psychology, this would be a good read, recommended. On a side note, the narration of this book along with the music and the score enhanced the whole experience.
+
+<a name="gopl"></a>__[The Go Programming Language by K&D](https://www.goodreads.com/book/show/25080953-the-go-programming-language)__
+<br>
+This is one of the few technical books that I think really helps shape how you code, with Go, in this case. I learnt a ton of things apart from the things that are specific to Go, for instance, topics such as brittle tests, benchmarking and application design etc. Would recommend.
+
+<a name="sayaka-murata"></a>__[Convenience Store Woman by Sayaka Murata](https://www.goodreads.com/book/show/38357895-convenience-store-woman)__
+<br>
+From my trip to Japan, I distinctly remember the environment of a convenience store there. It's very different from what I had seen and this book captures essence. With some odd characters and a laidback plot, this is a good quick short read if you're into this genre.
+
+<a name="tara-westover"></a>__[Educated by Tara Westover *](https://www.goodreads.com/book/show/35133922-educated)__
+<br>
+A very inspiring memoir of a girl from an extraordinarily weird family in which her parents didn't believe the government, they avoided going to the doctors at all costs, they didn't allow their children to go to school, the list goes on. In the midst of this chaos, Tara Westover carves her own way out to earn a degree from Cambridge and then Harvard. Must read.
+
+<a name="dave-ramsey"></a>__[The Total Money Makeover by Dave Ramsey](https://www.goodreads.com/book/show/78427.The_Total_Money_Makeover)__
+<br>
+If you're a beginner just starting out with personal finance, it's a good read but If you already know the fundamentals, then this can get quite repetitive. I felt that way. The success stories in the book were quite interesting though.
+
+<a name="seneca"></a>__[How to Keep Your Cool by Seneca](https://www.goodreads.com/book/show/41795421-how-to-keep-your-cool)__
+<br>
+Seneca advises his brother in this short letter about the perils of anger. He mentions examples of leading men were brought down to nothing because of anger, how it's never the solution and how most of the time, when angry, delaying the actions could result in better outcome for all the parties involved.
+
+<a name="easwaran-eknath"></a>__[The Bhagavad Gita by Easwaran Eknath](https://www.goodreads.com/book/show/358540.The_Bhagavad_Gita)__
+<br>
+This was an exploratory read, I wanted to understand religion and why people go above and beyond for the same often times leading to ethically and morally wrong actions. But as it turns out, the Bhagavad Gita is a purely self-help guide narrated to Prince Arjuna by Lord Krishna. It was surprisingly good, would recommend.
 
 <a name="jake-adelstein"></a>__[Tokyo Vice by Jake Adelstein](https://www.goodreads.com/book/show/6658129-tokyo-vice)__
 <br>
@@ -19,7 +63,7 @@ I've read Gandhiji's autobiography but Ramachandra Guha does an extraordinary jo
 <br>
 Non-fiction after so long. This was a pleasant read to be honest. It's about a quirky, not-so-social old man set in Sweden. It's humorous a lot of times and turns to such subjects as life, loneliness and death. A good read if you're into non-fiction.
 
-<a name="cant-hurt-me"></a>__[The Case Against Sugar by Gary Taubes](https://www.goodreads.com/book/show/29874881-the-case-against-sugar)__
+<a name="gary-taubes"></a>__[The Case Against Sugar by Gary Taubes](https://www.goodreads.com/book/show/29874881-the-case-against-sugar)__
 <br>
 We've all read how Sugar, processed in particular, is bad for health. I was in the same boat for quite a while but I didn't know why this was the case. This books goes back, way back into the advent of sugar in our diets. It then traces it's path while comparing the glaring increase in chronic diseases. It's quite frightening what all Sugar is capable of doing to us and at the same time, and it's quite surprising, the reason why it's one of the most widely used substance in almost all the processed foods, is how corporations work and lobby for their interests.
 
@@ -71,7 +115,7 @@ Heard a lot about this book before finally deciding to read it. It makes you sto
 
 <a name="hector-garcia">__[Ikigai by Hector Garcia](https://www.goodreads.com/book/show/33357041-ikigai)__
 <br>
-This book is about the Japanese concept known as Ikigai which roughly translates to "the happiness of always being busy". It follows with a visit by the authors to the island of Okinawa which has the highest life expectancy in the world and discovering the secrets of the people living there, It talks about how the Japanese people don't stop working and moving regardless of their age. The authors visit various people in the town of Ogimi, Okinawa who are above 1years of age to talk about some of their habits. These include examples such as eating until you are 8full, practicing mindfullness, the Okinawan diet, doing yoga, taichi and drinking green tea. A good read.
+This book is about the Japanese concept known as Ikigai which roughly translates to "the happiness of always being busy". It follows with a visit by the authors to the island of Okinawa which has the highest life expectancy in the world and discovering the secrets of the people living there, It talks about how the Japanese people don't stop working and moving regardless of their age. The authors visit various people in the town of Ogimi, Okinawa who are above 1years of age to talk about some of their habits. These include examples such as eating until you are 8full, practicing mindfullness, the Okinawan diet, doing yoga, taichi and drinking green tea. A good read but overhyped.
 
 <a name="ramit-sethi">__[I Will Teach You to Be Rich by Ramit Sethi](https://www.goodreads.com/book/show/40591670-i-will-teach-you-to-be-rich)__
 <br>
@@ -79,9 +123,9 @@ This book is about the Japanese concept known as Ikigai which roughly translates
 
 <a name="cathy-davidson">__[36 Views of Mount Fuji by Cathy N. Davidson](https://www.goodreads.com/book/show/473464.36_Views_of_Mount_Fuji)__
 <br>
-Another book on Japanese culture, this talks much more about the Japanese life and it's people than the one by Donald Keene. There was an equal divide in this book wherein one part talks about what's so good about Japan that so many people admire it. And the second part talks about the lesser known darker secrets of the Japanese society which is at times, tough to read but nevertheless, insightful. A very good book and a very laid back style of writing. A good read.
+Another book on Japanese culture, this talks much more about the Japanese life and it's people than the one by [Donald Keene](#donald-keene). There was an equal divide in this book wherein one part talks about what's so good about Japan that so many people admire it. And the second part talks about the lesser known darker secrets of the Japanese society which is at times, tough to read but nevertheless, insightful. A very good book and a very laid back style of writing. A good read.
 
-<a name="matthew-walker">__[Why We Sleep by Matthew Walker](https://www.goodreads.com/book/show/34466963-why-we-sleep)__
+<a name="matthew-walker">__[Why We Sleep by Matthew Walker](https://www.goodreads.com/book/show/34466963-why-we-sleep)__ *
 <br>
 One of the best book I've read until now. Simply talks about how sleep is one of the most important part of life. Everything stated in this book is backed by research, there's also reasoning to many of the phenomenon which many thought were inexplicable. Do yourself a favor and read this gem of a book, can't stress enough.
 
