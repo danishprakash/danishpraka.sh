@@ -5,6 +5,7 @@ title: Software
 
 Here's some of the stuff I've written:
 
+- [zf](https://github.com/danishprakash/zf): barely there fetch utility
 - [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim.
 - [vim-docker](https://github.com/danishprakash/vim-docker): Docker development plugin for Vim
 - [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager
