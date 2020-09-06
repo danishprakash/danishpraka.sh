@@ -2,19 +2,33 @@
 layout: default
 ---
 
-<div class="post">
-    {% include analytics.html %}
-	<a class="post__back" href="/">←</a>
+<div class="page">
+    <div class="nav">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/reading">BOOKS</a></li>
+            <li><a href="/software">CODE</a></li>
+            <li><a href="https://unsplash.com/@danishprakash" target="_blank">PHOTOS</a></li>
+        </ul>
+    </div>
 
-	{% if page.title %}
-		<h1 class="post__title">{{ page.title }}</h1>
-	{% endif %}
+    <div class="cont">
+        <div class="post">
+            {% include analytics.html %}
 
-	{% if page.date %}
-		<p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
-	{% endif %}
+            {% if page.title %}
+                <h1 class="post__title">{{ page.title }}</h1>
+            {% endif %}
 
-    <div class="post__content"?>
-        {{ content }}
+            {% comment %}
+            {% if page.date %}
+                <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+            {% endif %}
+            {% endcomment %}
+
+            <div class="post__content"?>
+                {{ content }}
+            </div>
+        </div>
     </div>
 </div>

@@ -17,35 +17,38 @@ function changeText() {
 }
 </script>
 
+<div class="page">
+    <div class="nav">
+        <ul>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/reading">BOOKS</a></li>
+            <li><a href="/software">CODE</a></li>
+            <li><a href="https://unsplash.com/@danishprakash" target="_blank">PHOTOS</a></li>
+        </ul>
+    </div>
 
-<div class="nav">
-    <div class="site-title"> <a href=".">danishpraka.sh</a> </div>
-    <ul>
-        <li><a href="/about">about</a></li>
-        <li><a href="https://github.com/danishprakash" target="_blank">github</a></li>
-        <li><a href="https://linkedin.com/in/danishprakash" target="_blank">linkedin</a></li>
-        <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
-    </ul>
-</div>
+    <div class="cont">
 
-<div class="desc">
-	<p>
-        Engineer at <a href="https://www.hackerrank.com/" target="_blank" >HackerRank</a>, previously at <a href="https://socialcops.com">SocialCops</a>. Enjoys writing <a href="/software" >software</a>, <a href="/reading" >reading</a> and other normal stuff. Writes about things that comes to mind.</p><br>
+        <div class="desc">
+        <div class="site-title">Danish Prakash</div>
+            <p>
+                Software Engineer at <a href="https://www.hackerrank.com/" target="_blank" >HackerRank</a>, previously at <a href="https://atlan.com">SocialCops</a>. Enjoys writing <a href="/software" >software</a>, <a href="/reading" >reading</a> and other normal stuff. Writes about things that comes to mind.</p><br>
 
-<div class="blog">
-    <h1>archive</h1>
-	<hr>
-    <ol>
-        <li>
-        </li>
-        {% for post in site.posts %}
-        <li>
-            {% if post.type == "external" %}
-                <a href="{{ post.link }}" target="_blank">{{ post.title }}</a><span class="date"> {{ post.date | date: '%Y-%m' }}
-            {% else %}
-                <a href="{{ post.url }}">{{ post.title }}</a><span class="date"> {{ post.date | date: '%Y-%m' }}
-            {% endif %}
-        </li>
-        {% endfor %}
-    </ol>
+        <div class="blog">
+            <h1>archive</h1>
+            <ol>
+                <li>
+                </li>
+                {% for post in site.posts %}
+                <li>
+                    {% if post.type == "external" %}
+                        <a href="{{ post.link }}" target="_blank">{{ post.title }}</a><span class="date"> {{ post.date | date: '%Y-%m' }}
+                    {% else %}
+                        <a href="{{ post.url }}">{{ post.title }}</a><span class="date"> {{ post.date | date: '%Y-%m' }}
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
 </div>

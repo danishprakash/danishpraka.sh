@@ -21,6 +21,6 @@ EDITOR:		 nvim
 TERMINAL:	 iterm
 {% endhighlight %}
 
-<img src="https://imgur.com/SehOajN.png" height="350" width="550">
+<img src="https://imgur.com/SehOajN.png" height="400" width="600">
 
 ---
