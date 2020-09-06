@@ -3,7 +3,7 @@ layout: post
 title: Software
 ---
 
-Here's some of the stuff I've written:
+I like to write tools, mostly command line utilities and plugins, here's some of the stuff that I've written:
 
 - [zf](https://github.com/danishprakash/zf): barely there fetch utility
 - [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim.
@@ -20,4 +20,4 @@ Here's some of the stuff I've written:
 - [vimport](https://github.com/danishprakash/vimport): Vim plugin to import and drop modules
 - [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal
 
-That's about it, feel free to [reach out](https://danishprakash.github.io).
+That's about it, feel free to [reach out](https://danishpraka.sh).

@@ -2,10 +2,33 @@
 layout: post
 title: Reading
 ---
-
+An account of books I've read with a line or two on what I thought about it, chronologically grouped by year:
 <br>
 
 # 2020
+<a name="arundhati-roy"></a>__[The God of Small Things by Arundhati Roy](https://www.goodreads.com/book/show/9777.The_God_of_Small_Things)__
+<br>
+I picked this book up out of respect for Arundhati Roy, she was one of the few celebrities who actively participated in the protests that took place in Delhi. About the book, a very vivid and enthralling is how I'd describe this book If I had to in one sentence. I understand why people adore Arundhati Roy and her writing style so much. She paints pictures with words and you are forced to take a moment and imagine the very scene in your minds. I don't usually read fiction but this was welcoming, I feel I can now read more of fiction of a similar style. Recommended.
+
+<a name="bhagat-singh"></a>__[Why I Am An Atheist by Bhagat Singh](https://www.goodreads.com/book/show/1389596.Why_I_Am_An_Atheist)__
+<br>
+This book's mere existence was surprising to me. I had always attributed the greatest of our revolutionaries to be devouts but not Bhagat Singh. Here was a young soul with an intellect rare to find with his age, a mature mindset and an unparalleled love for his nation. Among other things in this book, he talks about why he turned an atheist. He puts forward logical arguments and asks relevant questions to fellow theists as to why God, if there's one, created this world of miseries and sorrows. This books throws light into the kind of stoic thinking he developed at the very end eventually asking the Government to have him shot instead of hanged.
+
+<a name="karan-bellani"></a>__[Buried Seeds: The Story of Vikas Khanna by Karan Bellani](https://www.goodreads.com/book/show/36623909-buried-seeds)__
+<br>
+Borrowed this from my brother, it's a book about Chef Vikas Khanna, how he grew up to become one of the world's most famous chef. The author talks about how Chef Vikas's humility, hardwork and passion towards cooking has allowed him to stand back up after every defeat he has had to face. It's a bummer that this is book is organized the way it is organized, in a parallel timeline manner and it didn't feel intuitive.
+
+<a name="jason-stanley"></a>__[How Fascism Works by Jason Stanley](https://www.goodreads.com/book/show/38255329-how-fascism-works)__
+<br>
+Fascism is more apparent than we think it is. It's difficult to wrap around the fact that people are more concerned with blatant lies laid down by the demagogues and not with the real issues that would directly affect their lives. This book talks about how Fascism works, what are the ways in which a Fascist tries to appeal to his/her target audience and how Fascism has, in a wrong manner, shaped the world that we live in right now. It becomes increasingly worrying how eerily similar are the things the author talks about in our current society.
+
+<a name="john-bogle"></a>__[The Little Book of Common Sense Investing by John C. Bogle](https://www.goodreads.com/book/show/36001646-remnants-of-a-separation)__
+<br>
+A classic on investing with a focus on Index funds. John C. Bogle is the creator of the world's first Index fund. He swears by the returns of investing in an Index fund over managed mutual funds or even ETFs. There is historical data to prove and he also very loosely predicts the upcoming trend, which is not so lucrative but still favors the returns offered by low cost Index funds, all this with a disclaimer of course. His arguments make sense and if you're interested in finance or investing, this is a good read.
+
+<a name="aanchal-malhotra"></a>__[Remnants of a Separation by Aanchal Malhotra](https://www.goodreads.com/book/show/36001646-remnants-of-a-separation)__
+<br>
+This is a unique book, the author sits down with people or descendents of those who had to migrate to the other side of the border during one of the most unfortunate instances in Indian history, "The Partition" and discuss their journey circulating around a material object which they carried with them. The result is an amalgamation of history, memories, materials and sorrow. In almost every chapter, you've to stop and think about the lives of those who had to leave everything behind in moment's time and move to a place not known to start life afresh, it's haunting.
 
 <a name="sudha-murty"></a>__[Wise and Otherwise by Sudha Murty](https://www.goodreads.com/book/show/1184484.Wise_and_Otherwise)__
 <br>
