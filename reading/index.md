@@ -6,6 +6,10 @@ An account of books I've read with a line or two on what I thought about it, chr
 <br>
 
 # 2020
+<a name="eric-schmidt"></a>__[How Google Works by Eric Schmidt, Jonathan Rosenberg](https://www.goodreads.com/book/show/23158207-how-google-works)__
+<br>
+Recommended by my previous manager. This book has a lot of insights into how Google operates differently from other companies. It talks about how to manage and work with smart individuals in an organization. Anecdotes from Google's old days are equally interesting giving backstories on how certain Google products came to fruition. It's not too technical but rather takes a managerial viewpoint. I was hoping to get more technical insights but the contents of this book are are spun more around people management.
+
 <a name="arundhati-roy"></a>__[The God of Small Things by Arundhati Roy](https://www.goodreads.com/book/show/9777.The_God_of_Small_Things)__
 <br>
 I picked this book up out of respect for Arundhati Roy, she was one of the few celebrities who actively participated in the protests that took place in Delhi. About the book, a very vivid and enthralling is how I'd describe this book If I had to in one sentence. I understand why people adore Arundhati Roy and her writing style so much. She paints pictures with words and you are forced to take a moment and imagine the very scene in your minds. I don't usually read fiction but this was welcoming, I feel I can now read more of fiction of a similar style. Recommended.
