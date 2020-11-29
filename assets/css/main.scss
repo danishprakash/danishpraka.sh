@@ -3,6 +3,7 @@
 
 @import url(bw.css);
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "reset";
 @import "config";
 
@@ -17,11 +18,12 @@
         position: fixed;
 
         a {
+            font-family: 'inter';
             line-height: 12px;
             font-weight: 900;
             font-style: normal;
             font-size: 12px;
-            color: #333333;
+            color: #000000;
         }
 
 
@@ -96,10 +98,10 @@
 }
 
 body {
-    color: #333333;
+    color: #000000;
     background: #ffffff;
-    font-family:  'inter', sans-serif;
-    font-size: 15px;
+    font-family:  'Roboto', sans-serif;
+    font-size: 12pt;
     line-height: 23px;
     font-weight: 400;
     word-wrap: break-word;
@@ -110,7 +112,7 @@ hr {
 }
 
 p {
-    font-size: 15px;
+    font-size: 12pt;
     line-height: 1.25em;
 }
 
@@ -146,7 +148,7 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 15px;
+        font-size: 12pt;
         font-family:  'inter', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
@@ -183,39 +185,35 @@ i {
     content: " · ";
 }
 
-// description
+// description text
+.description {
+    a {
+        line-height: 23px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12pt;
+        color: #1a1695;
+        text-decoration: underline;
+        text-decoration-color: currentcolor;
+    }
+}
+
+// desc
 .desc {
     max-width: 60ch;
 
 	h2 {
-        font-size: 15px;
+        font-size: 12pt;
 	}
 
     p {
-        font-family:  'inter', sans-serif;
-        font-size: 15px;
+        font-family:  'Roboto', sans-serif;
+        font-size: 12pt;
         font-weight: 400;
         line-height: 23px;
         margin-bottom: 5px;
         justify-items: center;
     }
-
-    a {
-        line-height: 23px;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 15px;
-        color: #333333;
-        text-decoration: underline;
-        text-decoration-color: currentcolor;
-        text-decoration-thickness: auto;
-        text-decoration-color: currentcolor;
-        text-decoration-thickness: auto;
-        text-decoration-color: #DADADA;
-        text-decoration-thickness: .125em;
-        text-underline-offset: 2.5px;
-    }
-
 }
 
 
@@ -234,47 +232,42 @@ i {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 15px;
+        font-size: 12pt;
         font-weight: 400;
         margin-bottom: 14px;
-        border-bottom: 1px #333333 solid;
+        border-bottom: 1px #000000 solid;
     }
 
 	li {
-        font-size: 15px;
         margin: 0 1.5px 1.5px 0;
         padding-right: 0px;
         list-style: none;
         line-height: 23px;
+        text-transform: capitalize;
 
         .date{
             float: none;
-            padding-left: 5px;
-            font-size: 8pt;
-            color: #333333;
+            font-size: 14.5px;
+            color: #777777;
             text-transform: lowercase;
-        }
-
-        &:hover {
-            color: #333333;
         }
 
 	}
 
     a {
-        line-height: 23px;
+        line-height: 18px;
         font-weight: 400;
         font-style: normal;
-        font-size: 15px;
-        color: #333333;
-        text-decoration: underline;
-        text-decoration-color: currentcolor;
-        text-decoration-thickness: auto;
-        text-decoration-color: currentcolor;
-        text-decoration-thickness: auto;
-        text-decoration-color: #DADADA;
-        text-decoration-thickness: .125em;
-        text-underline-offset: 2.5px;
+        font-size: 12pt;
+        color: #000000;
+            &:hover {
+                // background-color: #000000;
+                text-decoration: none;
+                // border-bottom: 1px solid #505050;
+                // color: #ffffff;
+                // transition: .15s;
+                // padding: 1px;
+            }
     }
 }
 
@@ -308,7 +301,7 @@ i {
         font-size: 0.75em;
         text-align: left;
         color: #616161;
-        font-family:  'inter', sans-serif;
+        font-family:  'Roboto', sans-serif;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -321,7 +314,7 @@ i {
 
         h1 {
             font-size: 24px;
-            color: #333333;
+            color: #000000;
             font-weight: 600;
             margin-top: 10px;
             margin-bottom: 8px;
@@ -330,7 +323,7 @@ i {
 
         h2 {
             font-size: 20px;
-            color: #333333;
+            color: #000000;
             font-weight: 500;
             margin-top: 5px;
             margin-bottom: 4px;
@@ -339,33 +332,29 @@ i {
 
 
         p {
-            font-family: 'inter', sans-serif;
-            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
             font-weight: 400;
             line-height: 23px;
-            padding-bottom: 15px;
+            padding-bottom: 16px;
             word-wrap: break-word;
             // letter-spacing: 0.2px;
-            color: #333333;
+            color: #000000;
         }
 
         a {
             line-height: 23px;
             font-weight: 400;
             font-style: normal;
-            font-size: 15px;
-            color: #333333;
+            font-size: 12pt;
+            color: #1a1695;
             text-decoration: underline;
             text-decoration-color: currentcolor;
-            text-decoration-thickness: auto;
-            text-decoration-color: currentcolor;
-            text-decoration-thickness: auto;
-            text-decoration-color: #DADADA;
-            text-decoration-thickness: .125em;
-            text-underline-offset: 2.5px;
+            // text-decoration-color: #DADADA;
+
 
             &:hover {
-                // background-color: #333333;
+                // background-color: #000000;
                 // border-bottom: 1px solid #505050;
                 // color: #ffffff;
                 // transition: .15s;
@@ -374,19 +363,19 @@ i {
         }
 
         strong {
-            font-family: 'inter', sans-serif;
+            font-family: 'Roboto', sans-serif;
             padding-bottom: 10px;
         }
         em {
             font-style: italic;
         }
         ul {
-            font-size: 15px;
-            font-family: 'inter', sans-serif;
+            font-size: 12pt;
+            font-family: 'Roboto', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.3em;
-            // margin-left: 15px;
+            // margin-left: 16px;
         }
 
         p + ol {
@@ -403,7 +392,7 @@ i {
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.65em;
-            margin-left: 15px;
+            margin-left: 16px;
         }
         li {
             padding-top: 3px;
@@ -414,7 +403,7 @@ i {
         }
         img {
             padding-top: 10px;
-            padding-bottom: 15px;
+            padding-bottom: 16px;
             // display: block;
             margin: 0 auto;
             @media screen and (max-width: $br) {
@@ -428,7 +417,7 @@ i {
             text-decoration: italic;
             display: inline-block;
             padding: 14px;
-            // margin-top: 15px;
+            // margin-top: 16px;
             border: 1px #d8f2fd solid;
             border-radius: 4px;
             a {
@@ -451,11 +440,11 @@ i {
             font-size: 11pt;
             background: #ffffff;
             word-wrap: break-word;
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'courier new', monospace;
             font-weight: 300;
             overflow: hidden;
             margin-bottom: 10px;
-            color: #333333;
+            color: #000000;
             border: 1px #dedede solid;
             border-radius: 3px;
 
@@ -475,9 +464,9 @@ i {
             overflow-x: scroll;
             background: #ffffff;
             font-size: 11pt;
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'courier new', monospace;
             font-weight: 300;
-            color: #333333;
+            color: #000000;
             margin-bottom: 15px;
             border: 1px #dedede solid;
             border-radius: 4px;
