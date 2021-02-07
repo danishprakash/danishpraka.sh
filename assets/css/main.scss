@@ -3,12 +3,13 @@
 
 @import url(bw.css);
 @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;900&display=swap');
 @import "reset";
 @import "config";
 
 .page {
     margin-top: 42px;
+    margin-left: 45px;
     display: flex;
     flex-direction: row;
     .nav {
@@ -19,10 +20,10 @@
 
         a {
             font-family: 'inter';
-            line-height: 12px;
-            font-weight: 900;
+            line-height: 8px;
+            font-weight: 700;
             font-style: normal;
-            font-size: 12px;
+            font-size: 8pt;
             color: #000000;
         }
 
@@ -34,8 +35,9 @@
             max-width: 90px;
 
             li {
-                text-align: left;
+                text-align: right;
                 padding: 0px;
+                line-height: 17px;
                 list-style: none;
                 width: 90px;
             }
@@ -43,7 +45,7 @@
     }
 
   .cont {
-    margin-left: 120px;
+    margin-left: 180px;
     // flex: 1;
     justify-content: center;
     align-items: center;
@@ -94,14 +96,14 @@
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 45px;
-    max-width: 560px;
+    max-width: 550px;
 }
 
 body {
     color: #000000;
     background: #ffffff;
-    font-family:  'Roboto', sans-serif;
-    font-size: 12pt;
+    font-family:  'Noto Serif JP', sans-serif;
+    font-size: 10pt;
     line-height: 23px;
     font-weight: 400;
     word-wrap: break-word;
@@ -112,7 +114,7 @@ hr {
 }
 
 p {
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 1.25em;
 }
 
@@ -130,7 +132,7 @@ ul {
 
 
 .wrapper {
-    max-width: 650px;
+    max-width: 700px;
     // margin: auto;
     // padding: 44px 0px 0px 44px;
     @media screen and (max-width: $br) {
@@ -148,7 +150,7 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 12pt;
+        font-size: 10pt;
         font-family:  'inter', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
@@ -191,24 +193,27 @@ i {
         line-height: 23px;
         font-weight: 400;
         font-style: normal;
-        font-size: 12pt;
-        color: #1a1695;
-        text-decoration: underline;
-        text-decoration-color: currentcolor;
+        font-size: 10pt;
+        color: #000000;
+        border-bottom: 1px solid #d2d2d2;
+        &:hover {
+            text-decoration: none;
+            border-bottom: 0px;
+        }
     }
 }
 
 // desc
 .desc {
-    max-width: 60ch;
+    max-width: 550px;
 
 	h2 {
-        font-size: 12pt;
+        font-size: 10pt;
 	}
 
     p {
-        font-family:  'Roboto', sans-serif;
-        font-size: 12pt;
+        font-family:  'Noto Serif JP', sans-serif;
+        font-size: 10pt;
         font-weight: 400;
         line-height: 23px;
         margin-bottom: 5px;
@@ -232,7 +237,7 @@ i {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 12pt;
+        font-size: 10pt;
         font-weight: 400;
         margin-bottom: 14px;
         border-bottom: 1px #000000 solid;
@@ -247,7 +252,7 @@ i {
 
         .date{
             float: none;
-            font-size: 14.5px;
+            font-size: 8pt;
             color: #777777;
             text-transform: lowercase;
         }
@@ -258,16 +263,13 @@ i {
         line-height: 18px;
         font-weight: 400;
         font-style: normal;
-        font-size: 12pt;
+        font-size: 10pt;
         color: #000000;
-            &:hover {
-                // background-color: #000000;
-                text-decoration: none;
-                // border-bottom: 1px solid #505050;
-                // color: #ffffff;
-                // transition: .15s;
-                // padding: 1px;
-            }
+        border-bottom: 1px solid #d2d2d2;
+        &:hover {
+            text-decoration: none;
+            border-bottom: 0px;
+        }
     }
 }
 
@@ -275,7 +277,7 @@ i {
 // blog-post
 .post {
     padding-bottom: 30px;
-    max-width: 65ch;
+    max-width: 525px;
 
     &__back {
         display: in-line;
@@ -288,11 +290,11 @@ i {
         font-family: 'inter', sans-serif;
         text-align: left;
         align-self: center;
-        font-size: 44px;
+        font-size: 22pt;
         font-weight: 700;
         // margin-top: 40px;
         margin-bottom: 10px;
-        line-height: 45px;
+        // line-height: 45px;
         max-width: 560px;
     }
 
@@ -301,7 +303,7 @@ i {
         font-size: 0.75em;
         text-align: left;
         color: #616161;
-        font-family:  'Roboto', sans-serif;
+        font-family:  'Noto Serif JP', sans-serif;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -313,7 +315,7 @@ i {
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 16pt;
             color: #000000;
             font-weight: 600;
             margin-top: 10px;
@@ -322,7 +324,7 @@ i {
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 14pt;
             color: #000000;
             font-weight: 500;
             margin-top: 5px;
@@ -332,10 +334,10 @@ i {
 
 
         p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 12pt;
+            font-family: 'Noto Serif JP', sans-serif;
+            font-size: 10pt;
             font-weight: 400;
-            line-height: 23px;
+            line-height: 20px;
             padding-bottom: 16px;
             word-wrap: break-word;
             // letter-spacing: 0.2px;
@@ -346,32 +348,26 @@ i {
             line-height: 23px;
             font-weight: 400;
             font-style: normal;
-            font-size: 12pt;
-            color: #1a1695;
-            text-decoration: underline;
-            text-decoration-color: currentcolor;
-            // text-decoration-color: #DADADA;
-
-
+            font-size: 10pt;
+            color: #000000;
+            font-family: 'Noto Serif JP', sans-serif;
+            border-bottom: 1px solid #d2d2d2;
             &:hover {
-                // background-color: #000000;
-                // border-bottom: 1px solid #505050;
-                // color: #ffffff;
-                // transition: .15s;
-                // padding: 1px;
+                text-decoration: none;
+                border-bottom: 0px;
             }
         }
 
         strong {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Noto Serif JP', sans-serif;
             padding-bottom: 10px;
         }
         em {
             font-style: italic;
         }
         ul {
-            font-size: 12pt;
-            font-family: 'Roboto', sans-serif;
+            font-size: 10pt;
+            font-family: 'Noto Serif JP', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.3em;
@@ -422,7 +418,7 @@ i {
             border-radius: 4px;
             a {
                 line-height: 25px;
-                color: #656565;
+                color: #000000;
                 text-decoration: underline;
                 text-decoration-color: currentcolor;
                 text-decoration-thickness: auto;
@@ -437,10 +433,10 @@ i {
         // inline code blocks
         .highlighter-rouge {
             padding: 0.5px 5px 0.5px 5px;
-            font-size: 11pt;
+            font-size: 10pt;
             background: #ffffff;
             word-wrap: break-word;
-            font-family: 'courier new', monospace;
+            font-family: 'monospace', monospace;
             font-weight: 300;
             overflow: hidden;
             margin-bottom: 10px;
@@ -459,12 +455,12 @@ i {
         .highlight {
             max-width: 650px;
             padding: 25px 25px 25px 25px;
-            line-height: 16pt;
+            line-height: 14pt;
             font-weight: 400;
-            overflow-x: scroll;
+            overflow-x: auto;
             background: #ffffff;
-            font-size: 11pt;
-            font-family: 'courier new', monospace;
+            font-size: 10pt;
+            font-family: 'monospace', monospace;
             font-weight: 300;
             color: #000000;
             margin-bottom: 15px;
@@ -516,7 +512,7 @@ i {
             margin-bottom: 5px;
         }
         p {
-            font-size: 1em;
+            font-size: 10pt;
             line-height: 150%;
             margin-bottom: 10px;
             font-weight: 400;
