@@ -5,7 +5,48 @@ title: Reading
 An account of books I've read with a line or two on what I thought about it, chronologically grouped by year:
 <br>
 
+# 2021
+<a name="eric-schmidt"></a>__[YNAB by Jesse Mecham](https://www.goodreads.com/book/show/34950841-you-need-a-budget)__
+<br>
+This is a "budgeting" book from the founder of [YNAB](https://www.youneedabudget.com/), a budgeting software with a very different philosophy than your usual track-what-you-spend. Even if you don't use YNAB, this is a quick weekend read which will force you to think about spending and managing your money in a way that would probably make you scoff for the first few times you try it but it's worth a shot.
+
+<a name="eric-schmidt"></a>__[The Psychology of Money by Morgan Housel](https://www.goodreads.com/book/show/41881472-the-psychology-of-money)__
+<br>
+Was highly recommended to me by 2 of my good friends. This was a completely finance book I've read. It stitches together various facets of life and then infers the sometimes not-so-direct financial POV that makes so much more sense afterwards. There were quite a few learnings from this book and for me personally, has changed how I used to do certain things earlier.
+
+<a name="eric-schmidt"></a>__[A Promised Land by Barack Obama *](https://www.goodreads.com/book/show/55361205-a-promised-land)__
+<br>
+I admire Barack Obama and having read this book gave me all the more reasons to continue to do so. There are probably too many things to quote here from the book but there were countless times in this book when I was forced to stop and think of all the wrongs in this world and how people end up being manipulated by demagogues. Probity aside, section in the book on life as the President and it's concomitant worries also keep you clinged.
+
+<a name="eric-schmidt"></a>__[Kubernetes in Action by Marko Luksa](https://www.goodreads.com/book/show/34013922-kubernetes-in-action)__
+<br>
+Great book on (almost)all things Kubernetes. I've been working on Kubernetes for over an year now and it always helps if you understand the systems you're working on. For instance, knowing how an Ingress controller refers to the Service's Endpoints resource to forward connections to pods, would, apart from scratching that proverbial itch, will also help you debug and build better systems on Kubernetes.
+
 # 2020
+<a name="eric-schmidt"></a>__[In the Beginning...Was the Command Line by Neal Stephenson](https://www.goodreads.com/book/show/40383049-in-the-beginning-was-the-command-line)__
+<br>
+Mostly a rant. Author talks about how *nix is better than other operating systems. I was expecting related to the history of _the_ command line being a command line enthusiast myself but was disappointed.
+
+<a name="eric-schmidt"></a>__[Let's Talk Money by Monika Halan *](https://www.goodreads.com/book/show/40499078-let-s-talk-money)__
+<br>
+Great book on personal finance and a little bit of investing wisdom tailored for Indians. The author warns readers of the various pitfalls people usually fall when looking for things such as a health insurance or a term insurance along with reasonable explanations as to why you even need one in the first place.
+
+<a name="eric-schmidt"></a>__[The Courtesan, the Mahatma, and the Italian Brahmin Manu S. Pillai](https://www.goodreads.com/book/show/52509565-the-courtesan-the-mahatma-and-the-italian-brahmin)__
+<br>
+A really interesting read. Our history is enriched with some really great people and this book is an essay consisting of small stories around those people. Putting this book down and looking at the current state of things in our country, one wonders what went wrong and when. How did we end up here. (Jan 2021)
+
+<a name="eric-schmidt"></a>__[Rich Dad, Poor Dad by Robert T. Kiyosaki](https://www.goodreads.com/book/show/69571.Rich_Dad_Poor_Dad)__
+<br>
+Quite boring. I'm still not sure how this tops the charts for personal finance books. There was just one idea in the book that I could relate to which had to do with "giving" but that was it. Nothing else really was exciting.
+
+<a name="eric-schmidt"></a>__[Atomic Habits by James Clear](https://www.goodreads.com/book/show/40121378-atomic-habits)__
+<br>
+I don't usually have trouble creating habits but this book explains the "how" of my habits working and I'm guessing, it'll be really good for folks who are starting out on being more productive, for lack of a better word. I do feel that there's a certain trite(ness) associated with resources that focus around productivity but this book focuses just on Habits and how they can lead you to attain some really great goals. Also interesting were the real life anecdotes strewn around in the book.
+
+<a name="eric-schmidt"></a>__[The 4-Hour Work Week by Tim Ferris](https://www.goodreads.com/book/show/9278897-the-4-hour-work-week)__
+<br>
+The idea is really interesting but once you start reading it, it doesn't look so appealing. Some suggestions from the author such as getting a virtual assistant or even the basic premise of the whole "new rich" sect of having a new product to sell, that really doesn't work for everyone.
+
 <a name="eric-schmidt"></a>__[How Google Works by Eric Schmidt, Jonathan Rosenberg](https://www.goodreads.com/book/show/23158207-how-google-works)__
 <br>
 Recommended by my previous manager. This book has a lot of insights into how Google operates differently from other companies. It talks about how to manage and work with smart individuals in an organization. Anecdotes from Google's old days are equally interesting giving backstories on how certain Google products came to fruition. It's not too technical but rather takes a managerial viewpoint. I was hoping to get more technical insights but the contents of this book are are spun more around people management.
