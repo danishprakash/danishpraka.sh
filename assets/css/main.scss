@@ -248,7 +248,7 @@ i {
         padding-right: 0px;
         list-style: none;
         line-height: 23px;
-        text-transform: capitalize;
+        // text-transform: capitalize;
 
         .date{
             float: none;
@@ -385,7 +385,7 @@ i {
         }
 
         ol {
-            list-style: disc;
+            list-style: decimal;
             padding-bottom: 10px;
             line-height: 1.65em;
             margin-left: 16px;
@@ -434,14 +434,14 @@ i {
         .highlighter-rouge {
             padding: 0.5px 5px 0.5px 5px;
             font-size: 10pt;
-            background: #ffffff;
+            background: #f2f2f2;
             word-wrap: break-word;
-            font-family: 'monospace', monospace;
+            font-family: 'courier', monospace;
             font-weight: 300;
             overflow: hidden;
             margin-bottom: 10px;
             color: #000000;
-            border: 1px #dedede solid;
+            // border: 1px #dedede solid;
             border-radius: 3px;
 
         }
@@ -460,7 +460,7 @@ i {
             overflow-x: auto;
             background: #ffffff;
             font-size: 10pt;
-            font-family: 'monospace', monospace;
+            font-family: 'courier', monospace;
             font-weight: 300;
             color: #000000;
             margin-bottom: 15px;
