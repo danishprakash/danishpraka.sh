@@ -6,19 +6,47 @@ An account of books I've read with a line or two on what I thought about it, chr
 <br>
 
 # 2021
-<a name="eric-schmidt"></a>__[YNAB by Jesse Mecham](https://www.goodreads.com/book/show/34950841-you-need-a-budget)__
+<a name="phil-knight"></a>__[Shoe Dog by Phil Knight](https://www.goodreads.com/book/show/27220736-shoe-dog)__*
+<br>
+This book was honestly a surprise. I opened to skim it and ended up reading a couple of chapters. It is very well written. Phil Knight takes you along on his journey around the world to find "self" and also to bring to fruition his crazy idea. How Nike came to be, the people behind it, the problems they faced. I also loved this book thanks to the Japanese influence on Phil Knight after his first visit to Japan. A very good read.
+
+<a name="annapoorna"></a>__[Indra Nooyi - A Biography by Annapoorna](https://www.goodreads.com/book/show/19756906-indra-nooyi---a-biography)__
+<br>
+This book was lying around on my Kindle and I just happened to open it one weekend. This book talks about Indra Nooyi's extraordinary journey. Two things that I didn't particularly supported were the potrayal of the entrenched patriarchy in Indian culture and how Indra Nooyi would justify drinking Pepsi is totally safe because she and her family does it daily, please no. Other than that, great book. Makes you realize there's a lot of potential up ahead.
+
+<a name="matthew-mcconaughey"></a>__[Greenlights by Matthew McConaughey](https://www.goodreads.com/book/show/52838315-greenlights)__*
+<br>
+Was half expecting his escapades with his famous life but no, this ended up being such a great memoir. It's inspiring, encouraging and introspective at so different levels. I was particularly impressed by the fact that he happened to quit Law school and then later on picked up his bags and fly over to Australia for a year as an exchange student. I like the notion of that freedom wherein if you're not happy with your current state and you need things to change, you pick your stuff up and move. This book has many instances of that and much more. Also, it was hilarious as fuck.
+
+<a name="tina-seelig"></a>__[What I Wish I Knew When I Was 20 by Tina Seelig](https://www.goodreads.com/book/show/6081261-what-i-wish-i-knew-when-i-was-20)__
+<br>
+Quite interesting but slow paced at times. This book talks about the author's time when she taught students at Stanford about things such as coming up with a solution to a problem which is not possible to solve in the first place. The book has countless examples which shows how, when people think differently, they are able to achieve so much more than they bargained for.
+
+<a name="bruce-daisley"></a>__[Eat Sleep Work Repeat by Bruce Daisley](https://www.goodreads.com/book/show/46178719-eat-sleep-work-repeat)__
+<br>
+Bruce Daisley has worked with various tech companies and he talks about employee productivity and efficiency based on his experience backed by scientific studies and experiments on the same. It debunks a lot of cultural trends that we're inundated with even now despite there being ample evidence as to what works and what doesn't. It also has quite a lot of tips to make your work more pleasant. A good read.
+
+<a name="aho-kernighan-weinberger"></a>__[The AWK Programming Language by Aho, Kernighan & Weinberger](https://www.goodreads.com/book/show/703101.The_AWK_Programming_Language)__*
+<br>
+I like [command line tools](/software) for their brevity, for their declarativeness and efficiency. Awk is one of those tools that you end up using every now and then but for printing out just that $n column. Awk is capable of doing much more than that. This is one of the best technical books I've read despite it being dated. The authors give a comprehensive overview of the practical capabilities of the language and to the extent it can be used in software engineering not just devops. A very good read.
+
+<a name="victoria-abbott-riccardi"></a>__[Untangling My Chopsticks by Victoria Abbott Riccardi](https://www.goodreads.com/book/show/306776.Untangling_My_Chopsticks)__
+<br>
+Another memoir from someone who gets to spend their informative years in Japan. This memoir from Victoria hits a niche, specificall Kaiseki, a special traditional meal that surrounds a traditional tea ceremony. The memoir is set in Kyoto and the author recounts her days with a Japanese family which was ready to accept a _gaijin_ as part of their family. There's lots of culture strewn around in the book with visits to markets and onsens. Good read.
+
+<a name="jesse-mechan"></a>__[YNAB by Jesse Mecham](https://www.goodreads.com/book/show/34950841-you-need-a-budget)__
 <br>
 This is a "budgeting" book from the founder of [YNAB](https://www.youneedabudget.com/), a budgeting software with a very different philosophy than your usual track-what-you-spend. Even if you don't use YNAB, this is a quick weekend read which will force you to think about spending and managing your money in a way that would probably make you scoff for the first few times you try it but it's worth a shot.
 
-<a name="eric-schmidt"></a>__[The Psychology of Money by Morgan Housel](https://www.goodreads.com/book/show/41881472-the-psychology-of-money)__
+<a name="morgan-housel"></a>__[The Psychology of Money by Morgan Housel](https://www.goodreads.com/book/show/41881472-the-psychology-of-money)__
 <br>
 Was highly recommended to me by 2 of my good friends. This was a completely finance book I've read. It stitches together various facets of life and then infers the sometimes not-so-direct financial POV that makes so much more sense afterwards. There were quite a few learnings from this book and for me personally, has changed how I used to do certain things earlier.
 
-<a name="eric-schmidt"></a>__[A Promised Land by Barack Obama *](https://www.goodreads.com/book/show/55361205-a-promised-land)__
+<a name="barack-obama"></a>__[A Promised Land by Barack Obama *](https://www.goodreads.com/book/show/55361205-a-promised-land)__
 <br>
 I admire Barack Obama and having read this book gave me all the more reasons to continue to do so. There are probably too many things to quote here from the book but there were countless times in this book when I was forced to stop and think of all the wrongs in this world and how people end up being manipulated by demagogues. Probity aside, section in the book on life as the President and it's concomitant worries also keep you clinged.
 
-<a name="eric-schmidt"></a>__[Kubernetes in Action by Marko Luksa](https://www.goodreads.com/book/show/34013922-kubernetes-in-action)__
+<a name="marko-luksa"></a>__[Kubernetes in Action by Marko Luksa](https://www.goodreads.com/book/show/34013922-kubernetes-in-action)__
 <br>
 Great book on (almost)all things Kubernetes. I've been working on Kubernetes for over an year now and it always helps if you understand the systems you're working on. For instance, knowing how an Ingress controller refers to the Service's Endpoints resource to forward connections to pods, would, apart from scratching that proverbial itch, will also help you debug and build better systems on Kubernetes.
 

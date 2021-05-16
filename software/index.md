@@ -5,6 +5,8 @@ title: Software
 
 I like to write tools, mostly command line utilities and plugins, here's some of the stuff that I've written:
 
+- [gosortstructs](https://github.com/danishprakash/gosortstructs): sort Go structs using AST
+- [vim-gosortstructs](https://github.com/danishprakash/vim-gosortstructs): vim plugin to sort Go structs
 - [zf](https://github.com/danishprakash/zf): barely there fetch utility
 - [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim.
 - [vim-docker](https://github.com/danishprakash/vim-docker): Docker development plugin for Vim
