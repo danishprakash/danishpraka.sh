@@ -6,9 +6,58 @@ An account of books I've read with a line or two on what I thought about it, chr
 <br>
 
 # 2021
+<a name="walter-isaacson-2"></a>__[Steve Jobs by Walter Isaacson](https://www.goodreads.com/book/show/11084145-steve-jobs)__
+<br>
+A bit late to this one but I'm glad I was. I'm sure I would've missed the parts about behaviour and spirituality had I read this back in my first year of college. An account of the kind of person that Steve Jobs was, the great visionary and a terrible people's man. There were a lot of things that went well for Jobs and I couldn't help and think back the idea of Outliers but this is not to undermine the great late visionary. Walter Isaacson did a great job in keeping this biography neutral. It was very inspiring especially at the end where Jobs just refused to part ways from Apple and his love for creating great products. Good read.
+
+<a name="john-hersey"></a>__[Hiroshima by John Hersey](https://www.goodreads.com/book/show/27323.Hiroshima)__*
+<br>
+Taking a closer look at the ones who survived this terrible act by humanity, the author tries to put to words that fateful day and the ones after that. A whole town uprooted in a literal flash, people burned to shadows and other atrocities that arose out of the bombing. Immediate aftermath of the bombing lead to whirlwinds and fires and even flooding which added more misery to the ones who were already badly injured and suffering from an utter lack of resources. It was a tragedy in the truest sense of the word. Do read this.
+
+<a name="sam-kyle"></a>__[The Decision Checklist by Sam Kyle](https://www.goodreads.com/book/show/40025817-the-decision-checklist)__
+<br>
+Rather a collection of snippets from various other books. The only part that seemed interesting were the mental models in appendix 3 at the end of the book.
+
+<a name="haruki-murakami-3"></a>__[Underground by Haruki Murakami](https://www.goodreads.com/book/show/17801.Underground)__
+<br>
+A reminder to what happens when religious fanatiscism surfaces. This is an account of the survivors of the Tokyo Gas attack. As much as this book is gloomy, you get a view into the minds of the Japanese people. It struck me as to how many of the affected individuals were of the opinion that the perpetrators were not really at fault for what they did. A good read.
+
+<a name="malcolm-gladwell-2"></a>__[Outliers by Malcolm Gladwell](https://www.goodreads.com/book/show/3228917-outliers)__*
+<br>
+Big fan of Malcolm Gladwell's writing style and lately, his narration. This is a book that has a lot of those aha moments. It explains that it's not just hard work that goes behind one of the most successfull people of all times, there's a lot more to it. Your upbringing, parents, opportunities that you got very early in your life, all of these compound to help you to get where you are today. Must read.
+
+<a name="manoj-mitta"></a>__[When A Tree Shook Delhi by Manoj Mitta](https://www.goodreads.com/book/show/10398239-when-a-tree-shook-delhi)__
+<br>
+A well-researched, intriguing and at times, frustrating account of the 1984 massacre from the very individuals who were at the helm of the movement aimed at ensuring the victims/affected the justice that they deserved. It's safe to say that this book reveals shocking truth of the complicity of those in power. How the media was barred from reporting on the commission that was setup and how politics played out surrounding this whole unfortunate event that took place on that fateful night in Delhi. A must read.
+
+<a name="john-williams"></a>__[Stoner by John Williams](https://www.goodreads.com/book/show/166997.Stoner)__*
+<br>
+I listened to this one. It's a ride through the life of Mr. Stoner, an academic professor dealing with various issues he encounters as he discovers himself. It's really grim at times and you'll find yourselves rooting for the protagonist. It talks about family, relationships, friendship and life in general. Might as well start looking into fiction a bit more, much recommended.
+
+<a name="john-wood"></a>__[Leaving Microsoft to Change the World by John Wood](https://www.goodreads.com/book/show/95429.Leaving_Microsoft_to_Change_the_World)__
+<br>
+This is a great book about what really goes into behind the scenes if you're working non-profit for the betterment of society. It's not smooth-sailing at all and it requires sheer grit and determination to pursue it to the very end. The book starts off with the author's well-settled albeit hectic lifestyle and then quitting all of it to help children read books, literally. It's emotional and encouraging. Good read.
+
+<a name="drew-neil"></a>__[Practical Vim by Drew Neil](https://www.goodreads.com/book/show/13607232-practical-vim)__
+<br>
+I had read this book in bits and pieces a few years back on my phone and as much as I liked it, I wasn't able to retain much of the information. This time however, I got a hardcopy issued from work and was able to take appropriate notes and it turned out to be pretty dense with information. I've been using (n)vim for the past 4 years or so and I ended up learning quite a lot of information from this book. A must read if you're into vim.
+
+<a name="paul-jaminet"></a>__[Perfect Health Diet by Paul and Shou-Ching Jaminet](https://www.goodreads.com/book/show/14546755-perfect-health-diet)__*
+<br>
+I picked this book partly due to the foreword being written by Mark Sisson and partly because I wanted to try out a new diet this year. Apart from the cringey title, this books is really well-researched and makes a sound argument. Some of the suggestions still do seem a little controversial and open to interpretation but in general this book is a good read if you want to take stock of your diet and want to learn more about nutrition. I especially loved the section on supplementation although some of it is questionable based on further research that I did before opting into some of the suggestions in the book. All in all, a very good book if you're interested in the subject.
+
+<a name="bill-bryson"></a>__[A Short History of Nearly Everything by Bill Bryson](https://www.goodreads.com/book/show/21.A_Short_History_of_Nearly_Everything)__
+<br>
+Aptly titled, it talks about literally everything. I listened to this on Audible and it was surprisingly smooth sailing, I did find taking notes while listening a bit difficult but It was well worth it. The author tries to clear up questions that you always had in your mind for e.g. "What really is the big bang all about?", "How did life came to be?", "What's the deal with dinosaurs going extinct?". There were certain parts in the book where you felt like slogging but overall, the author and the narrator rightly so, made this book a pleasant listen.
+
 <a name="phil-knight"></a>__[Shoe Dog by Phil Knight](https://www.goodreads.com/book/show/27220736-shoe-dog)__*
 <br>
 This book was honestly a surprise. I opened to skim it and ended up reading a couple of chapters. It is very well written. Phil Knight takes you along on his journey around the world to find "self" and also to bring to fruition his crazy idea. How Nike came to be, the people behind it, the problems they faced. I also loved this book thanks to the Japanese influence on Phil Knight after his first visit to Japan. A very good read.
+
+<a name="nam-joo-cho"></a>__[Kim Jiyoung, Born 1982 by Cho Nam-Joo](https://www.goodreads.com/book/show/44527412-kim-jiyoung-born-1982)__
+<br>
+A great book that outlines the misogyny in the modern world. Although a work of fiction, you'd be hard pressed not to think otherwise. Some of the instances are something I've heard about in India and it's safe to say this is not just a South Korean thing but rather something that stems from the patriarchal history of a majority of asian cultures. Good read.
+
 
 <a name="annapoorna"></a>__[Indra Nooyi - A Biography by Annapoorna](https://www.goodreads.com/book/show/19756906-indra-nooyi---a-biography)__
 <br>
