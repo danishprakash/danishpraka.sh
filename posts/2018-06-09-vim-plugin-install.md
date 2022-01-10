@@ -39,7 +39,7 @@ We'll be using one of my [plugin](https://github.com/danishprakash/vimport) for 
 
 1 Clone the plugin to the appropriate vim directory.
 
-{% highlight sh %}
+{% highlight bash %}
 $ git clone https://github.com/danishprakash/vimport.git ~/vim/plugins/
 {% endhighlight %}
 

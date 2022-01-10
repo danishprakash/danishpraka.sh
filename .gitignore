@@ -1,7 +1,12 @@
-.DS_Store
-*tags
-.sass-cache/*
+# node modules
+node_modules
+
+# eleventy related
 _site
-_includes
-install.sh
-.jekyll-metadata
+.cache
+
+# vscode meta
+.vscode
+
+# MacOS specific
+.DS_Store

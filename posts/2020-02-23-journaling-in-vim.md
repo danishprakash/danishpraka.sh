@@ -51,14 +51,14 @@ journal/
 {% endhighlight %}
 And for the same, I require that every `.md` file that I open inside `~/journal/*` should be populated with my journal template. We can do that by using the following autocmd:
 
-{% highlight vimscript linenos %}
+{% highlight vim linenos %}
 autocmd VimEnter */journal/**   0r ~/.config/nvim/templates/journal.skeleton
 {% endhighlight %}
 The above autocommand is triggered on the `VimEnter` event i.e every time you enter vim from the command line. It is triggered on the pattern `*/journal/**` which recursively matches it's subdirectory. Finally, it reads and populates the active buffer with the journal template using the `r`(read) command.
 
 We'll also wrap our autocommand(s) in an `augroup` which helps removing and executing a group of autocommands together, it also makes it easier to organize your autocommands and eventually your vimrc. We'll add more autocommands to the journal augroup as shown below:
 
-{% highlight vimscript linenos %}
+{% highlight vim linenos %}
 augroup journal
     autocmd!
 
@@ -72,7 +72,7 @@ That looks much more readable, we will add subsequent autocmds to this augroup.
 # Completion
 Another important piece here is the completion source. For instance, a month into your journaling journey, you will be repeating or referencing a lot of words whether that's names of people, places or some technical jargon related to work. In order to minimize the effort and keystrokes required to repeat such words, we can make use of vim's completion feature which allows us to select custom sources. We can set a custom completion source by setting an appropriate value for the `complete` option:
 
-{% highlight vimscript linenos %}
+{% highlight vim linenos %}
 autocmd VimEnter */journal/**   setlocal complete=k/Users/danish/journal/**/*
 {% endhighlight %}
 The interesting thing to note in the above command is the `setlocal complete=...` command being triggered upon opening a new/existing file which matches the glob pattern specified. The `k` char before the file path tells vim to scan and source words for completion from the path that is specified local to the buffer matching the pattern and event. I urge you to read more about this on the [help document](http://vimdoc.sourceforge.net/htmldoc/options.html#'complete'), there are a bunch of potentially other useful flags for this option. 
@@ -95,14 +95,14 @@ I write the present day's journal the next morning, so in the morning when I ope
 
 Since this is dynamic, we can't make use of Vim templates here. Instead, let's use a combination of the shell and some Vimscript here. First off, I have created the following alias in my shell:
 
-{% highlight sh linenos %}
+{% highlight bash linenos %}
 journal='nvim $(date -v-1d "+%d-%m-%Y").md'
 {% endhighlight %}
 Using simple command substitution and the date utility, this will open (n)vim with the filename of the buffer as the previous day's date. For instance, If I'm writing the previous day's entry today (23/02/2020), the filename would aptly be named `22-02-2020.md`.
 
 Now, as soon as this command is executed, our templating autocommand, which we had setup previously, will spring into action and will populate the buffer with our skeleton file. To add the header, which is now the filename itself, we will use some good'ol Vimscript:
 
-{% highlight vimscript linenos %}
+{% highlight vim linenos %}
 " set header title for journal & enter writing mode
 function! JournalMode()
     execute 'normal gg'
@@ -115,7 +115,7 @@ endfunction
 
 We get the filename minus the extension, prepend a hash to that so that it formats as a markdown header and set that to the topmost line of our buffer. We then move on to the next line and then enter focus/zen mode provided by the [junegunn/goyo](https://github.com/junegunn/goyo.vim) plugin. Let's also add this to our journal augroup so that it does it's job at the right time:
 
-{% highlight vimscript linenos %}
+{% highlight vim linenos %}
 " workflow for daily journal
 augroup journal
     autocmd!
