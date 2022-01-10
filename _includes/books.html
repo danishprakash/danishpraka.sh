@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="page">
+  <div class="nav">
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/reading">BOOKS</a></li>
+      <li><a href="/software">CODE</a></li>
+      <li><a href="https://unsplash.com/@danishprakash" target="_blank">PHOTOS</a></li>
+    </ul>
+  </div>
+
+  <div class="cont">
+    <div class="post">
+      {% include 'analytics' %} {% if page.title %}
+      <h1 class="post__title">{{ page.title }}</h1>
+      {% endif %} An account of books I’ve read with a line or two on what I thought about it, chronologically grouped
+      by year:
+      <br />
+      <br />
+
+      <div class="post__content" ?>
+        {% for review in old_reviews.data %}
+        <div class="book-meta">
+          <a href="{{review.book.link}}" target="_blank">{{ review.book.title }}</a>
+          <p class="book-review">{{ review.review.body }}</p>
+          <!-- <div class="review-date">{{ review.review.date_read | date: '%b %Y' }}</div> -->
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

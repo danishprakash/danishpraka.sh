@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="page">
+  <div class="nav">
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/reading">BOOKS</a></li>
+      <li><a href="/software">CODE</a></li>
+      <li><a href="https://unsplash.com/@danishprakash" target="_blank">PHOTOS</a></li>
+    </ul>
+  </div>
+
+  <div class="cont">
+    <div class="post">
+      {% include 'analytics' %} {% if page.title %}
+      <h1 class="post__title">{{ page.title }}</h1>
+      {% endif %} {% comment %} {% if page.date %}
+      <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+      {% endif %} {% endcomment %}
+
+      <div class="post__content">{{ content }}</div>
+    </div>
+  </div>
+</div>
