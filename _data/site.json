@@ -1,0 +1,17 @@
+{
+  "name": "danishprakash",
+  "description": null,
+  "include": [".htaccess"],
+  "exclude": ["README.md", "LICENSE"],
+  "sass": {
+    "style": ":compressed",
+    "sass_dir": "_sass"
+  },
+  "google_analytics": "UA-101783497-1",
+  "markdown": "kramdown",
+  "kramdown": {
+    "input": "GFM",
+    "hard_wrap": false
+  },
+  "highlighter": "rouge"
+}
