@@ -3,12 +3,13 @@
 
 @import url(bw.css);
 @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
 @import "reset";
 @import "config";
 
 .page {
-    margin-top: 42px;
+    margin-top: 60px;
     margin-left: 45px;
     display: flex;
     flex-direction: row;
@@ -20,10 +21,10 @@
 
         a {
             font-family: 'inter';
-            line-height: 8px;
+            // line-height: 8px;
             font-weight: 700;
             font-style: normal;
-            font-size: 8pt;
+            font-size: 9pt;
             color: #514e4e;
         }
 
@@ -102,9 +103,9 @@
 body {
     color: #000000;
     background: #ffffff;
-    font-family:  'Noto Serif JP', sans-serif;
-    font-size: 11pt;
-    line-height: 23px;
+    font-family:  'IBM Plex Sans', sans-serif;
+    font-size: 12pt;
+    line-height: 1.5;
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -114,7 +115,7 @@ hr {
 }
 
 p {
-    font-size: 11pt;
+    font-size: 12pt;
     line-height: 1.25em;
 }
 
@@ -150,7 +151,7 @@ ul {
         display: block;
     }
     h1 {
-        font-size: 11pt;
+        font-size: 12pt;
         font-family:  'inter', sans-serif;
 		font-weight: 500;
         padding-bottom: 5px;
@@ -190,12 +191,12 @@ i {
 // description text
 .description {
     a {
-        line-height: 23px;
+        line-height: 1.5;
         font-weight: 400;
         font-style: normal;
-        font-size: 11pt;
+        font-size: 12pt;
         color: #000000;
-        border-bottom: 1px solid #d2d2d2;
+        border-bottom: 2px solid #d2d2d2;
         &:hover {
             text-decoration: none;
             background-color: #fcf7a2;
@@ -209,12 +210,12 @@ i {
     max-width: 550px;
 
 	h2 {
-        font-size: 11pt;
+        font-size: 12pt;
 	}
 
     p {
-        font-family:  'Noto Serif JP', sans-serif;
-        font-size: 11pt;
+        font-family:  'IBM Plex Sans', sans-serif;
+        font-size: 12pt;
         font-weight: 400;
         line-height: 23px;
         margin-bottom: 5px;
@@ -238,17 +239,17 @@ i {
     padding-bottom: 30px;
 
     h1 {
-        font-size: 11pt;
+        font-size: 12pt;
         font-weight: 400;
         margin-bottom: 14px;
-        border-bottom: 1px #000000 solid;
+        border-bottom: 1px #e6e6e6 solid;
     }
 
 	li {
         margin: 0 1.5px 1.5px 0;
         padding-right: 0px;
         list-style: none;
-        line-height: 25px;
+        line-height: 30px;
         // text-transform: capitalize;
 
         .date{
@@ -264,9 +265,9 @@ i {
         line-height: 18px;
         font-weight: 400;
         font-style: normal;
-        font-size: 11pt;
+        font-size: 12pt;
         color: #000000;
-        border-bottom: 1px solid #d2d2d2;
+        border-bottom: 2px solid #d2d2d2;
         &:hover {
             text-decoration: none;
             background-color: #fcf7a2;
@@ -305,7 +306,7 @@ i {
         font-size: 0.75em;
         text-align: left;
         color: #616161;
-        font-family:  'Noto Serif JP', sans-serif;
+        font-family:  'IBM Plex Sans', sans-serif;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -336,10 +337,10 @@ i {
 
 
         p {
-            font-family: 'Noto Serif JP', sans-serif;
-            font-size: 11pt;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 12pt;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 1.5;
             padding-bottom: 16px;
             word-wrap: break-word;
             // letter-spacing: 0.2px;
@@ -347,13 +348,13 @@ i {
         }
 
         a {
-            line-height: 23px;
+            line-height: 1.5;
             font-weight: 400;
             font-style: normal;
-            font-size: 11pt;
+            font-size: 12pt;
             color: #000000;
-            font-family: 'Noto Serif JP', sans-serif;
-            border-bottom: 1px solid #d2d2d2;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border-bottom: 2px solid #d2d2d2;
             &:hover {
                 text-decoration: none;
                 background-color: #fcf7a2;
@@ -362,15 +363,15 @@ i {
         }
 
         strong {
-            font-family: 'Noto Serif JP', sans-serif;
+            font-family: 'IBM Plex Sans', sans-serif;
             padding-bottom: 10px;
         }
         em {
             font-style: italic;
         }
         ul {
-            font-size: 11pt;
-            font-family: 'Noto Serif JP', sans-serif;
+            font-size: 12pt;
+            font-family: 'IBM Plex Sans', sans-serif;
             list-style: disc;
             padding-bottom: 10px;
             line-height: 1.3em;
@@ -436,16 +437,15 @@ i {
         // inline code blocks
         .highlighter-rouge {
             padding: 0.5px 5px 0.5px 5px;
-            font-size: 11pt;
-            background: #f2f2f2;
+            font-size: 12pt;
+            // background: #f2f2f2;
             word-wrap: break-word;
-            font-family: 'courier', monospace;
+            font-family: 'IBM Plex Mono', monospace;
             font-weight: 300;
             overflow: hidden;
             margin-bottom: 10px;
             color: #000000;
-            // border: 1px #dedede solid;
-            border-radius: 3px;
+            border: 1px solid #EBE9ED;
 
         }
 
@@ -462,8 +462,8 @@ i {
             font-weight: 400;
             overflow-x: auto;
             background: #ffffff;
-            font-size: 11pt;
-            font-family: 'courier', monospace;
+            font-size: 16px;
+            font-family: 'IBM Plex Mono', monospace;
             font-weight: 300;
             color: #000000;
             margin-bottom: 15px;
@@ -515,8 +515,8 @@ i {
             margin-bottom: 5px;
         }
         p {
-            font-size: 11pt;
-            line-height: 150%;
+            font-size: 12pt;
+            line-height: 1.5;
             margin-bottom: 10px;
             font-weight: 400;
 		}
