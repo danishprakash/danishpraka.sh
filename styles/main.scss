@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
 @import "reset";
 @import "config";
+@import './prism_theme.scss';
 
 .page {
     margin-top: 60px;
