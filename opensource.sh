@@ -2,10 +2,12 @@
 
 USERNAME="danishprakash"
 declare REPOS="golang/tools \
+    ankitects/anki \
     hashicorp/nomad \
     hashicorp/terraform-ls \
+    hashicorp/vscode-terraform \
     Shopify/kubeaudit \
-    aws/aws-sam-cli \
+    neovim/neovim \
     microsoft/ptvsd \
     microsoft/knack \
     auth0/auth0-python \
@@ -13,9 +15,8 @@ declare REPOS="golang/tools \
     python/cpython \
     python/peps \
     VSCodeVim/Vim \
-    neovim/neovim \
-    coala/coala-bears \
-    hashicorp/vscode-terraform"
+    aws/aws-sam-cli \
+    coala/coala-bears"
 
 
 for REPO in ${REPOS}
@@ -31,6 +32,6 @@ do
             split(a[2], message, "\\\\n")
 
             gsub(/^[ \t"]+|[ \t]+$/, "", url); gsub(/^[ \t]+|[ \t"]+$/, "", message[1])
-            printf "- %s:\n [%s](%s)    \n", org[1], message[1], url
+            printf "- %s: [%s](%s)    \n", org[1], message[1], url
         }'
 done
