@@ -36,16 +36,15 @@
     }
 
     margin-top: 40px;
-    margin-left: 45px;
     font-weight: 300;
     font-family: 'inter';
     border-top: 1px solid #dddcdc;
     margin-top: 160px;
     margin-bottom: -20em;
-    padding-left: 30px;
     padding-top: 15px;
-    margin-right: -100em;
     border-left: 1px solid #dddcdc;
+    padding-left: 30px;
+    margin-left: 45px;
     padding-bottom: 40px;
 }
 
@@ -70,7 +69,6 @@
         padding-top: 95px;
         padding-left: 31px;
         margin-bottom: 25px;
-        margin-right: -100em;
 
         a {
             font-family: 'inter';
@@ -187,8 +185,9 @@ p {
 
 
 .wrapper {
-    max-width: 950px;
+    max-width: auto;
     margin: auto;
+    margin-left: 10em;
     // padding: 44px 0px 0px 44px;
     @media screen and (max-width: $br) {
         padding: 20px;
@@ -334,7 +333,7 @@ i {
 // blog-post
 .post {
     padding-bottom: 30px;
-    max-width: 600px;
+    max-width: 38em;
 
     &__back {
         display: in-line;
@@ -356,7 +355,7 @@ i {
     }
 
     &__date {
-        visibility: hidden;
+        // visibility: hidden;
         font-size: 0.75em;
         text-align: left;
         color: #616161;

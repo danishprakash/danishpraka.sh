@@ -24,11 +24,9 @@ layout: default
                 <h1 class="post__title">{{ page.title }}</h1>
             {% endif %}
 
-            {% comment %}
             {% if page.date %}
                 <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
             {% endif %}
-            {% endcomment %}
 
             <div class="post__content"?>
                 {{ content }}
