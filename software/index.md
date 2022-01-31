@@ -31,6 +31,7 @@ This is an archive of some of the software I've written over time and a few of m
 # Personal Projects
 I like to write tools, mostly command line utilities and plugins, here's some of the stuff that I've written:
 
+- [kube-step-podautoscaler](https://github.com/danishprakash/kube-step-podautoscaler): Controller to scale workloads based on steps.
 - [gosortstructs](https://github.com/danishprakash/gosortstructs): sort Go structs using AST
 - [vim-gosortstructs](https://github.com/danishprakash/vim-gosortstructs): vim plugin to sort Go structs
 - [zf](https://github.com/danishprakash/zf): barely there fetch utility
