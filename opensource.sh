@@ -2,11 +2,12 @@
 
 USERNAME="danishprakash"
 declare REPOS="golang/tools \
-    ankitects/anki \
+    Shopify/kubeaudit \
     hashicorp/nomad \
     hashicorp/terraform-ls \
     hashicorp/vscode-terraform \
-    Shopify/kubeaudit \
+    opencontainers/runc \
+    ankitects/anki \
     neovim/neovim \
     microsoft/ptvsd \
     microsoft/knack \
