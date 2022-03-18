@@ -12,6 +12,7 @@ declare REPOS="golang/tools \
     microsoft/ptvsd \
     microsoft/knack \
     auth0/auth0-python \
+    lighttiger2505/sqls \
     google/kasane \
     python/cpython \
     python/peps \

@@ -20,6 +20,7 @@ This is an archive of some of the software I've written over time and a few of m
 - neovim/neovim: [vim-patch:8.0.0323: one second pause when running cmdline test (#8015)](https://github.com/neovim/neovim/commit/09b51bbf87b16af9a186cea750ada748d89aa259)
 - microsoft/knack: [Desired behavior with --debug, --verbose (#117)](https://github.com/microsoft/knack/commit/71d4e993eee1caa8a40e70636d79e40aab9d9968)
 - auth0/auth0-python: [Add `client_id` param to ClientGrants.all](https://github.com/auth0/auth0-python/commit/ebff4305a4ad6146942b8fe62eb5d28eee6d2400)
+- lighttiger2505/sqls: [internal/formatter: fix incorrect formatting with INSERT INTO](https://github.com/lighttiger2505/sqls/pull/90/files)
 - google/kasane: [add --version option](https://github.com/google/kasane/commit/89c7dd14b83182152e191b1e5506e41158481801)
 - python/cpython: [bpo-34901: add isolated (-I) flag to sys.flags (GH-9708)](https://github.com/python/cpython/commit/656d52dbfde3223cd2a3525d652b6cccb02fa991)
 - python/cpython: [bpo-34365: Update date object documentation (GH-8814)](https://github.com/python/cpython/commit/9c223794c754408644c16349b85dd27fdba8a926)
