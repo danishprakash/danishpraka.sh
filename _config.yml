@@ -6,6 +6,8 @@ description: ~
 include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
 
+plugins:
+  - jekyll-feed
 
 # Sass
 sass:
