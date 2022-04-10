@@ -5,10 +5,10 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
-@import "reset";
-@import "config";
+@import 'reset';
+@import 'config';
 
-.title{
+.title {
     margin-top: 40px;
     margin-left: 45px;
     font-weight: 800;
@@ -50,6 +50,12 @@
 
 .page {
     margin-left: 45px;
+
+    @media (max-width: $breakpoint-sm) {
+        margin-left: 0;
+        padding-left: 16px;
+    }
+
     display: block;
     border-left: 1px solid #dddcdc;
     padding-left: 30px;
@@ -79,7 +85,6 @@
             color: gray;
         }
 
-
         ul {
             list-style: none;
             align-content: left;
@@ -97,38 +102,44 @@
         }
     }
 
-  .cont {
-    // margin-left: 180px;
-    // flex: 1;
-    justify-content: center;
-    align-items: center;
-    // display: flex;
-  }
+    .cont {
+        // margin-left: 180px;
+        // flex: 1;
+        justify-content: center;
+        align-items: center;
+        // display: flex;
+    }
 }
 
 @media (max-width: 500px) {
-  .page {
-    flex-direction: column;
-    align-items: center;
-    .nav {
-      width: 65%;
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
+    .page {
+        flex-direction: column;
+        align-items: center;
+        .nav {
+            width: 65%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
-  }
-  .page .cont {
-      margin-left: 120px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
+    .page .cont {
+        margin-left: 120px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: $breakpoint-sm) {
+            max-width: 90vw;
+            display: block;
+        }
     }
 
-  .page {
-      display: inline-block;
-      .cont {
-          margin-left: 0px;
+    .page {
+        display: inline-block;
+        .cont {
+            margin-left: 0px;
         }
         .nav {
             margin-left: 0px;
@@ -138,7 +149,7 @@
                 padding-right: 10px;
             }
         }
-  }
+    }
 }
 
 .site-title {
@@ -155,7 +166,7 @@
 body {
     color: #000000;
     background: #ffffff;
-    font-family:  'inter', sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 12pt;
     line-height: 1.5;
     font-weight: 400;
@@ -183,32 +194,33 @@ p {
 //     }
 // }
 
-
 .wrapper {
     max-width: auto;
     margin: auto;
     margin-left: 10em;
     // padding: 44px 0px 0px 44px;
-    @media screen and (max-width: $br) {
-        padding: 20px;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        margin-left: 0;
+        padding-left: 16px;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        margin-left: 0;
+        padding-left: 0;
     }
 }
 
-
-// header (name)
 .header {
     display: inline;
     justify-content: space-between;
     align-items: baseline;
-    @media screen and (max-width: $br) {
-        display: block;
-    }
     h1 {
         font-size: 12pt;
-        font-family:  'inter', sans-serif;
-		font-weight: 500;
+        font-family: 'inter', sans-serif;
+        font-weight: 500;
         padding-bottom: 5px;
-		text-align: left;
+        text-align: left;
     }
     // ul {
     //     margin-top: 10px;
@@ -218,7 +230,6 @@ p {
     //         padding-left: 5px;
     //     }
     // }
-
 }
 
 b {
@@ -231,14 +242,14 @@ i {
 
 // navigation item separation
 #navigation ul li {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     display: inline;
 }
 
 #navigation li:not(:first-child):before {
-    content: " · ";
+    content: ' · ';
 }
 
 // description text
@@ -262,12 +273,12 @@ i {
 .desc {
     max-width: 550px;
 
-	h2 {
+    h2 {
         font-size: 12pt;
-	}
+    }
 
     p {
-        font-family:  'inter', sans-serif;
+        font-family: 'inter', sans-serif;
         font-size: 12pt;
         font-weight: 400;
         line-height: 23px;
@@ -276,7 +287,6 @@ i {
     }
 }
 
-
 .portfolio {
     padding-bottom: 30px;
     h1 {
@@ -284,8 +294,6 @@ i {
         margin-bottom: 5px;
     }
 }
-
-
 
 // archive section
 .blog {
@@ -298,21 +306,20 @@ i {
         border-bottom: 1px #e6e6e6 solid;
     }
 
-	li {
+    li {
         margin: 0 1.5px 1.5px 0;
         padding-right: 0px;
         list-style: none;
         line-height: 30px;
         // text-transform: capitalize;
 
-        .date{
+        .date {
             float: none;
             font-size: 8pt;
             color: #777777;
             text-transform: lowercase;
         }
-
-	}
+    }
 
     a {
         line-height: 18px;
@@ -328,7 +335,6 @@ i {
         }
     }
 }
-
 
 // blog-post
 .post {
@@ -359,11 +365,10 @@ i {
         font-size: 0.75em;
         text-align: left;
         color: #616161;
-        font-family:  'inter', sans-serif;
+        font-family: 'inter', sans-serif;
         font-weight: 400;
         margin-bottom: 20px;
     }
-
 
     &__content {
         hr {
@@ -387,7 +392,6 @@ i {
             margin-bottom: 4px;
             font-family: 'inter', sans-serif;
         }
-
 
         p {
             font-family: 'inter', sans-serif;
@@ -452,7 +456,7 @@ i {
             padding-bottom: 3px;
             // list-style: decimal;
             padding-left: 2px;
-            margin-left: 12px
+            margin-left: 12px;
         }
         img {
             padding-top: 10px;
@@ -481,8 +485,8 @@ i {
                 text-decoration-thickness: auto;
                 text-decoration-color: currentcolor;
                 text-decoration-thickness: auto;
-                text-decoration-color: #DADADA;
-                text-decoration-thickness: .125em;
+                text-decoration-color: #dadada;
+                text-decoration-thickness: 0.125em;
                 text-underline-offset: 2.5px;
             }
         }
@@ -498,8 +502,7 @@ i {
             overflow: hidden;
             margin-bottom: 10px;
             color: #000000;
-            border: 1px solid #EBE9ED;
-
+            border: 1px solid #ebe9ed;
         }
 
         sup {
@@ -522,7 +525,6 @@ i {
             margin-bottom: 15px;
             border: 1px #dedede solid;
             border-radius: 4px;
-
         }
 
         .lineno {
@@ -547,11 +549,10 @@ i {
 }
 
 .about {
-
-	&__back {
-		display: block;
-		text-align: left;
-	}
+    &__back {
+        display: block;
+        text-align: left;
+    }
 
     &__title {
         font-size: 1.5em;
@@ -572,7 +573,6 @@ i {
             line-height: 1.5;
             margin-bottom: 10px;
             font-weight: 400;
-		}
+        }
     }
 }
-
