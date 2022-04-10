@@ -11,6 +11,7 @@ This is an archive of some of the software I've written over time and a few of m
 - golang/tools: [internal/lsp/source: evaluate bin/hex literal on hover](https://github.com/golang/tools/commit/0c506a27403cdd01a1a9f73f3e3ead148a0628d1)
 - golang/tools: [internal/lsp/source: return location(s) for imported packages](https://github.com/golang/tools/commit/c94e1fe1450c95c7fd702428de838e0347e2544c)
 - Shopify/kubeaudit: [pkg/k8s: add support for initContainer (#376)](https://github.com/Shopify/kubeaudit/commit/abd7f1240b41be7e12ea6d96e6b5b3d779d9bc2c)
+- hashicorp/nomad: [command/operator_debug: add pprof interval (#11938)](https://github.com/hashicorp/nomad/commit/ff6ae5fad2a98e6062563d289f7a769c14adadd7)
 - hashicorp/nomad: [client: emit max_memory metric (#11490)](https://github.com/hashicorp/nomad/commit/e70b0b7727c0dba82e453a5cbba94f081ce85b39)
 - hashicorp/terraform-ls: [internal: expose pending tf related options via init opts (#619)](https://github.com/hashicorp/terraform-ls/commit/d9ad7f83217fd8641fe545a692de996a4defa4a2)
 - hashicorp/terraform-ls: [internal: expose tf related options via init opts (#588)](https://github.com/hashicorp/terraform-ls/commit/21b76867bec62308666851b08cdd7d992283b6bb)
