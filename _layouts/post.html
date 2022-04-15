@@ -30,7 +30,7 @@ layout: default
             {% endif %}
 
             <div class="post__content"?>
-                {{ content }}
+                {% include anchor_headings.html html=content anchorBody="#" %}
             </div>
         </div>
     </div>
