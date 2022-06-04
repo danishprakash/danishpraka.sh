@@ -13,6 +13,7 @@ This is an archive of some of the software I've written over time and a few of m
 - Shopify/kubeaudit: [pkg/k8s: add support for initContainer (#376)](https://github.com/Shopify/kubeaudit/commit/abd7f1240b41be7e12ea6d96e6b5b3d779d9bc2c)
 - hashicorp/nomad: [command/operator_debug: add pprof interval (#11938)](https://github.com/hashicorp/nomad/commit/ff6ae5fad2a98e6062563d289f7a769c14adadd7)
 - hashicorp/nomad: [client: emit max_memory metric (#11490)](https://github.com/hashicorp/nomad/commit/e70b0b7727c0dba82e453a5cbba94f081ce85b39)
+- hashicorp/terraform-ls: [internal/service: add support for didChangeWatchedFiles (#790)](https://github.com/hashicorp/terraform-ls/commit/d223ae48f783d41c5814a5e95d7c550ea7b400fb)
 - hashicorp/terraform-ls: [internal: expose pending tf related options via init opts (#619)](https://github.com/hashicorp/terraform-ls/commit/d9ad7f83217fd8641fe545a692de996a4defa4a2)
 - hashicorp/terraform-ls: [internal: expose tf related options via init opts (#588)](https://github.com/hashicorp/terraform-ls/commit/21b76867bec62308666851b08cdd7d992283b6bb)
 - hashicorp/vscode-terraform: [src/clientHandler: add support for: (#741)](https://github.com/hashicorp/vscode-terraform/commit/fa3ddf51c29827daabd162f751f69e68c4d6d067)
