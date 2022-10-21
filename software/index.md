@@ -8,6 +8,7 @@ This is an archive of some of the software I've written over time and a few of m
 
 # Open Source
 
+- kubernetes/kubernetes: [pkg/admission/storageclass: pick random storageclass if >1 present](https://github.com/kubernetes/kubernetes/commit/f12325add3fbac8a2ce31cb12b4649c01d74f248)
 - golang/tools: [internal/lsp/source: evaluate bin/hex literal on hover](https://github.com/golang/tools/commit/0c506a27403cdd01a1a9f73f3e3ead148a0628d1)
 - golang/tools: [internal/lsp/source: return location(s) for imported packages](https://github.com/golang/tools/commit/c94e1fe1450c95c7fd702428de838e0347e2544c)
 - Shopify/kubeaudit: [pkg/k8s: add support for initContainer (#376)](https://github.com/Shopify/kubeaudit/commit/abd7f1240b41be7e12ea6d96e6b5b3d779d9bc2c)
