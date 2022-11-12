@@ -493,8 +493,8 @@ i {
 
         // inline code blocks
         .highlighter-rouge {
-            padding: 0.5px 5px 0.5px 5px;
-            font-size: 12pt;
+            padding: 1.5px 5px 2.5px 5px;
+            font-size: 11pt;
             // background: #f2f2f2;
             word-wrap: break-word;
             font-family: 'IBM Plex Mono', monospace;
@@ -502,7 +502,9 @@ i {
             overflow: hidden;
             margin-bottom: 10px;
             color: #000000;
-            border: 1px solid #ebe9ed;
+            // border: 1px solid #ebe9ed;
+            background: #e6e6e6;
+            border-radius: 5px;
         }
 
         sup {
@@ -514,11 +516,11 @@ i {
         .highlight {
             max-width: 650px;
             padding: 25px 25px 25px 25px;
-            line-height: 14pt;
+            line-height: 12pt;
             font-weight: 400;
             overflow-x: auto;
-            background: #ffffff;
-            font-size: 16px;
+            background: #e6e6e6;
+            font-size: 14px;
             font-family: 'IBM Plex Mono', monospace;
             font-weight: 300;
             color: #000000;
@@ -528,7 +530,7 @@ i {
         }
 
         .lineno {
-            color: #d9d9d9;
+            color: #bbbbbb;
             padding-right: 8px;
             border-right: 1px solid #d9d9d9;
             margin-right: 10px;
