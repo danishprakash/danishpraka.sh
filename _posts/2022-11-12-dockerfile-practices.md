@@ -3,7 +3,7 @@ layout: post
 title: Dockerfile Practices
 ---
 
-Yet another post on the internet about how to write Dockerfiles, for the umpteenth time. But I'm writing this post as a reference for my future self rather than having it act as a gospel for others to abide by while writing Dockerfiles. That was the primary purpose, the secondary purpose is, in general, to [write more](https://danishpraka.sh/2022/01/30/year-in-review-2021.html#reading--writing). Quality over quantity somewhat. I've been slacking away from finishing up a lot of articles due to this small block that Julia Evans described quite neatly, people find it extremely difficult to write without explaining everything from the beginning[1].
+Yet another post on the internet about how to write Dockerfiles, for the umpteenth time. But I'm writing this post as a reference for my future self rather than having it act as a gospel for others to abide by while writing Dockerfiles. That was the primary purpose, the secondary purpose is, in general, to [write more](https://danishpraka.sh/2022/01/30/year-in-review-2021.html#reading--writing). Quality over quantity somewhat. I've been slacking away from finishing up a lot of articles due to this small block that Julia Evans described quite neatly, people find it extremely difficult to write without explaining everything from the beginning.
 
 This post doesn't follow a weighted order, it's just some of the practices I've personally used and (some) would prefer to use whenever I write Dockerfiles. This post also assumes you have a basic understanding of Docker and Dockerfiles.
 
@@ -41,7 +41,7 @@ Some things I've gathered so far:
 1. While installing packages, specify each per line for better diffs & readability.
 2. Use empty lines. Group sets of instructions based on functionality.
 3. Break chained commands and start the next line with an `&&`.
-3. Employ comments only if necessary.
+3. Make use of comments only if necessary.
 
 {% highlight text linenos %}
 ...
@@ -79,14 +79,14 @@ RUN apt-get update \
 
 COPY . .
 RUN make install
-
-RUN go build -o app
 {% endhighlight %}
 
 Once done installing the prerequisites, we can go ahead and build our application. Here, we're using a [Makefile](https://danishpraka.sh/2019/12/07/using-makefiles-for-go.html) target which wraps the `go install` command internally.
 
 # Multi-stage builds!
-If there's to be only one takeaway from this article, let it be this one. Docker allows you to base your docker image off of other docker images as part of a single build. Let's say you built your application from source by installing all the prerequisites and other requirements and finally you have your binary ready for use. But you don't really need all the other dependencies you installed in your final environment. Build stages can help us define multiple stages, for instance, in this example, we can have a build stage where we build our application. We can then have a second stage which can be based off a lean alpine image and since we have access to the previous stage, we can simply copy our binary from the build stage to our final state. Multi-stage builds allows us to properly define separation of concerns to significantly reduce the final image size.
+If there's to be only one takeaway from this article, let it be this one. Docker allows you to base your docker image off of other docker images as part of a single build.
+
+Let's say you built your application from source by installing all the prerequisites and other requirements and finally you have your binary ready for use. But you don't really need all the other dependencies you installed in your final environment. Build stages can help us define multiple stages, for instance, in this example, we can have a build stage where we build our application. We can then have a second stage which can be based off a lean alpine image and since we have access to the previous stage, we can simply copy our binary from the build stage to our final stage. Multi-stage builds allows us to properly define separation of concerns to significantly reduce the final image size.
 
 {% highlight text linenos %}
 # Stage 2; builder stage
@@ -113,7 +113,7 @@ This will give you a docker image with a small footprint and without all the ext
 
 Using multi-stage builds can drastically improve both the size and hygiene of your Dockerfiles.
 
-Multi-stage builds also serve other important purposes, for e.g. allowing you to have a dev environment build within your primary Dockerfile or allowing you to build your dependencies in parallen (concurrency pattern) resulting in faster builds.
+Multi-stage builds also serve other important purposes, for e.g. allowing you to have a dev environment build within your primary Dockerfile or allowing you to build your dependencies in parallel (concurrency pattern) resulting in faster builds.
 
 
 # Use ARGs effectively
@@ -168,7 +168,7 @@ RUN wget https://github.com/checkpoint-restore/criu/archive/refs/tags/v${CRIU_VE
 # Understand `ENTRYPOINT` and `CMD`
 This is probably the most commonly misinterpreted of them all. Part of the confusion arises due to the different forms available for both `ENTRYPOINT` and `CMD`. But to keep it simple, I'm going to only consider the JSON form here while discussing a preferred way to use these two directives.
 
-There are two common ways one would use a Docker image. They either use it as a interactive sandbox environment wherein you could exec and do some tasks. The other is to use it as a binary. For instance, in our example above, we really just want to run this docker image and expect it to start our Go binary. This is the format that's commonly used when it comes to usage within container orchestration systems such as Kubernetes.
+There are two common ways one would use a Docker image. They are either used as an interactive sandbox environment wherein you could exec and do some tasks. Or they are used as a binary. For instance, in our example above, we really just want to run this docker image and expect it to start our Go binary. This is the format that's commonly used when it comes to usage within container orchestration systems such as Kubernetes.
 
 That being said, if you're using your Docker image as an executable, your Dockerfile should have either of `ENTRYPOINT` or `CMD` or preferably both. `ENTRYPOINT` defines the command that is supposed to run in your container, `CMD` specifies default arguments that are passed to the command specified by `ENTRYPOINT`. Let's understand this better with an example:
 
@@ -182,6 +182,8 @@ CMD ["-a", "-l"]
 {% endhighlight %}
 
 Once built, when you do `docker run <image>`, it should execute the `ls` command with the two arguments specified by `CMD`.
+
+This is not to say that this covers the complete difference between the two directives, but it should help you make informed decisions for the most common use-cases wrt to specifying commands and arguments for your Docker image. I can maybe talk about the in-depth differences (signals, pids, etc) that arises with the usage between these two in a separate post of its own.
 
 # Dockerignore
 Having an up to date dockerignore file in your project's repository ensures no fluff is added to your Docker images and additionally, it can prevent you from accidentaly adding credentials or secret files to your Docker images. I could've added this to the discard fluff section but if implemented, it really helps maintain the hygiene of your repository, like how .gitignore helps keeps your upstream all neat and clean.
@@ -197,13 +199,6 @@ This is the kind of post which doesn't really call for an inferential conclusion
 7. Understand the difference between `ENTRYPOINT` and `CMD`.
 8. Use `.dockerignore` in your projects.
 
-If you came across anything in this article that might not be right(highly likely), feel free to report an [issue](https://github.com/danishprakash/danishpraka.sh/issues) or reach out to me directly via email.
-
-## References
-[1] - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-
-[2] - [https://docs.docker.com/engine/reference/builder](https://docs.docker.com/engine/reference/builder)
-
-[3] - [https://www.youtube.com/watch?v=JofsaZ3H1qM](https://www.youtube.com/watch?v=JofsaZ3H1qM)
+As mentioned previously, I've curated this list of practices from my own experience with writing Dockerfiles for the past 3 years. There is a good chance some of this runs counter against what you follow or what should be followed. And if that's the case, if you came across anything in this article that might not be right(highly likely) or if you have suggestions for improvements, feel free to report an [issue](https://github.com/danishprakash/danishpraka.sh/issues) or reach out to me directly via email.
 
 :wq
