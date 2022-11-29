@@ -2,6 +2,7 @@
 
 USERNAME="danishprakash"
 declare REPOS="golang/tools \
+    kubernetes/kubernetes \
     Shopify/kubeaudit \
     hashicorp/nomad \
     hashicorp/terraform-ls \
@@ -20,12 +21,10 @@ declare REPOS="golang/tools \
     aws/aws-sam-cli \
     coala/coala-bears"
 
-
-for REPO in ${REPOS}
-do
-    curl -s -u danishprakash:${GH_TOKEN} -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${REPO}/commits?author=${USERNAME}" \
-        | jq '.[] |  "\(.html_url) | \(.commit.message)"' \
-        | awk '
+for REPO in ${REPOS}; do
+    curl -s -u danishprakash:${GH_TOKEN} -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${REPO}/commits?author=${USERNAME}" |
+        jq '.[] |  "\(.html_url) | \(.commit.message)"' |
+        awk '
         BEGIN { FS = "|" }
         {
             split($0, a, "|")
