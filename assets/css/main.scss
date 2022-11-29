@@ -5,24 +5,9 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 @import 'reset';
 @import 'config';
-
-.title {
-    margin-top: 40px;
-    margin-left: 45px;
-    font-weight: 800;
-    font-family: 'inter';
-    color: #514e4e;
-    border-left: 1px solid #dddcdc;
-    padding-left: 30px;
-    font-size: 16px;
-
-    a:visited {
-        color: #514e4e;
-        text-decoration: none;
-    }
-}
 
 .footer {
     p {
@@ -35,54 +20,81 @@
         color: #514e4e;
     }
 
-    margin-top: 40px;
     font-weight: 300;
     font-family: 'inter';
     border-top: 1px solid #dddcdc;
-    margin-top: 160px;
     margin-bottom: -20em;
     padding-top: 15px;
     border-left: 1px solid #dddcdc;
     padding-left: 30px;
     margin-left: 45px;
     padding-bottom: 40px;
+    margin-right: 45px;
+    border-right: 1px solid #dddcdc;
+    background: #f7f7f7;
 }
 
 .page {
     margin-left: 45px;
+    margin-right: 45px;
 
     @media (max-width: $breakpoint-sm) {
         margin-left: 0;
-        padding-left: 16px;
+        // padding-left: 16px;
+    }
+
+    .header {
+        display: inline-flex;
+        width: 100%;
+        border-bottom: 1px solid #dddcdc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        font-size: 12pt;
+        background: #f0f0f0;
+        padding-top: 20px;
     }
 
     display: block;
     border-left: 1px solid #dddcdc;
-    padding-left: 30px;
-    margin-top: -6em;
-    margin-bottom: -10em;
-    padding-bottom: 100px;
+    border-right: 1px solid #dddcdc;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    // margin-top: -6em;
+    // margin-bottom: -10em;
+    // padding-bottom: 100px;
+    background: #f7f7f7;
+
+    .title {
+        // margin-top: 40px;
+        // margin-left: 45px;
+        font-weight: 400;
+        font-family: 'inter';
+        color: #4a4a4a;
+        // border-left: 1px solid #dddcdc;
+        // padding-top: 30px;
+        text-align: left;
+        padding-left: 30px;
+
+        a:visited {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+    }
+
 
     .nav {
-        // width: 100px;
-        // margin-left: 18px;
-        // min-width: 100px;
-        // position: fixed;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #dddcdc;
-        padding-bottom: 10px;
-        margin-left: -1.9em;
-        padding-top: 95px;
-        padding-left: 31px;
-        margin-bottom: 25px;
-
+        padding-right: 20px;
         a {
             font-family: 'inter';
             // line-height: 8px;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 16px;
+            font-weight: 400;
             color: gray;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #fcf7a2;
+                border-bottom: 0px;
+            }
         }
 
         ul {
@@ -94,7 +106,7 @@
 
             li {
                 // text-align: right;
-                padding-right: 14px;
+                padding-right: 12px;
                 // line-height: 17px;
                 // list-style: none;
                 // width: 90px;
@@ -108,6 +120,8 @@
         justify-content: center;
         align-items: center;
         // display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -129,6 +143,7 @@
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+
 
         @media (max-width: $breakpoint-sm) {
             max-width: 90vw;
@@ -160,12 +175,12 @@
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 45px;
-    max-width: 550px;
+    max-width: auto;
 }
 
 body {
     color: #000000;
-    background: #ffffff;
+    background: #eaeaea;
     font-family: 'inter', sans-serif;
     font-size: 12pt;
     line-height: 1.5;
@@ -197,7 +212,8 @@ p {
 .wrapper {
     max-width: auto;
     margin: auto;
-    margin-left: 10em;
+    width: 40%;
+    // margin-left: 10em;
     // padding: 44px 0px 0px 44px;
 
     @media only screen and (max-width: $breakpoint-md) {
@@ -271,7 +287,7 @@ i {
 
 // desc
 .desc {
-    max-width: 550px;
+    max-width: auto;
 
     h2 {
         font-size: 12pt;
@@ -314,9 +330,9 @@ i {
         // text-transform: capitalize;
 
         .date {
-            float: none;
-            font-size: 8pt;
-            color: #777777;
+            float: right;
+            font-size: 12pt;
+            color: #e1e0e0;
             text-transform: lowercase;
         }
     }
@@ -339,7 +355,7 @@ i {
 // blog-post
 .post {
     padding-bottom: 30px;
-    max-width: 38em;
+    max-width: auto;
 
     &__back {
         display: in-line;
@@ -350,14 +366,15 @@ i {
 
     &__title {
         font-family: 'inter', sans-serif;
+        // font-family: 'Playfair Display', sans-serif;
         text-align: left;
         align-self: center;
-        font-size: 22pt;
+        font-size: 28px;
         font-weight: 700;
         // margin-top: 40px;
         margin-bottom: 10px;
         // line-height: 45px;
-        max-width: 580px;
+        max-width: auto;
     }
 
     &__date {
@@ -382,6 +399,22 @@ i {
             margin-top: 10px;
             margin-bottom: 8px;
             font-family: 'inter', sans-serif;
+
+            a {
+                visibility: hidden;
+                &:hover {
+                    line-height: 1.5;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 12pt;
+                    color: #000000;
+                    font-family: 'inter', sans-serif;
+                    border-bottom: 2px solid #d2d2d2;
+                    text-decoration: none;
+                    background-color: #fcf7a2;
+                    border-bottom: 0px;
+                }
+            }
         }
 
         h2 {
@@ -463,6 +496,7 @@ i {
             // padding-bottom: 16px;
             // display: block;
             margin: 0 auto;
+            width: 100%;
             @media screen and (max-width: $br) {
                 width: 100%;
                 margin: auto;
@@ -547,6 +581,7 @@ i {
             border: 0;
             border-bottom: 1px dashed #606060;
         }
+
     }
 }
 

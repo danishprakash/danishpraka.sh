@@ -17,24 +17,26 @@ function changeText() {
 }
 </script>
 
-<div class="title">
-    <a href="/">danishprakash</a>
-</div>
-
 <div class="topborder"></div>
 <div class="leftborder"></div>
 
 
 <div class="page">
-    <section class="nav">
-        <ul>
-            <li><a href="/about">about</a></li>
-            <li><a href="/software">code</a></li>
-            <li><a href="/reading">reading</a></li>
-            <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
-            <li><a href="/feed.xml" type="application/atom+xml" target="_blank">feed</a></li>
-        </ul>
-    </section>
+    <div class="header">
+        <div class="title">
+            <a href="/">danishpraka.sh</a>
+        </div>
+
+        <section class="nav">
+            <ul>
+                <li><a href="/about">about</a></li>
+                <li><a href="/software">code</a></li>
+                <li><a href="/reading">reading</a></li>
+                <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
+                <!-- <li><a href="/feed.xml" type="application/atom+xml" target="_blank">feed</a></li> -->
+            </ul>
+        </section>
+    </div>
 
     <div class="cont">
         <div class="desc">
@@ -51,9 +53,9 @@ function changeText() {
                 {% for post in site.posts %}
                 <li>
                     {% if post.type == "external" %}
-                        <a href="{{ post.link }}" target="_blank">{{ post.title }}</a> <span class="date"> {{ post.date | date: '%Y-%m' }} </span>
+                        <a href="{{ post.link }}" target="_blank">{{ post.title }}</a> <span class="date"> {{ post.date | date: '%b %y' }} </span>
                     {% else %}
-                        <a href="{{ post.url }}">{{ post.title }}</a> <span class="date"> {{ post.date | date: '%Y-%m' }}  </span>
+                        <a href="{{ post.url }}">{{ post.title }}</a> <span class="date"> {{ post.date | date: '%b %y' }}  </span>
                     {% endif %}
                 </li>
                 {% endfor %}
