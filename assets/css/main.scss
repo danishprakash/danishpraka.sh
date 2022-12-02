@@ -132,6 +132,7 @@
             align-content: left;
             justify-content: left;
             display: flex;
+            gap: 0.5em;
             // max-width: 90px;
 
             li {
@@ -269,7 +270,7 @@ p {
 .wrapper {
     max-width: auto;
     margin: auto;
-    width: 40%;
+    width: 70ch;
     // margin-left: 10em;
     // padding: 44px 0px 0px 44px;
 
