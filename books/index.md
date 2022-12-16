@@ -10,7 +10,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | **2022** | |
 | Bhais of Bengaluru | Jyoti Shelar | _Reading_ |
 | Quiet | Susan Cain | _Reading_ |
-| [Algorithms to Live By](/books/algorithms-to-live-by) | Danish Prakash | ★★★★ |
+| [Algorithms to Live By](/books/algorithms-to-live-by) | Brian Christian | ★★★★ |
 | [Society Without God](/books/society-without-god) | Phil Zuckerman | ★★★ |
 | [Vietnam: Rising Dragon](/books/vietnam-rising-dragon) | Bill Hayton | ★★★ |
 | [Annihilation of Caste](/books/annihilation-of-caste) | Dr. B R Ambedkar | ★★★★ |
