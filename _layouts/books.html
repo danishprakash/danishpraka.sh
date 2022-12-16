@@ -10,9 +10,9 @@ layout: default
 
         <section class="nav">
             <ul>
-                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
                 <li><a href="/software">code</a></li>
-                <li><a href="/reading">reading</a></li>
+                <li><a href="/books">books</a></li>
                 <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
             </ul>
         </section>
@@ -26,24 +26,24 @@ layout: default
                 <h1 class="post__title">{{ page.title }}</h1>
             {% endif %}
 
-            {{ content }}
-            <br>
-            <br>
+            <div class="post__content">
+                {{ content }}
+            </div>
 
-            {% comment %}
-            {% if page.date %}
-                <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
-            {% endif %}
-            {% endcomment %}
+            <!-- {% comment %} -->
+            <!-- {% if page.date %} -->
+            <!--     <p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p> -->
+            <!-- {% endif %} -->
+            <!-- {% endcomment %} -->
 
-            <div class="post__content"?>
-                {% for review in site.data.reviews.data %}
-                    <div class="book-meta"> <a href={{review.book.link}} target="_blank">{{ review.book.title }}</a>
-                        <p class="book-review"> {{ review.review.body }} </p>
-                        <!-- <div class="review-date">{{ review.review.date_read | date: '%b %Y' }}</div> -->
-                      </div>
-                {% endfor %}
-              </div>
+            <!-- <div class="post__content"?> -->
+            <!--     {% for review in site.data.reviews.data %} -->
+            <!--         <div class="book-meta"> <a href={{review.book.link}} target="_blank">{{ review.book.title }}</a> -->
+            <!--             <p class="book-review"> {{ review.review.body }} </p> -->
+            <!--             <!-1- <div class="review-date">{{ review.review.date_read | date: '%b %Y' }}</div> -1-> -->
+            <!--           </div> -->
+            <!--     {% endfor %} -->
+            <!--   </div> -->
         </div>
     </div>
 </div>

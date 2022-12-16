@@ -16,7 +16,7 @@
     }
 
     a:visited {
-        text-decoration: none;
+        // text-decoration: none;
         color: #514e4e;
     }
 
@@ -43,6 +43,58 @@
         margin-right: 0;
         margin-left: 0;
     }
+}
+
+table {
+    width: 100%;
+    // table-layout: fixed;
+
+    tr td:nth-child(1) {
+        padding-left: 2px;
+        padding-right: 8px;
+        width: 55%;
+    }
+
+    tr td:nth-child(3) {
+        text-align: right;
+        // padding-right: 2ch;
+        width: 15%;
+    }
+
+    tr td:nth-child(2) {
+        padding-left: 2px;
+        width: 30%;
+    }
+
+    tr td {
+        padding: 4px 1px 10px 1px;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: 800;
+        font-size: 20px;
+        padding-top: 12px;
+    }
+
+    a {
+        line-height: 1.5;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12pt;
+        color: #000000;
+        font-family: 'inter', sans-serif;
+        border-bottom: 2px solid #d2d2d2;
+        &:hover {
+            text-decoration: none;
+            background-color: #fcf7a2;
+            border-bottom: 0px;
+        }
+    }
+
 }
 
 .page {
@@ -78,11 +130,6 @@
     display: block;
     border-left: 1px solid #dddcdc;
     border-right: 1px solid #dddcdc;
-    // padding-left: 30px;
-    // padding-right: 30px;
-    // margin-top: -6em;
-    // margin-bottom: -10em;
-    // padding-bottom: 100px;
     background: #f7f7f7;
 
     .title {
@@ -100,6 +147,10 @@
             color: #4a4a4a;
             text-decoration: none;
         }
+
+        @media (max-width: 500px) {
+            padding-left: 16px;
+        }
     }
 
 
@@ -110,7 +161,7 @@
         }
 
         @media (max-width: 500px) {
-            padding-left: 30px;
+            padding-left: 16px;
         }
 
         padding-right: 20px;
@@ -161,6 +212,11 @@
         // display: flex;
         padding-left: 30px;
         padding-right: 30px;
+
+        @media (max-width: 500px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
     }
 }
 
@@ -496,6 +552,21 @@ i {
             word-wrap: break-word;
             // letter-spacing: 0.2px;
             color: #000000;
+
+            a {
+                line-height: 1.5;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12pt;
+                color: #000000;
+                font-family: 'inter', sans-serif;
+                border-bottom: 2px solid #d2d2d2;
+                &:hover {
+                    text-decoration: none;
+                    background-color: #fcf7a2;
+                    border-bottom: 0px;
+                }
+            }
         }
 
         a {
@@ -642,7 +713,6 @@ i {
             border: 0;
             border-bottom: 1px dashed #606060;
         }
-
     }
 }
 
