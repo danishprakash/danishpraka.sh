@@ -8,6 +8,7 @@ This is an archive of some of the software I've written over time and a few of m
 
 # Open Source
 
+- hashicorp/nomad: [command/job_stop: accept multiple jobs, stop concurrently (#12582)](https://github.com/hashicorp/nomad/commit/16401b864ee35ef38126d77d10b30f4c3abc4138)    
 - kubernetes/kubernetes: [pkg/admission/storageclass: pick random storageclass if >1 present](https://github.com/kubernetes/kubernetes/commit/f12325add3fbac8a2ce31cb12b4649c01d74f248)
 - golang/tools: [internal/lsp/source: evaluate bin/hex literal on hover](https://github.com/golang/tools/commit/0c506a27403cdd01a1a9f73f3e3ead148a0628d1)
 - golang/tools: [internal/lsp/source: return location(s) for imported packages](https://github.com/golang/tools/commit/c94e1fe1450c95c7fd702428de838e0347e2544c)
