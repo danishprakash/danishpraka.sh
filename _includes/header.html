@@ -1,9 +1,14 @@
 <div class="header">
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="title">
+        <a href="/">danishpraka.sh</a>
+    </div>
+
+    <section class="nav">
+        <ul>
+            <li><a href="/about">about</a></li>
+            <li><a href="/software">code</a></li>
+            <li><a href="/books">books</a></li>
+            <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
+        </ul>
+    </section>
 </div>

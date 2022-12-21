@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <script>
 function changeText() {
     // "no spams please"
@@ -22,22 +20,7 @@ function changeText() {
 
 
 <div class="page">
-    <div class="header">
-        <div class="title">
-            <a href="/">danishpraka.sh</a>
-        </div>
-
-        <section class="nav">
-            <ul>
-                <li><a href="/about">about</a></li>
-                <li><a href="/software">code</a></li>
-                <li><a href="/books">books</a></li>
-                <li><a href="https://unsplash.com/@danishprakash" target="_blank">photos</a></li>
-                <!-- <li><a href="/feed.xml" type="application/atom+xml" target="_blank">feed</a></li> -->
-            </ul>
-        </section>
-    </div>
-
+    {% include header.html %}
     <div class="cont">
         <div class="desc">
             <div class="description"><p>
@@ -64,6 +47,4 @@ function changeText() {
     </div>
 </div>
 
-<div class="footer">
-    <p> Copyright © <a href="/">Danish Prakash</a> 2022</p>
-</div>
+{% include footer.html %}
