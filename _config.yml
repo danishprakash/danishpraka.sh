@@ -4,7 +4,7 @@ description: ~
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
+exclude: ["README.md", "LICENSE", "vendor"]
 
 plugins:
   - jekyll-feed

@@ -7,9 +7,10 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 
 | | | |
 | ----- | ------ | ------ |
-| **2022** | |
+| **2023** | |
 | Container Security | Liz Rice | _Reading_ |
 | Prisoners of Geography | Tim Marshal | _Reading_ |
+| **2022** | |
 | [The Year of Less](/books/the-year-of-less) | Cait Flanders | ★★★ |
 | [Quiet](/books/quiet) | Susan Cain | ★★★★ |
 | [Bhais of Bengaluru](/books/bhais-of-bengaluru) | Jyoti Shelar | ★★★★ |
@@ -20,6 +21,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | [The Doctor and the Saint](/books/the-doctor-and-the-saint) | Arundhati Roy | ★★★★ |
 | [The Paleo Manifesto](/books/the-paleo-manifesto) | John Durant | ★★★ |
 | [Nepal - Culture Smart!](/books/nepal-culture-smart) | Tessa Feller | ★★★★ |
+| [A Tokyo Romance](/books/a-tokyo-romance) | Ian Buruma | ★★★★ |
 | [Digital Minimalism](/books/digital-minimalism) | Cal Newport | ★★★★★ |
 | [Four Seasons in Rome](/books/four-seasons-in-rome) | Anthony Doerr | ★★★★ |
 | [On Tyranny](/books/on-tyranny) | Timothy Snyder | ★★★★ |
@@ -134,7 +136,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | [1984](/books/1984) | George Orwell | ★★★★ |
 | [Free as in Freedome (2.0)]() | Sam Williams | ★★★★ |
 | [How to Win Friends and Influence People]() | Dale Carnegie | ★★★★ |
-| [/books/3/1](./5-3-1) | Jim Wendler | ★★★ |
+| [5/3/1](./5-3-1) | Jim Wendler | ★★★ |
 | [Functional Programming in Python](/books/functional-programming-in-python) | David Mertz | ★★★ |
 | [The Ramayana](/books/the-ramayana) | R.K. Narayan | ★★★ |
 | **2017** | |
