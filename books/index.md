@@ -3,13 +3,14 @@ layout: books
 title: Books
 ---
 
-Here's a list of all the books I've read or am reading. You can read my summary of the book if you click on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
+Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 
 | | | |
 | ----- | ------ | ------ |
 | **2023** | |
-| Container Security | Liz Rice | _Reading_ |
-| Prisoners of Geography | Tim Marshal | _Reading_ |
+| Container Security | Liz Rice | _reading_ |
+| Prisoners of Geography | Tim Marshal | _reading_ |
+| Anna Karenina | Leo Tolstoy | _listening_ |
 | **2022** | |
 | [The Year of Less](/books/the-year-of-less) | Cait Flanders | ★★★ |
 | [Quiet](/books/quiet) | Susan Cain | ★★★★ |
