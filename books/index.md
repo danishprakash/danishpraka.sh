@@ -8,6 +8,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | ----- | ------ | ------ |
 | **2023** | |
+| On Earth We're Briefly Gorgeous | Ocean Vuong | _reading_ |
 | Container Security | Liz Rice | _reading_ |
 | Prisoners of Geography | Tim Marshal | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
