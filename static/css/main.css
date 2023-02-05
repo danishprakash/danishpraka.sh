@@ -1,10 +1,6 @@
-@import url(bw.css);
- @import url('https://rsms.me/inter/inter.css');
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
- @import 'reset';
- @import 'config';
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+
  .footer {
 	 background: #f7f7f7;
 	 border-left: 1px solid #dddcdc;
@@ -388,6 +384,7 @@ body {
 	 background-color: #fcf7a2;
 	 border-bottom: 0px;
 }
+
  .desc {
 	 max-width: auto;
 }
@@ -569,6 +566,7 @@ body {
 	 list-style: disc;
 	 padding-bottom: 10px;
 	 line-height: 1.3em;
+     padding-left: 10px;
 }
  .post__content p + ol {
 	 margin-top: -8px;
@@ -640,20 +638,19 @@ body {
 }
 
  .post__content pre {
-	 max-width: 650px;
-	 padding: 25px 25px 25px 25px;
-     margin-top: 0px;
-	 line-height: 12pt;
-	 font-weight: 400;
-	 overflow-x: auto;
 	 background: #e6e6e6;
-	 font-size: 14px;
-	 font-family: 'IBM Plex Mono', monospace;
-	 font-weight: 300;
-	 color: #000;
-	 margin-bottom: 15px;
 	 border: 1px #dedede solid;
 	 border-radius: 4px;
+	 color: #000;
+	 font-family: 'IBM Plex Mono', monospace;
+	 font-size: 14px;
+	 font-weight: 300;
+	 font-weight: 400;
+	 margin-bottom: 15px;
+     margin-top: 0px;
+	 max-width: 650px;
+	 overflow-x: auto;
+	 padding: 25px 25px 25px 25px;
 }
  .post__content .lineno {
 	 color: #bbb;
