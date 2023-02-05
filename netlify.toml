@@ -1,0 +1,9 @@
+[build]
+    base = "./"
+    publish = "./build"
+    command = "make build"
+
+[[redirects]]
+  from = "/:year/:month/:date/:slug"
+  to = "/posts/:slug"
+  force = true

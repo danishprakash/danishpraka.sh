@@ -1,8 +1,0 @@
-.DS_Store
-*tags
-.sass-cache/*
-_site
-install.sh
-.jekyll-metadata
-vendor/
-.bundle/

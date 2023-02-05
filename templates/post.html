@@ -1,0 +1,28 @@
+<!doctype>
+
+<div class=wrapper>
+    <div class="page">
+        {{ template "header.html" }}
+        <div class="cont">
+            <div class="post">
+                {{ template "analytics.html" }}
+
+                <title>
+                    {{ index .FM "title" }}
+                </title>
+
+                <h1> {{ index .FM "title" }} </h1>
+
+                {{ if index .FM "date" }}
+                    <p class="post__date">{{ .Date.Format  "2 January 2006" }}</p>
+                {{ end }}
+
+                <div class="post__content"?>
+
+                    {{ .Body }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ template "footer.html" }}
+</div>

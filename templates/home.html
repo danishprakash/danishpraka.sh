@@ -1,0 +1,32 @@
+<!doctype>
+
+<div class="wrapper">
+    <div class="topborder"></div>
+    <div class="leftborder"></div>
+    <div class="page">
+        {{ template "header.html" }}
+        <div class="cont">
+            <div class="desc">
+                <div class="description"><p>
+                    {{ .Body }}
+                </p>
+            </div>
+
+            <div class="blog">
+                <h1>archive</h1>
+                <ol>
+                    {{ range .Posts }}
+                        <li>
+                            {{ if index .Frontmatter "external" }}
+                                <a href="{{ index .Frontmatter "url" }}" target="_blank">{{ .Title }}</a> <span class="date"> {{ .Date.Format "Jan 06" }} </span>
+                            {{ else }}
+                                <a href="{{ .URL }}" >{{ .Title }}</a> <span class="date"> {{ .Date.Format "Jan 06" }} </span>
+                            {{ end }}
+                        </li>
+                    {{ end }}
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{{ template "footer.html" }}
