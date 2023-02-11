@@ -8,6 +8,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Learning Modern Linux | Michael Hausenblas | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
 | [Container Security](/books/container-security) | Liz Rice | ★★★★ |
 | [On Earth We're Briefly Gorgeous](/books/on-earth-were-briefly-gorgeous) | Ocean Vuong | ★★★ |
