@@ -8,10 +8,10 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| The Great Mental Models | Shane Parrish | _reading_ |
-| On Earth We're Briefly Gorgeous | Ocean Vuong | _reading_ |
-| Container Security | Liz Rice | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
+| [Container Security](/books/container-security) | Liz Rice | ★★★★ |
+| [On Earth We're Briefly Gorgeous](/books/on-earth-were-briefly-gorgeous) | Ocean Vuong | ★★★ |
+| [The Great Mental Models](/books/the-great-mental-models) | Shane Parrish | ★★★★ |
 | [Prisoners of Geography](/books/prisoners-of-geography) | Tim Marshal | ★★★★ |
 | **2022** | |
 | [The Year of Less](/books/the-year-of-less) | Cait Flanders | ★★★ |
