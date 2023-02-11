@@ -13,12 +13,17 @@
 
                 <h1> {{ index .FM "title" }} </h1>
 
-                {{ if index .FM "date" }}
-                    <p class="post__date">{{ .Date.Format  "2 January 2006" }}</p>
-                {{ end }}
+                <div class="metadata">
+                    {{ if index .FM "author" }}
+                        <p class="book__author">Author: {{ index .FM "author" }}</p>
+                    {{ end }}
+
+                    {{ if index .FM "date" }}
+                        <p class="book__date">Date read: {{ .Date.Format  "2 January 2006" }}</p>
+                    {{ end }}
+                </div>
 
                 <div class="post__content"?>
-
                     {{ .Body }}
                 </div>
             </div>
@@ -26,3 +31,4 @@
     </div>
     {{ template "footer.html" }}
 </div>
+

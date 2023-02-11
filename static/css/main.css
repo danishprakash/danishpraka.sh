@@ -454,6 +454,21 @@ body {
 	 margin-bottom: 4px;
 	 max-width: auto;
 }
+
+.metadata {
+    margin-bottom: 30px;
+}
+
+.metadata p {
+	 font-size: 0.80em;
+	 text-align: left;
+	 color: #616161;
+	 font-family: 'inter', sans-serif;
+	 font-weight: 400;
+     margin-bottom: 2px;
+     margin-top: 0px;
+}
+
  .post__back {
 	 display: in-line;
 	 text-align: left;

@@ -1,5 +1,6 @@
 <!doctype html>
 <div class=wrapper>
+    <title> books — Danish Prakash </title>
     <div class="page">
         {{ template "header.html" }}
         <div class="cont">
@@ -11,8 +12,8 @@
                 </title>
                 <h1> {{ index .FM "title" }} </h1>
 
-                {{ if index .FM "date" }}
-                    <p class="post__date">{ index .FM "date" | date: '%B %-d, %Y' }</p>
+                {{ if index .FM "date_read" }}
+                    <p class="post__date">{{ index .FM "date_read" }}</p>
                 {{ end }}
 
                 <div class="post__content"?>
