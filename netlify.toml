@@ -3,7 +3,20 @@
     publish = "./build"
     command = "make build"
 
+# jekyll style routing to kizai
 [[redirects]]
   from = "/:year/:month/:date/:slug"
   to = "/posts/:slug"
+  force = true
+
+# post rename reading to books
+[[redirects]]
+  from = "/reading"
+  to = "/books"
+  force = true
+
+# post rename reading to books
+[[redirects]]
+  from = "/software"
+  to = "/code"
   force = true
