@@ -8,6 +8,8 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| The Primal Blueprint | Mark Sisson | _reading_ |
 | Learning Modern Linux | Michael Hausenblas | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
 | [Container Security](/books/container-security) | Liz Rice | ★★★★ |
