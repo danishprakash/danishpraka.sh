@@ -7,7 +7,7 @@ Date: 6th January 2023
 
 <img src="./../../static/img/posts/year-in-review-2022/cover.png"/>
 
-Second coming of the yearly review. I really enjoyed doing this the [first time](/2022/01/30/year-in-review-2021) and I'm guessing it'll be an yearly ritual I'll follow from here on out. Especially after following last year's writing goals, I've come to quite enjoy the cathartic experience that writing is. Again, no fixed structure to this post, but building upon last year's post as we go.
+Second coming of the yearly review. I really enjoyed doing this the [first time](/posts/year-in-review-2021) and I'm guessing it'll be an yearly ritual I'll follow from here on out. Especially after following last year's writing goals, I've come to quite enjoy the cathartic experience that writing is. Again, no fixed structure to this post, but building upon last year's post as we go.
 
 # work
 

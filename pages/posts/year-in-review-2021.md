@@ -5,7 +5,7 @@ title: Year In Review 2021
 Date: 30th January 2022
 ---
 
-<img src="./../../static/img/posts/andaman.png" width="600px"/>
+<img src="./../../static/img/posts/year-in-review-2021/andaman.png"/>
 
 Been planning to do this for a while but never got around to doing it. Ever since I started doing yearly planning and reviews (2020), It made all the more sense to do these reviews publicly. Not just because everybody else does it, that’s part of it. But more importantly, committing publicly naturally pushes you to accomplish the goals you’ve set for yourselves.
 
