@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-30
-title: Year In Review 2021
+title: Year In Review (2021)
 Date: 30th January 2022
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-01-06
-title: Year In Review 2022
+title: Year In Review (2022)
 Date: 6th January 2023
 ---
 

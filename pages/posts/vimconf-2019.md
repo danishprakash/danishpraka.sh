@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-12-27
-title: VimConf 2019
+title: VimConf (2019)
 ---
 
 VimConf is an international conference, perhaps the only one, pertaining to all things Vim. I was fortunate enough to be invited over by the VimConf Preparatory Committee to present a talk in Japan on 3rd of November this year. This post talks about my experience at the conference.

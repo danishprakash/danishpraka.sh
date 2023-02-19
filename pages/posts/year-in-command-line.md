@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-12-16
-title: Year in Command Line 2022
+title: Year in Command Line (2022)
 ---
 
 # Background
