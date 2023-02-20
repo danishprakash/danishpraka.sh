@@ -1,11 +1,11 @@
 ---
 layout: post
-title:
+title: About
 ---
 
 # work
 
-Hi! my name is Danish. I'm a software engineer by profession, I currently work at <a href="https://suse.com/" target="_blank">SUSE</a> focusing on container technologies. Before this, I spent 4 years at <a href="https://www.hackerrank.com" target="_blank">HackerRank</a> working on the core remote code execution service using technologies such as Kubernetes, Containers and Go. Before that, I interned at <a href="https://atlan.com" target="_blank">SocialCops (Atlan)<a/> where I also worked on developing tooling for internal use working mostly with Python.
+Hi! my name is Danish. I'm a software engineer by profession, I currently work at <a href="https://suse.com/" target="_blank">SUSE</a> focusing on container technologies. Before this, I spent 4 years at <a href="https://www.hackerrank.com" target="_blank">HackerRank</a> working on the core remote code execution service using technologies such as Kubernetes, Containers and Go. Before that, I interned at <a href="https://atlan.com" target="_blank">SocialCops (Atlan)</a> where I also worked on developing tooling for internal use working mostly with Python.
 
 I'm interested in distributed systems, developer tooling, infrastructure engineering (cloud-native infrastructure) and programming languages. I've experience working with systems solving problems involving performance optimizations, scaling, monitoring and alerting. I've past experience writing Go and Python professionally while also dabbling a little with DevOps (deployment and infrastructure).
 
@@ -20,12 +20,12 @@ I've my setup configuration files in this [repository](https://github.com/danish
 
 ```
 ~ $ curl -s https://raw.githubusercontent.com/danishprakash/zf/master/zf | zsh
-OS:              linux
+OS:              GNU/Linux
+DISTRO:          openSUSE Tumbleweed
 KERNEL:          6.1.0-1-default
 SHELL:           zsh
 EDITOR:          nvim
 ```
 
 # colophon
-A lot of people message me asking about the theme of this website and what I used to built it. It's your typical static website with quite some time spent fiddling with the design to get it to where it is right now. You can find the source for this website on [Github](https://github.com/danishprakash/danishprakash.github.io).
-
+A lot of people message me asking about the theme of this website and what I used to built it. It's your typical static website built using [kizai](https://github.com/danishprakash/kizai) with quite some time spent fiddling with the design to get it to where it is right now. You can find the source for this website on [Github](https://github.com/danishprakash/danishprakash.github.io).
