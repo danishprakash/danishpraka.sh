@@ -9,9 +9,9 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | :--- | --- | ---: |
 | **2023** | | |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
-| The Primal Blueprint | Mark Sisson | _reading_ |
-| Learning Modern Linux | Michael Hausenblas | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
+| [The Primal Blueprint](/books/the-primal-blueprint) | Mark Sisson |  ★★★ |
+| [Learning Modern Linux](/books/learning-modern-linux) | Michael Hausenblas | ★★ |
 | [Container Security](/books/container-security) | Liz Rice | ★★★★ |
 | [On Earth We're Briefly Gorgeous](/books/on-earth-were-briefly-gorgeous) | Ocean Vuong | ★★★ |
 | [The Great Mental Models](/books/the-great-mental-models) | Shane Parrish | ★★★★ |
