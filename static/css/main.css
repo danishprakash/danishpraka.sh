@@ -527,6 +527,14 @@ body {
 	 margin-bottom: 4px;
 	 font-family: 'inter', sans-serif;
 }
+ .post__content h4 {
+	 font-size: 14pt;
+	 color: #000;
+	 font-weight: 500;
+	 margin-top: 5px;
+	 margin-bottom: 1px;
+	 font-family: 'inter', sans-serif;
+}
  .post__content p {
 	 font-family: 'inter', sans-serif;
 	 font-size: 12pt;
