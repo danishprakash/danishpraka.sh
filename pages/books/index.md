@@ -8,6 +8,8 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Linux System Programming | Robert Love | _reading_ |
+| The Art of Lifting | Greg Nuckols, Omar Isuf | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
 | Anna Karenina | Leo Tolstoy | _listening_ |
 | [The Primal Blueprint](/books/the-primal-blueprint) | Mark Sisson |  ★★★ |
