@@ -72,8 +72,8 @@ cpu_period_us=250ms
 - You want your process to be able to use 20% of a CPU:
 
 ```
-cpu_quota_us=50ms
-cpu_period_us=10ms
+cpu_quota_us=10ms
+cpu_period_us=50ms
 
 10/50 * 1000 => 200m => 0.2CPU
 ```
@@ -88,7 +88,7 @@ cpu_period_us=50ms
 
 (10)/50 * 1000 => 200m CPU => 200
 
-quota per threads = 10/5 => 2ms
+quota per threads = 10/10 => 1ms
 ```
 
 ..you'll exceed your quota in 2ms and your processes will be throttled for the remaining 48ms of that cycle. As mentioned, this is especially pronounced in multi-threaded environment and Kubernetes is a prime example. In fact, Kubernetes is the reason this issue came to light in the first place.
