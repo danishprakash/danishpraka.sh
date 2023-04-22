@@ -11,6 +11,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | Linux System Programming | Robert Love | _reading_ |
 | The Righteous Mind | Jonathan Haidt | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [Kitchen Confidential](/books/kitchen-confidential) | Anthony Bourdain | ★★★★★ |
 | [Anna Karenina](/books/anna-karenina)| Leo Tolstoy | ★★★★ |
 | [The Art of Lifting](/books/the-art-of-lifting) | Greg Nuckols, Omar Isuf | ★★★★ |
 | [The Primal Blueprint](/books/the-primal-blueprint) | Mark Sisson |  ★★★ |
