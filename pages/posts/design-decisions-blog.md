@@ -27,7 +27,7 @@ Natural for someone reading this to ask why was this written this in the first p
 I'll briefly talk about a topic and then move on to the next, there's nothing profound about this so I'd rather not waste too much time if you decide to read the whole piece.
 
 # dark theme
-The most obvious of them all. I want to create a more readable experience, I wanted to optimize for reading when someone lands on this blog. I'm of course biased--affect bias--because I've never personally liked reading white-on-black. Have you ever had to read white text on a black sheet? It's not nice. Reading black-on-white takes me back to the good old days without technology where all you could find is black-on-white and I cherish that memory when I open such sites still. It is also partially inspired by Instapaper, that app is so visually appealing to read on and I wanted to create something similar, I'm sure you'd have noticed similarities by now.
+The most obvious of them all. I want to create a more readable experience, I wanted to optimize for reading when someone lands on this blog. I'm of course biased--affect bias--because I've never personally liked reading white-on-black. Have you ever had to read white text on a black sheet? It's not nice. Reading black-on-white takes me back to the good old days without technology where all you could find is black-on-white and I cherish that memory when I open such sites still. It is also partially inspired by Instapaper, that app is so visually appealing to read on and I wanted to create something similar, I'm sure you'd have noticed similarities by now. And also, let's not forget Kindle. I do most of my [reading](/books/) on an old kindle and I cherish the warm and comfortable reading experience that the white on black provides.
 
 # hyperlink decoration
 I come from the school of thought that too much visual confetti breaks comprehension. Again, affect bias would be the underlying theme for this post but you get the idea. For that reason, I've tried to keep hyperlink decorations to the bare minimum. Only so much as you'd get a hint that it's indeed a hyperlink and that's about it. No need for your peripheral vision to jump around to colorful elements popping out while you're trying to focus on content. I don't use syntax highlighting to comprehend code and I believe it's easier for us to comprehend literature without syntax highlighting. Think about it.
@@ -49,9 +49,11 @@ By now the pattern must be discernible. Optimize for reading and keep the fluff 
 
 I've come across websites in the past that make it extremely difficult to navigate the site or to skip to the main content of the site just because they have so much chaos going on in the header. I admire Google's simplicity here, keeping it stupidly simple just works.
 
-- Breaking the monolith?
-
 <img src="./../../static/img/posts/design-decisions/blog_history.gif"/>
+
+# future
+There are a lot of microdecisions that I decided not to talk about here for the sake of keeping this post comprehensible. As for the future of this blog's design, as I mentioned in the disclaimer, tastes change and it would inevitably lead to some drastic changes to this blog but I want to believe the things I've talked about here would remain intact one way or another.
+I plan to keep this post as a living post which documents the design journey of this blog.
 
 # conclusion
 No reasonable conclusion to this one but hoping this would be a poignant reminder to my future self to continue this ever-evolving obsession with improving this blog, so to speak, all the while continuing to strike a balance with writing more content here.
