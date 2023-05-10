@@ -2,6 +2,7 @@
 layout: book
 title: Indistractable
 date: 2023-04-24
+format: Audiobook
 author: Nir Eyal
 ---
 

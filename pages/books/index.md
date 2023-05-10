@@ -8,6 +8,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Sapiens | Yuval Noah Harari | _listening_ |
 | Linux System Programming | Robert Love | _reading_ |
 | The Righteous Mind | Jonathan Haidt | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |

@@ -21,6 +21,10 @@
                     {{ if index .FM "date" }}
                         <p class="book__date">Date read: {{ .Date.Format  "2 January 2006" }}</p>
                     {{ end }}
+
+                    {{ if index .FM "format" }}
+                        <p class="book__author">Format: {{ index .FM "format" }}</p>
+                    {{ end }}
                 </div>
 
                 <div class="post__content"?>
