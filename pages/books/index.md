@@ -12,6 +12,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | Linux System Programming | Robert Love | _reading_ |
 | The Righteous Mind | Jonathan Haidt | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [The Righteous Mind](/books/the-righteous-mind) | Jonathan Haidt | ★★★★ |
 | [The Anthropocene Reviewed](/books/the-anthropocene-reviewed) | John Green | ★★★★ |
 | [Sapiens](/books/sapiens) | Yuval Noah Harari | ★★★★★ |
 | [Indistractable](/books/indistractable) | Nir Eyal | ★★★★ |
