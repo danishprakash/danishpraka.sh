@@ -8,10 +8,12 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Enlightenment Now | Steven Pinker | _listening_ |
 | This Is What Inequality Looks Like | Teo You Yenn | _reading_ |
-| Fooled by Randomness | Nassim Nicholas Taleb | _listening_ |
 | Linux System Programming | Robert Love | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [The Prophet](/books/the-prophet) | Kahlil Gibran | ★ |
+| [Fooled by Randomness](/books/fooled-by-randomness) | Nassim Nicholas Taleb | ★★★★ |
 | [The Righteous Mind](/books/the-righteous-mind) | Jonathan Haidt | ★★★★ |
 | [The Anthropocene Reviewed](/books/the-anthropocene-reviewed) | John Green | ★★★★ |
 | [Sapiens](/books/sapiens) | Yuval Noah Harari | ★★★★★ |
