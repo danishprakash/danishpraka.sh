@@ -8,8 +8,8 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Singapore - Culture Smart! | Angela Milligan | _reading_ |
 | Enlightenment Now | Steven Pinker | _listening_ |
-| This Is What Inequality Looks Like | Teo You Yenn | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
 | [This Is What Inequality Looks Like](/books/this-is-what-inequality-looks-like) | Teo You Yenn | ★★★★ |
