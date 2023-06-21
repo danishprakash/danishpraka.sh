@@ -6,52 +6,49 @@ title: Software
 This is an archive of some of the software I've written over time and a few of my Open Source contributions to various projects. These lists are generated (partially) automatically so If you find anything out of the ordinary, feel free to create an [issue](https://github.com/danishprakash/danishpraka.sh/issues/new).
 
 
-# Open Source
-
-- hashicorp/nomad: [command/job_stop: accept multiple jobs, stop concurrently (#12582)](https://github.com/hashicorp/nomad/commit/16401b864ee35ef38126d77d10b30f4c3abc4138)    
-- kubernetes/kubernetes: [pkg/admission/storageclass: pick random storageclass if >1 present](https://github.com/kubernetes/kubernetes/commit/f12325add3fbac8a2ce31cb12b4649c01d74f248)
-- golang/tools: [internal/lsp/source: evaluate bin/hex literal on hover](https://github.com/golang/tools/commit/0c506a27403cdd01a1a9f73f3e3ead148a0628d1)
-- golang/tools: [internal/lsp/source: return location(s) for imported packages](https://github.com/golang/tools/commit/c94e1fe1450c95c7fd702428de838e0347e2544c)
-- Shopify/kubeaudit: [pkg/k8s: add support for initContainer (#376)](https://github.com/Shopify/kubeaudit/commit/abd7f1240b41be7e12ea6d96e6b5b3d779d9bc2c)
-- hashicorp/nomad: [command/operator_debug: add pprof interval (#11938)](https://github.com/hashicorp/nomad/commit/ff6ae5fad2a98e6062563d289f7a769c14adadd7)
-- hashicorp/nomad: [client: emit max_memory metric (#11490)](https://github.com/hashicorp/nomad/commit/e70b0b7727c0dba82e453a5cbba94f081ce85b39)
-- hashicorp/terraform-ls: [internal/service: add support for didChangeWatchedFiles (#790)](https://github.com/hashicorp/terraform-ls/commit/d223ae48f783d41c5814a5e95d7c550ea7b400fb)
-- hashicorp/terraform-ls: [internal: expose pending tf related options via init opts (#619)](https://github.com/hashicorp/terraform-ls/commit/d9ad7f83217fd8641fe545a692de996a4defa4a2)
-- hashicorp/terraform-ls: [internal: expose tf related options via init opts (#588)](https://github.com/hashicorp/terraform-ls/commit/21b76867bec62308666851b08cdd7d992283b6bb)
-- hashicorp/vscode-terraform: [src/clientHandler: add support for: (#741)](https://github.com/hashicorp/vscode-terraform/commit/fa3ddf51c29827daabd162f751f69e68c4d6d067)
-- opencontainers/runc: [libcontainer: remove \"pausing\" state](https://github.com/opencontainers/runc/commit/7346dda3329e19a483929fad4b62dd6932a82019)
-- ankitects/anki: [qt/aqt/webview: handle opening href with target=_blank (#1623)](https://github.com/ankitects/anki/commit/2c357a6c949e49b51ef48001867489e0d7c9bacd)
-- neovim/neovim: [vim-patch:8.0.0323: one second pause when running cmdline test (#8015)](https://github.com/neovim/neovim/commit/09b51bbf87b16af9a186cea750ada748d89aa259)
-- microsoft/knack: [Desired behavior with --debug, --verbose (#117)](https://github.com/microsoft/knack/commit/71d4e993eee1caa8a40e70636d79e40aab9d9968)
-- auth0/auth0-python: [Add `client_id` param to ClientGrants.all](https://github.com/auth0/auth0-python/commit/ebff4305a4ad6146942b8fe62eb5d28eee6d2400)
-- lighttiger2505/sqls: [internal/formatter: fix incorrect formatting with INSERT INTO](https://github.com/lighttiger2505/sqls/pull/90/files)
-- google/kasane: [add --version option](https://github.com/google/kasane/commit/89c7dd14b83182152e191b1e5506e41158481801)
-- python/cpython: [bpo-34901: add isolated (-I) flag to sys.flags (GH-9708)](https://github.com/python/cpython/commit/656d52dbfde3223cd2a3525d652b6cccb02fa991)
-- python/cpython: [bpo-34365: Update date object documentation (GH-8814)](https://github.com/python/cpython/commit/9c223794c754408644c16349b85dd27fdba8a926)
-- python/cpython: [bpo-34426: fix typo (__lltrace__ -> __ltrace__) (GH-8822)](https://github.com/python/cpython/commit/09efe49c07e2d5f93b415ead757c87e20cc0026f)
-- python/peps: [spelling conventions and errors (#812)](https://github.com/python/peps/commit/a187ebc2541f97cb102870a5d3a8309ecfd6871e)
-- VSCodeVim/Vim: [neovim:.ts: typo in log (#2451)](https://github.com/VSCodeVim/Vim/commit/20be4bc7c7a2442eedd5863a3a3c371899281347)
-- aws/aws-sam-cli: [refactor: fix grammar in log statement (#800)](https://github.com/aws/aws-sam-cli/commit/fa61dc7b281a5846e2596f3f14d2f9dbe8a61acf)
-- coala/coala-bears: [JuliaLintBear.py: Use JuliaRequirement](https://github.com/coala/coala-bears/commit/9a6e40558d8c92b4752ca806bb187dce7b238282)
-
-# Personal Projects
-I like to write tools, mostly command line utilities and plugins, here's some of the stuff that I've written:
-
-- [kube-step-podautoscaler](https://github.com/danishprakash/kube-step-podautoscaler): Controller to scale workloads based on steps.
-- [gosortstructs](https://github.com/danishprakash/gosortstructs): sort Go structs using AST
-- [vim-gosortstructs](https://github.com/danishprakash/vim-gosortstructs): vim plugin to sort Go structs
-- [zf](https://github.com/danishprakash/zf): barely there fetch utility
-- [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim.
-- [vim-docker](https://github.com/danishprakash/vim-docker): Docker development plugin for Vim
-- [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager
-- [vim-githubinator](https://github.com/danishprakash/vim-githubinator): Show selected text in Vim on Github
-- [vim-yami](https://github.com/danishprakash/vim-yami): Monochromatic dark(闇) theme for Vim
-- [goodreadsh](https://github.com/danishprakash/goodreadsh): Command line interface for goodreads.com
-- [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall
-- [githubfs](https://github.com/danishprakash/githubfs): Read-only virtual file-system for Github using FUSE
-- [pip-name](https://github.com/danishprakash/pip-name): Check whether a package name is available on PyPi
-- [amizone-cli](https://github.com/danishprakash/amizone-cli): Command line interface for amizone.net
-- [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection
-- [vimport](https://github.com/danishprakash/vimport): Vim plugin to import and drop modules
-- [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal
+| |
+| :--- |
+| |
+| **Open Source** |
+| [containers/podman](https://github.com/containers/podman/commits?author=danishprakash) - A tool for managing OCI containers and pods.|
+| [containers/buildah](https://github.com/containers/buildah/commits?author=danishprakash) - A tool that facilitates building OCI images.|
+| [containerd/nerdctl](https://github.com/containerd/nerdctl/commits?author=danishprakash) - Docker-compatible CLI for containerd |
+| [hashicorp/nomad](https://github.com/hashicorp/nomad/commits?author=danishprakash) - performant workload orchestrator |
+| [golang/tools](https://github.com/golang/tools/commits?author=danishprakash) - provides the golang.org/x/tools module |
+| [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/commits?author=danishprakash) -  Production-Grade Container Scheduling |
+| [shopify/kubeaudit](https://github.com/shopify/kubeaudit/commits?author=danishprakash) - Kubernetes cluster security audit |
+| [hashicorp/terraform-ls](https://github.com/hashicorp/terraform-ls/commits?author=danishprakash) -  Terraform Language Server |
+| [hashicorp/vscode-terraform](https://github.com/hashicorp/vscode-terraform/commits?author=danishprakash) -  HashiCorp Terraform VSCode extension |
+| [opencontainers/runc](https://github.com/opencontainers/runc/commits?author=danishprakash) - CLI for running containers according to the OCI spec |
+| [ankitects/anki](https://github.com/ankitects/anki/commits?author=danishprakash) - Anki for desktop computers |
+| [neovim/neovim](https://github.com/neovim/neovim/commits?author=danishprakash) - Vim-fork focused on extensibility and usability |
+| [microsoft/knack](https://github.com/microsoft/knack/commits?author=danishprakash) -  Knack - A Python command line interface framework |
+| [auth0/auth0-python](https://github.com/auth0/auth0-python/commits?author=danishprakash) - Auth0 SDK for Python |
+| [google/kasane](https://github.com/google/kasane/commits?author=danishprakash) - A simple kubernetes deployment manager |
+| [python/cpython](https://github.com/python/cpython/commits?author=danishprakash) - The Python programming language |
+| [python/peps](https://github.com/python/peps/commits?author=danishprakash) - Python Enhancement Proposals |
+| [VSCodeVim/Vim](https://github.com/VSCodeVim/Vim/commits?author=danishprakash) - Vim for Visual Studio Code |
+| [coala/coala-bears](https://github.com/coala/coala-bears/commits?author=danishprakash) - Bears for coala |
+| |
+| |
+| **Personal Projects** |
+| [kube-step-podautoscaler](https://github.com/danishprakash/kube-step-podautoscaler): Controller to scale workloads based on steps. |
+| [gosortstructs](https://github.com/danishprakash/gosortstructs): sort Go structs using AST |
+| [vim-gosortstructs](https://github.com/danishprakash/vim-gosortstructs): vim plugin to sort Go structs |
+| [zf](https://github.com/danishprakash/zf): barely there fetch utility |
+| [nvim-blameline](https://github.com/danishprakash/nvim-blameline): GitLens's current line blame for nvim. |
+| [vim-docker](https://github.com/danishprakash/vim-docker): Docker development plugin for Vim |
+| [vim-zen](https://github.com/danishprakash/vim-zen): Barebones Vim plugin manager |
+| [vim-githubinator](https://github.com/danishprakash/vim-githubinator): Show selected text in Vim on Github |
+| [vim-yami](https://github.com/danishprakash/vim-yami): Monochromatic dark(闇) theme for Vim |
+| [goodreadsh](https://github.com/danishprakash/goodreadsh): Command line interface for goodreads.com |
+| [py-splice](https://github.com/danishprakash/py-splice): A Python interface to splice(2) syscall |
+| [githubfs](https://github.com/danishprakash/githubfs): Read-only virtual file-system for Github using FUSE |
+| [pip-name](https://github.com/danishprakash/pip-name): Check whether a package name is available on PyPi |
+| [amizone-cli](https://github.com/danishprakash/amizone-cli): Command line interface for amizone.net |
+| [dash](https://github.com/danishprakash/dash): Unix shell written with piping & history recollection |
+| [vimport](https://github.com/danishprakash/vimport): Vim plugin to import and drop modules |
+| [chromatic](https://github.com/danishprakash/chromatic): Create monochromatic backgrounds on the terminal |
+| |
+| |
 That's about it, feel free to [reach out](https://danishpraka.sh).
