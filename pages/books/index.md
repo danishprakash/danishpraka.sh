@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| Singapore - Culture Smart! | Angela Milligan | _reading_ |
+| Malaysia - Culture Smart! | Victor King | _reading_ |
 | Enlightenment Now | Steven Pinker | _listening_ |
 | Linux System Programming | Robert Love | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [Singapore - Culture Smart!](/books/singapore-culture-smart) | Angela Milligan | ★★★ |
 | [This Is What Inequality Looks Like](/books/this-is-what-inequality-looks-like) | Teo You Yenn | ★★★★ |
 | [The Prophet](/books/the-prophet) | Kahlil Gibran | ★ |
 | [Fooled by Randomness](/books/fooled-by-randomness) | Nassim Nicholas Taleb | ★★★★ |
