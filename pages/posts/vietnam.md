@@ -11,22 +11,22 @@ Last September, I, along with a friend of mine planned for a trip to Vietnam. We
 
 We took a direct flight to Hanoi from Delhi, landed late in Hanoi and took a public bus to the famous/iconic [Buffalo hostel](https://buffalohostels.com/). The next morning, we visited the Literature Temple, a famous Bun Cha place and tried egg coffee at a lakeside cafe. The city was teeming with young people rustling by on their bikes and scooties. It's an overwhelming sight when you first ride on the main roads and streets. And this is coming from someone who's ridden in some of the most congested of places in Delhi.
 
-<img src="./../../static/img/posts/vietnam/street.png"/>
-<img src="./../../static/img/posts/vietnam/lit-temple.png"/>
-<img src="./../../static/img/posts/vietnam/bahn-mi.png"/>
+<img src="./../../static/img/posts/vietnam/street.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/lit-temple.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/bahn-mi.png" loading="lazy"/>
 <br>
 <br>
 
 The first thing we had planned to do in Vietnam was the incredibly surreal Ha Giang bike loop. It's exactly what it sounds like, a 4-day bike loop in the mountains of northern Vietnam. Our group, by the time we flew from Delhi, had morphed into a 6-member group. In Ha Giang, it further transmogrified into a 12-member group when we teamed upw with two other smaller groups to do the loop together.
 
-<img src="./../../static/img/posts/vietnam/ha-giang.png"/>
-<img src="./../../static/img/posts/vietnam/ha-giang-2.png"/>
-<img src="./../../static/img/posts/vietnam/ha-giang-3.png"/>
+<img src="./../../static/img/posts/vietnam/ha-giang.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/ha-giang-2.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/ha-giang-3.png" loading="lazy"/>
 
 The idea is to start from Ha Giang city, then ride a couple hundred kilometres and stay at a homestay in the valleys, repeat 3 more days. We all rode a semi-automatic bike with surprisingly good mileage. The loop is designed in such a way that even though it's ~120km a day, it has enough stops in between that you cover the whole day and reach the homestays after sundown.
 
-<img src="./../../static/img/posts/vietnam/bike.png"/>
-<img src="./../../static/img/posts/vietnam/bike-group.png"/>
+<img src="./../../static/img/posts/vietnam/bike.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/bike-group.png" loading="lazy"/>
 
 The pictures aren't lying. It was just sheer greenery through and through with occasional patches of life when you're passing by a valley. And that too was accompanied with extremely curious locals trying to get as much information about India as they can.
 
@@ -34,41 +34,41 @@ I have so many more photos I can attach here but then I might not be able to tal
 
 Next stop was Ha Long Bay. The UNESCO World Heritage Center site is famous for it's limestone pillar in the inland ocean. The only way to explore these is to book a cruise which would sail further into the bay to give you a closer look at the formations.
 
-<img src="./../../static/img/posts/vietnam/ha-long.png"/>
-<img src="./../../static/img/posts/vietnam/ha-long-2.png"/>
+<img src="./../../static/img/posts/vietnam/ha-long.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/ha-long-2.png" loading="lazy"/>
 
 You can also visit the caves formed naturally inside these formations and additionally, go canoeing around them.
 
 Back to Hanoi, and off we went to Ninh Binh for a night. We rode bikes from Hanoi to Ninh Binh and the reliable partner that Google Maps is, it took us through deep residential pockets skipping the highways only meant for cars. But thanks to this route, we were able to see middle-aged ladies enjoying a session of tai-chi? in the evening in a community center verandah while a group of young kids played volleyball in a ground further ahead. Or in other words, a casual evening routine for the residents of outer Hanoi.
 
-<img src="./../../static/img/posts/vietnam/ninh-binh-2.png"/>
-<img src="./../../static/img/posts/vietnam/ninh-binh-3.png"/>
+<img src="./../../static/img/posts/vietnam/ninh-binh-2.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/ninh-binh-3.png" loading="lazy"/>
 
 Ninh Binh was quiet, serene but due to the storm that just went by a couple of days before we arrived, it was raining quite heavily. We still managed to do the famous boat tour there. During the ride, Vietnamese tourists would shout out and greet us and ask us where we're from, it was a jovial affair. We even had a couple of races with some of them, it was healthy.
 
-<img src="./../../static/img/posts/vietnam/ninh-binh-4.png"/>
+<img src="./../../static/img/posts/vietnam/ninh-binh-4.png" loading="lazy"/>
 
 We headed back to Hanoi for one last night where we explored the War Museum, it was an overwhelming collection of feelings, artifacts and information surrounding Vietnam's history especially the infamous [Vietnam](https://en.wikipedia.org/wiki/Vietnam_War) war.
 
-<img src="./../../static/img/posts/vietnam/hanoi-night.png"/>
+<img src="./../../static/img/posts/vietnam/hanoi-night.png" loading="lazy"/>
 
 The next morning we took an early morning bus to Hue, the ancient capital of Vietnam. It was raining cats and dogs and while we touched upon some famous tourist spots in the city, we eventually ended up having coffee and just taking short walks around the bus stand waiting for our afternoon bus to Da Nang.
 
-<img src="./../../static/img/posts/vietnam/hue.png"/>
-<img src="./../../static/img/posts/vietnam/danang.png"/>
+<img src="./../../static/img/posts/vietnam/hue.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/danang.png" loading="lazy"/>
 
 Da Nang is a typical urban expanse with lots of things to do. We made a day trip from Da Nang to explore Hoi An, which is a quaint little coastal town with lots and lots of tourists throughout the day. You can walk around the town capturing the old streets, shop for souveniers and have their local delicacy, Cao Lau. The town suddenly transforms after sundown, it's a brightly lit cacophony of lights and lamps, a sight to behold.
 
-<img src="./../../static/img/posts/vietnam/hoi-an-3.png"/>
-<img src="./../../static/img/posts/vietnam/hoi-an.png"/>
-<img src="./../../static/img/posts/vietnam/hoi-an-2.png"/>
+<img src="./../../static/img/posts/vietnam/hoi-an-3.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/hoi-an.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/hoi-an-2.png" loading="lazy"/>
 
 The final leg of the trip was to head south to Ho Chi Minh City, formerly Saigon. As soon as we landed in Saigon, it was chaos. It looked like any other big city in South East Asia but with lots of people. There were bikes all around and coming from Da Nang and the quieter North, Saigon was the polar opposite.
 
 On the flipside, I had the best coffee here coupled with getting some really good street shots.
 
-<img src="./../../static/img/posts/vietnam/coffee.png"/>
-<img src="./../../static/img/posts/vietnam/street-hcm.png"/>
+<img src="./../../static/img/posts/vietnam/coffee.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/street-hcm.png" loading="lazy"/>
 
 We visited the Ho Chi Minh City Museum where, along with the Vietnamese history, we witnessed some intense wedding shoots. Yes, inside the museum. I also witnessed the city's wildest nightlife at the Bui Vien street, it was crazy and mere inches away from being considered a stampede. Throngs of people out on the street drinking, smoking and just being plain crazy. I was glad that stretch was over when it finally was.
 
@@ -77,9 +77,9 @@ Ho Chi Minh is where we did most of our shopping at the famous Ben Thanh market.
 # food
 If you're a vegetarian and are planning a trip to Vietnam, god forbid you're going to have a hard time. Especially if you're planning to do the Ha Giang loop or thinking of going deeper into the mainlands. In the cities, you'd still find a variety of vegetarian, vegan even, options. That being said, I think I personally enjoyed the Vietnamese cuisine the most out of this trip.
 
-<img src="./../../static/img/posts/vietnam/pho.png"/>
-<img src="./../../static/img/posts/vietnam/cao-lau.png"/>
-<!-- <img src="./../../static/img/posts/vietnam/pho-2.png"/> -->
+<img src="./../../static/img/posts/vietnam/pho.png" loading="lazy"/>
+<img src="./../../static/img/posts/vietnam/cao-lau.png" loading="lazy"/>
+<!-- <img src="./../../static/img/posts/vietnam/pho-2.png" loading="lazy"/> -->
 
 And of course, I've already mentioned the coffee. I didn't have a single bad coffee during the whole time I was there and it was a sentiment most of friends shared too.
 
@@ -96,10 +96,10 @@ I can't say if these observations are a helpful addition to the post or not, but
 
 
 # conclusion
-After a failed attempt to travel to Vietnam right before COVID in early 2020, I was really looking forward to explore this land of hardworking people, as the saying goes. I wasn't disappointed. Additionaly, I paired this trip with a reading of [Vietnam: Rising Dragon](/books/vietnam-rising-dragon), it was the perfect companion.
+After a failed attempt to travel to Vietnam right before COVID in early 2020, I was really looking forward to explore this land of hardworking people, as the saying goes. I wasn't disappointed. Additionaly, I paired this trip with a reading of [Vietnam: Rising Dragon](/reading/vietnam-rising-dragon), it was the perfect companion.
 
 I remember I was having this discussion with a friend at work about how travel is not what it used to be with the advent of internet. One can even "experience" a new land with all the innovations in AR. But writing this post, I realize there are things I'd have never even read about lest I had travelled to the place by myself and that makes all the difference. It expands your worldview, for the better.
 
-<img src="./../../static/img/posts/vietnam/vietnam-flag.png"/>
+<img src="./../../static/img/posts/vietnam/vietnam-flag.png" loading="lazy"/>
 
 :wq

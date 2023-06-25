@@ -20,7 +20,7 @@ While reviewing the previous goals in my annual OKRs, this was an eyesore. I wro
 Not so dreary were the [open source contributions](/software). I'm hoping, with the new role, I'd be in a better position to contribute more this year.
 
 # reading & writing
-I had consciously chosen not to participate in the Goodreads reading challenge in 2022. I found that with the challenge in tow, I was trying to push towards quantity rather than quality sometimes. This year, I chose which books to read purely on the basis of my interest at that specific period of time. I especially enjoyed [The God Delusion](/books/the-god-delusion), [Man’s Search for Meaning](/books/mans-search-for-meaning), [Walden](/books/walden), [Digital Minimalism](/books/digital-minimalism) and [Annihilation of Caste](/books/annihilation-of-caste).
+I had consciously chosen not to participate in the Goodreads reading challenge in 2022. I found that with the challenge in tow, I was trying to push towards quantity rather than quality sometimes. This year, I chose which books to read purely on the basis of my interest at that specific period of time. I especially enjoyed [The God Delusion](/reading/the-god-delusion), [Man’s Search for Meaning](/reading/mans-search-for-meaning), [Walden](/reading/walden), [Digital Minimalism](/reading/digital-minimalism) and [Annihilation of Caste](/reading/annihilation-of-caste).
 
 Writing also, surprisingly went quite well compared to 2021:
 
@@ -55,7 +55,7 @@ Learning Japanese was put on the backpedal(すみません), in that I didn't le
 
 This year, I'm also focusing more on how I retain information and how I take notes. I've started using Obsidian and have been reading [this series of posts](https://jamierubin.net/blog-series/practically-paperless-with-obsidian/) about note-taking by Jamie Rubin. I intend to be more mindful and comprehensive while taking notes and working my way towards increasing my overall retention of topics I find valuable and useful. I'll most probably write a post about this sometime in 2023 so I'll keep it short here.
 
-Finally, a thing I realized this past year is that I value solitude a lot. I tend to avoid a gathering of more than 2 individuals just because I think the discussions quickly spirals into drivel one way or another. So far, I had been under the impression that this was not acceptable or socially correct  as people around you would quicly have you know. But I recently read Susan Cain's [Quiet](/books/quiet) which throws light on being quiet or being introverted is just another, even better in some ways, way of life. I'm curious to know more about how to optimize (for lack of a better word), such a way of life.
+Finally, a thing I realized this past year is that I value solitude a lot. I tend to avoid a gathering of more than 2 individuals just because I think the discussions quickly spirals into drivel one way or another. So far, I had been under the impression that this was not acceptable or socially correct  as people around you would quicly have you know. But I recently read Susan Cain's [Quiet](/reading/quiet) which throws light on being quiet or being introverted is just another, even better in some ways, way of life. I'm curious to know more about how to optimize (for lack of a better word), such a way of life.
 
 # 2023
 I have some specific areas I've identified which I'm going to be focusing more on in 2023, most notably:
