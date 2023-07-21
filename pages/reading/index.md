@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| Malaysia - Culture Smart! | Victor King | _reading_ |
+| The Renaissance Diet 2.0 | Mike Israetel | _reading_ |
 | Enlightenment Now | Steven Pinker | _listening_ |
 | Linux System Programming | Robert Love | _reading_ |
 | Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [Malaysia - Culture Smart!](/reading/malaysia-culture-smart) | Victor King | ★★★ |
 | [Singapore - Culture Smart!](/reading/singapore-culture-smart) | Angela Milligan | ★★★ |
 | [This Is What Inequality Looks Like](/reading/this-is-what-inequality-looks-like) | Teo You Yenn | ★★★★ |
 | [The Prophet](/reading/the-prophet) | Kahlil Gibran | ★ |
