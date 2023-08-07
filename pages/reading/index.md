@@ -11,7 +11,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | The Demon-Haunted World | Carl Sagan | _listening_ |
 | The Renaissance Diet 2.0 | Mike Israetel | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
-| Where India Goes | Diane Coffe, Dean Spears | _reading_ |
+| [Where India Goes](/reading/where-india-goes) | Diane Coffe, Dean Spears | ★★★★★ |
 | [Enlightenment Now](/reading/enlightenment-now) | Steven Pinker | ★★★★ |
 | [Malaysia - Culture Smart!](/reading/malaysia-culture-smart) | Victor King | ★★★ |
 | [Singapore - Culture Smart!](/reading/singapore-culture-smart) | Angela Milligan | ★★★ |
