@@ -8,9 +8,10 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| The Demon-Haunted World | Carl Sagan | _listening_ |
 | The Renaissance Diet 2.0 | Mike Israetel | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [The Simple Path to Wealth](/reading/the-simple-path-to-wealth) | J. L. Collins | ★★★ |
+| [The Demon-Haunted World](/reading/the-demon-haunted-world) | Carl Sagan | ★★★★★ |
 | [Where India Goes](/reading/where-india-goes) | Diane Coffe, Dean Spears | ★★★★★ |
 | [Enlightenment Now](/reading/enlightenment-now) | Steven Pinker | ★★★★ |
 | [Malaysia - Culture Smart!](/reading/malaysia-culture-smart) | Victor King | ★★★ |
