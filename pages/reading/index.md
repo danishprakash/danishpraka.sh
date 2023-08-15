@@ -8,6 +8,8 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Einstein | Walter Isaacson | _reading_ |
+| Home in the World | Amartya Sen | _listening_ |
 | The Renaissance Diet 2.0 | Mike Israetel | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
 | [The Simple Path to Wealth](/reading/the-simple-path-to-wealth) | J. L. Collins | ★★★ |
