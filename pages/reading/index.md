@@ -8,10 +8,13 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Atlas of the Heart | Brené Brown | _listening_ |
+| Four Thousand Weeks | Oliver Burkeman | _reading_ |
 | Einstein | Walter Isaacson | _reading_ |
-| Home in the World | Amartya Sen | _listening_ |
-| The Renaissance Diet 2.0 | Mike Israetel | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [Kabuliwala, Selected Plays and Stories](/reading/kabuliwala) | Rabindranath Tagore | ★★★★ |
+| [Home in the World](/reading/home-in-the-world) | Amartya Sen | ★★★★ |
+| [The Renaissance Diet 2.0](/reading/the-renaissance-diet) | Mike Israetel | ★★★★★ |
 | [The Simple Path to Wealth](/reading/the-simple-path-to-wealth) | J. L. Collins | ★★★ |
 | [The Demon-Haunted World](/reading/the-demon-haunted-world) | Carl Sagan | ★★★★★ |
 | [Where India Goes](/reading/where-india-goes) | Diane Coffe, Dean Spears | ★★★★★ |
