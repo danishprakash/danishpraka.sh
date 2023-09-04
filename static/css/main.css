@@ -759,6 +759,10 @@ i {
     padding: 25px 25px 25px 25px;
 }
 
+.post__content pre code {
+    padding-left: 0px;
+}
+
 .post__content .lineno {
     color: #bbb;
     padding-right: 8px;
