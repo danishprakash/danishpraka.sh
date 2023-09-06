@@ -124,7 +124,7 @@ table a:hover {
     margin-bottom: 15px;
     padding-bottom: 20px;
     font-size: 12pt;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
     padding-top: 20px;
 }
 
@@ -362,7 +362,7 @@ p {
 .wrapper {
     max-width: auto;
     margin: auto;
-    width: 75ch;
+    width: 82ch;
 
     a {
         text-decoration: none;
@@ -485,7 +485,7 @@ i {
 .blog li .date {
     float: right;
     font-size: 12pt;
-    color: #e1e0e0;
+    color: #b9b9b9;
     text-transform: lowercase;
 }
 
@@ -663,24 +663,20 @@ i {
     list-style: disc;
     padding-bottom: 10px;
     line-height: 1.3em;
-    padding-left: 10px;
+    padding-left: 8px;
+    margin-top: -16px;
+    margin-bottom: 24px;
 }
 
-.post__content p+ol {
-    margin-top: -8px;
-    margin-bottom: 10px;
-}
-
-.post__content p+ul {
-    margin-top: -10px;
-    margin-bottom: 10px;
+.post__content ul li p {
+    margin: 0px;
 }
 
 .post__content ol {
     list-style: decimal;
     padding-bottom: 10px;
     line-height: 1.65em;
-    margin-left: 16px;
+    padding-left: 8px;
 }
 
 .post__content li {

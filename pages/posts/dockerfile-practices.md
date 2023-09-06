@@ -191,6 +191,7 @@ Having an up to date dockerignore file in your project's repository ensures no f
 
 # Conclusion
 This is the kind of post which doesn't really call for an inferential conclusion so instead, I'm going to quickly summarize everything we talked about in this post:
+
 1. Order your layers with the least frequently changes on top and so on.
 2. Spend time sensibly formatting your Dockerfiles.
 3. Keep the image as minimal as possible, discard all fluff.
