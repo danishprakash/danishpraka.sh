@@ -34,7 +34,6 @@ COPY . .
 RUN go build -o app
 ```
 
-<br>
 # Format your Dockerfiles
 Was not originally planning to add it here, but I've seen countless examples of unformatted Dockerfiles to actually include this as its own section. Unfortunately, there's no standardised formatting tool such as `gofmt` available for Dockerfiles and so it's difficult to attain a quorum during discussions or reviews but one thing I've seen that helps is to refer to official Dockerfiles or files from popular open source projects.
 
@@ -165,7 +164,6 @@ RUN wget https://github.com/checkpoint-restore/criu/archive/refs/tags/v${CRIU_VE
     cp ./criu/criu /usr/bin/
 ```
 
-<br>
 # Understand `ENTRYPOINT` and `CMD`
 This is probably the most commonly misinterpreted of them all. Part of the confusion arises due to the different forms available for both `ENTRYPOINT` and `CMD`. But to keep it simple, I'm going to only consider the JSON form here while discussing a preferred way to use these two directives.
 

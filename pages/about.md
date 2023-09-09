@@ -3,7 +3,7 @@ layout: post
 title: About
 ---
 
-Hi, I'm Danish! I'm an engineer by profession and I currently live in Bengaluru, India. I tend to spend my time <a href="/reading">reading</a> or preferably <a href="https://www.strava.com/athletes/89607404">outdoors</a>. I'm into [weight training](https://www.hevy.com/user/danishprakash), badminton, and swimming, in that order. I also dabble with [photography](https://unsplash.com/@danishprakash) time to time and have also been trying to write more lately.
+Hi, I'm Danish! I'm an engineer by profession and I currently live in Bengaluru, India. I tend to spend my time <a href="/reading">reading</a> or preferably <a href="https://www.strava.com/athletes/89607404">outdoors</a>. I'm into [weight training](https://www.hevy.com/user/danishprakash), badminton, and swimming, in that order. I also dabble with [photography](https://unsplash.com/@danishprakash/collections) time to time and have also been trying to write more lately.
 
 # work
 
