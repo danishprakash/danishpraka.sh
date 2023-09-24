@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| Nationalism | Rabindranath Tagore | _reading_ |
 | Atlas of the Heart | Brené Brown | _listening_ |
-| Four Thousand Weeks | Oliver Burkeman | _reading_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [Four Thousand Weeks](/reading/four-thousand-weeks) | Oliver Burkeman | ★★★ |
 | [Kabuliwala, Selected Plays and Stories](/reading/kabuliwala) | Rabindranath Tagore | ★★★★ |
 | [Home in the World](/reading/home-in-the-world) | Amartya Sen | ★★★★ |
 | [The Renaissance Diet 2.0](/reading/the-renaissance-diet) | Mike Israetel | ★★★★★ |
