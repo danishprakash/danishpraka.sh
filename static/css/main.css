@@ -673,6 +673,10 @@ i {
     margin: 0px;
 }
 
+.post__content ul li {
+    padding-top: 20px;
+}
+
 .post__content ol {
     list-style: decimal;
     padding-bottom: 10px;
