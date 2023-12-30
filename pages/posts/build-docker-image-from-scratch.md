@@ -64,7 +64,7 @@ Docker requires all layers and the concomitant metadata to be inside a content-a
 ```
 $ sha256sum layer.tar
 f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117 layer.tar
-
+sum
 $ mkdir f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117
 $ mv layer.tar f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117/
 
@@ -103,7 +103,7 @@ We have defined our entrypoint to be our static binary. We then refer to the lay
 
 ```
 $ sha256sum config.json
-25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f  config.json
+25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f config.json
 $ mv config.json 25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f.json
 
 $ tree
@@ -119,12 +119,12 @@ Howsoever arcane our directory might look like to us, it's completely comprehens
 The manifest file holds metadata such as location of the config, the different layers that are part the image and the image name or tag, etc. Docker uses a file called `manifest.json` to accomplish this:
 
 ```
-$ vi manifest.json
+$ vim manifest.json
 [
     {
         "Config": "25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f.json",
         "RepoTags": [
-            "hello:latest"
+            "hello:scratch"
         ],
         "Layers": [
             "f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117/layer.tar"
@@ -133,7 +133,7 @@ $ vi manifest.json
 ]
 ```
 
-The file above can have multiple entries for each image, in our case, we have just one image with the `latest` tag. We refer to that image name and tag, along with the config and the layer archive our image will use.
+The file above can have multiple entries for each image, in our case, we have just one image with the `scratch` tag. We refer to that image name and tag, along with the config and the layer archive our image will use.
 
 At this point, we have the following files:
 ```
@@ -166,9 +166,9 @@ $ tar -cf hello.tar *
 
 $ docker load < hello.tar
 f0890db25e21: Loading layer [==================>]  3.686MB/3.686MB
-Loaded image: hello:latest
+Loaded image: hello:scratch
 
-$ docker run hello
+$ docker run hello:scratch
 hello world
 ```
 
@@ -177,10 +177,133 @@ And would you look at that, it works as if we created the image using docker its
 ```
 $ docker image ls hello
 REPOSITORY   TAG       IMAGE ID       CREATED   SIZE
-hello        latest    25e8b3bd9720   N/A       3.67MB
+hello        scratch    25e8b3bd9720  N/A       3.67MB
 ```
 
 Thanks to the scratch base image, our image has a minimal footprint, in fact, the only file in our image is our binary.
+
+# Using a Base Image
+Let's try creating a version of our image which is based on `alpine` rather than scratch. This would introduce another layer in our image, so let's see how multiple layers are handled or represented within the configuration and metadata. For the sake of better understanding, this is how our Dockerfile would look using alpine if we hadn't been doing it from scratch.
+
+```
+FROM alpine:latest
+
+COPY ./hello /root/hello
+
+ENTRYPOINT ["./hello"]
+```
+
+In our image so far, we had just one layer that consists of our `hello` binary. As we've seen before, a layer can be considered a filesystem diff. So if we plan to use alpine as our base image, we need the respective root filesystem onto which we'll base our second layer, the binary. You can obtain the alpine root filesystem from their official website.
+
+```
+$ wget https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-minirootfs-3.18.4-x86_64.tar.gz -O rootfs.tar.gz
+
+$ tar -xvf rootfs.tar.gz
+$ tar --remove-files -cf layer.tar *
+```
+
+That tar dance at the end is because, as we saw before, docker requires the layers as standard archive, and not a gzipped one. So we're unzipping the gzipped archive and then converting it again to a tar archive without compression.
+
+Next up, let's create a new directory corresponding to our new base image layer:
+```
+$ sha256sum layer.tar
+60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db layer.tar
+$ mkdir 60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db
+$ mv layer.tar 60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db/
+
+$ tree
+.
+├── 25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f.json
+├── 60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db
+│   └── layer.tar
+├── f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117
+│   └── layer.tar
+└── manifest.json
+```
+
+We'll add this new alpine image as a new tag to our existing image. Essentially, we'll have an image `hello` with two tags, `scratch` and `alpine`. We already have the former set up and running, what's left is to create a config and update the metadata to reflect the new tag `alpine`. Let's create a new config by copying over the existing one and updating the contents for it:
+
+```
+$ vim config.json
+{
+    "config": {
+        "Entrypoint": [
+            "./hello"
+        ]
+    },
+    "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+            "sha256:60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db",
+            "sha256:f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117"
+        ]
+    }
+}
+
+$ sha256sum config.json
+3d0268e9a91e466ba3a9385fe12edf4a9804089fd582fe3c79a6fa11c9db317b config.json
+$ mv config.json 3d0268e9a91e466ba3a9385fe12edf4a9804089fd582fe3c79a6fa11c9db317b.json
+```
+
+We have the new config, we added the base layer as the first layer in the `diff_ids` block. Layers are represented top to bottom so our base alpine layer comes first and then our layer with the static binary. Apart from the layers, nothing else really changes, we'd still be able to tell the difference if we try to exec into the container and more readily if we simply compare the image sizes. All that's left now is to let docker know that there's a new image with a new tag, so let's update the manifest file:
+
+```
+$ vim manifest.json
+[
+    {
+        "Config": "25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f.json",
+        "RepoTags": [
+            "hello:scratch"
+        ],
+        "Layers": [
+            "f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117/layer.tar"
+        ]
+    },
+    {
+        "Config": "3d0268e9a91e466ba3a9385fe12edf4a9804089fd582fe3c79a6fa11c9db317b.json",
+        "RepoTags": [
+            "hello:alpine"
+        ],
+        "Layers": [
+            "60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db/layer.tar",
+            "f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117/layer.tar"
+        ]
+    }
+]
+```
+
+We added a new entry in the file which creates a new image named `hello:alpine` and refers to its configuration. And finally, it has a reference to the two layers archives. Let's create an archive for our new image(s) and load them up in docker:
+
+```
+$ tree
+.
+├── 25e8b3bd9720a2c1a4c1908aaca598593fc5483f5f3ecfaa1a40aa271ef8615f.json
+├── 3d0268e9a91e466ba3a9385fe12edf4a9804089fd582fe3c79a6fa11c9db317b.json
+├── 60319e6788a598db0914c14d8608cd4865ec12fc1f31bfaa82933c09c504a0db
+│   └── layer.tar
+├── f0890db25e21d129985da9eb714feea4c610994ddb3ddddc974cb3404a142117
+│   └── layer.tar
+└── manifest.json
+$ tar -cf hello.tar *
+
+$ docker load < hello.tar
+f0890db25e21: Loading layer [==================>]  3.686MB/3.686MB
+Loaded image: hello:scratch
+Loaded image: hello:alpine
+
+$ docker run hello:scratch
+hello world
+$ docker run hello:alpine
+hello world
+
+$ docker image ls hello
+REPOSITORY   TAG       IMAGE ID       CREATED   SIZE
+hello        scratch   25e8b3bd9720   N/A       3.67MB
+hello        alpine    3d0268e9a91e   N/A       11MB
+```
+
+So there we have it, our two images loaded into the docker daemon. We can run both of them and see the same output from both of them. One interesting thing to note is the size difference between the two images. Alpine, while still having a lower footprint is larger than scratch, but nothing extraordinary. Hopefully this example demonstrated interaction between different layers in an image and how a manifest file can represent multiple images from a single file.
+
 
 # Conclusion
 I was initially planning to title this article "Container Image Internals" and the first draft of that came out all theoretical and while reading it, even I felt bored even though I enjoyed finding about all I could about container images for the post. But then I decided to document the fun part of this whole journey and here we are. In this article, we saw how we can "build" a docker image from scratch. But that's not to say that we'd be doing something like that on a day to day basis. You should never find yourself doing this as part of your regular development workflow. This article intentionally uses a simple example and so it misses out on more recent developments such as how this would work with the OCI spec or if I had to pry open a v1 docker image spec image, how would that differ from what we did here.

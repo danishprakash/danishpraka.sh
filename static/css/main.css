@@ -726,7 +726,7 @@ i {
 /* inline code blocks */
 .post__content code {
     padding: 1.5px 5px 2.5px 5px;
-    font-size: 18px;
+    font-size: 16px;
     word-wrap: break-word;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
@@ -747,7 +747,7 @@ i {
     border-radius: 6px;
     color: #2b2b2b;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-weight: 400;
     margin-bottom: 15px;
