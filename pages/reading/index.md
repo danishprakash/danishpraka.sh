@@ -12,6 +12,8 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [Prisoner's Dilemma](/reading/prisoners-dilemma) | William Poundstone | ★★★ |
+| **2023** | | |
 | [Indonesia - Culture Smart!](/reading/indonesia-culture-smart) | Graham Saunders | ★★★ |
 | [Atlas of the Heart](/reading/atlas-of-the-heart) | Brené Brown | ★★★★★ |
 | [Nationalism](/reading/nationalism) | Rabindranath Tagore | ★★★ |
