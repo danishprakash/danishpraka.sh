@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
-| The Joy of X | Steven H. Strogatz | _reading_ |
+| Predictably Irrational | Dan Ariely | _reading_ |
 | Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [The Joy of X](/reading/the-joy-of-x) | Steven H. Strogatz | ★★★ |
 | [Prisoner's Dilemma](/reading/prisoners-dilemma) | William Poundstone | ★★★ |
 | **2023** | | |
 | [Indonesia - Culture Smart!](/reading/indonesia-culture-smart) | Graham Saunders | ★★★ |
@@ -80,7 +81,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | [What the Most Successful People Do Before Breakfast](#) | Laura Vanderkam | ★★★ |
 | [Thinking, Fast and Slow](#) | Daniel Kahneman | ★★★ |
 | [Confessions of a Yakuza](/reading/confessions-of-a-yakuza) | Junichi Saga | ★★★★ |
-| [Steve Jobs](/reading/steve-jobs) | Walter Isaascon | ★★★★ |
+| [Steve Jobs](/reading/steve-jobs) | Walter Isaacson | ★★★★ |
 | [Hiroshima](/reading/hiroshima) | John Hersey | ★★★★★ |
 | [The Decision Checklist](/reading/the-decision-checklist) | Sam Kyle | ★★★ |
 | [Underground: The Tokyo Gas Attack](/reading/underground) | Haruki Murakami | ★★★★ |

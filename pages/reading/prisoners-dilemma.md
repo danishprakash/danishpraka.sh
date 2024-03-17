@@ -2,7 +2,7 @@
 layout: book
 title: Prisoner's Dilemma
 date: 2024-01-16
-author: Willaim Poundstone
+author: William Poundstone
 format: eBook
 ---
 
