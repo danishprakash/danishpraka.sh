@@ -8,10 +8,10 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
-| Predictably Irrational | Dan Ariely | _reading_ |
 | Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [Predictably Irrational](/reading/predictably-irrational) | Dr. Dan Ariely | ★★★★ |
 | [The Joy of X](/reading/the-joy-of-x) | Steven H. Strogatz | ★★★ |
 | [Prisoner's Dilemma](/reading/prisoners-dilemma) | William Poundstone | ★★★ |
 | **2023** | | |
