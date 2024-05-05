@@ -8,6 +8,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
+| The Last Lecture | Randy Pausch | _reading_ |
 | Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
