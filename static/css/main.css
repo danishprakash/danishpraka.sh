@@ -1,6 +1,10 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap");
 
+:root {
+    --textfont: #262626;
+}
+
 .footer {
     background: #f7f7f7;
     border-left: 1px solid #dddcdc;
@@ -46,8 +50,8 @@
 
 table {
     width: 100%;
-    line-height: 1.25em;
-    font-size: 18px;
+    line-height: 18px;
+    font-size: 16px;
 }
 
 table tr td:nth-child(1) {
@@ -76,7 +80,7 @@ table em {
 
 table strong {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 12px;
 }
 
@@ -96,7 +100,7 @@ table a:hover {
 }
 
 .page {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 45px;
     margin-right: 45px;
     display: block;
@@ -330,10 +334,10 @@ table a:hover {
 }
 
 body {
-    color: #000;
+    /* color: #000; */
     background: #eaeaea;
     font-family: "inter", sans-serif;
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 400;
     word-wrap: break-word;
     margin-top: 0;
@@ -358,7 +362,7 @@ hr {
 .wrapper {
     max-width: auto;
     margin: auto;
-    width: 82ch;
+    width: 80ch;
 
     a {
         text-decoration: none;
@@ -416,7 +420,7 @@ i {
 
 .description a {
     text-decoration: none;
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 400;
     font-style: normal;
     font-size: 12pt;
@@ -440,9 +444,9 @@ i {
 
 .desc p {
     font-family: "inter", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     margin-bottom: 5px;
     justify-items: center;
 }
@@ -458,8 +462,8 @@ i {
 
 .blog {
     padding-bottom: 30px;
-    line-height: 40px;
-    color: #30373e;
+    line-height: 32px;
+    color: var(--textfont);
 }
 
 .blog ol {
@@ -473,7 +477,7 @@ i {
     font-weight: 400;
     margin-bottom: 14px;
     border-bottom: 1px #c4c1c1 solid;
-    color: #30373e;
+    color: var(--textfont);
 }
 
 .blog li {
@@ -493,7 +497,7 @@ i {
 .blog a {
     font-weight: 400;
     font-style: normal;
-    color: #30373e;
+    color: var(--textfont);
     text-decoration: none;
 }
 
@@ -530,8 +534,8 @@ i {
 }
 
 .post__content {
-    font-size: 18px;
-    color: #30373e;
+    font-size: 16px;
+    color: var(--textfont);
 }
 
 .post__back {
@@ -612,16 +616,16 @@ i {
 .post__content p {
     font-family: "inter", sans-serif;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     padding-bottom: 12px;
     word-wrap: break-word;
 }
 
 .post__content p a {
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 400;
     font-style: normal;
-    color: #000;
+    color: var(--textfont);
     font-family: "inter", sans-serif;
     border-bottom: 2px solid #d2d2d2;
     text-decoration: none;
@@ -634,11 +638,11 @@ i {
 }
 
 .post__content a {
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
+    color: var(--textfont);
     font-family: "inter", sans-serif;
     border-bottom: 2px solid #d2d2d2;
     text-decoration: none;
@@ -665,7 +669,7 @@ i {
     padding-bottom: 10px;
     line-height: 1.3em;
     padding-left: 8px;
-    margin-top: -16px;
+    margin-top: -38px;
     margin-bottom: 24px;
 }
 
@@ -682,7 +686,7 @@ i {
     padding-bottom: 10px;
     line-height: 1.65em;
     padding-left: 8px;
-    margin-top: -16px;
+    margin-top: -38px;
     margin-bottom: 24px;
 }
 
@@ -760,7 +764,7 @@ i {
     overflow-x: auto;
     padding: 25px 25px 25px 25px;
     margin-top: -12px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .post__content pre code {
@@ -806,7 +810,7 @@ i {
 
 .about__content p {
     font-size: 12pt;
-    line-height: 28px;
+    line-height: 24px;
     margin-bottom: 10px;
     font-weight: 400;
 }
