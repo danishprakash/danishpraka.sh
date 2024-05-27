@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
-| The Last Lecture | Randy Pausch | _reading_ |
+| The First and Last Freedom | J. Krishnamurti | _reading_ |
 | Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [The Last Lecture](/reading/the-last-lecture) | Randy Pausch | ★★★★★ |
 | [Horrors and Absurdities of Religion](/reading/horrors-and-absurdities-of-religion) | Arthur Schopenhauer | ★★★ |
 | [Predictably Irrational](/reading/predictably-irrational) | Dr. Dan Ariely | ★★★★ |
 | [The Joy of X](/reading/the-joy-of-x) | Steven H. Strogatz | ★★★ |
@@ -166,7 +167,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | [The Little Book of Hygge](/reading/the-little-book-of-hygge) | Meik Wiking | ★★★ |
 | [When Breath Becomes Air](/reading/when-breath-becomes-air) | Paul Kalanithi | ★★★★★ |
 | [Norwegian Wood](/reading/norwegian-wood) | Haruki Murakami | ★★★★ |
-| [The Subtle Art of Not Giving a F*ck](/reading/the-subtle-art-of-not-giving-a-fuck) | Mark Manson | ★★ |
+| [The Subtle Art of Not Giving a F\*ck](/reading/the-subtle-art-of-not-giving-a-fuck) | Mark Manson | ★★ |
 | [Hit Refresh](/reading/hit-refresh) | Satya Nadella | ★★★ |
 | [Gandhi: An Autobiography](#) | Mahatma Gandhi | ★★★★★ |
 | [1984](/reading/1984) | George Orwell | ★★★★ |
