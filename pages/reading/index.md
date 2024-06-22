@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
+| Sixteen Stormy Days | Tripurdaman Singh | _listening_ |
 | The First and Last Freedom | J. Krishnamurti | _reading_ |
-| Pale Blue Dot | Carl Sagan | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
 | Linux System Programming | Robert Love | _reading_ |
+| [Pale Blue Dot](/reading/pale-blue-dot) | Carl Sagan | ★★★★ |
 | [The Last Lecture](/reading/the-last-lecture) | Randy Pausch | ★★★★★ |
 | [Horrors and Absurdities of Religion](/reading/horrors-and-absurdities-of-religion) | Arthur Schopenhauer | ★★★ |
 | [Predictably Irrational](/reading/predictably-irrational) | Dr. Dan Ariely | ★★★★ |
