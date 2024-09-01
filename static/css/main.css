@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 
 :root {
     --textcolor: #222222;
-    --linkcolor: #273584;
+    --linkcolor: #253c97;
+    --textfont:  'inter';
 }
 
 .footer {
-    // background: #f7f7f7;
-    // border-left: 1px solid #dddcdc;
-    // border-right: 1px solid #dddcdc;
     border-top: 1px solid #dddcdc;
-    // border-bottom: 1px solid #dddcdc;
-    font-family: "IBM Plex Sans";
+    font-family: var(--textfont);
     font-weight: 300;
     margin-bottom: -20em;
     margin-left: 45px;
     margin-right: 45px;
     padding-bottom: 40px;
-    // padding-left: 30px;
     padding-top: 15px;
 }
 
@@ -93,7 +90,7 @@ table a {
     font-weight: 400;
     font-style: normal;
     color: var(--linkcolor);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     /* border-bottom: 2px solid #d2d2d2; */
 }
 
@@ -153,7 +150,7 @@ table a:hover {
 
 .page .title {
     font-weight: 400;
-    font-family: "IBM Plex Sans";
+    font-family: var(--textfont);
     color: #4a4a4a;
     text-align: left;
     // padding-left: 30px;
@@ -192,10 +189,10 @@ table a:hover {
 }
 
 .page .nav a {
-    font-family: "IBM Plex Sans";
+    font-family: var(--textfont);
     font-weight: 400;
     color: var(--linkcolor);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .page .nav a:hover {
@@ -326,7 +323,7 @@ table a:hover {
 }
 
 .site-title {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     text-align: left;
     align-self: center;
     font-size: 44px;
@@ -338,8 +335,7 @@ table a:hover {
 
 body {
     /* color: #000; */
-    background: #ffffff;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     line-height: 24px;
     font-weight: 400;
     word-wrap: break-word;
@@ -365,7 +361,7 @@ hr {
 .wrapper {
     max-width: auto;
     margin: auto;
-    width: 80ch;
+    width: 72ch;
 }
 
 @media only screen and (max-width: 768px) {
@@ -392,7 +388,7 @@ hr {
 
 .header h1 {
     font-size: 12pt;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-weight: 500;
     padding-bottom: 5px;
     text-align: left;
@@ -442,7 +438,7 @@ i {
 }
 
 .desc p {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -471,7 +467,7 @@ i {
 
 /* archive header */
 .blog h1 {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 14px;
@@ -489,7 +485,7 @@ i {
 .blog li .date {
     float: right;
     font-size: 12pt;
-    color: #a8a8a8;
+    color: #aaa69a;
     text-transform: lowercase;
 }
 
@@ -519,7 +515,7 @@ i {
 }
 
 .post h1 {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     margin-bottom: 4px;
     max-width: auto;
     line-height: 36px;
@@ -535,7 +531,7 @@ i {
     font-size: 0.8em;
     text-align: left;
     color: #616161;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-weight: 400;
     margin-bottom: 2px;
     margin-top: 4px;
@@ -555,7 +551,7 @@ i {
 
 .post__title {
     font-size: 56px;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     text-align: left;
     align-self: center;
     font-weight: 700;
@@ -567,7 +563,7 @@ i {
     font-size: 0.75em;
     text-align: left;
     color: #616161;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-weight: 400;
     margin-bottom: 32px;
     margin-top: 0px;
@@ -583,7 +579,7 @@ i {
     font-weight: 600;
     margin-top: 16px;
     margin-bottom: -10px;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
 }
 
 .post__content h1 a {
@@ -596,7 +592,7 @@ i {
     font-style: normal;
     font-size: 12pt;
     color: var(--linkcolor);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     border-bottom: 2px solid #d2d2d2;
     text-decoration: none;
     background-color: #fcf7a2;
@@ -608,7 +604,7 @@ i {
     color: #000;
     font-weight: 600;
     margin-top: 5px;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     margin-bottom: -10px;
 }
 
@@ -618,11 +614,11 @@ i {
     font-weight: 500;
     margin-top: 5px;
     margin-bottom: -10px;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
 }
 
 .post__content p {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     font-weight: 400;
     line-height: 24px;
     padding-bottom: 12px;
@@ -634,7 +630,7 @@ i {
     font-weight: 400;
     font-style: normal;
     color: var(--linkcolor);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     /* border-bottom: 2px solid #d2d2d2; */
     text-decoration: underline;
     text-decoration-style: solid;
@@ -652,7 +648,7 @@ i {
     font-style: normal;
     font-size: 16px;
     color: var(--linkcolor);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     /* border-bottom: 2px solid #d2d2d2; */
     text-decoration: underline;
     text-decoration-style: solid;
@@ -669,7 +665,7 @@ i {
 }
 
 .post__content strong {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     padding-bottom: 10px;
 }
 
@@ -678,7 +674,7 @@ i {
 }
 
 .post__content ul {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--textfont);
     list-style: disc;
     padding-bottom: 10px;
     line-height: 1.3em;
@@ -776,7 +772,7 @@ i {
 .post__content pre {
     /* border: 2px #dfdfdf solid; */
     border-radius: 6px;
-    background: #eaeaea;
+    background: #e6e6e6;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     font-weight: 300;
