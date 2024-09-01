@@ -8,10 +8,11 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
-| Letters to a Young Contrarian | Christopher Hitchens | _reading_ |
+| The Outsider | Albert Camus | _reading_ |
 | CODE | Charles Petzold | _reading_ |
 | Sixteen Stormy Days | Tripurdaman Singh | _listening_ |
 | Einstein | Walter Isaacson | _reading_ |
+| [Letters to a Young Contrarian](/reading/letters-to-a-young-contrarian) | Christopher Hitchens | ★★★★ |
 | [Born to Run](/reading/born-to-run) | Christopher McDougall | ★★★★★ |
 | [Linux System Programming](/reading/linux-system-programming) | Robert Love | ★★★★★ |
 | [The First and Last Freedom](/reading/the-first-and-last-freedom) | J. Krishnamurti | ★★★★ |
