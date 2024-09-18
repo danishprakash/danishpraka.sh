@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ .Meta.Title }}</title>
+<description>{{ .Meta.Title }} by {{ .Meta.Name }}</description>
+<atom:link href="{{ .Meta.URL }}/rss.xml" rel="self" type="application/rss+xml"/>
+<link>{{ .Meta.URL }}/</link>
+<language>en-us</language>
+{{ range $post := .Posts }}
+<item>
+<title>{{ $post.Title }}</title>
+<link>{{ $post.URL }}</link>
+<guid>{{ $post.URL }}</guid>
+<pubDate>{{ $post.Date }}GMT</pubDate>
+<description>
+{{ $post.Body }}
+</description>
+</item>
+{{ end }}
+</channel>
+</rss>

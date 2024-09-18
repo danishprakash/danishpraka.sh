@@ -8,12 +8,12 @@
                 {{ template "analytics.html" }}
 
                 <title>
-                    {{ index .FM "title" }}
+                    {{ index .Frontmatter "title" }}
                 </title>
-                <h1> {{ index .FM "title" }} </h1>
+                <h1> {{ index .Frontmatter "title" }} </h1>
 
-                {{ if index .FM "date_read" }}
-                    <p class="post__date">{{ index .FM "date_read" }}</p>
+                {{ if index .Frontmatter "date_read" }}
+                    <p class="post__date">{{ index .Frontmatter "date_read" }}</p>
                 {{ end }}
 
                 <div class="post__content"?>

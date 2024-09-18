@@ -8,22 +8,22 @@
                 {{ template "analytics.html" }}
 
                 <title>
-                    {{ index .FM "title" }} — Danish Prakash
+                    {{ index .Frontmatter "title" }} — Danish Prakash
                 </title>
 
-                <h1> {{ index .FM "title" }} </h1>
+                <h1> {{ index .Frontmatter "title" }} </h1>
 
                 <div class="metadata">
-                    {{ if index .FM "author" }}
-                        <p class="book__author">Author: {{ index .FM "author" }}</p>
+                    {{ if index .Frontmatter "author" }}
+                        <p class="book__author">Author: {{ index .Frontmatter "author" }}</p>
                     {{ end }}
 
-                    {{ if index .FM "date" }}
-                        <p class="book__date">Date read: {{ .Date.Format  "2 January 2006" }}</p>
+                    {{ if index .Frontmatter "date" }}
+                        <p class="book__date">Date read: {{ .Post.Date.Format  "2 January 2006" }}</p>
                     {{ end }}
 
-                    {{ if index .FM "format" }}
-                        <p class="book__author">Format: {{ index .FM "format" }}</p>
+                    {{ if index .Frontmatter "format" }}
+                        <p class="book__author">Format: {{ index .Frontmatter "format" }}</p>
                     {{ end }}
                 </div>
 

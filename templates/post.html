@@ -8,13 +8,13 @@
                 {{ template "analytics.html" }}
 
                 <title>
-                    {{ index .FM "title" }} — Danish Prakash
+                    {{ index .Frontmatter "title" }} — Danish Prakash
                 </title>
 
-                <h1> {{ index .FM "title" }} </h1>
+                <h1> {{ index .Frontmatter "title" }} </h1>
 
-                {{ if index .FM "date" }}
-                    <p class="post__date">{{ .Date.Format  "2 January 2006" }}</p>
+                {{ if index .Frontmatter "date" }}
+                    <p class="post__date">{{ .Post.Date.Format  "2 January 2006" }}</p>
                 {{ end }}
 
                 <div class="post__content"?>
