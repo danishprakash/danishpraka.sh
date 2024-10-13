@@ -8,9 +8,10 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
+| The Lady and the Monk | Pico Iyer | _reading_ |
 | CODE | Charles Petzold | _reading_ |
 | Sixteen Stormy Days | Tripurdaman Singh | _listening_ |
-| Einstein | Walter Isaacson | _reading_ |
+| [Einstein](/reading/einstein) | Walter Isaacson | ★★★★ |
 | [The Outsider](/reading/the-outsider) | Albert Camus | ★★★★ |
 | [Letters to a Young Contrarian](/reading/letters-to-a-young-contrarian) | Christopher Hitchens | ★★★ |
 | [Born to Run](/reading/born-to-run) | Christopher McDougall | ★★★★★ |
