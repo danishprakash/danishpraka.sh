@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-05-18
-title: On Shortform Content
+title: Shortform Content
 ---
 
 Lately, everybody and their mothers (literally) are fond of this new byte-size content consumption format commonly referred to as shortform content. Instagram, TikTok, X(formerly Twitter), Youtube Shorts are some of the common and most popular ones out there. But I feel this new "radical" way of consuming content might not be healthy.
