@@ -3,8 +3,9 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
-    --textcolor: #222222;
-    --linkcolor: #253c97;
+    --headertextcolor: #646464;
+    --textcolor: #000000;
+    --linkcolor: #000000;
     --textfont:  'inter';
 }
 
@@ -95,9 +96,9 @@ table a {
 }
 
 table a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 
 .page {
@@ -126,7 +127,7 @@ table a:hover {
 .page .header {
     display: inline-flex;
     width: 100%;
-    border-bottom: 1px solid #b5b5b5;
+    border-bottom: 1px solid #ecebeb;
     margin-bottom: 15px;
     padding-bottom: 20px;
     font-size: 12pt;
@@ -151,9 +152,8 @@ table a:hover {
 .page .title {
     font-weight: 400;
     font-family: var(--textfont);
-    color: #4a4a4a;
+    color: var(--headertextcolor);
     text-align: left;
-    // padding-left: 30px;
 }
 
 .page .title a {
@@ -161,7 +161,7 @@ table a:hover {
 }
 
 .page .title a:visited {
-    color: var(--linkcolor);
+    color: var(--headertextcolor);
     text-decoration: none;
 }
 
@@ -172,7 +172,7 @@ table a:hover {
 }
 
 .page .nav {
-    // padding-right: 20px;
+    color: var(--headertextcolor);
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,14 +191,14 @@ table a:hover {
 .page .nav a {
     font-family: var(--textfont);
     font-weight: 400;
-    color: var(--linkcolor);
+    color: var(--headertextcolor);
     text-decoration: none;
 }
 
 .page .nav a:hover {
-    text-decoration: none;
-    background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* text-decoration: none; */
+    /* background-color: #fcf7a2; */
+    /* border-bottom: 0px; */
 }
 
 .page .nav ul {
@@ -217,7 +217,7 @@ table a:hover {
     }
 }
 
-.page .nav ul li {
+.page .nav ul li:not(:last-child) {
     padding-right: 12px;
 }
 
@@ -424,9 +424,9 @@ i {
 }
 
 .description a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 
 .desc {
@@ -499,9 +499,9 @@ i {
 }
 
 .blog a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 
 .blog li:hover {
@@ -637,9 +637,9 @@ i {
 }
 
 .post__content p a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 
 .post__content a {
@@ -659,9 +659,9 @@ i {
 }
 
 .post__content a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fcf7a2;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 
 .post__content strong {
