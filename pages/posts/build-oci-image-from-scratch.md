@@ -160,7 +160,7 @@ $ tree ../..
 The `mediaType` attribute references the type of the media. OCI spec defines media types for various kinds of content. In our case, we refer to the config and layer with the relevant `mediaType` value. And as is required, we encode the manifest file too.
 
 #### index.json
-Like how manifest.json acts as an index and metadata repository for an image for a specific architecture and operating system, an index.json file does that for the manifest.json files. In other words, it acts as an index for a set of images that can span different architectures and operating systems.
+index.json file acts as an index for a set of images that can span different architectures and operating systems.
 
 <img src="./../../static/img/posts/build-oci-image-from-scratch/index_multi.png"/>
 
