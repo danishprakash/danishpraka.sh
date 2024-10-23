@@ -164,7 +164,7 @@ index.json file acts as an index for a set of images that can span different arc
 
 <img src="./../../static/img/posts/build-oci-image-from-scratch/index_multi.png"/>
 
-A simple example could be a container image that has different flavors e.g. a fully-featured base image with all the bells and whistles but also a "slim" variant that comes without unwanted additions. Here, the index.json would contain two entries pointing to the two variants of the image via their manifests, which would then contain image specific metadata.
+An example could be a container image that has different flavors: a fully featured base image and its minimal variant. In this case, the index.json would contain two entries pointing to the two variants of the image via their manifests that in turn would contain image specific metadata.
 
 ```
 $ cd ../..
@@ -184,7 +184,7 @@ $ vim index.json
 }
 ```
 
-We've added an annotation representing the name and tag for our image referenced by the manifest. The index.json file isn't required to be encoded and therefore resides at the top-level directory of our image and not under `blobs/`. With all the finished components, a quick recap of what's what:
+We've added an annotation representing the name and tag for our image referenced by the manifest. The index.json file isn't required to be encoded, so it resides at the top-level directory of our image and not under `blobs/`. With all the finished components, let's do a quick recap:
 ```
 $ tree
 ├── blobs/sha256
@@ -197,13 +197,13 @@ $ tree
 (in the order shown above)
 
 1. `38f01cd4419e646946527861333e01d71775c43965ff340dea0466eae61c200d` — Metadata such as image name and tag for our image along with other data.
-2. `c37c06cdec9d6a0f2a2d55deb5aa002b26b37b17c02c2eca908fc062af5f53eb` — gzip compressed tar archive that consists of the only layer in our image which in turn consists of a single static C binary.
-3. `cd12bca58eb0ed29b24e4264179a2696b68df24f9006bc16563fe3525210936e` — Container configuration options such as the entrypoint and environment variables that are going to be used by the container runtime when running the container based off of our image.
+2. `c37c06cdec9d6a0f2a2d55deb5aa002b26b37b17c02c2eca908fc062af5f53eb` — gzip compressed tar archive that consists of a single layer in the image. The layer consists of a single static C binary.
+3. `cd12bca58eb0ed29b24e4264179a2696b68df24f9006bc16563fe3525210936e` — Container configuration options, such as the entrypoint and environment variables, that are going to be used by the container runtime when running the container based on our image.
 4. `index.json` — a higher-level manifest that references multiple image manifests, allowing for the distribution of container images across different platforms or architectures.
 
 
 # Packing
-We have all the parts in place for our image. Let's create an archive of the various components we've created so far and test our image out:
+We have all the parts in place for our image. Let's create an archive of the components we've created so far, and then test our image:
 ```
 $ tree
 ├── blobs/sha256
@@ -224,7 +224,7 @@ $ podman run localhost/hello:scratch world
 hello world!
 ```
 
-We can see that the image was loaded without any problems by podman, and we were able to run a container based on our image, correctly dumping `hello world!` to stdout. Let's inspect our loaded image:
+We can see that the image was loaded without any problems by podman, and we were able to run a container based on our image, correctly outputting `hello world!` to stdout. Let's inspect our loaded image:
 
 ```
 $ podman image ls hello
@@ -232,10 +232,10 @@ REPOSITORY   TAG       IMAGE ID       CREATED   SIZE
 hello        scratch    25e8b3bd9720  N/A       3.67MB
 ```
 
-Thanks to the scratch base image, our image has a minimal footprint, in fact, the only file in our image is our binary.
+Thanks to the scratch base image, our image has a minimal footprint. In fact, the only file in the image is our binary.
 
 # Using a Base Image
-Let's try creating a version of our image which is based on `alpine` rather than scratch. This would introduce another layer in our image, so let's see how to handle multiple layers. For the sake of better understanding, this is how our Containerfile would look using alpine if we hadn't been doing it from scratch.
+Let's create a version of our image based on `alpine` instead of scratch. This introduces another layer in our image, so let's see how to handle multiple layers. In this case, the Containerfile is as follows.
 
 ```
 FROM alpine:latest
@@ -245,9 +245,9 @@ COPY ./hello /root/hello
 ENTRYPOINT ["time", "./hello"]
 ```
 
-Note that we also changed the entrypoint to use the `time` utility, part of the alpine builtins, this is simply to demonstrate working of the two layers in the image.
+Note that we changed the entrypoint to use the `time` utility. This is done to demonstrate how two layers work in the image.
 
-In our image so far, we have had just one layer that consists of the `hello` binary. As we've seen before, a layer can be considered a filesystem diff. So if we plan to use alpine as the base image, we need the respective root filesystem onto which we'll base the second layer, the one with the binary. You can obtain the alpine root filesystem from their official website.
+So far, the image has only one layer that consists of the `hello` binary. As mentioned previously, a layer can be considered a filesystem diff. So if we use alpine as the base image, we need the respective root filesystem onto which we'll base the second layer (that is, the layer with the binary). You can obtain the alpine root filesystem from the project's official website.
 
 ```
 $ cd blobs/sha256
@@ -271,7 +271,7 @@ $ tree
 
 It's a little hard to figure out what's what with all those digests, but rest assured, you will _never_ find yourself doing this manually, ever again.
 
-Now, on to updating our config and manifest files with the new layer. Once done, we also need to make sure, we encode them again with their respective updated sha256 digests.
+Next, we need to update config and manifest files with the new layer. After that, we also need to make sure that we encode them again with their respective updated sha256 digests.
 
 ```
 $ vim config.json
@@ -296,7 +296,7 @@ $ vim config.json
 $ mv config.json $(sha256sum config.json | awk '{print $1}')
 ```
 
-Layers are represented top to bottom so the base alpine rootfs layer comes first and then the second layer with the binary. Note also that we modified the entrypoint to use the `time` utility as discussed previously. The manifest file also sees similar changes--adding the layer digests--along with updating the size of our config file, and not to forget re-calculating the digest and encoding our updated manifest.
+Layers are represented top to bottom so the base alpine rootfs layer comes first, and then the second layer with the binary. Keep in mind that we modified the entrypoint to use the `time` utility. The manifest file also sees similar changes--adding the layer digests--along with updating the size of our config file, and not to forget re-calculating the digest and encoding our updated manifest.
 
 ```
 $ vim manifest.json
