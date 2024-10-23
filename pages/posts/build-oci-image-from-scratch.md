@@ -7,7 +7,7 @@ title: Build an OCI Image from Scratch
 For a developer, a Container image is essentially a collection of configurations required to run a container. But what really is a container image? For the longest time, I theoretically knew what a container image was, how it was made up of layers and that it was a collection of tar archives but that was about it. Let's try building an OCI(Open Container Initative) image from the ground up and undertand what's really inside.
 
 # Scratch?
-This post aims to build an "OCI" image from scratch. `scratch` here doesn't mean that we'll create a Containerfile based on the minimal base image provided by Docker, even though that's inevitably what we'll end up achieving here. What we mean by scratch here is that we're not going to use any specialized tool i.e. docker, podman, or buildah to build our image. Rather, we'll manually create all the required files, the layers and metadata, and then package it into an OCI image format that almost all container engines support. In so doing, the idea is to see what really constitutes an image and what a container engine such as docker or podman does under the hood when you run `[docker|podman] build -f Containerfile` on your terminal.
+This post aims to build an "OCI" image from scratch. What we mean by scratch here is that we're not going to use any specialized tool i.e. docker, podman, or buildah to build our image. Rather, we'll manually create all the required files, the layers and metadata, and then package it into an OCI image format that almost all container engines support. In so doing, the idea is to see what really constitutes an image and what a container engine such as docker or podman does under the hood when you run `[docker|podman] build -f Containerfile` in your terminal.
 
 We'll be building an equivalent of the following Containerfile:
 
@@ -19,31 +19,29 @@ COPY ./hello ./
 ENTRYPOINT ["./hello"]
 ```
 
-In the above sample Containerfile, the image is based off of the "scratch" image discussed previously, then the statically linked `hello` binary is copied into the image and finally it is set as the [entrypoint](/posts/dockerfile-practices) of the container.
+In the above sample Containerfile, the image is based on the "scratch" image discussed previously, then the statically linked `hello` binary is copied into the image and finally it is set as the [entrypoint](/posts/dockerfile-practices) of the container.
 
-Now that we know what our docker image is supposed to be doing, let's start by building one. Let's understand the different components that make up an OCI container image.
+Now that we know what our Docker image is supposed to be doing, let's start by building one. Let's understand the different components that make up an OCI container image.
 
 #### The Big Picture
-There are 4 major components that make up a container image, a layer(s), configuration, manifest and an index.
+There are 4 major components that make up a container image, one or more layers, configuration, manifest and an index.
 
 <img src="./../../static/img/posts/build-oci-image-from-scratch/image_components.png"/>
 
-Whenever you `build` an image using a Containerfile, the engine or whatever tool you're using (buildah, img, podman, docker, etc), one way or another, creates these 4 components. We'll create all these components and understand how they make up a container image together.
+Whenever you `build` an image using a Containerfile, the engine or whatever tool you're using (Buildah, img, Podman, Docker, etc), creates these 4 components. But since we're not using any tools in this session, we'll create all the components manually and understand how they make up a container image together.
 
 #### layers
-Layers are the basic building blocks of an image. An image, an OCI image in this case, is made up of different layers stacked on top of each other to generate the filesystem of the end image. You can also consider it a filesystem changeset i.e a diff format for filesystems for when you add or remove elements from one filesystem to the next.
+You can think of a layer as a filesystem changeset, or a diff format for filesystems created when you add or remove elements from one filesystem to the next. Layers are the basic building blocks of an image. An image, an OCI image in this case, is made up of different layers stacked on top of each other to generate the filesystem of the end image.
 
-One simple way to understand this is to imagine that you're building the following image:
-
+To better understand the concept of layers, let's look at the following example:
 ```
 FROM alpine
 
 COPY ./hello /root/
 ```
-
 Here, your image contains 2 layers. The first layer comes from the base image, the alpine official docker image i.e. the root filesystem with all the standard shell tools that come along with an alpine distribution. Almost every instruction inside your Dockerfile generates another layer. So in the Containerfile above, the `COPY` instruction creates the second layer which includes filesystem changes to the layer before it. The change here is "adding" a new file to the existing filesystem i.e. the alpine root filesystem.
 
-Let us create the layer for our image. We start by creating a statically linked C binary for our simple hello world program:
+Let us create the layer for our image. We start by creating a statically linked C binary for our simple "Hello world" program:
 ```
 $ cat hello.c
 #include <stdio.h>
@@ -63,10 +61,10 @@ $ gcc -o hello hello.c -static
 $ tar --remove-files -czvf layer.tar.gz hello
 ```
 
-We then create an gzip compressed tar archive of the binary. This constitues our first and only layer. Note the `--remove-files` flag that ensures files that are being created an archive of, are removed so that we don't end up having a bunch of unwanted files in our directory.
+We then create an gzip compressed tar archive of the binary. This constitues our first and only layer.
 
 #### content addressability
-In order to allow for efficiency and integrity, OCI requires certain components in the OCI image to be identified based on their content i.e. you can identify data based on their content rather than its location (filepath, etc). To achive this in the case of an OCI image, a unique identifier (generally a cryptographic hash) is used as the filename. This is known as _content addressability_.
+In order to allow for efficiency and integrity, OCI requires components in the OCI image to be identified based on their content i.e. you can identify data based on their content rather than its location (filepath, etc). To achive this in the case of an OCI image, a unique identifier (generally a cryptographic hash) is used as the filename. This is known as _content addressability_.
 
 We'll use sha256 as the algorithm to generate the identifiers for the various components in this post. Let's make our layer archive content addressable:
 ```
@@ -99,7 +97,7 @@ $ tree ../..
 So far, our unpacked OCI image has a single layer archive consisting of our statically linked hello \<name> binary, encoded by its sha256 digest. We can now move on to defining the configuration of the container that will run based on this image.
 
 #### Config
-When we run a container using `docker run ...`, we often supply command line options such as environment variables, container entrypoint, or volume mounts, etc. These options can be part of the image--as they often are--in which case, they are passed onto the container engine/runtime of choice that consumes these options to configure the container when we run it.
+When we run a container using `docker run ...`, we often supply command line options such as environment variables, container entrypoint, or volume mounts, etc. These options can be part of the image, in which case, they are passed onto the container engine/runtime of choice that uses these options to configure the container when we run it.
 
 It's equally common to have such configuration as part of your image. In an OCI image, this is done via config.json, a JSON file that includes various configuration options for an image, along with layer information. Here's how it looks for our image:
 
@@ -130,7 +128,7 @@ $ tree
 The configuration part is self-explanatory, we defined the static binary as the entrypoint and that's the only configuration option we need for our image. It's stated that this image is made for `linux/amd64` platform, and we also refer to the layer we created earlier by its sha256 digest. Lastly, we encode our config.json with its sha256 digest to make it content addressable.
 
 #### manifest
-We need a way to index(v.) our layers and configuration for the image. The manifest file holds information such as the location of the config, the different layers that are part the image, all via their content adresses.
+We need a way to index(v.) our layers and configuration for the image. The manifest file holds information such as the location of the config, the different layers that are part the image. It does so by referring to their individual content addresses, as shown below:
 
 ```
 $ vim manifest.json
