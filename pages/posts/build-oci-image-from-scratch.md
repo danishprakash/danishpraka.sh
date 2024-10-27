@@ -7,7 +7,7 @@ title: Build an OCI Image from Scratch
 For a developer, a Container image is essentially a collection of configurations required to run a container. But what really is a container image? For the longest time, I theoretically knew what a container image was, how it was made up of layers and that it was a collection of tar archives but that was about it. Let's try building an OCI(Open Container Initative) image from the ground up and undertand what's really inside.
 
 # Scratch?
-This post aims to build an "OCI" image from scratch. What we mean by scratch here is that we're not going to use any specialized tool i.e. docker, podman, or buildah to build our image. Rather, we'll manually create all the required files, the layers and metadata, and then package it into an OCI image format that almost all container engines support. In so doing, the idea is to see what really constitutes an image and what a container engine such as docker or podman does under the hood when you run `[docker|podman] build -f Containerfile` in your terminal.
+This post aims to build an "OCI" image from scratch. We'll create all the required components, the layers and metadata, and then package it into an OCI image format that almost all container engines support. In so doing, the idea is to see what really constitutes an image and what a container engine such as docker or podman does under the hood when you run `[docker|podman] build -f Containerfile` in your terminal.
 
 We'll be building an equivalent of the following Containerfile:
 
@@ -19,19 +19,19 @@ COPY ./hello ./
 ENTRYPOINT ["./hello"]
 ```
 
-In the above sample Containerfile, the image is based on the "scratch" image discussed previously, then the statically linked `hello` binary is copied into the image and finally it is set as the [entrypoint](/posts/dockerfile-practices) of the container.
+In the above sample Containerfile, the image is based on the "scratch" image, that means there's no filesystem, then we copy the statically linked `hello` binary into the image and finally set it as the [entrypoint](/posts/dockerfile-practices) of the container.
 
-Now that we know what our Docker image is supposed to be doing, let's start by building one. Let's understand the different components that make up an OCI container image.
+Let's now understand what's a container image as we go along building one.
 
 #### The Big Picture
-There are 4 major components that make up a container image, one or more layers, configuration, manifest and an index.
+Up until 2014, docker-image format was the only format around and with the emergence of container tooling left and right, there was a need for standardisation. So, the Open Containers Initiative was setup in 2015 aimed around standardising all things containers. They came up with the OCI image-spec, and so in this article, when I mention image, I will mean OCI image and vice versa. There are 4 major components that make up a container image, one or more layers, configuration, manifest and an index.
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/image_components.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/oci.png"/>
 
-Whenever you `build` an image using a Containerfile, the engine or whatever tool you're using (Buildah, img, Podman, Docker, etc), creates these 4 components. But since we're not using any tools in this session, we'll create all the components manually and understand how they make up a container image together.
+Let's go through each of them and understand how they are created, how they are used, and how they interact with each other, let's start with layers.
 
 #### layers
-You can think of a layer as a filesystem changeset, or a diff format for filesystems created when you add or remove elements from one filesystem to the next. Layers are the basic building blocks of an image. An image, an OCI image in this case, is made up of different layers stacked on top of each other to generate the filesystem of the end image.
+A layer can be loosely defined as "what's inside your container image". Technically though, one can think of a layer as a filesystem changeset, or a diff for filesystems created when you add or remove elements from one filesystem to the next. An image is made up of different layers stacked on top of each other to generate the filesystem of the end image.
 
 To better understand the concept of layers, let's look at the following example:
 ```
@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("Hello, %s!\n", argv[1]); // Print "Hello, [name]"
+    printf("Hello, %s!\n", argv[1]);
 
     return 0;
 }
@@ -62,6 +62,8 @@ $ tar --remove-files -czvf layer.tar.gz hello
 ```
 
 We then create an gzip compressed tar archive of the binary. This constitues our first and only layer.
+
+// TODO: talk about .wh files and what a changeset means by showing an example
 
 #### content addressability
 In order to allow for efficiency and integrity, OCI requires components in the OCI image to be identified based on their content i.e. you can identify data based on their content rather than its location (filepath, etc). To achive this in the case of an OCI image, a unique identifier (generally a cryptographic hash) is used as the filename. This is known as _content addressability_.
@@ -325,7 +327,7 @@ $ vim manifest.json
 $ mv manifest.json $(sha256sum manifest.json | awk '{print $1}')
 ```
 
-Note: the filenames for both config.json and manifest.json would've been the sha256 digests from the first variant of the image we built, I'm choosing to revert them to config.json and manifest.json for presentation purposes.
+Note: the filenames for both config.json and manifest.json should've been the sha256 digests from the first variant of the image we built, I'm choosing to revert them to config.json and manifest.json for presentation purposes.
 
 Since we changed our manifest, we need to update index.json with the new digest and filesize:
 
@@ -378,7 +380,7 @@ hello        scratch   25e8b3bd9720   N/A       3.67MB
 hello        alpine    3d0268e9a91e   N/A       11MB
 ```
 
-So there we have it, our two images loaded into the docker daemon. We can run both of them and see the same output from both of them. One interesting thing to note is the size difference between the two images. Alpine, while still having a lower footprint is larger than scratch, but nothing extraordinary. Hopefully this example demonstrated interaction between different layers in an image and how a manifest file can represent multiple images from a single file.
+Hopefully this example made it a little easier to understand how different are used within a container image.
 
 
 # Conclusion
