@@ -93,6 +93,10 @@ table a {
     color: var(--linkcolor);
     font-family: var(--textfont);
     /* border-bottom: 2px solid #d2d2d2; */
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #d7d7d7;
+    text-decoration-thickness: 2px;
 }
 
 table a:hover {
@@ -495,7 +499,8 @@ i {
     color: var(--linkcolor);
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: var(--textcolor);
+    text-decoration-color: #d7d7d7;
+    text-decoration-thickness: 2px;
 }
 
 .blog a:hover {
@@ -634,6 +639,8 @@ i {
     /* border-bottom: 2px solid #d2d2d2; */
     text-decoration: underline;
     text-decoration-style: solid;
+    text-decoration-color: #d7d7d7;
+    text-decoration-thickness: 2px;
 }
 
 .post__content p a:hover {
@@ -649,9 +656,10 @@ i {
     font-size: 16px;
     color: var(--linkcolor);
     font-family: var(--textfont);
-    /* border-bottom: 2px solid #d2d2d2; */
     text-decoration: underline;
     text-decoration-style: solid;
+    text-decoration-color: #d7d7d7;
+    text-decoration-thickness: 2px;
 }
 
 .post__content table a {
