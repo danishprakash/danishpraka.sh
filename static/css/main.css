@@ -338,7 +338,7 @@ table a:hover {
 }
 
 body {
-    /* color: #000; */
+    background: #ffffff;
     font-family: var(--textfont);
     line-height: 24px;
     font-weight: 400;
