@@ -7,11 +7,13 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 
 | | | |
 | :--- | --- | ---: |
-| **2024** | | |
+| **2025** | | |
+| The Anxious Generation | Jonathan Haidt | _reading_ |
 | CODE | Charles Petzold | _reading_ |
 | Sixteen Stormy Days | Tripurdaman Singh | _listening_ |
-| Meditations | Marcus Aurelius | _reading_ |
-| 12 Rules for Life | Jordan Peterson | _reading_ |
+| Meditations | Marcus Aurelius | ★★★ |
+| **2024** | | |
+| 12 Rules for Life | Jordan Peterson | _stopped_ |
 | [The Lady and the Monk](/reading/the-lady-and-the-monk) | Pico Iyer | ★★★★ |
 | [Einstein](/reading/einstein) | Walter Isaacson | ★★★★ |
 | [The Outsider](/reading/the-outsider) | Albert Camus | ★★★★ |
