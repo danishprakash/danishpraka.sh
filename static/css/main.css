@@ -501,7 +501,8 @@ a:hover {
     font-family: var(--textfont);
     margin-bottom: 4px;
     max-width: auto;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 28px;
 }
 
 .metadata {
@@ -548,8 +549,8 @@ a:hover {
     color: #616161;
     font-family: var(--textfont);
     font-weight: 400;
-    margin-bottom: 32px;
-    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-top: 4px;
 }
 
 .post__content hr {
@@ -693,6 +694,7 @@ a:hover {
 .post__content img {
     margin: 5 auto;
     width: 100%;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 768px) {
