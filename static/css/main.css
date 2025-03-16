@@ -599,16 +599,6 @@ a:hover {
     margin-top: 2rem;
 }
 
-.post__content h3 {
-    font-size: 22px;
-    color: #000;
-    font-weight: 400;
-    margin-top: 5px;
-    padding-bottom: 8px;
-    font-family: var(--textfont);
-    margin-bottom: -10px;
-}
-
 .post__content h4 {
     font-size: clamp(1.15rem, 20%, 3rem);
     color: #000;
