@@ -4,14 +4,14 @@ date: 2022-12-16
 title: Year in Command Line (2022)
 ---
 
-# Background
+## Background
 Sometime last year while browsing Spotify Wrapped, Strava Year in Review and other yearly reports from different applications, I thought about doing something similar with my command line usage. I spend a lot of time on the terminal and was naturally drawn to bringing this idea to fruiton. I started recording my shell history in a MySQL instance as a starting point shortly thereafter. Back then I did not know what kind of insights I'd be able to draw out of the data that I'll have eventually or whether they'll be interesting or not. But the idea of taking a step back to realize patterns from such data to see how I've "evolved" in a year's span sounded a little too interesting to simply discard.
 
 Part of the motivation was also my [Year in Review 2021](../../../2022/01/30/year-in-review-2021.html) which I thorougly enjoyed writing and I thought I might as well start doing it for other aspects of my life too.
 
 The way I've structured this post is to go through some high-level insights first and then digging deeper into some of the most used commands and gain insights out of those. I'll skip explaining the setup and how I visualized the data for this post and park it aside for another post.
 
-# Data
+## Data
 I started capturing my shell history in a MySQL instance in [January 2021](https://github.com/danishprakash/dotfiles/commit/e3f23dbcefa64868aac3e70669e81bf35932c5a1). Post that, all the commands that I've hit on my machine, along with metadata such as the current working directory and timestamp have been dumped into that same database. As of writing this post, in December 2022, I've gathered:
 
 - Total commands: 63,264
@@ -23,10 +23,10 @@ Also, since the database contains data from 2021 and this post is aptly titled 2
 
 Let's now dig deeper into the data and see what kind of insights we can draw. Again, there is no structured index to this post, I've kept it quite loose. We'll talk first about the usage patterns for the year and then we'll talk in-depth about the individual commands. Finally, we'll talk about optimizations.
 
-# Usage
+## Usage
 Before diving into the actual commands, let's take a look at the kind of usage pattern that emerges from this dataset to see what kind of command line user am I.
 
-## Weekly Usage
+### Weekly Usage
 The graph below shows my command line usage on a weekly basis for the past 12 months:
 
 <img src="./../../static/img/posts/year-in-command-line/weekly_freq.png"/>
@@ -35,7 +35,7 @@ That one huge spike in March-April was when I was working on a feature I had to 
 
 The two dips in July and October correspond with my vacations where I did some work but certainly didn't hit the terminal. On average, I think the graph pretty nicely shows a weekly wave-like pattern having crests and troughs depending upon the kind of work I'm doing that week.
 
-## Day of the week
+### Day of the week
 
 Is there a day on which I've been programming or hitting the terminal the most, due to a reason?
 
@@ -44,7 +44,7 @@ Is there a day on which I've been programming or hitting the terminal the most, 
 Turns out that's not the case. Saturday and Sunday lines up just fine, I do some [open source](../../../software) work on weekends. And then weekdays were expected to have taken up the majority share. One surprising observation here is how Tuesday is on par with Thursday considering that the latter is the day in my week with the most meetings.
 
 
-## Hourly Usage
+### Hourly Usage
 Finally, let's take a look at how the usage is distributed when it comes to the time of day:
 
 <img src="./../../static/img/posts/year-in-command-line/hourly_freq.png"/>
@@ -55,7 +55,7 @@ An interesting pattern to note is that since my early mornings(6-9) are blocked 
 
 Lastly, I can count the number of instances where I had been on the terminal post 10:30 at night, those were neither deliberate nor fun but the need of the hour, but it's interesting to see that I was able to keep the routine in check willingly over the course of an entire year.
 
-# Top Commands
+## Top Commands
 
 Let's now move to the actual commands. The graph below lists the top 13 (odd I know, metabase resize ftw) commands in the past 1 year, ordered by frequency. These are just the base commands, we'll dig deeper into some of these commands in separate sections where we'll talk about the subcommands and arguments.
 
@@ -79,7 +79,7 @@ I think that gave a really nice overview of my command line habits. I have a cou
 
 Let us now pick each of the top 3 commands and see how the usage is and how it differs from the command.
 
-# Git
+## Git
 Below are the top `git` subcommands ordered by frequency in descending order. It shows the most commonly used commands on top and groups a few at the end of the top 20 spectrum:
 
 <img src="./../../static/img/posts/year-in-command-line/git-subcmds.png"/>
@@ -90,7 +90,7 @@ I then check for what all have I changed so far and then further going into the 
 
 A note I'd like to make here is that I don't type these sub-commands every time I need to use them. I've used git aliases for almost all of them, for e.g. instead of `git status`, I'd simply do `git s`. The expansion of these aliases has been done here for presentation purposes. You can find the complete configuration [here](https://github.com/danishprakash/dotfiles/blob/master/.gitconfig). We'll talk more about how this translates into time saved later in the post.
 
-# Kubectl
+## Kubectl
 Let's look at how I've been using `kubectl` for the past one year so far. The following graph shows the top sub-commands I've used with `kubectl` ordered by frequency:
 
 <img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds.png"/>
@@ -108,14 +108,14 @@ Also, the `-n` is again, specifying namespace for the command to follow. This de
 
 Let's now explore the usage for `get` and `edit`.
 
-## kubectl get
+### kubectl get
 <img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-arg.png"/>
 
 I mostly work across a bunch of different clusters under different projects and cloud providers, namely GCP and AWS. Different projects call for debugging/operations/monitoring on different resources but the common theme across all of them are, unsurprisingly, Pods, HPAs and Deployments.
 
 I've seen other engineers at work using graphical interface tools such as [Lens](https://k8slens.dev/) to view the cluster state at a glance, but for some reason, I still feel comfortable running these commands on the terminal and seeing if things are fine or not.
 
-## kubectl edit
+### kubectl edit
 <figure>
     <img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-edit.png"/>
   <!-- <figcaption>kubectl edit</figcaption> -->
@@ -123,7 +123,7 @@ I've seen other engineers at work using graphical interface tools such as [Lens]
 
 I've spent a lot more time _editing_ HPAs than any other resource. At work, I've to quite frequently scale workloads manually(unfortunately) due to AWS control plane constraints and hence so many edit invocations. What's more interesting is that I had realized that I'm spending so much time doing gruntwork that I worked on a [custom k8s controller](https://github.com/danishprakash/kube-step-podautoscaler) to do this job for me.
 
-# Docker
+## Docker
 
 Last of the top commands, let's take a look at the sub commands which I've been using the most with `docker`:
 
@@ -135,7 +135,7 @@ The next is quite interesting, I use `docker` so much so that I have to regularl
 
 Nothing out of the ordinary about the rest of the subcommands if you've been using docker.
 
-# Optimizations
+## Optimizations
 Now that we've seen quite a few insights from my command line usage for the past one year, is there a scope for optimization? i.e. can I save my time and make my time on the command line more efficient? I'm personally quite wary of [yak shaving](https://www.pcmag.com/encyclopedia/term/yak-shaving) and [premature optimization](https://stackify.com/premature-optimization-evil/) and am not going to mindlessly plunge into this quest but it makes for a good discussion especially as we end this post.
 
 ## Using aliases
@@ -149,12 +149,12 @@ Let's do some napkin math get a quick idea on the kind of savings we can do If I
 
 I can apply this to the `git` command too and save me 30 minutes which I honestly don't think is worth it.
 
-## Subcommands aliases
+### Subcommands aliases
 Unlike git, not a lot of commands provide a way to alias subcommands. `kubectl` still provides [shorthand](https://github.com/kubernetes/kubectl/blob/1d7e71a12f476bb95d1eb550130505678d0d3c08/pkg/cmd/set/set_env.go#L49) for some of the commands. For docker, the commands are short in and of itself so it might not make a lot of difference to actually have a shorthand.
 
 But I really like how git allows you to configure this and much more to make your life using git easier. I wished other commands would support something similar.
 
-## Switching directories
+### Switching directories
 
 Another interesting observation was when I tried to map out the arguments for `cd`. Out of a total of 1347 matches, the distribution for the top 3 arguments to `cd` are as follows(refer to the legend):
 
@@ -164,13 +164,13 @@ Again, an obvious change here could be to just alias `..` and `-` to do their jo
 
 Also, please note that these three are topping the chart above because I don't use `cd` for actually moving to a directory. As previously mentioned, I use `z` for that purpose.
 
-## Drawback
+### Drawback
 One drawback that I've noticed when using aliases or custom functions extensively is how I'm essentially paralysed while using a different machine or working briefly on someone else's machine or even pair programming.
 
 But, the flipside is that you spend a stark majority of your time one your _own_ machine, so any potential downside arising out of using some other machine for a brief period of time will be miniscule against the time saved by heavily optimizing your own setup.
 
 
-# Conclusion
+## Conclusion
 No inference to be drawn in this post. I just enjoyed the whole activity. Learnt a thing or two about when and how I use the command line. Did some overthinking about optimization that _might_ save me some time potentially. I personally feel data is extremely important to make informed decisions. Insights from the data are fun and they can tell you about patterns that are otherwise extremely difficult to be found.
 
 The kind of post this is, I'd love to hear from you if you have something interesting in mind in terms of what I just talked about in this post. It could be an optimization, a new tool, virtually anything.

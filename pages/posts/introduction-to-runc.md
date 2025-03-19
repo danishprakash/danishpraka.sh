@@ -6,15 +6,15 @@ title: Introduction to runc
 
 We've been using runc at work in production for a while now and although it seemed somewhat obscure at first, we've come around to being used to it so much so that it seems more intuitive than docker. I wanted to write this blogpost as a gentle introduction to runc for folks who want to try it out. This blogpost will try to serve as a quick primer on getting started with runc i.e. managing a container lifecycle with runc.
 
-# Introduction
+## Introduction
 runc is a lightweight portable container runtime parts of which were internally used by Docker and were packaged as a single binary and released as an open source project under the the Open Containers Initiative (OCI) as a way of giving back to the community[1]. Explained simply, runc is a lightweight tool written in Go which helps manage a container's lifecycle i.e creating, running, killing and deleting a container. You'll go through each of these steps in this post and see how runc differs from Docker when it comes to running containers.
 
 You'll work with the official golang docker image as a running example for the purpose of this article. You can find more details about this image on [Docker Hub](https://hub.docker.com/_/golang).
 
-# Requirements
+## Requirements
 Unlike docker, runc doesn't abstract tedious tasks under the hood and rather expects you to arrange whatever is it that is required for it to work. Let's run through the requirements:
 
-## runc Binary
+### runc Binary
 runc is a portable piece of software, for GNU/Linux users, it's as simple as fetching the binary and giving execute permissions to it in order to work with runc:
 
 ```
@@ -23,7 +23,7 @@ $ curl -L -o /usr/bin/runc https://github.com/opencontainers/runc/releases/downl
 
 You can head over to the project's [release page](https://github.com/opencontainers/runc) to download other versions. It's also worth noting that runc doesn't work on macOS so if you are on a Mac, your best bet is to run runc inside a docker container.
 
-## runtime-spec
+### runtime-spec
 Specifying configuration options such as volume mounts, memory limits or uid:gid mapping while running a container with docker is as simple as specifying command line options to the docker command. While using runc, these configurations are passed to runc as a file. This configuration file, the runtime-spec, is a configuration standard put in place by the Open Container Initiative (OCI) to specify options for a container and is used by runc[2]. In simpler words, the runtime-spec is a JSON file named `config.json` consisting of configurations pertaining to a specific container.
 
 You'll go through a few attributes in the runtime-spec in this post to get enough understanding so as to be able to run containers. Later sections will focus on attributes which require further explanation. Consider this sample runtime-spec snippet:
@@ -53,7 +53,7 @@ You'll go through a few attributes in the runtime-spec in this post to get enoug
 
 runc expects the configuration file in the exact same format with a certain required fields and a few other optional ones. You might have figured out a few options from the snippet above alone for instance, the environment variables, the current working directory and the uid:gid mapping. There are other configuration options which give you more control over how the container should perform that you'll go through in the sections to follow.
 
-## Root filesystem
+### Root filesystem
 This is exactly what it sounds like, root filesystem for the container. There are multiple ways you can get hold of a root filesystem from a Docker image but the easiest and the one advised by the OCI is using `docker export`:
 
 ```
@@ -64,7 +64,7 @@ This will generate the unarchived root filesystem for our golang docker image wh
 
 Now that you've gathered up the required prerequisites, you can now go ahead and run containers using runc.
 
-# Running a container
+## Running a container
 Before running the container, you've to make sure you have all the prerequisites in the required manner. The `runc` binary, by default, looks for the root filesystem and the runtime-spec in a directory which is referred to as a "bundle". The bundle directory must have the runtime-spec(config.json) and the root filesystem(rootfs) in order for runc to work.
 
 ```
@@ -113,7 +113,7 @@ Contrary to the title of this section, there are multiple commands to "spin up" 
 
 You can now "spin up" containers with runc, killing or deleting containers with runc is also fairly straightforward.
 
-# Stopping a container
+## Stopping a container
 Once you've started the container and played around with it, you need to discard it in such a manner that it does not run in the background holding onto resources or populating your pid tables for virtually no reason.
 
 Although there's no `stop` command provided by runc, the `runc kill` command, when run without any options, sends a `SIGTERM` signal to the init process of the container thereby stopping the container. This moves the container to a `stopped` state. Your container might still be holding on to certain resources used by processes contained by your container though. As a side not, while you're at the topic of killing of processes inside containers, it's worthwhile to go through issues associated with handling of [zombie processes in docker](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/).
@@ -140,7 +140,7 @@ You've sent a signal to a running container and then released any resources held
 
 You can now manage a container using runc, you'll take it one step further and see how you can checkpoint/restore a container with runc.
 
-# Checkpoint/Restore a container
+## Checkpoint/Restore a container
 Similar to docker, runc provides a handy functionality to checkpoint/restore running containers. You can think of checkpointing a container as serializing the state of a running process and then storing the contents on disk. This serialized blob has all the metadata required to restore the process to the same point from when it was checkpointed at a later point in time. That's an extremely simplified explanation of how criu works. It's a lot more complex than it sounds but it's adequate for the purpose of this article.
 
 To accomplish this, runc uses `criu`, an open source piece of software which does the actual checkpoint and restore. In order to use runc commands such as `checkpoint` and `restore`, you ought to have the criu binary installed on your host system. You can find instruction for installing criu [here](https://github.com/checkpoint-restore/criu).
@@ -170,7 +170,7 @@ There might be other more sophisticated use cases but I think checkpoint/restore
 
 You can, apart from managing a container lifecycle, also do things like checkpoint/restore. It's imperative to focus on the runtime-spec now as it is what controls how the container is run, what resources it gets and other configuration options.
 
-# runtime-spec
+## runtime-spec
 The runtime spec, as discussed above, is a set of configuration options stored in a file read by runc to apply configuration before running the container. In docker, you can explicitly set some of the options that you can provide in the runtime-spec. Going through the most common configuration options, you can:
 
 - Limit the amount of memory that can be allocated to the processes running under the new cgroup inside the container. For instance, the snippet below will instruct runc to limit the amount of memory available to the container to 2068MB. A value of `-1` means unlimited memory.
@@ -233,11 +233,11 @@ The runtime spec, as discussed above, is a set of configuration options stored i
 
 There are lots of other configuration options in the runtime-spec that you can use to configure your container as per your requirements. It would not be wise to discuss them all here for the sake of brevity and keeping this post relevant. You can head over to runtime-spec's [Github repo](https://github.com/opencontainers/runtime-spec) for all the options available.
 
-# Conclusion
+## Conclusion
 You learnt how to manage a container's lifecycle using runc, a lightweight, portable container runtime. It is highly unlikely you'll use runc to manage containers on a daily basis, docker is much more user friendly and convenient for that especially when you factor in the added time and effort to gather the pre-requisites for runc to do it's job. On the other hand, runc can prove to fill in gaps Docker can't, these can vary from performance to the lack of additional, often unnecessary features built into docker that runc doesn't come bundled with. But those are decisions for you to take a call on. Anyhow, it's always a good idea to learn something new just for the fun of it.
 
 If you found something in this article that's incorrectly stated or can be improved, feel free to [raise a PR](https://github.com/danishprakash/danishprakash.github.io/tree/master/_posts) or contact me.
 
-# References
+## References
 1. [https://www.docker.com/blog/runc]()
 2. [https://github.com/opencontainers/runtime-spec/blob/master/spec.md]()

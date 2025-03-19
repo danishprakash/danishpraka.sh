@@ -33,7 +33,7 @@ What really goes behind the curtains when you install a vim plugin is essentiall
 - Finally, source the plugin file
 
 
-# Installation
+## Installation
 If you've been following along, you probably have an idea now how to manually install 
 a vim plugin. If not, it's alright, keep reading.
 We'll be using one of my [plugin](https://github.com/danishprakash/vimport) for this example.
@@ -68,7 +68,7 @@ Now you should be able to run the plugin, try this command.
 
 --
 
-# Conclusion
+## Conclusion
 As it turns out, it's pretty simple to actually install a vim plugin. But if you are one of those who use quite a number of plugins, the management of these could turn into a nightmare pretty quick. And for the same reason, I'd rather use a plugin manager and so should you.
 
 ---

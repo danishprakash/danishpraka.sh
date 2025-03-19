@@ -49,7 +49,7 @@ This plugin helps you quickly import and drop python packages and/or modules tha
 
 --
 
-# Updates 
+## Updates 
 I'll keep this list updated with new plugins that I install or remove plugins from the list above if I find a good enough alternate for it within vim itself or another plugin which might offer better features. 
 
 

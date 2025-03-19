@@ -13,10 +13,10 @@ There are essentialy two steps in this process:
 
 Don't worry about the terminology just yet, we'll get to know them as and when required.
 
-# Your application's `tar` archive
+## Your application's `tar` archive
 Homebrew accepts a tar archive of your application in order to process it. We can generate one by simple creating a new release on your project's github repository. Once you've successfully created a release, click on the releases tab and find the link to the tar archive below the release label. My application's [release(s)](https://github.com/danishprakash/goodreadsh/releases) for example.
 
-# Write your formula
+## Write your formula
 Homebrew formulae are essentially ruby scripts which stores information about your application. It tells homebrew important information regarding the installation of your application like where and how your app is going to be installed. This is what a simple formula for an application written in bash would look like.
 
 ```
@@ -68,14 +68,14 @@ $ brew audit --strict <formula.rb>
 ```
 
 
-# Install & Test
+## Install & Test
 Since this is a rather trivial application that we're writing a formula for, the formula for this would also be a simple one. You can have multiple things defined in your formula depending upon what you expect it to do.
 
 Moving ahead, we can see a function definition `install` in which there's a single expression `bin.install "goodreads"`. This will move the file in double quotes into the Formula's bin directory and make it executable (`chmod 0555 goodreads`).
 
 Similarly in the second function definition `test`, we execute the installed executable with the `system` command in ruby which is used to execute commands from within ruby scripts. The `system` function takes a single quoted argument which is the absolute path to the executable. 
 
-# Putting it together
+## Putting it together
 Before moving one, there's one thing I'd like to make clear. There are more than one way to allow users to allow installing your application via homebrew. First, having your application formula in the `homebrew-core` repository and the second is creating a tap. Having your application formula accepted in `homebrew-core` isn't very straightforward since there are various rules that determine whether a package should be in the `homebrew-core` repo, for instance, your application's Github repo should have more than 30 watchers, 75 stars and 30 watchers and should be more than 30 days old.
 
 Taps on the other hand are your own personal formula repository where formula(e) for your applications can be stored. Homebrew can look up formula(e) from this repo and allow you to install the said application. In this tutorial, we'll be creating a tap. Now, let's create a repository where we'll store our homebrew formulae, let's call it [`homebrew-formulae`](https://github.com/danishprakash/homebrew-formulae) and add our formula file here. 
@@ -91,7 +91,7 @@ Another upside to having a designated formula repo (tap) of your own is the simp
 
 --
 
-# Conclusion
+## Conclusion
 Hopefully you can now write a homebrew formula for a trivial application and distribute it via homebrew by creating a tap.
 There are lots of options for you to consider when you write a formula for your application in the Homebrew [Formula Cookbook](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md). I'd suggest taking a good look at the formula cookbook before attempting to write your own formula.
 

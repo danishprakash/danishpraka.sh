@@ -10,14 +10,14 @@ I journal daily(not anymore) but I'm not a fan of using pen and paper although t
 
 In order to make the process as painless as possible, I've created a setup for journalling using Vim which has been working really good for me lately. I'd walk you through my setup in this post.
 
-# Basics
+## Basics
 I use markdown formatting for writing most of my documents including my journals and other notes since they are easy to format, are used universally and have good support by most applications be it web or desktop. You can easily export them to a plethora of document types, LaTeX flavored PDF being one of them.
 
 Secondly, the choice of editor despite the title, is [(neo)vim](https://neovim.io/), if you're reading this article, you probably know the difference between the two, even if you don't, it wouldn't really affect anything you might get out of this article, so read on :D
 
 With that out of the way, let's move on to some more interesting pieces of this setup.
 
-# Vim templates
+## Vim templates
 A template in Vim is a simple `.skeleton` file which can be used to populate buffers based on certain rules. For instance, if you find yourself adding the shebang header to every shell script you write, you can "automate" it using a skeleton file so that everytime you open a `.sh` file, your buffer will be preloaded with the text you've specified inside the `.skeleton` file, which could very well be just the following:
 
 ```
@@ -37,7 +37,7 @@ You can create your own templates and place them in a directory, I prefer the `~
 
 We're going to add one more piece to it later on in the post but this is mostly it. As I mentioned above, you can have it your way, this is just how I prefer to write my journal everyday.
 
-# Autocommands
+## Autocommands
 Autocommands are a great way to automate functionality in vim. Here, we'll use `autocmd` to populate our buffer from our skeleton file when the buffer metadata matches a certain pattern. My journal directory looks something like this:
 
 ```
@@ -70,7 +70,7 @@ augroup end
 
 That looks much more readable, we will add subsequent autocmds to this augroup.
 
-# Completion
+## Completion
 Another important piece here is the completion source. For instance, a month into your journaling journey, you will be repeating or referencing a lot of words whether that's names of people, places or some technical jargon related to work. In order to minimize the effort and keystrokes required to repeat such words, we can make use of vim's completion feature which allows us to select custom sources. We can set a custom completion source by setting an appropriate value for the `complete` option:
 
 ```
@@ -80,7 +80,7 @@ The interesting thing to note in the above command is the `setlocal complete=...
 
 Note: In order to get Vim to scan the files recursively, this [answer](https://stackoverflow.com/questions/12094708/include-a-directory-recursively-for-vim-autocompletion) pointed me to the right globbing pattern to use.
 
-# Header
+## Header
 I write the present day's journal the next morning, so in the morning when I open Vim to write the previous day's entry, I like to have the date populated there along with the templated content, something like this:
 
 ```
@@ -134,14 +134,14 @@ augroup END
 
 Our journal augroup now looks complete with all the configuration we talked about in the previous sections.
 
-# Appearance
+## Appearance
 This is purely subjective, you may or may not decide to read this but I decided to add this section purely for posterity.
 
 I don't use syntax highlighting, I've come to realize that It's much easier to focus for me without the colors and text formatting involved. I made a [monochrome theme](https://github.com/danishprakash/vim-yami) just to help me with the transition from a lot of colors to none and shortly after, I disabled syntax highlighting altogether. Aside from that, here's how my setup looks once I enter the `journal` command in the respective directory:
 
 <img src="./../../static/img/posts/journaling-in-vim-preview.png" width="570px"/>
 
-# Conclusion
+## Conclusion
 This is just a way to remove a little resistance from the process of daily journaling by automating some of the parts in a way that all that is required from you is just the writing part which is how it should be. But again, this varies widely from person to person but I'm sure there's something or the other you can pickup from this post. There are bound to be errors/mistakes in the article or a way to better the process, if that's the case, reach out!
 
 ---

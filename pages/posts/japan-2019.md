@@ -6,7 +6,7 @@ title: Japan (2019)
 
 Last month I had the privilege and opportunity to travel to Japan for a [conference](/posts/vimconf-2019). It was my first visit to Japan and I'd had been mesmerised this by this beautiful piece of land on earth.
 
-# tokyo
+## tokyo
 I flew from New Delhi to Narita with a short layover in Hong Kong. It was a nice comfy flight on a Boeing 777-300ER, one massive and majestic piece of engineering. I landed in Tokyo shortly after noon and then took an express train to the city center from where I took the Ginza line to Akihabara. I took in the bigger than life skyscrapers with the latest and greatest anime characters plastered on each and every one of them. It was shortly before I was supposed to leave for Japan when a friend of mine told me that Akihabara is apparently the anime city.
 
 <img src="./../../static/img/posts/japan-2019/narita.png"/>
@@ -35,7 +35,7 @@ I then walked around the residential areas and clicked as many photographs of th
 <img src="./../../static/img/posts/japan-2019/tokyo-2.png"/>
 <!-- <img src="./../../static/img/posts/japan-2019/shibuya.png"/> -->
 
-# osaka
+## osaka
 Early int the morning, I took the Shinkansen from Tokyo to Osaka where I'd spend the next 3 nights. It is customary to buy bento from the station and have it onboard the Shinkansen, and I did the same with a shot of Suntory coffee. The train had great wifi and I spent some time working on the way. The Salaryman(サラリーマン) next to me pointed out Fuji San when it passed by, It was majestic.
 
 <img src="./../../static/img/posts/japan-2019/shinkansen.png"/>
@@ -56,7 +56,7 @@ Next morning, I visited the Osaka Castle, Shitennoji Temple, Tennoji, Osaka zoo.
 <img src="./../../static/img/posts/japan-2019/osaka-castle.png"/>
 <img src="./../../static/img/posts/japan-2019/osaka-street-2.png"/>
 
-# kyoto
+## kyoto
 Kyoto is close enough to Osaka for it to be a day long trip. So I took the express train from Osaka to Kyoto and reached within 1.5 hours I guess. I first went to the Fushimi Inari shrine. It's a long long way up to the top with lots of stairs and Torii gates all the way up to the top. The hike itself is calming, albeit a little tiring because of the 12000 steps in total. Everybody was walking up to the Shrine in good spirits and it was a fun, cheery atmosphere.
 
 <img src="./../../static/img/posts/japan-2019/fushimi.png"/>
@@ -71,7 +71,7 @@ It was almost sundown when I headed out of the temple, I took the crowded bus to
 
 Early next day, I took the Shinkansen back to Tokyo and stayed in the Akasaka area for my last night. The next morning, I left for Haneda airport, all the while wishing to come back as soon as possible.
 
-# observations
+## observations
 There were lots in this one, let me jot down the most notable ones:
 
 - Japan is extremely civilized. Before I went to Japan, my then manager told me to enjoy the Structural Chaos in Japan and I knew this as soon as I landed at Narita. There was a huge line at the airport at the exit point. Some people running ahead while others just added onto the line making it even longer. I also did the same, trying not to commit a faux pas in a foreign land. After a while, I noticed people are deliberately leaving one side of the elevator for those who are in hurry even though it crowded the airport exit. Pareto principle, in reverse.
@@ -83,7 +83,7 @@ There were lots in this one, let me jot down the most notable ones:
 Obligatory disclaimer that I was just there for around 10 days and almost everything I observed could be anecdotal so please bear that in mind.
 
 
-# conclusion
+## conclusion
 I personally am someone who believes in a society where people follow rules for the sake of others. I'm not referring to being a conformist but rather being a responsible citizen and thus making the society better for the rest. After visiting Japan, I tell everyone how a society should function. Now of course, there are concepts such as the pervasive drinking culture or death by overworking (Karoshi) and many more. But ammortized benefits of the structure in Japanese society, imo, still makes it one of the best places in the world.
 
 <img src="./../../static/img/posts/japan-2019/kyoto-2.png"/>

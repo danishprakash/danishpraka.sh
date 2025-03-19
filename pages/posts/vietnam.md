@@ -7,7 +7,7 @@ title: Vietnam (2022)
 Last September, I, along with a friend of mine planned for a trip to Vietnam. We spent quite some time planning for the whole trip. We did discussions on where to go, where to stay, what to eat, etc. This post is a travelogue-ish post, similar to what I did with my [Goa](/2022/06/03/south-goa.html) trip earlier this year. I had planned a trip to Vietnam in March of 2020 and then COVID struck, bringing the rains down on the entire plan. But this one came together and It was an experience worth sharing.
 
 
-# journey
+## journey
 
 We took a direct flight to Hanoi from Delhi, landed late in Hanoi and took a public bus to the famous/iconic [Buffalo hostel](https://buffalohostels.com/). The next morning, we visited the Literature Temple, a famous Bun Cha place and tried egg coffee at a lakeside cafe. The city was teeming with young people rustling by on their bikes and scooties. It's an overwhelming sight when you first ride on the main roads and streets. And this is coming from someone who's ridden in some of the most congested of places in Delhi.
 
@@ -74,7 +74,7 @@ We visited the Ho Chi Minh City Museum where, along with the Vietnamese history,
 
 Ho Chi Minh is where we did most of our shopping at the famous Ben Thanh market. There are eateries all around the place and it gets especially lively at night when all the street eateries put their [baby-chairs](https://khaipham1093.wordpress.com/2016/03/03/why-do-vietnamese-sit-on-little-chairs/) out for the locals.
 
-# food
+## food
 If you're a vegetarian and are planning a trip to Vietnam, god forbid you're going to have a hard time. Especially if you're planning to do the Ha Giang loop or thinking of going deeper into the mainlands. In the cities, you'd still find a variety of vegetarian, vegan even, options. That being said, I think I personally enjoyed the Vietnamese cuisine the most out of this trip.
 
 <img src="./../../static/img/posts/vietnam/pho.png" loading="lazy"/>
@@ -83,7 +83,7 @@ If you're a vegetarian and are planning a trip to Vietnam, god forbid you're goi
 
 And of course, I've already mentioned the coffee. I didn't have a single bad coffee during the whole time I was there and it was a sentiment most of friends shared too.
 
-# observations
+## observations
 I always note down interesting observations during travel, I feel some of them are worth sharing:
 
 - Vietnam is a matriarchal society and the difference is stark. Coming from India, I was pleasantly greeted with every other business being run by ladies. It was a fresh departure from a traditionally patriarchal Indian society. Not just that, being a matriarchal society, Vietnam naturally lends itself to a save environment for women. This is ofcourse, my observations from slightly more than 2 weeks there but from what I've read so far, it is indeed true.
@@ -95,7 +95,7 @@ I always note down interesting observations during travel, I feel some of them a
 I can't say if these observations are a helpful addition to the post or not, but this is what I seek when I travel, a new worldview, understanding of how people live their lives and how societies are different from what you're used to back home and I thought they are worth sharing.
 
 
-# conclusion
+## conclusion
 After a failed attempt to travel to Vietnam right before COVID in early 2020, I was really looking forward to explore this land of hardworking people, as the saying goes. I wasn't disappointed. Additionaly, I paired this trip with a reading of [Vietnam: Rising Dragon](/reading/vietnam-rising-dragon), it was the perfect companion.
 
 I remember I was having this discussion with a friend at work about how travel is not what it used to be with the advent of internet. One can even "experience" a new land with all the innovations in AR. But writing this post, I realize there are things I'd have never even read about lest I had travelled to the place by myself and that makes all the difference. It expands your worldview, for the better.

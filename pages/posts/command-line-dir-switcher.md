@@ -9,7 +9,7 @@ So, I started looking for ways that would help me switch directories more easily
 
 I came up with a simple trick which has worked good enough for me for quite some time now, it's intuitive and configurable.
 
-# Function
+## Function
 This is a simple bash function with `find` and `fzf`. Load this up in your `.zshrc`. Follow along to get a grip on how this actually works. 
 
 ```
@@ -33,7 +33,7 @@ __Update__: Thanks to [/u/maji_yabakune](https://www.reddit.com/user/maji_yabaku
 4 `zle reset-prompt`: This redraws the prompt to take into immediate effect the new working directory so you don't need to hit the enter key anymore.
 
 
-# Creating a shortcut
+## Creating a shortcut
 Now, we would like to have a handy key combination to open our switcher, how about `Ctrl-p`? We would want our function to fire up as soon as we type `Ctrl-p`, so a simple bindkey should do, right? Well, no, zsh doesn't allow you to bind keys to a function, instead we would create a widget which maps to the function and finally bind that widget to the key combination. We can do that by creating a widget using the zsh line editor, `zle` and then we can specify our key combination mapped to this widget we just created.
 
 ```
@@ -46,7 +46,7 @@ That's about it, simply put the [function](#function) and these two lines in you
 
 --
 
-# Conclusion
+## Conclusion
 If all goes well, you should have something like the gif below making it easier for you to switch between directories easily. 
 
 ![img](https://i.imgur.com/r8eWY0L.gif)

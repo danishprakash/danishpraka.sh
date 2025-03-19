@@ -9,10 +9,10 @@ Localization is a big deal especially when your application is being used by a l
 
 I've been writing Python for a while now and I was working on this big open source project recently, trying to fix a trivial issue which ended up failing the builds. When I inquired about it, it turns out that the builds failed because I forgot to make the strings in my changes __translatable__. So, I set about looking for answers and there it was, Localization. In this post, we'll walk our way towards providing translations to a simple python program.
 
-# GNU gettext
+## GNU gettext
 There are other ways with which you can provide localization for your applications. But we'll use the `gettext` module for the purpose of this post. It provides internationalization and localization services for your applications and comes bundled with the standard python installation. It exposes two different API's for you to work with, a more standard `gettext` API which affects your entire application's translations and a class-based API which is more suitable for Python modules and applications. We'll make use of the latter.
 
-# Hello World!
+## Hello World!
 We'll use this [legendary](https://blog.hackerrank.com/the-history-of-hello-world/) hello world program in this post with a simple addition.
 
 ```
@@ -24,7 +24,7 @@ if '__main__' == __name__:
     main()
 ```
 
-# Translations
+## Translations
 In order to provide the translations which could be read by the `gettext` module, we need to create a separate directory named `locales`, this can be named anything as long as it's intuitive. For the sake of keeping this post brief, we'll be providing a German(Deutsch) translation for our `Hello World` program. For the same, our `locales` directory would look something like this.
 
 ```
@@ -56,7 +56,7 @@ Since functions in Python are first-class objects, we can move them or pass them
 
 Now that we've marked the strings we will provide translations for, let's provide actual translations for them.
 
-# pygettext
+## pygettext
 We'll create a template with all of the strings which we've marked in our program so that it's easier for us to write the translations for the strings. This template is a POT with a `.pot` extension which stands for portable object template. To generate the template for our program, we can use the `pygettext.py` module which also comes bundled with the standard installation of python.
 
 ```
@@ -106,7 +106,7 @@ msgstr "Lokalisierung macht Spaß"
 
 For the english translation (`en/`), we can make do by simply copying `template.pot` to `locales/en/LC_MESSAGES`. We can think of this template as a global template we can use for every locale or language we wish to provide a translation for, all that's required is to copy this template to the proper directory as shown in the directory convention above.
 
-# msgfmt
+## msgfmt
 There's one more step to this before we fire up das program. `gettext` module cannot directly use the `.po` files and hence we are required to convert these files to their equivalent `.mo` files. These `.mo` files are binary machine-object files that are parsed by `gettext`. We can use the `msgfmt` tool to generate these, which also comes with the standard python installation.
 
 ```
@@ -128,7 +128,7 @@ locales
         └── template.po
 ```
 
-# Putting it together
+## Putting it together
 Let's modify our program to use the appropriate translations or more aptly, to use the `.mo` files we have generated.
 
 ```
@@ -168,7 +168,7 @@ It works as expected for both english and german locales, look at how we've used
 
 ---
 
-# Conclusion
+## Conclusion
 In this post, we've seen how to localize our application. We learned how to use the `gettext` module and a bit about portable objects and portable object templates. We also used environment variables to switch locales of our application.
 
 If there's something you'd like to improve in this article or if you've found something that's not correctly stated, feel free to contact me.

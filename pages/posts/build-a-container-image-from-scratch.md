@@ -8,7 +8,7 @@ title: Build a Container Image from Scratch
 
 For a developer, a Container image is essentially a collection of configurations required to run a container. But what really is a container image? You might know what a container image is, how it is made up of layers and that it's a collection of tar archives. There are questions that still went unanswered, questions such as what makes up a layer, how are layers combined to form a complete filesystem or multi-platform images, etc. In this article, we'll build a container image from scratch and try to answer all these questions to understand container image internals.
 
-# OCI Image
+## OCI Image
 Little bit of history before we proceed. Up until roughly 10 years back, docker-format was the only format being used and with the emergence of all the tooling around containers, there was a need for standardisation. Around 2015, the Open Containers Initiative was established--no a Linux Foundation project--with the aim to standardise all things containers. They came up with a specification for container images called the OCI spec. Modern tooling all conform and follow the runtime spec while dealing with container images and so for this article, and OCI image and a container image will be used interchangeably.
 
 An OCI image consists of four core components--layer, config, manifest and index:
@@ -28,7 +28,7 @@ ENTRYPOINT ["./hello"]
 The image itself is based on `scratch`, an empty base image. We then copy the `hello` binary to the image and set it as the [entrypoint](/posts/dockerfile-practices) for the container. Let's get going.
 
 
-# 1. layer — _what's inside the image_
+## 1. layer — _what's inside the image_
 Layers represent _what's inside a container image_. Often referred to as the basic building blocks of container images. They consist of components such as your source code you copy to your image, the container filesystem, or virtually anything you add to your container image.
 
 Technically, a container image is a filesystem _changeset_. A filesystem changeset is a diff between two filesystems serialized as a tar archive. Consider the following container image:
@@ -41,7 +41,7 @@ RUN rm -f /bin/ash \
 
 We've used alpine as the base image, deleted `/bin/ash` and installed `bash`. Let's use this as an example to build changesets and then to assemble the final filesystem of the container.
 
-## 1.1 layer: create a changeset
+### 1.1 layer: create a changeset
 In order to create a layer or more appropriately, a filesystem changeset, we start with a minimal root filesystem, one from [alpine](something) in our case since our example Containerfile starts off with the alpine base image:
 
 ```
@@ -73,7 +73,7 @@ Given that we removed `/bin/ash` and added `/bin/bash` from our example image, o
 
 Notice the `.wh` which means whiteout to denote deleted files. The changeset above tells the container engine that we added/modified `bash` and deleted `ash` _on top_ of the previous layer/changeset--the alpine base in our case. And that would constitute a changeset, a layer.
 
-# 1.2 layer: creating the filesystem
+### 1.2 layer: creating the filesystem
 
 Now we have created a layer. A container engine takes multiple layers and creates a complete filesystem for the resulting container.
 
@@ -83,7 +83,7 @@ Let's say we have 3 layers, an empty layer with no filesystem--the starting chan
 
 The container engine would apply all the layers part of an image on top of each other left-to-right to generate the resulting filesystem. In this case, the final filesystem would only have `/bin/bash` as a result of applying layer 1 on top of layer 0, and layer 2 on top of layer 1. This is how a container engine creates a filesystem from a collection of layers in the form of a container image.
 
-# 1.3 layer: lifecycle
+### 1.3 layer: lifecycle
 
 So far we've understood:
 
@@ -97,7 +97,7 @@ How does this all play together when you employ containers in your daily workflo
 
 You use `podman build` and pass in the Containerfile, podman would then create various layers, and package that as a "container image". When you use `podman run` with this image, the engine would combine all the various layers part of the image and create the root filesystem for the container being run.
 
-# 1.4 layer — _our scratch image layer_
+### 1.4 layer — _our scratch image layer_
 Let's create the layer for our "hello" image. For reference, this is how our image would look like had it been a Containerfile:
 ```
 FROM scratch
@@ -134,7 +134,7 @@ $ mv layer.tar.gz 36c412b23a871c4afbec29a45b25faad76197f3a9dbf806f3aef779af92679
 
 We then create a gzip compressed tar archive of the binary. This constitues our first and only layer.
 
-# 2. config — _how to run the container_
+## 2. config — _how to run the container_
 The config represents _how to run the container_. It's a JSON file that stores the configuration options used to configure the container. Options such as environment variables, entrypoint of the container, and volumes, etc. These options can be supplied via the command line while running the container, or as part of the Containerfile in which case, the config.json file is populated. 
 
 Consider the following snippet from a sample config.json:
@@ -180,7 +180,7 @@ $ vim config.json
 
 You can notice it's not too much. If you refer back to our image's Containerfile equivalent, you'll notice we set our "hello" binary as the entrypoint for our image, and that's the only configuration option we need to set.
 
-# 3. manifest — _locate layers and config.json_
+## 3. manifest — _locate layers and config.json_
 The container engine uses the manifest to locate layers and config.json for an image. Consider the following snippet from a sample `manifest.json`:
 
 ```
@@ -205,7 +205,7 @@ The container engine uses the manifest to locate layers and config.json for an i
 The manifest mentions the config and the layer in the above snippet along with additional metadata for each of them. But instead of referring to a path, the manifest addresses the components via a digest. That's because the layers, config and the manifest together make up what's called a _content-addressable store_.
 
 
-# 3.1 Content addressability
+### 3.1 Content addressability
 In order to allow for efficiency and integrity, OCI requires components in the OCI image to be identified based on their content i.e. you can identify data based on their content rather than its location (filepath, etc). To achive this in the case of an OCI image, a unique identifier (generally a cryptographic hash) is used as the filename. This is known as _content addressability_.
 
 <img src="./../../static/img/posts/build-oci-image-from-scratch/cas.png"/>
@@ -292,7 +292,7 @@ $ tree .
 
 So far, our unpacked OCI "hello" image has a single layer archive consisting of our statically linked `hello` binary, the configuration for the container, and the manifest for the image, all encoded by their sha256 digest.
 
-# 4. index — _manifest for manifests_
+## 4. index — _manifest for manifests_
 index.json file acts as an index for a set of images that can span different architectures and operating systems.
 
 <img src="./../../static/img/posts/build-oci-image-from-scratch/index.png"/>
@@ -337,7 +337,7 @@ $ tree
 4. `index.json` — a higher-level manifest that references multiple image manifests, allowing for the distribution of container images across different platforms or architectures.
 
 
-# Packing
+## Packing
 We have all the parts in place for our image. Let's create an archive of the components we've created so far, and test our image:
 ```
 $ tree
@@ -365,7 +365,7 @@ hello        scratch    25e8b3bd9720  N/A       3.67MB
 
 We can see that the image was loaded by podman, and we were able to run a container based on our image, correctly outputting `hello world!` to stdout. We know exactly what made up the image, what files we put in, the configuration we set, and the metadata that's part of the image.
 
-# Using a Base Image
+## Using a Base Image
 Let's create a version of our image based on `alpine` instead of scratch. This introduces another layer in our image, so let's see how to handle multiple layers. In this case, the Containerfile is as follows.
 
 ```
@@ -502,7 +502,7 @@ hello        scratch   25e8b3bd9720   N/A       3.67MB
 hello        alpine    3d0268e9a91e   N/A       11MB
 ```
 
-# Conclusion
+## Conclusion
 I hope this post helped you understand container images in slightly more detail and in a manner that was accessible and approachable. The examples used in this article is not something you'd use in your daily workflow. Their purpose is to demonstrate the inner workings of container images.
 
 If you find any problems or improvements, open an issue or feel free to reach out via email.

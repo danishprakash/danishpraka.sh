@@ -6,9 +6,7 @@ title: Software
 This is an archive of some of the software I've written over time and a few of my Open Source contributions to various projects. These lists are generated (partially) automatically so If you find anything out of the ordinary, feel free to create an [issue](https://github.com/danishprakash/danishpraka.sh/issues/new).
 
 
-| |
 | :--- |
-| |
 | **Open Source** |
 | [containers/podman](https://github.com/containers/podman/commits?author=danishprakash) - A tool for managing OCI containers and pods.|
 | [containers/buildah](https://github.com/containers/buildah/commits?author=danishprakash) - A tool that facilitates building OCI images.|
@@ -29,7 +27,6 @@ This is an archive of some of the software I've written over time and a few of m
 | [python/peps](https://github.com/python/peps/commits?author=danishprakash) - Python Enhancement Proposals |
 | [VSCodeVim/Vim](https://github.com/VSCodeVim/Vim/commits?author=danishprakash) - Vim for Visual Studio Code |
 | [coala/coala-bears](https://github.com/coala/coala-bears/commits?author=danishprakash) - Bears for coala |
-| |
 | |
 | **Personal Projects** |
 | [kube-step-podautoscaler](https://github.com/danishprakash/kube-step-podautoscaler): Controller to scale workloads based on steps. |

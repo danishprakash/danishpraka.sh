@@ -6,15 +6,15 @@ title: Write a shell in C
 
 Ever wondered how that terminal just works? A more correct question would be how that shell just works? I had one of those too and It took me a couple of searches and a lot of reading to figure out how. I wrote a shell in C, first a basic and then added few more features on top of it. I've written the process for writing a basic shell in C.
 
-# Shell
+## Shell
 What is a shell? In a very simple way, it could be defined as a tool or a program through which you can(should) interact with the operating system. This definition is very vague but it gives the idea.
 
-# Requirements
+## Requirements
 - C programming knowledge
 - gcc
 - text editor
 
-# Starting of the shell
+## Starting of the shell
 This is the driving function of the loop. Let us see how things are implemented and how they work when the shell starts.
 First things first, a prompt lets the user know that the terminal is ready to accept commands from the user. A prompt can be heavily customized but for the sake of simplicity, we'll set our prompt as a very basic yet popular `>` symbol. Consider the code below.
 
@@ -39,7 +39,7 @@ void loop() {
 Now, let's actually focus on the more important parts. We declare a char pointer and 2d char pointer, `line` and `args` respectively. The `line` char pointer will hold the command(string) entered by the user using the `read_line()` function which is explained below. The `status` variable stores the return value of functions invoked during command execution. It will determine the termination of the loop i.e If the user enters the `exit` command, the `exit` function will return `0` which will force the control to break out of the loop and the shell would terminate. The last two lines of the do-while loop basically frees the memory used by the two pointer variables using the `free()` function, freeing up memory explicitly is required in C and is a good practice.
 
 
-# Reading user commands
+## Reading user commands
 
 ```
 char * read_line() {
@@ -87,7 +87,7 @@ In the final conditional statement, we check if the size of `buffer` is equal to
 
 The `if(!buffer)` checks are for making sure memory was allocated to `buffer` successfully otherwise `malloc` and `realloc` return `NULL` in unsuccessfull memory allocation attempts. If that happens, our function returns with an error.
 
-# Tokenizing Input
+## Tokenizing Input
 Once we have the command entered by the user as a char pointer array. We'd tokenize (read split) it making it easier for us to execute them. We define the function `split_line()` with one a character pointer as an argument. In this function, we'll do memory mangement in the same way we did it in the `read_line()` function. Other variables here include `**tokens` and `*token`.
 We will be using the `strtok()` function for the task. It takes two arguments, the string to be tokenized and the delimiters. We've specified 4 del
 
@@ -142,7 +142,7 @@ char * * split_line(char * line) {
 
 After every iteration, we update the `tokens` variable by assigining the `token` in it's respective `position`. And finally return the `tokens` variable.
 
-# Exiting the shell
+## Exiting the shell
 Since it is a simple program, a simple `return 0` statement would be enough for us to exit the program successfully. Let's create a trivial function which returns 0.
 
 
@@ -155,7 +155,7 @@ int dash_exit(char **args)
 
 We'll later on check if the user has entered `exit` and invoke this function appropriately.
 
-# Executing commands
+## Executing commands
 
 After all the hard work above, the last step is rather trivial, thanks to the syscalls `execvp` `fork`.
 
@@ -194,7 +194,7 @@ command that needs to be executed. It returns `-1` only if there is an error. La
 
 Note here that we are doing a check for the `exit` command. It doesn't matter if the `**args` variable has more items than just the string `exit`. It'll simply return the function `dash_exit` which in turn will return `0`. We could've had returned 0 right inside the check but this makes it much more understandable and makes for a good practice.
 
-# Everything that we've done
+## Everything that we've done
 Here's the complete code for our basic shell. The code still has some on the things that aren't explained in the article but they are crucial to the functioning of our shell for instance, color-coded errors and warnings.
 
 ```
@@ -325,13 +325,13 @@ int main() {
 
 ___
 
-# Conclusion
+## Conclusion
 This post is more inclined as a learning exercise rather than a full-fledged product. You'd probably never want to use a shell this basic but you probably now know how your favorite shells work under the hood.
 
 I've written a more advanced version of this shell including piping, history and other inbuilt commands [here](https://github.com/danishprakash/dash).
 
 
-# Contribute
+## Contribute
 If you find any errors or if you think this article can be improved in any way, ping me.
 
 ---

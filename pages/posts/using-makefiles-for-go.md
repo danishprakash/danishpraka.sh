@@ -8,12 +8,12 @@ title: Using Makefile(s) for Go
 
 We've been using `make` as a build tool for one of our projects at HackerRank which is written in Go and it has been working out fairly well. In this post, I'll point out a few features and intricacies of GNU Make we've used which eventually improved the overall productivity of members of our team.
 
-# Introduction
+## Introduction
 `make` is a simple utility which detects which part of a large project needs to be recompiled and executes user-defined commands to carry out compilation or other required actions. It's also widely used as a build tool wherein you specify a set of commands to be run which you inherently used to write on the command-line, often times repeatedly. The latter is what the rest of this post is about.
 
 For the purposes of this post, we'll assume we're working on a Go project, "stringifier" and will be writing a Makefile for the same which is also named `Makefile`.
 
-# Build and Run
+## Build and Run
 These are two actions that Go programmers use quite frequently, so let's add these targets to our Makefile:
 
 ```
@@ -26,7 +26,7 @@ run:
 
 I added the `-race` flag to the run command because it detects race conditions in your Go code when you run it which is an otherwise unpleasent exercise.
 
-# Cleaning and DRYing
+## Cleaning and DRYing
 After building the binary and running the application just fine, let's make sure we are cleaning the binaries before proceeding with anything else. Our updated Makefile should look something like this:
 
 ```
@@ -60,7 +60,7 @@ clean:
 
 Looks much cleaner, doesn't it? You can define Makefile variables at the top and make will automatically expand them when you invoke the `make` command.
 
-# PHONY targets
+## PHONY targets
 By design, make executes the rule if one of the prerequisites or the target file has been changed. But since we are are not relying on the ability of make to detect file changes, we are putting ourselves in a potential pit. 
 
 Imagine that there's a file in our project directory named `build`, again this is a hypothetical situation. In this case, when you run `make build`, make will check for changes to the file `build` and its prerequisites which there are none and hence won't execute the recipe which is not what we want. We might end up using the existing binary for our use, which is misleading and a road to a lot of confusion down the road.
@@ -92,7 +92,7 @@ Now that you've specified all the above targets as phony, make will run the reci
 
 But for Makefiles which grow really big, this is not suggested as it could lead to ambiguity and unreadability, hence the preferred way is to explicitly set phony target right before the rule definition.
 
-# Recursive Make targets
+## Recursive Make targets
 Let us now assume that we have another module `tokenizer` in our root directory that we use in our project. Our directory structure is now something like this:
 
 ```
@@ -143,7 +143,7 @@ build-tokenizer:
 
 Now, anytime you run `make build-tokenizer`, make will handle the directory switching for you and will invoke the right target in the right directory for you in a much more readable and robust manner.
 
-# Targets for Docker commands
+## Targets for Docker commands
 Now you wish to [containerize](https://www.ibm.com/cloud/learn/containerization#toc-what-is-co-r25Smlqq) your application and susequently write make targets for the same for convenience which is completely understandable.
 
 Now, you have the following rules defined for the docker commands:
@@ -207,7 +207,7 @@ Success
 
 Essentially, you are making sure that the `docker-push` target has a safety net which checks that the user who invoked the target has specified a value for the `ENV` variable.
 
-# Help target
+## Help target
 A new member has joined the project and is wondering what all the rules do in the Makefile, to help them out, you can add a new target which will print all the target names along with a short description of what they do:
 
 ```
@@ -260,7 +260,7 @@ Usage:
 
 Well, that looks quite helpful. It will most certainly come in handy for a lot of people and even for you at times.
 
-# Conclusion
+## Conclusion
 Make is a simple yet a highly configurable tool. In this post, you ran through a host of configurations and features offerred by make to write an effective and productive Makefile for your Go application.
 
 Here's the complete Makefile after adding a few trivial rules and variables for completeness's sake:
@@ -333,4 +333,4 @@ help:
 
 If you found any issues/mistakes or have any suggestions or additions related to this post, please feel free to reach out to me.
 
----
+:wq

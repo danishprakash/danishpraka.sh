@@ -8,7 +8,7 @@ Like everyone else who's even remotely aware of the harmful effects of social me
 
 If you clicked on this post looking for insights into dietary experiments, I'm sorry. This is going to be primarily about media consumption in the digital format in our modern society. I'll probably think about writing a post on my diet experiments some other day.
 
-# Problem
+## Problem
 I've been through that unhealthy pattern of opening up a social media app and then just scrolling through [mindlessly](https://en.wikipedia.org/wiki/Doomscrolling) to find something, just something. That something doesn't show up, of course, and you end up devouring unwanted information. I've come to call this kind of consumption _Undirected consumption_. Pretty self-explanatory, but this is the type of consumption when you don't know what you're looking for to consume but you're consuming anyways.  The flip side of this is _Directed Consumption_, which is a rather conscious decision about what you're consuming. Let's understand each of them.
 
 ## Undirected Consumption

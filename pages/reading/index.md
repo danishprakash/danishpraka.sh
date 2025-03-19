@@ -5,7 +5,6 @@ title: Reading
 
 Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 
-| | | |
 | :--- | --- | ---: |
 | **2025** | | |
 | The Life of Greece | Will Durant | _reading_ |

@@ -11,7 +11,7 @@ I personally avoid using such frameworks that add unnecessary overhead to your t
 
 __Note__: If you are just looking for the solution, jump to [Conclusion](#conclusion) directly and read on if you don't mind bits of interesting info thrown around.
 
-# Git branch
+## Git branch
 Before I started looking for solutions to this particular problem, I only knew one way to echo the current branch in a directory which is the good old `git branch` command. But turns out there's one more and possibly others.
 
 ```
@@ -27,7 +27,7 @@ refs/heads/master
 
 I'm using the latter version since it will give us a rather brief and static output than `git branch` which would list all the branches there are in your current working tree.
 
-# Suppressing errors
+## Suppressing errors
 In directories which are not git repositories, our command will throw an error. To supress such errors, we could simply redirect the error. Our updated command:
 
 ```
@@ -40,7 +40,7 @@ $
 
 The `2> /dev/null` redirects the `stderr` or standard error to a special file `/dev/null` which takes input but doesn't really do anything with it. So we're sorted here. Read more about standard streams [here](http://www.learnlinux.org.za/courses/build/shell-scripting/ch01s04.html).
 
-# Comes in `awk`
+## Comes in `awk`
 You certainly don't need `ref/heads/master` in your prompt, let's filter the unwanted stuff out. We'll use a simple awk script (command really) to do the job.
 
 ```
@@ -51,7 +51,7 @@ master
 In the `awk` command above, first of all we specify the field separator (`FS="/"`) since our git command returns a path which is separated by a forward slash and finally we print the last column in the separated list. `$NF` here means the number of fields and subsequently points to the last column.
 Now that we have our output sanitized, let's get this onto our prompt.
 
-# Updating prompt
+## Updating prompt
 Now that we have all the inputs ready, let's put these together to get it working. Add this function in your `.zshrc`, preferably on the top so that it becomes easier for you to re-use it.
 
 ```
@@ -81,7 +81,7 @@ This is how it looks on my machine.
 
 --
 
-# Conclusion
+## Conclusion
 So, having the current branch displayed on your zsh prompt was all in all a simple `git` command with a pint of `awk` in it and an even simpler shell script. For those restless souls who landed here in search of the solution, here it is.
 
 ```

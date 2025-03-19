@@ -9,7 +9,7 @@ First of its kind travelogue, I had thought about doing this for a while especia
 
 Early March 2022, I and a friend of mine, planned a [workcation](https://www.bbc.com/worklife/article/20220309-workcations-the-travel-trend-mixing-work-and-play) to South Goa. We didn't plan to go to the north side of the town just because we didn't plan to party or visit any tourist spots. Given this was a workcation, we wanted to spend as much free time we could get on our hands relaxing.
 
-# journey
+## journey
 
 Short layover at Mumbai while flying from Delhi to Goa. Travelled to Linking Road for some ad-hoc work. It was scorching and not pleasant at all, we rushed back to the airport as soon as we were done with the work.
 

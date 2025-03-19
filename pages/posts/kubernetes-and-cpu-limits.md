@@ -7,12 +7,12 @@ Date: 20th February 2022
 
 I recently came across a rather interesting issue concerning resource limits and how they are implemented in Kubernetes. In this blogpost, I've tried to explain the problem, the cause of the problem and potential solutions to the same.
 
-# The problem
+## The problem
 A few requests on one of our workloads were timing out one fine day. Out of the blue, nothing out of the ordinary. Now, these timeouts would span over a few minutes and during that time, we'd also see quite a few of the pods failing their readiness and liveness probes. This happened twice in a period of ~1 month. The kind of workloads we were running, timeouts on certain requests at random wasn't acceptable at all. So we had to figure out why this was the case, even though it was just for 2 minutes that one time.
 
 It quickly became a priority and I went about trying to figure out what really went wrong. Before going into the post, a quick disclaimer that I'm going to deliberately avoid talking about Resource Requests in this post since they are in no real way involved in the aforementioned issue. You can read more about Resources in Kubernetes [here](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-# Resources limits
+## Resources limits
 
 A quick short primer. Kubernetes allows you to specify Memory and CPU limits for your workloads. There's a lot of configuration options available when it comes to managing Resources for your workloads on Kuberenetes, for e.g. QoS, LimitRanges etc. We're going to specifically focus on `spec.resources` attribute that you set in your pod manifest. The `spec.resources.request` property allows you to specify how much memory and CPU your pod would require. This information is used by the scheduler to schedule pods. But your application can certainly exceed their allocated/requested quota of resources and you don't want other workloads running on the same node to be affected by a badly behaving workload. To avoid running into this situation, you can specify `spec.resources.limits` which "ensures" your workloads never goes haywire when it comes to resource utilization.
 
@@ -32,17 +32,17 @@ resources:
 
 In the above snippet, the scheduler will find nodes which have 256Mi of free memory and 100m of CPU available. Once scheduled, the pods can use more than 256Mi of memory and 100m of CPU but not beyond 512Mi and 200m.
 
-## Memory limits
+### Memory limits
 
 Memory being an incompressible resource, if your workloads are using more than the allocated memory limit, it will get killed. This specific event of killing a process because it is consuming more memory than it's allowed is known as OOMKilled(Out of memory killed). If and when this happens, you should be able to figure out whether you're actually experiencing an OOMKill event by going through the logs, the kernel or the container runtime dumps such events. With that, it becomes easy for you to gauge memory usage for your workloads and to decide whether you need to increase the allocated memory. Do note that in Kubernetes, an OOMKill will [not restart](https://github.com/kubernetes/kubernetes/issues/50632) your container if it's not the init container.
 
-## CPU limits
+### CPU limits
 
 CPU Limits work in an entirely different way. Being a compressible resource, the system based on certain heuristics, will allow or disallow CPU cycles to your process if and when your process starts to consume more than its fair share of allocated CPU. This disallowing of CPU to a process is known as throttling.
 
 That's all well and good but when it comes to visibility, unlike memory where you can clearly find OOMKill events, figuring out whether there's any CPU throttling that your apps are experiencing is not trivial by any means. It's not impossible either, the Kernel exposes throttling metrics but it's not commonly supported by monitoring solutions and you've to set those up manually.
 
-## How CPU Limits are enforced
+### How CPU Limits are enforced
 
 The Kernel uses [CFS(Completely Fair Scheduler)](https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt) to facilitate CPU allocation/disallocation to processes in a system. The CFS in turn uses two configuration options:
 
@@ -99,7 +99,7 @@ To add insult to injury, there happen\[s\|ed\] to be a [bug](https://git.kernel.
 
 
 
-# Solutions?
+## Solutions?
 A lot of folks have experienced this issue especially when working at scale. But there was no single one-shot fix for this since there were multiple things going on. There was the obvious using up of quota within a period by multiple threads. Then there's the Kernel bug which made matters worse. That being said, you've the following options:
 
 1. Disable CPU Limits. If there are no CPU limits on your workloads, the CFS will not come into action and the whole chaos will be averted. This has its own issues in that it's not feasible for folks to run their applications without a CPU limit. This comes down to the kind of workloads you're running i.e. optimized applications that you've written yourselves or running 3rd party binaries which you don't have any control over whatsoever when it comes to their resource usage.
@@ -109,7 +109,7 @@ A lot of folks have experienced this issue especially when working at scale. But
 
 I personally tried removing the CPU limits and it worked as expected. For others, maybe disabling the CFS is easier or just waiting out for GKE et.al to come up with node images with the updated Kernel version.
 
-# Kubelet
+## Kubelet
 
 But wait, there's more. Remember I mentioned in passing that the pods also faced a lot of readiness and liveness probes failing? Well, I reached out to GCP for info on that.
 
@@ -117,12 +117,8 @@ My hypothesis was that during such a crisis i.e. the processes getting throttled
 
 One suggested fix for this is to move to `exec` based healthchecks instead of `httpGet` allowing the Kubelet to not having to setup the context to send and then subsequently receive response over HTTP. But rather just executing a command in the container namespace.
 
-# Conclusion
-
+## Conclusion
 It was quite a ride from seeing certain requests getting timed-out to understanding how CPU limits are enforced by the Kernel. Kubernetes, as developer-friendly as it is, also comes with a lot of rough edges and it's very easy to get hit if you're not careful.
-
-
-<br>
 
 ## References
 

@@ -8,7 +8,7 @@ One of the first post I wrote here, [Write a shell in C](https://danishprakash.g
 
 We'll write a simple shell that that will support almost all the basic commands. We'll also implement piping for our shell which will allow us to pipe the output of a command as input to another command, more on that later.
 
-# Program flow
+## Program flow
 We'll start off with our `main` function where we will handle the program flow. First, let's get the user input which is quite trivial, we'll just run an infinite loop and prompt the user for input.
 
 ```
@@ -25,7 +25,7 @@ def main():
 
 We're handling the `exit` command simply by breaking out of the loop. The next most important task is to execute the command entered by the user which we'll manage in a separate function, let's call that `execute_commands(command)`. We've also added a simple `help` function to let the user know what's actually happening.
 
-# Executing commands
+## Executing commands
 Let's execute the commands entered by the user. We're using the `subprocess` builtin module here, so `import subprocess` and we're good to go. The `run` function in particular is used here to execute commands in a subshell. For those coming from C, this saves us from going about forking and creating a child process and then waiting for the child to finish execution, let Python take care of that this one time.
 
 ```
@@ -38,7 +38,7 @@ def execute_commands(command):
 
 We're making sure that our shell doesn't come crashing down if the user enters `cs` instead of `cd` by mistake, hence the `try/except` mechanism. Just a heads up, there are many other ways to execute system commands from within Python including `os.system` and `commands` etc but using `subprocess` is the [preferred](https://docs.python.org/2/library/commands.html) [way](https://docs.python.org/3/library/os.html?%20system#os.system) of doing it.
 
-# Changing the directory
+## Changing the directory
 While all our commands would work using the `subprocess` module, the `cd` command would not work this way. This is because subprocess runs the command in a subshell and when you try to change the directory, it actually changes the directory but does so in the subshell instead of in the original process and hence we get the impression that the command didn't work. We'll handle this separately in a different function and add a conditional in our `main` function.
 
 ```
@@ -52,7 +52,7 @@ def psh_cd(path):
 
 Here, we're using `os.chdir` to change the directory and we also make sure to convert the path entered by the user to an absolute path before passing it to `os.chdir`. Note that we'll have to edit our main function to add this condition.
 
-# Pipes!
+## Pipes!
 Let's get to the fun part. Pipes allow us to transfer output of one process as input to another and so on, in a chained manner. Consider this image\[[1](http://web.cse.ohio-state.edu/~mamrak.1/CIS762/pipes_lab_notes.html)] which shows how pipes are used and what they do.
 
 ![img](http://web.cse.ohio-state.edu/~mamrak.1/CIS762/unix_pipes.gif)
@@ -118,7 +118,7 @@ Don't fret if that seemed confusing, let's see what's happening in the above sni
 - __Lines 36-39:__ We're restoring the values of `stdin` and `stdout` to their original values that we had stored earlier.
 - __Lines 40:__ Execute the command normally if no pipe operators are present.
 
-# Putting it together
+## Putting it together
 We have all the pieces figured out now. Let's put them together to get this shell working. I've made some additions here and there which are too trivial to explain before putting it out here. You can also see the sample output below the code.
 
 ```
@@ -220,7 +220,7 @@ $ cat psh | wc -l
 <br>
 --
 
-# Conclusion
+## Conclusion
 So we've written a functional shell in Python in about ~80 lines of code, that's not too bad considering we've got piping sorted out here. There are a lot of features missing from this shell but the intent behind this was not turning this into a daily driver but to rather see the implementation of a shell in Python. In the process, we learned how to execute system commands from within Python the right way, we also learned how to manipulate file descriptors in Python to redirect input/output of a command as per our needs.
 
 For further practice, you can try implementing the following features in this shell
@@ -231,4 +231,4 @@ For further practice, you can try implementing the following features in this sh
 
 If you find any issues/mistakes in this post, contact me or open an issue on this project's [repository](https://github.com/danishprakash/psh).
 
----
+:wq
