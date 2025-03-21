@@ -42,10 +42,10 @@ RUN rm -f /bin/ash \
 We've used alpine as the base image, deleted `/bin/ash` and installed `bash`. Let's use this as an example to build changesets and then to assemble the final filesystem of the container.
 
 ### 1.1 layer: create a changeset
-In order to create a layer or more appropriately, a filesystem changeset, we start with a minimal root filesystem, one from [alpine](something) in our case since our example Containerfile starts off with the alpine base image:
+In order to create a layer or more appropriately, a filesystem changeset, we start with a minimal root filesystem, one from [alpine](https://hub.docker.com/_/alpine) in our case since our example Containerfile starts off with the alpine base image:
 
 ```
-$ wget https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-minirootfs-3.18.4-x86_64.tar.gz && tar -xvf $_
+$ wget https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-minirootfs-3.18.4-x86_64.tar.gz && tar -xvf ${_##*/}
 $ tree
 .
 ├── alpine-minirootfs-3.18.4-x86_64.tar.gz
@@ -60,7 +60,7 @@ $ tree
 ...
 ```
 
-In order to create subsequent layers, we create a copy/snapshot of the base filesystem--using `cp -rp`–and make changes to the snapshot by adding, deleting, or modifying files or directories. 
+In order to create subsequent layers, we create a copy/snapshot of the base filesystem--using `cp -rp`–and make changes to the snapshot by adding, deleting, or modifying files or directories.
 
 A changeset consists of only files that are added, modified, and deleted. In order to create the changeset, both the filesystems(snapshots from previous step) are recursively compared. A tar archive is then created that contains _only_ the changeset.
 
@@ -106,7 +106,7 @@ COPY ./hello /root/
 
 ENTRYPOINT ["./hello"]
 ```
-Here, our image contains 2 layers. The first layer comes from the base image, the alpine official docker image i.e. the root filesystem with all the standard shell tools that come along with an alpine distribution. Almost every instruction inside a Containerfile generates another layer. So in the Containerfile above, the `COPY` instruction creates the second layer which includes filesystem changes to the layer before it. The change here is "adding" a new file—the `hello` binary—to the existing filesystem i.e. the alpine root filesystem.
+Here, our image contains 2 layers. The first layer comes from the scratch image--a special "image" that tells the container engine to start without a filesystem layer for your image. As we saw in previous sections, this means starting off with an empty filesystem layer and then having subsequent instructions create layers. Almost every instruction inside a Containerfile generates another layer. So in the Containerfile above, the `COPY` instruction creates the second layer which includes filesystem changes to the layer before it. The change here is "adding" a new file—the `hello` binary—to the existing filesystem i.e. the alpine root filesystem.
 
 Let us create the layer for our image. We start by creating a statically linked C binary for our simple "Hello world" program:
 ```
@@ -135,7 +135,7 @@ $ mv layer.tar.gz 36c412b23a871c4afbec29a45b25faad76197f3a9dbf806f3aef779af92679
 We then create a gzip compressed tar archive of the binary. This constitues our first and only layer.
 
 ## 2. config — _how to run the container_
-The config represents _how to run the container_. It's a JSON file that stores the configuration options used to configure the container. Options such as environment variables, entrypoint of the container, and volumes, etc. These options can be supplied via the command line while running the container, or as part of the Containerfile in which case, the config.json file is populated. 
+The config represents _how to run the container_. It's a JSON file that stores the configuration options used to configure the container. Options such as environment variables, entrypoint of the container, and volumes, etc. These options can be supplied via the command line while running the container, or as part of the Containerfile in which case, the config.json file is populated.
 
 Consider the following snippet from a sample config.json:
 
