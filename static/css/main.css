@@ -506,7 +506,7 @@ a:hover {
 .post h1 {
     font-family: var(--textfont);
     margin-bottom: 4px;
-    font-weight: 400;
+    font-weight: 600;
     max-width: auto;
     /* font-size: 2em; */
     font-size: clamp(2rem, 50%, 3rem);
@@ -551,8 +551,8 @@ a:hover {
     max-width: auto;
 }
 
-.post__date {
-    font-size: 0.75em;
+.post__date, .post__camera {
+    font-size: 0.8em;
     text-align: left;
     color: #616161;
     font-family: var(--textfont);
@@ -820,4 +820,21 @@ a:hover {
     line-height: 24px;
     margin-bottom: 10px;
     font-weight: 400;
+}
+
+.image-grid {
+    column-count: 1;
+    column-gap: 8px;
+}
+
+.image-grid img {
+    all: unset;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.image-grid a {
+    border-bottom: unset;
 }
