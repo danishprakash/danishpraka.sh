@@ -7,6 +7,8 @@ My experiments with photography. You can also find original resolution versions 
 
 
 | :--- | ---: |
+| [Astana, Kazakhstan](/photos/astana-kazakhstan-2025) | June, 2025 |
+| [Almaty, Kazakhstan](/photos/almaty-kazakhstan-2025) | June, 2025 |
 | [Bhutan](/photos/bhutan-2025) | May, 2025 |
 | [Mangalore, India](/photos/mangalore-india-2025) | April, 2025 |
 | [Kamakura, Japan](/photos/kamakura-japan-2024) | November, 2024 |
