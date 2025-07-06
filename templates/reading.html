@@ -1,8 +1,8 @@
 <!doctype html>
 <div class=wrapper>
+    {{ template "header.html" }}
     <title> {{ index .Frontmatter "title" }} — Danish Prakash </title>
     <div class="page">
-        {{ template "header.html" }}
         <div class="cont">
             <div class="post">
                 {{ template "analytics.html" }}

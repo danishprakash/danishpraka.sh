@@ -1,8 +1,8 @@
 <!doctype>
 
 <div class=wrapper>
+    {{ template "header.html" }}
     <div class="page">
-        {{ template "header.html" }}
         <div class="cont">
             <div class="post">
                 {{ template "analytics.html" }}
@@ -26,8 +26,8 @@
                     {{ if .Post.Images }}
                         <div class="image-grid">
                             {{ range .Post.Images }}
-                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-                                    <img src="{{ . }}" alt="Photo" loading="lazy" />
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="width: 100%; height: 100%;">
+                                    <img src="{{ . }}" alt="Photo" loading="lazy" style="width: 100%; height: auto; display:block;" />
                                 </a>
                             {{ end }}
                         </div>

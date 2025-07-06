@@ -3,9 +3,9 @@
 <div class="wrapper">
     <div class="topborder"></div>
     <div class="leftborder"></div>
+    {{ template "header.html" }}
     <title> Danish Prakash </title>
     <div class="page">
-        {{ template "header.html" }}
         <div class="cont">
             <div class="desc">
                 <div class="description"><p>
@@ -17,9 +17,9 @@
                     {{ range $post := .Posts }}
                         <li>
                             {{ if index $post.Frontmatter "external" }}
-                                <a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a> <span class="date"> {{ .Date.Format "Jan 06" }} </span>
+                                <a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a> <span class="date"> {{ .Date.Format "January 2006" }} </span>
                             {{ else }}
-                                <a href="{{ $post.URL }}" >{{ $post.Title }}</a> <span class="date"> {{ $post.Date.Format "Jan 06" }} </span>
+                                <a href="{{ $post.URL }}" >{{ $post.Title }}</a> <span class="date"> {{ $post.Date.Format "January 2006" }} </span>
                             {{ end }}
                         </li>
                     {{ end }}
