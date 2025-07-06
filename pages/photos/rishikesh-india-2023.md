@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Malaysia (2023)
+title: Rishikesh, India (2023)
 camera: Fujifilm X100F
 images:
   - https://photos.danishpraka.sh/Rishikesh/XYqJstXkJNg.jpg
