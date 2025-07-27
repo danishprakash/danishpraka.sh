@@ -9,6 +9,7 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 | **2025** | | |
 | The Life of Greece | Will Durant | _reading_ |
 | CODE | Charles Petzold | _reading_ |
+| [Kazakhstan - Culture Smart!](/reading/kazakhstan-culture-smart) | Dina Zhansagimova | ★★★★ |
 | [The Anxious Generation](/reading/the-anxious-generation) | Jonathan Haidt | ★★★★★ |
 | [Bhutan - Culture Smart!](/reading/bhutan-culture-smart) | Karma Choden | ★★★ |
 | Sixteen Stormy Days | Tripurdaman Singh | _stopped_ |
