@@ -11,6 +11,8 @@ My experiments with photography. You can also find original resolution versions 
 | [Almaty, Kazakhstan](/photos/almaty-kazakhstan-2025) | June, 2025 |
 | [Bhutan](/photos/bhutan-2025) | May, 2025 |
 | [Mangalore, India](/photos/mangalore-india-2025) | April, 2025 |
+| [Uji, Japan](/photos/uji-japan-2024) | November, 2024 |
+| [Nara, Japan](/photos/nara-japan-2024) | November, 2024 |
 | [Kamakura, Japan](/photos/kamakura-japan-2024) | November, 2024 |
 | [Rishikesh, India](/photos/rishikesh-india-2023) | December, 2023 |
 | [Kuala Lumpur, Malacca & Port Dickson, Malaysia](/photos/malaysia-2023) | July, 2023 |
