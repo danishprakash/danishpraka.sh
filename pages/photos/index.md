@@ -7,6 +7,7 @@ My experiments with photography. You can also find original resolution versions 
 
 
 | :--- | ---: |
+| [Amsterdam, Netherlands](/photos/amsterdam-netherlands-2025) | August, 2025 |
 | [Astana, Kazakhstan](/photos/astana-kazakhstan-2025) | June, 2025 |
 | [Almaty, Kazakhstan](/photos/almaty-kazakhstan-2025) | June, 2025 |
 | [Bhutan](/photos/bhutan-2025) | May, 2025 |
