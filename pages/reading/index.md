@@ -7,8 +7,12 @@ Here's a list of all the books I've read or am reading. You can read my summary 
 
 | :--- | --- | ---: |
 | **2025** | | |
+| Road to Mussoorie | Ruskin Bond | _listening_ |
 | The Life of Greece | Will Durant | _reading_ |
-| CODE | Charles Petzold | _reading_ |
+| Operating Systems: Three Easy Pieces | Arpaci-Dusseau | _reading_ |
+| [Friends, Lovers, and the Big Terrible Thing](/reading/friends-lovers-and-the-big-terrible-thing) | Matthew Perry | ★★★ |
+| [Into The Wild](/reading/into-the-wild) | Jon Krakauer | ★★★ |
+| [CODE](/reading/code) | Charles Petzold | ★★★★★ |
 | [Kazakhstan - Culture Smart!](/reading/kazakhstan-culture-smart) | Dina Zhansagimova | ★★★★ |
 | [The Anxious Generation](/reading/the-anxious-generation) | Jonathan Haidt | ★★★★★ |
 | [Bhutan - Culture Smart!](/reading/bhutan-culture-smart) | Karma Choden | ★★★ |
