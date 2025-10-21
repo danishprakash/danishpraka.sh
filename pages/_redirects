@@ -1,0 +1,9 @@
+# Jekyll-style routing
+/:year/:month/:date/:slug /posts/:slug 301
+
+# Remove .html suffix from posts
+/posts/:slug.html /posts/:slug 301
+
+# Legacy path redirects
+/books /reading 301
+/software /code 301
