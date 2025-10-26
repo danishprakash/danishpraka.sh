@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Container Security
+format: Paperback
 date: 2023-02-11
 author: Liz Rice
 ---

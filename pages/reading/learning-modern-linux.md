@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Learning Modern Linux
+format: Paperback
 date: 2023-03-31
 author: Michael Hausenblas
 ---

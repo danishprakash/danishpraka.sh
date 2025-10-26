@@ -1,6 +1,7 @@
 ---
 layout: book
 title: The Great Mental Models
+format: Audiobook
 date: 2023-02-09
 author: Shane Parrish
 ---
