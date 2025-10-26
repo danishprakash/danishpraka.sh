@@ -1,0 +1,95 @@
+---
+layout: photography
+title: Photos
+intro: |
+    My experiments with photography. You can also find original resolution versions of most of the images listed here over at [Unsplash](https://unsplash.com/@danishprakash).
+photos:
+  - title: Amsterdam, Netherlands
+    slug: amsterdam-netherlands-2025
+    date: August, 2025
+
+  - title: Astana, Kazakhstan
+    slug: astana-kazakhstan-2025
+    date: June, 2025
+
+  - title: Almaty, Kazakhstan
+    slug: almaty-kazakhstan-2025
+    date: June, 2025
+
+  - title: Bhutan
+    slug: bhutan-2025
+    date: May, 2025
+
+  - title: Mangalore, India
+    slug: mangalore-india-2025
+    date: April, 2025
+
+  - title: Uji, Japan
+    slug: uji-japan-2024
+    date: November, 2024
+
+  - title: Nara, Japan
+    slug: nara-japan-2024
+    date: November, 2024
+
+  - title: Kamakura, Japan
+    slug: kamakura-japan-2024
+    date: November, 2024
+
+  - title: Rishikesh, India
+    slug: rishikesh-india-2023
+    date: December, 2023
+
+  - title: Kuala Lumpur, Malacca & Port Dickson, Malaysia
+    slug: malaysia-2023
+    date: July, 2023
+
+  - title: Singapore
+    slug: singapore-2023
+    date: June, 2023
+
+  - title: Hampi, India
+    slug: hampi-india-2023
+    date: June, 2023
+
+  - title: Bangalore, India
+    slug: bangalore-india-2023
+    date: February, 2023
+
+  - title: Coorg, India
+    slug: coorg-india-2023
+    date: April, 2023
+
+  - title: Indonesia
+    slug: indonesia-2023
+    date: October, 2023
+
+  - title: Aero India
+    slug: aero-india-2023
+    date: February, 2023
+
+  - title: Vietnam
+    slug: vietnam-2022
+    date: October, 2022
+
+  - title: Delhi, India
+    slug: delhi-india-2022
+    date: April, 2022
+
+  - title: Andaman and Nicobar Islands, India
+    slug: andaman-india-2021
+    date: February, 2021
+
+  - title: Tokyo, Osaka & Kyoto, Japan
+    slug: japan-2019
+    date: October, 2019
+
+  - title: Berlin, Germany
+    slug: berlin-germany-2019
+    date: May, 2019
+
+  - title: Pondicherry, India
+    slug: pondicherry-india-2019
+    date: April, 2019
+
+---

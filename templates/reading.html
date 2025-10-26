@@ -16,8 +16,42 @@
                     <p class="post__date">{{ index .Frontmatter "date_read" }}</p>
                 {{ end }}
 
-                <div class="post__content"?>
+                <div class="post__content">
+                    {{- if .Body }}
                     {{ .Body }}
+                    {{- end }}
+
+                    {{- $books := index .Yaml "books" }}
+                    {{- if $books }}
+                    {{- range $i, $yearMap := $books }}
+                    {{- range $year, $bookList := $yearMap }}
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>{{ $year }}</strong></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            {{- range $book := $bookList }}
+                            <tr>
+                                <td>
+                                    {{- if index $book "slug" }}
+                                    <a href="/reading/{{ index $book "slug" }}">{{ index $book "title" }}</a>
+                                    {{- else }}
+                                    {{ index $book "title" }}
+                                    {{- end }}
+                                </td>
+                                <td>{{ index $book "author" }}</td>
+                                <td>{{ index $book "status" }}</td>
+                            </tr>
+                            {{- end }}
+                        </tbody>
+                    </table>
+                    {{- end }}
+                    {{- end }}
+                    {{- else }}
+                    {{ .Body }}
+                    {{- end }}
                 </div>
             </div>
         </div>

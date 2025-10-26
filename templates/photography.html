@@ -1,0 +1,30 @@
+<!doctype html>
+<div class=wrapper>
+    {{ template "header.html" }}
+    <title> {{ index .Frontmatter "title" }} — Danish Prakash </title>
+    <div class="page">
+        <div class="cont">
+            <div class="post">
+                {{ template "analytics.html" }}
+                <h1>{{ index .Frontmatter "title" }}</h1>
+                <div class="post__content">
+                    {{ .Body }}
+                    {{- $photos := index .Yaml "photos" }}
+                    {{- if $photos }}
+                    <table>
+                        <tbody>
+                            {{- range $photo := $photos }}
+                            <tr>
+                                <td><a href="/photos/{{ index $photo "slug" }}">{{ index $photo "title" }}</a></td>
+                                <td style="text-align: right;">{{ index $photo "date" }}</td>
+                            </tr>
+                            {{- end }}
+                        </tbody>
+                    </table>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ template "footer.html" }}
+</div>
