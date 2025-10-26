@@ -1,6 +1,7 @@
 ---
 layout: book
 title: The Primal Blueprint
+format: Hardcover
 date: 2023-03-31
 author: Mark Sisson
 ---

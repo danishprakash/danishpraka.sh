@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Prisoners of Geography
+format: Hardcover
 author: Tim Marshal
 date: 2023-01-20
 ---

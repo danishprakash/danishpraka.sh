@@ -1,6 +1,7 @@
 ---
 layout: book
 title: On Earth We're Briefly Gorgeous
+format: Hardcover
 date: 2023-02-10
 author: Ocean Vuong
 ---

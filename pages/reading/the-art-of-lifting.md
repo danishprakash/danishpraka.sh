@@ -1,6 +1,7 @@
 ---
 layout: book
 title: The Art of Lifting
+format: eBook
 date: 2023-04-01
 author: Greg Nuckols, Omar Isuf
 ---

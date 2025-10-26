@@ -1,6 +1,7 @@
 ---
 layout: book
 title: The Righteous Mind
+format: Hardcover
 date: 2023-05-28
 author: Jonathan Haidt
 ---
