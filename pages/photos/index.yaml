@@ -4,6 +4,10 @@ title: Photos
 intro: |
     My experiments with photography. You can also find original resolution versions of most of the images listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
+  - title: Paris, France
+    slug: paris-france-2025
+    date: September, 2025
+
   - title: Amsterdam, Netherlands
     slug: amsterdam-netherlands-2025
     date: August, 2025
