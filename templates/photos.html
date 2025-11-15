@@ -13,13 +13,15 @@
 
                 <h1> {{ index .Frontmatter "title" }} </h1>
 
-                {{ if index .Frontmatter "camera" }}
-                    <p class="post__camera">Camera: {{ index .Frontmatter "camera" }}</p>
-                {{ end }}
+                <div class="metadata">
+                    {{ if index .Frontmatter "camera" }}
+                        <p class="post__camera">Camera: {{ index .Frontmatter "camera" }}</p>
+                    {{ end }}
 
-                {{ if index .Frontmatter "date" }}
-                    <p class="post__date">{{ .Post.Date.Format  "2 January 2006" }}</p>
-                {{ end }}
+                    {{ if index .Frontmatter "date" }}
+                        <p class="book__date">Date read: {{ index .Frontmatter "date" }}</p>
+                    {{ end }}
+                </div>
 
                 <div class="post__content">
                     {{ .Body }}
