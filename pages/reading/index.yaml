@@ -5,9 +5,13 @@ intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
   - 2025:
-    - title: Road to Mussoorie
-      author: Ruskin Bond
+    - title: To Kill a Mockingbird
+      author: Harper Lee
       status: listening
+
+    - title: "City of Djinns: A Year in Delhi"
+      author: William Dalrymple
+      status: reading
 
     - title: The Life of Greece
       author: Will Durant
@@ -16,6 +20,21 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: The Great Gatsby
+      author: F. Scott Fitzgerald
+      status: ★★★
+      slug: the-great-gatsby
+
+    - title: Pride & Prejudice
+      author: Jane Austen
+      status: ★★★★
+      slug: pride-and-prejudice
+
+    - title: Road to Mussoorie
+      author: Ruskin Bond
+      status: ★★★★
+      slug: road-to-mussoorie
 
     - title: Friends, Lovers, and the Big Terrible Thing
       author: Matthew Perry
