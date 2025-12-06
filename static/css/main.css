@@ -603,7 +603,7 @@ a:hover {
     margin-top: 5px;
     margin-bottom: -10px;
     font-family: var(--textfont);
-    margin-bottom: 0px;
+    margin-bottom: -4px;
     padding-bottom: 0px;
     margin-top: 1.5rem;
 }
