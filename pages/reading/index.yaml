@@ -5,12 +5,12 @@ intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
   - 2025:
-    - title: To Kill a Mockingbird
-      author: Harper Lee
+    - title: The Mahabharata
+      author: Sudipta Bhawmik
       status: listening
 
-    - title: "City of Djinns: A Year in Delhi"
-      author: William Dalrymple
+    - title: Why the Poor Don't Kill Us
+      author: Manu Joseph
       status: reading
 
     - title: The Life of Greece
@@ -20,6 +20,16 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: To Kill a Mockingbird
+      author: Harper Lee
+      status: ★★★★★
+      slug: to-kill-a-mockingbird
+
+    - title: "City of Djinns: A Year in Delhi"
+      author: William Dalrymple
+      status: ★★★★★
+      slug: city-of-djinns
 
     - title: The Great Gatsby
       author: F. Scott Fitzgerald
