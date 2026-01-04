@@ -1,5 +1,5 @@
 :root {
-    --headertextcolor: #646464;
+    --headertextcolor: #373737;
     --textcolor: #000000;
     --linkcolor: #000000;
     --textfont:  'inter';
@@ -13,7 +13,7 @@
     font-weight: 300;
     margin-bottom: -20em;
     padding-bottom: 40px;
-    padding-top: 15px;
+    margin-top: 48px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,6 +37,7 @@
     font-size: 12px;
     color: #514e4e;
     padding-left: 35px;
+    padding-top: 16px;
 }
 
 .footer a {
@@ -123,6 +124,7 @@ table a {
     padding-top: 20px;
     justify-content: space-between;
     align-items: baseline;
+    background: #ebebeb;
 }
 
 .header a {
@@ -191,7 +193,7 @@ table a {
 }
 
 .nav a {
-    font-family: var(--textfont);
+    font-family: var(--headertextcolor);
     font-weight: 400;
     color: var(--headertextcolor);
     text-decoration: none;
@@ -337,6 +339,7 @@ body {
     font-size: 1rem; /* 18px */
     line-height: 1.6;
 }
+
 
 @media only screen and (max-width: 768px) {
     body {
