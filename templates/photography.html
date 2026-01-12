@@ -11,16 +11,25 @@
                     {{ .Body }}
                     {{- $photos := index .Yaml "photos" }}
                     {{- if $photos }}
-                    <table>
-                        <tbody>
-                            {{- range $photo := $photos }}
-                            <tr>
-                                <td><a href="/photos/{{ index $photo "slug" }}">{{ index $photo "title" }}</a></td>
-                                <td style="text-align: right;">{{ index $photo "date" }}</td>
-                            </tr>
+                    <div class="photo-grid">
+                        {{- range $photo := $photos }}
+                        <a href="/photos/{{ index $photo "slug" }}" class="photo-card">
+                            {{- if index $photo "cover" }}
+                            <div class="photo-card__image">
+                                <img src="{{ index $photo "cover" }}" class="grid-cover" alt="{{ index $photo "title" }}" loading="lazy">
+                            </div>
                             {{- end }}
-                        </tbody>
-                    </table>
+                            <div class="photo-card__info">
+                                <h3 class="photo-card__title">{{ index $photo "title" }}</h3>
+                                <p class="photo-card__meta">
+                                    {{- if index $photo "count" }}{{ index $photo "count" }} images{{- end }}
+                                    {{- if and (index $photo "count") (index $photo "date") }} • {{- end }}
+                                    {{- if index $photo "date" }} {{ index $photo "date" }}{{- end }}
+                                </p>
+                            </div>
+                        </a>
+                        {{- end }}
+                    </div>
                     {{- end }}
                 </div>
             </div>

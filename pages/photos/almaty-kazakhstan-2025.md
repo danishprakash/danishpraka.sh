@@ -2,6 +2,7 @@
 layout: photos
 title: Almaty, Kazakhstan (2025)
 camera: Fujifilm X100F
+date: June 2025
 images: 
   - https://photos.danishpraka.sh/Almaty/DSCF9118.webp
   - https://photos.danishpraka.sh/Almaty/DSCF9089.webp

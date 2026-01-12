@@ -2,6 +2,7 @@
 layout: photos
 title: Indonesia (2023)
 camera: Fujifilm X100F
+date: October 2023
 images: 
   - https://photos.danishpraka.sh/Indonesia/ZwUZvlk6svQ.webp
   - https://photos.danishpraka.sh/Indonesia/ZSnu2S4n6P8.webp

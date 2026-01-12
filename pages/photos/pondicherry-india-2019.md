@@ -2,6 +2,7 @@
 layout: photos
 title: Pondicherry, India (2019)
 camera: Google Pixel 2XL
+date: April 2019
 images: 
   - https://photos.danishpraka.sh/Pondicherry/yainK3eJdr0.webp
   - https://photos.danishpraka.sh/Pondicherry/oJeAykVwiio.webp

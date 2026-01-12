@@ -2,6 +2,7 @@
 layout: photos
 title: Kamakura, Japan (2024)
 camera: Fujifilm X100F
+date: November 2024
 images:
   - https://photos.danishpraka.sh/Kamakura/aSHqubB3MJI.webp
   - https://photos.danishpraka.sh/Kamakura/9StSrNeLCTE.webp

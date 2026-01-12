@@ -2,6 +2,7 @@
 layout: photos
 title: Kuala Lumpur, Malacca & Port Dickson, Malaysia (2023)
 camera: Fujifilm X100F
+date: July 2023
 images:
   - https://photos.danishpraka.sh/Malaysia/z8LN3tFud-Y.webp
   - https://photos.danishpraka.sh/Malaysia/uUe6WtzkRRg.webp

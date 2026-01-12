@@ -2,6 +2,7 @@
 layout: photos
 title: Hampi (2023)
 camera: Fujifilm X100F
+date: June 2023
 images: 
   - https://photos.danishpraka.sh/Hampi/danish-prakash-3vBNzo4oFHw-unsplash.webp 
   - https://photos.danishpraka.sh/Hampi/danish-prakash-HFfsrkX1hZo-unsplash.webp

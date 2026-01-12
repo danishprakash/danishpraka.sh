@@ -2,6 +2,7 @@
 layout: photos
 title: Berlin, Germany (2019)
 camera: Google Pixel 2XL
+date: May 2019
 images:
   - https://photos.danishpraka.sh/Germany/wH0AO4qYa1o.webp
   - https://photos.danishpraka.sh/Germany/mwWyhzvC5J8.webp

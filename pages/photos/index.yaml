@@ -2,98 +2,144 @@
 layout: photography
 title: Photos
 intro: |
-    My experiments with photography. You can also find original resolution versions of most of the images listed here over at [Unsplash](https://unsplash.com/@danishprakash).
+    My experiments with photography. I used to upload photographs to Unsplash in the past, you can still find higher resolution versions of some of the photos listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
   - title: Paris, France
     slug: paris-france-2025
     date: September, 2025
+    cover: https://photos.danishpraka.sh/Paris/DSCF0019.webp
+    count: 24
 
   - title: Amsterdam, Netherlands
     slug: amsterdam-netherlands-2025
     date: August, 2025
+    cover: https://photos.danishpraka.sh/Amsterdam/DSCF9439.webp
+    count: 14
 
   - title: Astana, Kazakhstan
     slug: astana-kazakhstan-2025
     date: June, 2025
+    cover: https://photos.danishpraka.sh/Astana/DSCF9155.webp
+    count: 9
 
   - title: Almaty, Kazakhstan
     slug: almaty-kazakhstan-2025
     date: June, 2025
+    cover: https://photos.danishpraka.sh/Almaty/DSCF9118.webp
+    count: 17
 
   - title: Bhutan
     slug: bhutan-2025
     date: May, 2025
+    cover: https://photos.danishpraka.sh/Bhutan/ZenPKAwZ0H4.webp
+    count: 25
 
   - title: Mangalore, India
     slug: mangalore-india-2025
     date: April, 2025
+    cover: https://photos.danishpraka.sh/Mangalore/LY605YgNWhE.webp
+    count: 19
 
   - title: Uji, Japan
     slug: uji-japan-2024
     date: November, 2024
+    cover: https://photos.danishpraka.sh/Uji/DSCF7568.webp
+    count: 15
 
   - title: Nara, Japan
     slug: nara-japan-2024
     date: November, 2024
+    cover: https://photos.danishpraka.sh/Nara/DSCF7264.webp
+    count: 25
 
   - title: Kamakura, Japan
     slug: kamakura-japan-2024
     date: November, 2024
+    cover: https://photos.danishpraka.sh/Kamakura/aSHqubB3MJI.webp
+    count: 22
 
   - title: Rishikesh, India
     slug: rishikesh-india-2023
     date: December, 2023
+    cover: https://photos.danishpraka.sh/Rishikesh/XYqJstXkJNg.webp
+    count: 18
 
   - title: Kuala Lumpur, Malacca & Port Dickson, Malaysia
     slug: malaysia-2023
     date: July, 2023
+    cover: https://photos.danishpraka.sh/Malaysia/z8LN3tFud-Y.webp
+    count: 13
 
   - title: Singapore
     slug: singapore-2023
     date: June, 2023
+    cover: https://photos.danishpraka.sh/Singapore/ZLSQN80oEE8.webp
+    count: 44
 
   - title: Hampi, India
     slug: hampi-india-2023
     date: June, 2023
+    cover: https://photos.danishpraka.sh/Hampi/danish-prakash-3vBNzo4oFHw-unsplash.webp
+    count: 7
 
   - title: Bangalore, India
     slug: bangalore-india-2023
     date: February, 2023
+    cover: https://photos.danishpraka.sh/Bangalore/WyNBOuFXwU.webp
+    count: 16
 
   - title: Coorg, India
     slug: coorg-india-2023
     date: April, 2023
+    cover: https://photos.danishpraka.sh/Coorg/vCJrx1wGZnw.webp
+    count: 9
 
   - title: Indonesia
     slug: indonesia-2023
     date: October, 2023
+    cover: https://photos.danishpraka.sh/Indonesia/ZwUZvlk6svQ.webp
+    count: 22
 
   - title: Aero India
     slug: aero-india-2023
     date: February, 2023
+    cover: https://photos.danishpraka.sh/Aero%20India%202023/0ZnAfk3XeNs.webp
+    count: 11
 
   - title: Vietnam
     slug: vietnam-2022
     date: October, 2022
+    cover: https://photos.danishpraka.sh/Vietnam/yJIxnzrEUUQ.webp
+    count: 26
 
   - title: Delhi, India
     slug: delhi-india-2022
     date: April, 2022
+    cover: https://photos.danishpraka.sh/Delhi/tHF_uHr-U-s.webp
+    count: 8
 
   - title: Andaman and Nicobar Islands, India
     slug: andaman-india-2021
     date: February, 2021
+    cover: https://photos.danishpraka.sh/Andaman/Kb53rjHNrRI.webp
+    count: 3
 
   - title: Tokyo, Osaka & Kyoto, Japan
     slug: japan-2019
     date: October, 2019
+    cover: https://photos.danishpraka.sh/Japan-2019/wu-NG-VkDyw.webp
+    count: 25
 
   - title: Berlin, Germany
     slug: berlin-germany-2019
     date: May, 2019
+    cover: https://photos.danishpraka.sh/Germany/wH0AO4qYa1o.webp
+    count: 6
 
   - title: Pondicherry, India
     slug: pondicherry-india-2019
     date: April, 2019
+    cover: https://photos.danishpraka.sh/Pondicherry/yainK3eJdr0.webp
+    count: 5
 
 ---

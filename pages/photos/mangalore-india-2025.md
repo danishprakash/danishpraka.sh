@@ -2,6 +2,7 @@
 layout: photos
 title: Mangalore (2025)
 camera: Fujifilm X100F
+date: April 2025
 images: 
   - https://photos.danishpraka.sh/Mangalore/LY605YgNWhE.webp
   - https://photos.danishpraka.sh/Mangalore/iXWQAzRxrm0.webp

@@ -2,6 +2,7 @@
 layout: photos
 title: Astana, Kazakhstan (2025)
 camera: Fujifilm X100F
+date: June 2025
 images: 
   - https://photos.danishpraka.sh/Astana/DSCF9155.webp
   - https://photos.danishpraka.sh/Astana/DSCF9156.webp

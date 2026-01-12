@@ -2,6 +2,7 @@
 layout: photos
 title: Tokyo, Osaka & Kyoto, Japan (2019)
 camera: Google Pixel 2XL
+date: October 2019
 images:
   - https://photos.danishpraka.sh/Japan-2019/wu-NG-VkDyw.webp
   - https://photos.danishpraka.sh/Japan-2019/VBy6KbX0NKI.webp

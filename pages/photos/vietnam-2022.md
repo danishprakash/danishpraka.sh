@@ -2,6 +2,7 @@
 layout: photos
 title: Vietnam (2022)
 camera: Fujifilm X100F
+date: October 2022
 images: 
   - https://photos.danishpraka.sh/Vietnam/yJIxnzrEUUQ.webp
   - https://photos.danishpraka.sh/Vietnam/uN6PNg62_vE.webp

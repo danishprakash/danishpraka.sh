@@ -2,6 +2,7 @@
 layout: photos
 title: Bangalore, India (2023)
 camera: Fujifilm X100F
+date: February 2023
 images:
   - https://photos.danishpraka.sh/Bangalore/WyNBOuFXwU.webp
   - https://photos.danishpraka.sh/Bangalore/vo7cpg8Y5s.webp

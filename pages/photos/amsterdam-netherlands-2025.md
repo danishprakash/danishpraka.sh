@@ -2,6 +2,7 @@
 layout: photos
 title: Amsterdam, Netherlands (2025)
 camera: Fujifilm X100F
+date: August 2025
 images:
   - https://photos.danishpraka.sh/Amsterdam/DSCF9439.webp
   - https://photos.danishpraka.sh/Amsterdam/DSCF9443.webp

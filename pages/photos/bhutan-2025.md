@@ -2,6 +2,7 @@
 layout: photos
 title: Bhutan (2025)
 camera: Fujifilm X100F
+date: May 2025
 images: 
   - https://photos.danishpraka.sh/Bhutan/ZenPKAwZ0H4.webp
   - https://photos.danishpraka.sh/Bhutan/Z2HumeqyCY8.webp

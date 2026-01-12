@@ -2,6 +2,7 @@
 layout: photos
 title: Singapore (2023)
 camera: Fujifilm X100F
+date: June 2023
 images: 
   - https://photos.danishpraka.sh/Singapore/ZLSQN80oEE8.webp
   - https://photos.danishpraka.sh/Singapore/z8yhxYiAc44.webp

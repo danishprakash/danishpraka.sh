@@ -2,6 +2,7 @@
 layout: photos
 title: Delhi, India (2022)
 camera: Fujifilm X100F
+date: April 2022
 images: 
   - https://photos.danishpraka.sh/Delhi/tHF_uHr-U-s.webp
   - https://photos.danishpraka.sh/Delhi/PlcBpXr7sQU.webp

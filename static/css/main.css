@@ -880,3 +880,73 @@ a:hover {
 .image-grid a {
     border-bottom: unset;
 }
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.post__content img.grid-cover {
+    margin: 8px auto;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+.photo-card {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.photo-card:hover {
+    text-decoration: none;
+}
+
+.photo-card__image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.photo-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(65%);
+}
+
+.photo-card:hover .photo-card__image img {
+    filter: grayscale(0%);
+}
+
+.photo-card__info {
+    padding-top: 4px;
+}
+
+.post__content h3.photo-card__title {
+    margin: 0 0 0.25rem 0;
+    color: var(--textcolor);
+    margin-top: 8px;
+}
+
+
+.post__content p.photo-card__meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

@@ -2,6 +2,7 @@
 layout: photos
 title: Uji, Japan (2024)
 camera: Fujifilm X100F
+date: November 2024
 images:
   - https://photos.danishpraka.sh/Uji/DSCF7568.webp
   - https://photos.danishpraka.sh/Uji/DSCF7566.webp

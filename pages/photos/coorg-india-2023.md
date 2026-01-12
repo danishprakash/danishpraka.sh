@@ -2,6 +2,7 @@
 layout: photos
 title: Coorg, India (2023)
 camera: Fujifilm X100F
+date: April 2023
 images:
   - https://photos.danishpraka.sh/Coorg/vCJrx1wGZnw.webp
   - https://photos.danishpraka.sh/Coorg/nq2tJTUtiIs.webp

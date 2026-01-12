@@ -2,6 +2,7 @@
 layout: photos
 title: Rishikesh, India (2023)
 camera: Fujifilm X100F
+date: December 2023
 images:
   - https://photos.danishpraka.sh/Rishikesh/XYqJstXkJNg.webp
   - https://photos.danishpraka.sh/Rishikesh/tRIJ6jGQ1xY.webp

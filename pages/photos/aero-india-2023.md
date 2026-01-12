@@ -2,6 +2,7 @@
 layout: photos
 title: Aero India (2023)
 camera: Fujifilm X100F
+date: February 2023
 images: 
   - https://photos.danishpraka.sh/Aero%20India%202023/0ZnAfk3XeNs.webp
   - https://photos.danishpraka.sh/Aero%20India%202023/2k1PpYOpkog.webp
