@@ -4,14 +4,14 @@ title: Reading
 intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
-  - 2025:
+  - 2026:
+    - title: Overcoming Gravity
+      author: Steven Low
+      status: reading
+
     - title: The Mahabharata
       author: Sudipta Bhawmik
       status: listening
-
-    - title: Why the Poor Don't Kill Us
-      author: Manu Joseph
-      status: reading
 
     - title: The Life of Greece
       author: Will Durant
@@ -20,6 +20,13 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+
+  - 2025:
+    - title: Why the Poor Don't Kill Us
+      author: Manu Joseph
+      status: ★★★★★
+      slug: why-the-poor-dont-kill-us
 
     - title: To Kill a Mockingbird
       author: Harper Lee
