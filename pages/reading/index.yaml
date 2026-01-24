@@ -5,13 +5,13 @@ intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
   - 2026:
+    - title: Mythos
+      author: Stephen Fry
+      status: listening
+
     - title: Overcoming Gravity
       author: Steven Low
       status: reading
-
-    - title: The Mahabharata
-      author: Sudipta Bhawmik
-      status: listening
 
     - title: The Life of Greece
       author: Will Durant
@@ -20,6 +20,11 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: The Mahabharata
+      author: Sudipta Bhawmik
+      status: ★★★★
+      slug: the-mahabharata
 
 
   - 2025:
