@@ -4,6 +4,7 @@ title: Nara, Japan (2024)
 camera: Fujifilm X100F
 date: November 2024
 images:
+  - https://photos.danishpraka.sh/Nara/DSCF7362.webp
   - https://photos.danishpraka.sh/Nara/DSCF7264.webp
   - https://photos.danishpraka.sh/Nara/DSCF7289.webp
   - https://photos.danishpraka.sh/Nara/DSCF7290.webp
@@ -17,7 +18,6 @@ images:
   - https://photos.danishpraka.sh/Nara/DSCF7338.webp
   - https://photos.danishpraka.sh/Nara/DSCF7350.webp
   - https://photos.danishpraka.sh/Nara/DSCF7355.webp
-  - https://photos.danishpraka.sh/Nara/DSCF7362.webp
   - https://photos.danishpraka.sh/Nara/DSCF7381.webp
   - https://photos.danishpraka.sh/Nara/DSCF7406.webp
   - https://photos.danishpraka.sh/Nara/DSCF7412.webp

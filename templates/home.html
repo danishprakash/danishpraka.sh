@@ -15,13 +15,11 @@
             <div class="blog">
                 <ol>
                     {{ range $post := .Posts }}
-                        <li>
-                            {{ if index $post.Frontmatter "external" }}
-                                <a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a> <span class="date"> {{ .Date.Format "January 2006" }} </span>
-                            {{ else }}
-                                <a href="{{ $post.URL }}" >{{ $post.Title }}</a> <span class="date"> {{ $post.Date.Format "January 2006" }} </span>
-                            {{ end }}
-                        </li>
+                        {{ if index $post.Frontmatter "external" }}
+                        <li onclick="window.location='{{ index $post.Frontmatter "url" }}'" style="cursor: pointer;"><a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a><span class="date">{{ .Date.Format "January 2006" }}</span></li>
+                        {{ else }}
+                        <li onclick="window.location='{{ $post.URL }}'" style="cursor: pointer;"><a href="{{ $post.URL }}">{{ $post.Title }}</a><span class="date">{{ $post.Date.Format "January 2006" }}</span></li>
+                        {{ end }}
                     {{ end }}
                 </ol>
             </div>

@@ -49,10 +49,13 @@
 }
 
 table {
-    width: 100%;
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    margin-right: -32px;
     line-height: 18px;
     font-size: 1rem;
     margin-top: 1rem;
+    border-collapse: collapse;
 }
 
 table tr td:nth-child(1) {
@@ -72,7 +75,7 @@ table tr td:nth-child(2) {
 }
 
 table tr td {
-    padding: 4px 1px 10px 0px;
+    padding: 10px 1px 10px 0px;
 }
 
 table em {
@@ -86,11 +89,73 @@ table strong {
     display: block;
 }
 
+@media only screen and (max-width: 768px) {
+    table strong {
+        margin-top: 0;
+    }
+
+    table tr:has(strong) td {
+        padding-top: 0;
+    }
+
+    table h2 {
+        margin: 0 !important;
+    }
+
+    table tr:has(h2) td {
+        padding-top: 24px;
+        padding-bottom: 12px;
+    }
+
+    .post__content h2 {
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
 table a {
     font-weight: 400;
     font-style: normal;
     color: var(--linkcolor);
     font-family: var(--textfont);
+    text-decoration: none !important;
+}
+
+table a:hover {
+    text-decoration: none !important;
+    color: var(--linkcolor);
+}
+
+table tr.clickable-row:hover {
+    background: #f0f0f0;
+}
+
+table tr td {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tr td:first-child {
+    padding-left: 32px;
+}
+
+table tr td:last-child {
+    padding-right: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    table tr td:first-child {
+        padding-left: 16px;
+    }
+
+    table tr td:last-child {
+        padding-right: 16px;
+    }
 }
 
 .page {
@@ -124,7 +189,7 @@ table a {
     padding-top: 20px;
     justify-content: space-between;
     align-items: baseline;
-    background: #ebebeb;
+    background: #ffffff;
 }
 
 .header a {
@@ -169,8 +234,22 @@ table a {
 }
 
 @media (max-width: 500px) {
-    .title {
-        padding-left: 16px;
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .header .title {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--bordercolor);
+    }
+
+    .header .nav {
+        padding-top: 16px;
     }
 }
 
@@ -180,15 +259,33 @@ table a {
 }
 
 @media only screen and (max-width: 768px) {
-    .nav {
-        padding-left: 30px;
+    .header .nav {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
         padding-right: 0;
+        width: 100%;
+    }
+
+    .header .nav ul {
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    .nav {
-        padding-left: 16px;
+    .header .nav {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .header .nav ul {
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
     }
 }
 
@@ -206,28 +303,56 @@ table a {
     display: flex;
     gap: 0.5em;
     margin: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width: 768px) {
     .nav ul {
         padding-left: 0;
-        gap: 0.5em;
+        gap: 1.5em;
     }
 }
 
+.nav ul li {
+    position: relative;
+}
+
+
 .nav ul li:not(:last-child) {
-    padding-right: 12px;
+    padding-right: 20px;
+    margin-right: 6px;
+}
+
+.nav ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: -20px;
+    height: calc(100% + 40px);
+    width: 1px;
+    background: #d0d0d0;
+    transform: skewX(-20deg);
 }
 
 @media (max-width: 500px) {
-    .nav ul li {
+    .nav ul li:not(:last-child) {
         padding-right: 0;
+        margin-right: 0;
+    }
+
+    .nav ul li:not(:last-child)::after {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .nav ul li {
+    .nav ul li:not(:last-child) {
         padding-right: 0;
+        margin-right: 0;
+    }
+
+    .nav ul li:not(:last-child)::after {
+        display: none;
     }
 }
 
@@ -449,7 +574,7 @@ i {
 
 .blog {
     padding-bottom: 30px;
-    line-height: 32px;
+    line-height: 18px;
     color: var(--textcolor);
 }
 
@@ -469,24 +594,68 @@ i {
 }
 
 .blog li {
-    padding-right: 0px;
     list-style: none;
-    padding-bottom: 4px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog li {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 8px;
+    }
+
+    .blog li .date {
+        font-size: 10pt;
+    }
+}
+
+.blog li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog li a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog li:hover {
+    background: #f0f0f0;
+}
+
+table tr.clickable-row {
+    cursor: pointer;
 }
 
 .blog li .date {
-    float: right;
     font-size: 12pt;
-    color: #aaa69a;
+    color: #666;
     text-transform: lowercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: right;
 }
 
 a {
     font-weight: 400;
     font-style: normal;
     color: var(--linkcolor);
-    text-decoration: none;
     text-decoration: underline;
+    text-decoration-color: #c8c8c8;
 }
 
 a:hover {
@@ -888,7 +1057,7 @@ a:hover {
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 0 1.5rem;
     margin-top: 2rem;
 }
 
@@ -900,15 +1069,26 @@ a:hover {
 
 
 .photo-card {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
-    border-bottom: none;
     display: block;
-    margin-bottom: 8px;
+    padding: 0 0 1.5rem 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.photo-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -32px;
+    right: -32px;
+    height: 1px;
+    background: #e0e0e0;
 }
 
 .photo-card:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .photo-card__image {
@@ -924,7 +1104,7 @@ a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: grayscale(65%);
+    filter: grayscale(45%);
 }
 
 .photo-card:hover .photo-card__image img {

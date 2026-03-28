@@ -28,12 +28,12 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td><strong>{{ $year }}</strong></td>
+                                <td><h2>{{ $year }}</h2></td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             {{- range $book := $bookList }}
-                            <tr>
+                            <tr{{- if index $book "slug" }} class="clickable-row" onclick="window.location='/reading/{{ index $book "slug" }}'"{{- end }}>
                                 <td>
                                     {{- if index $book "slug" }}
                                     <a href="/reading/{{ index $book "slug" }}">{{ index $book "title" }}</a>
