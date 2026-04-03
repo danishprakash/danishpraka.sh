@@ -9,8 +9,6 @@ locations:
   - Eze
   - Monaco
 images:
-  - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0356.webp
-  - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0366.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0378.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0389.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0429.webp
