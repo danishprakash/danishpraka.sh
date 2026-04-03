@@ -4,6 +4,12 @@ title: Photos
 intro: |
     My experiments with photography. I used to upload photographs to Unsplash in the past, you can still find higher resolution versions of some of the photos listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
+  - title: Côte d'Azur, France
+    slug: cote-d-azur-france-2025
+    date: September, 2025
+    cover: https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0591.webp
+    count: 32
+
   - title: Paris, France
     slug: paris-france-2025
     date: September, 2025
@@ -39,6 +45,24 @@ photos:
     date: April, 2025
     cover: https://photos.danishpraka.sh/Mangalore/f77utx1gcu4.webp
     count: 19
+
+  - title: Arashiyama, Japan
+    slug: arashiyama-japan-2024
+    date: November, 2024
+    cover: https://photos.danishpraka.sh/2024/Arashiyama/DSCF7004.webp
+    count: 22
+
+  - title: Hiroshima, Japan
+    slug: hiroshima-japan-2024
+    date: November, 2024
+    cover: https://photos.danishpraka.sh/2024/Hiroshima/DSCF7813.webp
+    count: 10
+
+  - title: Kyoto, Japan
+    slug: kyoto-japan-2024
+    date: November, 2024
+    cover: https://photos.danishpraka.sh/2024/Kyoto/DSCF7933.webp
+    count: 16
 
   - title: Uji, Japan
     slug: uji-japan-2024
