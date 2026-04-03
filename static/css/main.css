@@ -265,6 +265,7 @@ table tr td:last-child {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+        clip-path: inset(0 0 -17px 0);
     }
 
     .header .nav ul {
@@ -336,23 +337,20 @@ table tr td:last-child {
 
 @media (max-width: 500px) {
     .nav ul li:not(:last-child) {
-        padding-right: 0;
-        margin-right: 0;
-    }
-
-    .nav ul li:not(:last-child)::after {
-        display: none;
+        padding-right: 20px;
+        margin-right: 6px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .nav ul li:not(:last-child) {
-        padding-right: 0;
-        margin-right: 0;
+        padding-right: 20px;
+        margin-right: 6px;
     }
-
     .nav ul li:not(:last-child)::after {
-        display: none;
+        top: -20px;
+        height: calc(100% + 40px);
+        right: -2px;
     }
 }
 
@@ -496,6 +494,8 @@ hr {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        border-left: none;
+        border-right: none;
     }
 }
 
@@ -1030,8 +1030,8 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
     .image-grid {
-        margin-left: 0;
-        margin-right: 0;
+        width: 100vw;
+        margin-left: -16px;
     }
 }
 
@@ -1052,6 +1052,12 @@ a:hover {
 
 .image-grid a {
     border-bottom: unset;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-grid img {
+        margin-bottom: 12px;
+    }
 }
 
 .photo-grid {
@@ -1132,5 +1138,18 @@ a:hover {
     .photo-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        width: 100vw;
+        margin-left: -16px;
+    }
+    .photo-card__image {
+        border-radius: 0;
+    }
+    .photo-card__info {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .photo-card::after {
+        left: 0;
+        right: 0;
     }
 }

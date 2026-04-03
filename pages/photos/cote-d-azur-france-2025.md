@@ -26,7 +26,6 @@ images:
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0559.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0565.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0570.webp
-  - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0585.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0591.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0601.webp
   - https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0602.webp
