@@ -16,6 +16,12 @@ photos:
     cover: https://photos.danishpraka.sh/Paris/DSCF0089.webp
     count: 24
 
+  - title: Belgium
+    slug: belgium-2025
+    date: August, 2025
+    cover: https://photos.danishpraka.sh/2025/Belgium/DSCF9950.webp
+    count: 26
+
   - title: Amsterdam, Netherlands
     slug: amsterdam-netherlands-2025
     date: August, 2025
