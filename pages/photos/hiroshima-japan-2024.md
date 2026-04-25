@@ -14,4 +14,5 @@ images:
   - https://photos.danishpraka.sh/2024/Hiroshima/DSCF7839.webp
   - https://photos.danishpraka.sh/2024/Hiroshima/DSCF7840.webp
   - https://photos.danishpraka.sh/2024/Hiroshima/DSCF7848.webp
+og_image: https://photos.danishpraka.sh/2024/Hiroshima/DSCF7813.webp
 ---

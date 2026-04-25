@@ -20,4 +20,5 @@ images:
   - https://photos.danishpraka.sh/2024/Kyoto/DSCF8002.webp
   - https://photos.danishpraka.sh/2024/Kyoto/DSCF8006.webp
   - https://photos.danishpraka.sh/2024/Kyoto/DSCF8010.webp
+og_image: https://photos.danishpraka.sh/2024/Kyoto/DSCF7933.webp
 ---

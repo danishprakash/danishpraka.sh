@@ -17,4 +17,5 @@ images:
   - https://photos.danishpraka.sh/Malaysia/6F9ScsoIhcA.webp
   - https://photos.danishpraka.sh/Malaysia/5i_ICmYy_yw.webp
   - https://photos.danishpraka.sh/Malaysia/0oT31f1a8K0.webp
+og_image: https://photos.danishpraka.sh/Malaysia/7CL2rGtND8w.webp
 ---

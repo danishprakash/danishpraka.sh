@@ -13,4 +13,5 @@ images:
   - https://photos.danishpraka.sh/Coorg/44U8qPn7hlU.webp
   - https://photos.danishpraka.sh/Coorg/1WzBNmAo4oU.webp
   - https://photos.danishpraka.sh/Coorg/1hhFrrEFO5I.webp
+og_image: https://photos.danishpraka.sh/Coorg/vCJrx1wGZnw.webp
 ---  

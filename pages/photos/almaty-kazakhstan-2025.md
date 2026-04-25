@@ -21,4 +21,5 @@ images:
   - https://photos.danishpraka.sh/Almaty/DSCF8687.webp
   - https://photos.danishpraka.sh/Almaty/DSCF8652.webp
   - https://photos.danishpraka.sh/Almaty/DSCF8673.webp
+og_image: https://photos.danishpraka.sh/Almaty/DSCF9118.webp
 ---

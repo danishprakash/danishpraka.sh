@@ -47,4 +47,5 @@ images:
   - https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1749.webp
   - https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1752.webp
   - https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1757.webp
+og_image: https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1081.webp
 ---

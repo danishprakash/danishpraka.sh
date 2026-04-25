@@ -37,4 +37,5 @@ images:
   - https://photos.danishpraka.sh/2026/Taiwan/DSCF2072.webp
   - https://photos.danishpraka.sh/2026/Taiwan/DSCF2099.webp
   - https://photos.danishpraka.sh/2026/Taiwan/DSCF2140.webp
+og_image: https://photos.danishpraka.sh/2026/Taiwan/DSCF1943.webp
 ---

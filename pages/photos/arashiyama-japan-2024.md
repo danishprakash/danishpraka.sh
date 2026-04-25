@@ -26,4 +26,5 @@ images:
   - https://photos.danishpraka.sh/2024/Arashiyama/DSCF7265.webp
   - https://photos.danishpraka.sh/2024/Arashiyama/DSCF7267.webp
   - https://photos.danishpraka.sh/2024/Arashiyama/DSCF7271.webp
+og_image: https://photos.danishpraka.sh/2024/Arashiyama/DSCF7004.webp
 ---

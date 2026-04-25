@@ -29,4 +29,5 @@ images:
   - https://photos.danishpraka.sh/Japan-2019/7E6-_jCKjFI.webp
   - https://photos.danishpraka.sh/Japan-2019/3E7o8Egzzoo.webp
   - https://photos.danishpraka.sh/Japan-2019/1JYeobyrxEU.webp
+og_image: https://photos.danishpraka.sh/Japan-2019/qP7Ug7xkGFk.webp
 ---

@@ -13,4 +13,5 @@ images:
   - https://photos.danishpraka.sh/Astana/DSCF9196.webp
   - https://photos.danishpraka.sh/Astana/DSCF9199.webp
   - https://photos.danishpraka.sh/Astana/DSCF9157.webp
+og_image: https://photos.danishpraka.sh/Astana/DSCF9155.webp
 ---

@@ -15,4 +15,5 @@ images:
   - https://photos.danishpraka.sh/Aero%20India%202023/oiSJ0TpulcU.webp
   - https://photos.danishpraka.sh/Aero%20India%202023/PxSW7aHW0fc.webp
   - https://photos.danishpraka.sh/Aero%20India%202023/z94TQpdcUqk.webp
+og_image: https://photos.danishpraka.sh/Aero%20India%202023/0ZnAfk3XeNs.webp
 ---

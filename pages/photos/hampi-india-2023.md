@@ -11,4 +11,5 @@ images:
   - https://photos.danishpraka.sh/Hampi/danish-prakash-UjBQyXC8lEw-unsplash.webp
   - https://photos.danishpraka.sh/Hampi/danish-prakash-nLFk8bXouJU-unsplash.webp
   - https://photos.danishpraka.sh/Hampi/danish-prakash-WyIjXjs_ya0-unsplash.webp
+og_image: https://photos.danishpraka.sh/Hampi/danish-prakash-nLFk8bXouJU-unsplash.webp
 ---

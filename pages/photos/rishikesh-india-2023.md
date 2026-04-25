@@ -22,4 +22,5 @@ images:
   - https://photos.danishpraka.sh/Rishikesh/4a9JOVcuE38.webp
   - https://photos.danishpraka.sh/Rishikesh/0jUm6fnFJ0Q.webp
   - https://photos.danishpraka.sh/Rishikesh/_78ywUqInwA.webp
+og_image: https://photos.danishpraka.sh/Rishikesh/Ou1hdpaqAwM.webp
 ---

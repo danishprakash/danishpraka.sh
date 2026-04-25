@@ -20,4 +20,5 @@ images:
   - https://photos.danishpraka.sh/Bangalore/64p0l12ED8.webp
   - https://photos.danishpraka.sh/Bangalore/7cNjtbARr4.webp
   - https://photos.danishpraka.sh/Bangalore/1HLU3SE_ZT0.webp
+og_image: https://photos.danishpraka.sh/Bangalore/qoC8GRThto.webp
 ---  

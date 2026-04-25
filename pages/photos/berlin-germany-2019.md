@@ -10,4 +10,5 @@ images:
   - https://photos.danishpraka.sh/Germany/hq890EbzQN0.webp
   - https://photos.danishpraka.sh/Germany/e4eY346nj10.webp
   - https://photos.danishpraka.sh/Germany/8ydBfbv29RQ.webp
+og_image: https://photos.danishpraka.sh/Germany/mwWyhzvC5J8.webp
 ---
