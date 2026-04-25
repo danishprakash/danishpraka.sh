@@ -23,4 +23,5 @@ images:
   - https://photos.danishpraka.sh/Mangalore/C3N81dujhmw.webp
   - https://photos.danishpraka.sh/Mangalore/VmgiTi5iwkA.webp
   - https://photos.danishpraka.sh/Mangalore/jRfMi0wCF4.webp
+og_image: https://photos.danishpraka.sh/Mangalore/f77utx1gcu4.webp
 ---

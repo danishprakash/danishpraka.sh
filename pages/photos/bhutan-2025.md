@@ -29,4 +29,5 @@ images:
   - https://photos.danishpraka.sh/Bhutan/5rqilOGuC88.webp
   - https://photos.danishpraka.sh/Bhutan/28Fl4d2GjbQ.webp
   - https://photos.danishpraka.sh/Bhutan/0CxWUIhi0vw.webp
+og_image: https://photos.danishpraka.sh/Bhutan/ui4OuiEmH7c.webp
 ---

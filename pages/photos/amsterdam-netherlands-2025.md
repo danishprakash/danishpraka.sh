@@ -18,4 +18,5 @@ images:
   - https://photos.danishpraka.sh/Amsterdam/DSCF9589.webp
   - https://photos.danishpraka.sh/Amsterdam/DSCF9590.webp
   - https://photos.danishpraka.sh/Amsterdam/DSCF9598.webp
+og_image: https://photos.danishpraka.sh/Amsterdam/DSCF9489.webp
 ---

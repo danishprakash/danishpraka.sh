@@ -28,4 +28,5 @@ images:
   - https://photos.danishpraka.sh/Paris/DSCF0058.webp
   - https://photos.danishpraka.sh/Paris/DSCF0329.webp
   - https://photos.danishpraka.sh/Paris/DSCF0338.webp
+og_image: https://photos.danishpraka.sh/Paris/DSCF0089.webp
 ---

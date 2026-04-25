@@ -12,4 +12,5 @@ images:
   - https://photos.danishpraka.sh/Delhi/kusISToe41A.webp
   - https://photos.danishpraka.sh/Delhi/6IoBl3VLG-k.webp
   - https://photos.danishpraka.sh/Delhi/0MChhIXuUAo.webp
+og_image: https://photos.danishpraka.sh/Delhi/MBZ7ceeYPp0.webp
 ---

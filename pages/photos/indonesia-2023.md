@@ -26,4 +26,5 @@ images:
   - https://photos.danishpraka.sh/Indonesia/8ADE6WjyLfM.webp
   - https://photos.danishpraka.sh/Indonesia/7HfhI5XrFEU.webp
   - https://photos.danishpraka.sh/Indonesia/6O-ihxdLens.webp
+og_image: https://photos.danishpraka.sh/Indonesia/ZwUZvlk6svQ.webp
 ---

@@ -29,4 +29,5 @@ images:
   - https://photos.danishpraka.sh/Nara/DSCF7478.webp
   - https://photos.danishpraka.sh/Nara/DSCF7510.webp
   - https://photos.danishpraka.sh/Nara/DSCF7513.webp
+og_image: https://photos.danishpraka.sh/Nara/DSCF7426.webp
 ---

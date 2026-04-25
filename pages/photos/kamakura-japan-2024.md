@@ -26,4 +26,5 @@ images:
   - https://photos.danishpraka.sh/Kamakura/fiMkCBiTzXU.webp
   - https://photos.danishpraka.sh/Kamakura/Fe1n951UQaU.webp
   - https://photos.danishpraka.sh/Kamakura/75fSFT-4QII.webp
+og_image: https://photos.danishpraka.sh/Kamakura/yT1wZHiEabs.webp
 ---

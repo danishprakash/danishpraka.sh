@@ -19,4 +19,5 @@ images:
   - https://photos.danishpraka.sh/Uji/DSCF7647.webp
   - https://photos.danishpraka.sh/Uji/DSCF7661.webp
   - https://photos.danishpraka.sh/Uji/DSCF7673.webp
+og_image: https://photos.danishpraka.sh/Uji/DSCF7566.webp
 ---

@@ -48,4 +48,5 @@ images:
   - https://photos.danishpraka.sh/Singapore/13UyBsulMLs.webp
   - https://photos.danishpraka.sh/Singapore/1bUaXrc_Cmo.webp
   - https://photos.danishpraka.sh/Singapore/0hZJFZ8KJv4.webp
+og_image: https://photos.danishpraka.sh/Singapore/5DmuwnJjyrI.webp
 ---

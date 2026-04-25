@@ -30,4 +30,5 @@ images:
   - https://photos.danishpraka.sh/Vietnam/98x9DB2oDdY.webp
   - https://photos.danishpraka.sh/Vietnam/6VD4zW3uIvQ.webp
   - https://photos.danishpraka.sh/Vietnam/3UyBsxS19Ns.webp
+og_image: https://photos.danishpraka.sh/Vietnam/yJIxnzrEUUQ.webp
 ---

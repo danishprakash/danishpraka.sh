@@ -9,4 +9,5 @@ images:
   - https://photos.danishpraka.sh/Pondicherry/JzpFw6GMqA8.webp
   - https://photos.danishpraka.sh/Pondicherry/ERmifHG7m9M.webp
   - https://photos.danishpraka.sh/Pondicherry/5VAplxH1Vmk.webp
+og_image: https://photos.danishpraka.sh/Pondicherry/oJeAykVwiio.webp
 ---

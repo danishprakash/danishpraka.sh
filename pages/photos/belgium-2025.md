@@ -33,4 +33,5 @@ images:
   - https://photos.danishpraka.sh/2025/Belgium/DSCF9950.webp
   - https://photos.danishpraka.sh/2025/Belgium/DSCF9961.webp
   - https://photos.danishpraka.sh/2025/Belgium/DSCF9974.webp
+og_image: https://photos.danishpraka.sh/2025/Belgium/DSCF9950.webp
 ---
