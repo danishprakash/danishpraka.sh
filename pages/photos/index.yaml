@@ -4,6 +4,18 @@ title: Photos
 intro: |
     My experiments with photography. I used to upload photographs to Unsplash in the past, you can still find higher resolution versions of some of the photos listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
+  - title: Taiwan
+    slug: taiwan-2026
+    date: April, 2026
+    cover: https://photos.danishpraka.sh/2026/Taiwan/DSCF1943.webp
+    count: 34
+
+  - title: Hong Kong
+    slug: hong-kong-2026
+    date: April, 2026
+    cover: https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1081.webp
+    count: 44
+
   - title: Côte d'Azur, France
     slug: cote-d-azur-france-2025
     date: September, 2025
