@@ -7,3 +7,6 @@
 # Legacy path redirects
 /books /reading 301
 /software /code 301
+
+# 404 fallback
+/* /404/index.html 404
