@@ -3,18 +3,16 @@
 <channel>
 <title>{{ .Meta.Title }}</title>
 <description>{{ .Meta.Title }} by {{ .Meta.Name }}</description>
-<atom:link href="{{ .Meta.URL }}/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="{{ .Meta.URL }}/feed.xml" rel="self" type="application/rss+xml"/>
 <link>{{ .Meta.URL }}/</link>
 <language>en-us</language>
 {{ range $post := .Posts }}
 <item>
 <title>{{ $post.Title }}</title>
-<link>{{ $post.URL }}</link>
-<guid>{{ $post.URL }}</guid>
-<pubDate>{{ $post.Date }}</pubDate>
-<description>
-{{ $post.Body }}
-</description>
+<link>{{ $.Meta.URL }}{{ $post.URL }}</link>
+<guid>{{ $.Meta.URL }}{{ $post.URL }}</guid>
+<pubDate>{{ $post.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+<description><![CDATA[{{ $post.Body }}]]></description>
 </item>
 {{ end }}
 </channel>
