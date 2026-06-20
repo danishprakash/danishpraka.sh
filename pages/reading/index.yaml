@@ -5,7 +5,7 @@ intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
   - 2026:
-    - title: Troy
+    - title: Odyssey
       author: Stephen Fry
       status: listening
 
@@ -24,6 +24,11 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: Troy
+      author: Stephen Fry
+      status: ★★★★★
+      slug: troy
 
     - title: Heroes
       author: Stephen Fry
