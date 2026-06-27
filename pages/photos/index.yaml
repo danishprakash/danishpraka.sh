@@ -4,6 +4,12 @@ title: Photos
 intro: |
     My experiments with photography. I used to upload photographs to Unsplash in the past, you can still find higher resolution versions of some of the photos listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
+  - title: Mumbai, India
+    slug: mumbai-india-2026
+    date: June, 2026
+    cover: https://photos.danishpraka.sh/2026/Mumbai/DSCF2219.webp
+    count: 9
+
   - title: Taiwan
     slug: taiwan-2026
     date: April, 2026
