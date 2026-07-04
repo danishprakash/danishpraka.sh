@@ -5,16 +5,16 @@ intro: |
     Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
 books:
   - 2026:
+    - title: गोदान
+      author: Munshi Premchand
+      status: reading
+
     - title: Odyssey
       author: Stephen Fry
       status: listening
 
     - title: Forbidden Nation
       author: Jonathan Manthorpe
-      status: reading
-
-    - title: Overcoming Gravity
-      author: Steven Low
       status: reading
 
     - title: The Life of Greece
@@ -44,6 +44,10 @@ books:
       author: Stephen Fry
       status: ★★★★★
       slug: mythos
+
+    - title: Overcoming Gravity
+      author: Steven Low
+      status: paused
 
     - title: The Mahabharata
       author: Sudipta Bhawmik
