@@ -4,7 +4,7 @@ date: 2026-06-20
 title: Open Source Summit India (2026)
 ---
 
-I attended Open Source Summit India 2026 last week in Mumbai. I wasn't speaking this time but attended quite a few interesting sessions. This post is a synthesized version of the notes I took over the two days of the conferences and some observations.
+I attended Open Source Summit India 2026 last week in [Mumbai](/photos/mumbai-india-2026). I wasn't speaking this time but attended quite a few interesting sessions. This post is a synthesized version of the notes I took over the two days of the conferences and some observations.
 
 #### Linus Torvalds & Dirk Hohndel
 
