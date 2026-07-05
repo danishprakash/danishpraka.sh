@@ -4,11 +4,11 @@ date: 2025-02-17
 title: Nepal (2022)
 ---
 
+<img src="./../../static/img/posts/nepal/ktm-airport.png"/>
+
 This is a post-dated post about my experience travelling across Nepal in the summer of 2022. It's a typical travelogue, sharing much in similarities to the ones I've written in the past.
 
 Flew from New Delhi to Kathmandu, it was a relatively smoother ride. We got some good mountain views as we approached Kathmandu. You get out of the airport and it's breath of fresh air--quite literally--fortified on one side by the lush green mountains compared to that of Delhi's smoggy skyline surrounding its airport. Immediately outside the airport, we got into a haggling match with a cab driver who then took us to our hostel.
-
-<img src="./../../static/img/posts/nepal/ktm-airport.png"/>
 
 ## Kathmandu -> Pokhara
 
