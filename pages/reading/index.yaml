@@ -13,10 +13,6 @@ books:
       author: Stephen Fry
       status: listening
 
-    - title: Forbidden Nation
-      author: Jonathan Manthorpe
-      status: reading
-
     - title: The Life of Greece
       author: Will Durant
       status: reading
@@ -24,6 +20,11 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: Forbidden Nation
+      author: Jonathan Manthorpe
+      status: ★★★★
+      slug: forbidden-nation
 
     - title: Troy
       author: Stephen Fry
