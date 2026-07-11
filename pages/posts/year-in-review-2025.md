@@ -59,6 +59,3 @@ I'll continue to use and rely on the techniques and processes I've learned over 
 ## Conclusion
 
 This wasn't a groundbreaking year by any measure but it was a year of change, and, as they say, change is inevitable. Of course, there are many changes that happened this past year that don't quite fit here but they all shaped me, and I'm hopeful for what 2026 will bring. I'm still working on my goal setting for 2026 and the idea is to incorporate incremental and realistic improvements that build upon the foundation, and to maintain existing systems.
-
-
-:wq

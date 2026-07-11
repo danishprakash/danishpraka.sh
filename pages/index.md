@@ -1,4 +1,5 @@
 ---
 layout: home
 ---
-I'm Danish, I like talking about programming, health and reading. I currently live in Bangalore and work as an engineer at <a href="https://www.suse.com/" target="_blank" >SUSE</a> focusing on container technologies.
+
+Notes on programming, travel, life, and much in between. If you're new here, start with [_Build a Container Image from Scratch_](/posts/build-a-container-image-from-scratch), [_On Budgeting_](/posts/on-budgeting) or the [_Year in Review_](/posts/year-in-review-2025) series.

@@ -265,5 +265,3 @@ We built a minimal registry that implements just enough of the OCI Distribution 
 
 The next time you run `podman push` or `pull`, you can mentally map the requests to API endpoints and the content-addressed blobs being transmitted and stored by the registry.
 
-
-:wq

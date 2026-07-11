@@ -4,7 +4,7 @@ date: 2022-11-12
 title: Dockerfile Practices
 ---
 
-Yet another post on the internet about how to write Dockerfiles, for the umpteenth time. But I'm writing this post as a reference for my future self rather than having it act as a gospel for others to abide by while writing Dockerfiles. That was the primary purpose, the secondary purpose is, in general, to [write more](https://danishpraka.sh/2022/01/30/year-in-review-2021.html#reading--writing). Quality over quantity somewhat. I've been slacking away from finishing up a lot of articles due to this small block that Julia Evans described quite neatly, people find it extremely difficult to write without explaining everything from the beginning.
+Yet another post on the internet about how to write Dockerfiles, for the umpteenth time. But I'm writing this post as a reference for my future self rather than having it act as a gospel for others to abide by while writing Dockerfiles. That was the primary purpose, the secondary purpose is, in general, to [write more](/posts/year-in-review-2021#reading-writing). Quality over quantity somewhat. I've been slacking away from finishing up a lot of articles due to this small block that Julia Evans described quite neatly, people find it extremely difficult to write without explaining everything from the beginning.
 
 This post doesn't follow a weighted order, it's just some of the practices I've personally used and (some) would prefer to use whenever I write Dockerfiles. This post also assumes you have a basic understanding of Docker and Dockerfiles.
 
@@ -200,5 +200,3 @@ This is the kind of post which doesn't really call for an inferential conclusion
 8. Use `.dockerignore` in your projects.
 
 As mentioned previously, I've curated this list of practices from my own experience with writing Dockerfiles for the past 3 years. There is a good chance some of this runs counter against what you follow or what should be followed. And if that's the case, if you came across anything in this article that might not be right(highly likely) or if you have suggestions for improvements, feel free to report an [issue](https://github.com/danishprakash/danishpraka.sh/issues) or reach out to me directly via email.
-
-:wq

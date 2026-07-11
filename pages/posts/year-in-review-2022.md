@@ -9,17 +9,17 @@ Date: 6th January 2023
 
 Second coming of the yearly review. I really enjoyed doing this the [first time](/posts/year-in-review-2021) and I'm guessing it'll be an yearly ritual I'll follow from here on out. Especially after following last year's writing goals, I've come to quite enjoy the cathartic experience that writing is. Again, no fixed structure to this post, but building upon last year's post as we go.
 
-## work
+## Work
 
 I felt I was more involved in product discussions and ad-hoc issues more than actual hands-on work that I was more inclined to do. I had known this and I found a really good opportunity at the end of the year. I started at SUSE this new year and I'll be focusing on container technologies. I've always been passionate about open source and have always felt like trying out such an opportunity if I ever chance upon one, I'm super excited for what's to come.
 
-## projects
+## Projects
 
 While reviewing the previous goals in my annual OKRs, this was an eyesore. I wrote about this in 2021 too and unfortunately, things haven't changed around much. Although I did briefly work on a toy DB engine and a static site generator, the truth is that I didn't find the inspiration to see either of those to completion. This year, I'm at least looking forward to complete the former and have this site being backed up by it. Despite the dismal disclaimer, as part of an issue I was struggling with at work, I wrote a small [kubernetes controller](https://github.com/danishprakash/kube-step-podautoscaler) which I then further hacked at our internal hackathon at HackerRank. It was fun.
 
 Not so dreary were the [open source contributions](/software). I'm hoping, with the new role, I'd be in a better position to contribute more this year.
 
-## reading & writing
+## Reading & Writing
 I had consciously chosen not to participate in the Goodreads reading challenge in 2022. I found that with the challenge in tow, I was trying to push towards quantity rather than quality sometimes. This year, I chose which books to read purely on the basis of my interest at that specific period of time. I especially enjoyed [The God Delusion](/reading/the-god-delusion), [Man’s Search for Meaning](/reading/mans-search-for-meaning), [Walden](/reading/walden), [Digital Minimalism](/reading/digital-minimalism) and [Annihilation of Caste](/reading/annihilation-of-caste).
 
 Writing also, surprisingly went quite well compared to 2021:
@@ -32,7 +32,7 @@ $ find _posts/ -type f -name "2022-*" | wc -l
 
 Not bad, not bad at all but I'm going to improve this as much as I possibly can. I've some ideas in the pipeline for both technical and non-technical posts and I'm going to strive for quality as well as quantity this time around.
 
-## health
+## Health
 
 Continued lifting for the better part of the year but had to deal with recurring shoulder impingement throughout the year, it was frustrating but at the end of the year, I started seeing a physiotherapist with whom I'm working on strengthening the rotator cuff. Hopefully it'll not be as big of an issue as it already has been going forward, but thankfully I was not away from the gym for the most part.
 
@@ -41,15 +41,15 @@ Halfway through the year, I moved back to Bengaluru which meant no cycling at al
 I have some ambitious health goals for 2023, such as reaching a certain bodyfat percentage and weight. Looking forward to them, will check back in '24.
 
 
-## travel
+## Travel
 <img src="./../../static/img/posts/year-in-review-2022/goa.png"/>
 
-I was able to overshoot my travel plans after so long. Early on, I went on a workcation to [Goa](/2022/06/03/south-goa) and then to Nepal and ended the year with a trip to [Vietnam](/2022/12/28/vietnam). Travel, to me, is explorative and not just a means to turn the dials off. It is another excuse for me to keep learning about different cultures which I find satisfying and satiating. I'm grateful to be in a place where I can make travel plans and execute them.
+I was able to overshoot my travel plans after so long. Early on, I went on a workcation to [Goa](/posts/south-goa) and then to Nepal and ended the year with a trip to [Vietnam](/posts/vietnam). Travel, to me, is explorative and not just a means to turn the dials off. It is another excuse for me to keep learning about different cultures which I find satisfying and satiating. I'm grateful to be in a place where I can make travel plans and execute them.
 
 <img src="./../../static/img/posts/year-in-review-2022/nepal.png"/>
 <img src="./../../static/img/posts/year-in-review-2022/vietnam.png"/>
 
-## other
+## Other
 
 Learning Japanese was put on the backpedal(すみません), in that I didn't learn a lot of new stuff, just kept on revising the stuff I had learnt already. Safe to say, I didn't appear for the JLTP exam in 2022. I'm going to attempt this ambitious goal once again in 2023 with more vigour and see where we end up.
 
@@ -66,5 +66,3 @@ I have some specific areas I've identified which I'm going to be focusing more o
 - Lifestyle: I'm at a point in my life where I'd like to experiment more with my lifestyle, not in a materialistic way, but perhaps spiritualistic or stoic. As mentioned, I'd like to also play around with solitude. I don't think I have a clear picture in my mind yet but I'll whittle this goal out as I learn more.
 
 That's it for this year's edition, thanks for sticking till the end.
-
-:wq

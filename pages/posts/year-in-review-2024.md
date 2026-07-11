@@ -45,5 +45,3 @@ As I said last year, I don't have an active goal towards reducing my social medi
 
 ## Conclusion
 The idea of writing these annual reviews has become therapeutic and doesn't feel like a chore anymore--it used to feel like it when I first started it while I was building the habit. There was a lot I didn't achieve in 2024 but there are always learnings that I can carry over to the next year and try not to fall into the same traps.
-
-:wq

@@ -1,6 +1,6 @@
 ---
 layout: book
-title: You Need a Budget - The Proven System for Breaking the Paycheck to Paycheck Cycle, Getting Out of Debt, and Living the Life You Want
+title: You Need a Budget
 date: 2021-02-07
 author: Jesse Mecham
 format: Hardcover

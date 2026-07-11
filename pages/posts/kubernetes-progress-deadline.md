@@ -72,11 +72,4 @@ done
 ## Conclusion
 This was supposed to be a short post and I'd reiterate again the use case depicted above is very specific but it's interesting how Kubernetes caters to a wide array of use-cases and how there are, at least now, a myriad of Kubernetes features that haven't gained mainstream adoption yet which I think is understandable.
 
-## References
-- [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#progress-deadline-seconds](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#progress-deadline-seconds)
-
 If you found an error or an improvement in the post above, please feel free to [report it](https://github.com/danishprakash/danishpraka.sh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
-
-<br>
-:wq
-

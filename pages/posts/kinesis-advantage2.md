@@ -4,11 +4,11 @@ date: 2025-12-06
 title: Kinesis Advantage2
 ---
 
-<img src="./../../static/img/posts/kinesis-advantage2/board.png"/>
-
 I bought a mechanical keyboard when I first started working remotely back in 2021. It was a Varmilo x Ducky 60% board and I quite enjoyed it, it was fun to write on a mechanical board with the linear red switches. But after roughly a year of using it, I started experiencing mild RSI. I did some "internet-research" and found that the ergonomic community was raving about split keyboards and I ended up zeroing in on the Kinesis Advantage2 (KA2). Primarily because it had been around for ages, and I was yet to read a bad review of this board.
 
 I got the Kinesis Advantage2 Quiet LF (the Cherry MX Silent Linear Red version) from a friend of mine who was visiting the US. It's not cheap by any standards especially if you plan to have it shipped outside of the US from Kinesis themselves.
+
+<img src="./../../static/img/posts/kinesis-advantage2/board.png"/>
 
 ## First impressions
 The keyboard felt extremely light and hollow which is a common sentiment amongst KA2 users. It is divided into two splits, the left and right wells, as they call it. These keywells allow you to keep your hands in a naturally rested position without any undue strain on your wrists. There are two thumb clusters that make use of your thumbs more efficiently, unlike traditional keyboards where both the thumbs tag team on the single long spacebar key. This allows you to quickly hit Return, Backspace or Modifier keys without moving your thumbs much. It's a great concept that is used in various different kinds of keyboards, some implementing it even more efficiently than Kinesis, the Glove80 for instance.

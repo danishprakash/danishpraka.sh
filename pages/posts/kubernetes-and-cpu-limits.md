@@ -127,6 +127,3 @@ It was quite a ride from seeing certain requests getting timed-out to understand
 - [https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
 If you found an error or an improvement in the post above, please feel free to [report it](https://github.com/danishprakash/danishpraka.sh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
-
-<br>
-:wq
