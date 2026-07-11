@@ -658,10 +658,10 @@ a {
     font-size: 24px;
     color: #000;
     font-weight: 700;
-    margin-top: 5px;
+    margin-top: 0px;
     font-family: var(--textfont);
     line-height: 1.25;
-    margin-top: 2rem;
+    padding-top: 24px;
     margin-bottom: 0.5rem;
 }
 
@@ -672,8 +672,8 @@ a {
     font-family: var(--textfont);
     line-height: 32px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
-    margin-top: 2rem;
+    padding-bottom: 8px;
+    margin-top: 16px;
 }
 
 .post__content h4 {
@@ -698,10 +698,9 @@ a {
     line-height: 1.5;
     padding-bottom: 12px;
     word-wrap: break-word;
-    padding-bottom: 0px;
+    padding-bottom: 16px;
     margin-bottom: 0px;
     margin-top: 0px;
-    margin-top: 0.65rem;
 }
 
 .post__content p a {
@@ -741,7 +740,7 @@ a {
     line-height: 1.3em;
     padding-left: 8px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 16px;
     margin-top: 0px;
 }
 
@@ -759,7 +758,7 @@ a {
 }
 
 .post__content ul li {
-    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .post__content ol {
@@ -847,7 +846,7 @@ a {
     max-width: none;
     overflow-x: auto;
     padding: 25px 32px;
-    margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 1rem;
     margin-left: -32px;
     margin-right: -32px;
@@ -983,7 +982,7 @@ a {
     color: inherit;
     display: block;
     padding: 0 0 1.5rem 0;
-    margin-bottom: 1.5rem;
+    padding-bottom: 16px;
     position: relative;
 }
 
@@ -1016,9 +1015,9 @@ a {
 }
 
 .post__content h3.photo-card__title {
-    margin: 0 0 0.25rem 0;
     color: var(--textcolor);
     margin-top: 8px;
+    padding-bottom: 4px;
     font-size: 24px;
     font-weight: 600;
 }
