@@ -8,22 +8,22 @@
     <div class="page">
         <div class="cont">
             <div class="desc">
-                <div class="description"><p>
-                </p>
+                <div class="description">{{ .Body }}</div>
             </div>
+            <br>
 
             <div class="blog">
                 <ol>
                     {{ range $post := .Posts }}
                         {{ if index $post.Frontmatter "external" }}
-                        <li onclick="window.location='{{ index $post.Frontmatter "url" }}'" style="cursor: pointer;"><a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a><span class="date">{{ .Date.Format "January 2006" }}</span></li>
+                        <li class="blog__row"><a href="{{ index $post.Frontmatter "url" }}" target="_blank">{{ $post.Title }}</a> <span class="date">{{ .Date.Format "2006-01-02" }}</span></li>
                         {{ else }}
-                        <li onclick="window.location='{{ $post.URL }}'" style="cursor: pointer;"><a href="{{ $post.URL }}">{{ $post.Title }}</a><span class="date">{{ $post.Date.Format "January 2006" }}</span></li>
+                        <li class="blog__row"><a href="{{ $post.URL }}">{{ $post.Title }}</a> <span class="date">{{ $post.Date.Format "2006-01-02" }}</span></li>
                         {{ end }}
                     {{ end }}
                 </ol>
             </div>
         </div>
     </div>
+    {{ template "footer.html" }}
 </div>
-{{ template "footer.html" }}
