@@ -41,5 +41,3 @@ It's worth mentioning the fact how VimConf Preparatory Committee went above and 
 - [VimConf 2019 Videos](https://www.youtube.com/watch?v=kgUciluS-ys&list=PLx8bw5NQypskQlEGupVqoUBBJtRmNXLet)
 - [VimConf 2019 Slides](https://vimconf.org/2019/#menu-time-table)
 - [VimConf 2019 Photos](https://photos.google.com/share/AF1QipMtq6M6rLWA_Pq-mmzyhJ8rTDqpFOnCOOiSqNfMc0rsdQZFYmYJLWv1hst3cgaLPQ?key=Z20wWC1HdjVNQlhIS0dVLXdKcTY4Zk5sODdrSGJR)
-
-:wq

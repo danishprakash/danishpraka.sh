@@ -10,7 +10,7 @@ Flew from New Delhi to Kathmandu, it was a relatively smoother ride. We got some
 
 <img src="./../../static/img/posts/nepal/ktm-airport.png"/>
 
-### kathmandu -> pokhara
+## Kathmandu -> Pokhara
 
 First impressions of the city weren't much different from that of let's say Delhi or any other dense Indian city. The roads were narrow, cars smaller, people everywhere. We reached our hostel and then headed out for dinner in the evening. This is where I had the best momos I've had in life, jhol momos. A soupy delicacy that I just couldn't get enough of during the whole trip. We made efforts to try the different kinds of Jhol momos at every place we found them at.
 
@@ -21,7 +21,7 @@ Our plan was to go to Pokhara first and then come back to explore Kathmandu. So 
 
 You can see the airplane right in front, a stone's throw away from the "airport". Just behind me is the taxi stand, so in a way this was the quickest deboard-to-taxi experience I had but it was also arguably the most terrifying flight experiences I've ever had so far. Not more than 6 months from when I took this flight, a [plane crashed](https://en.wikipedia.org/wiki/Yeti_Airlines_Flight_691) at the same route before landing at Pokhara from Kathmandu, reading about that crash gave me chills.
 
-### pokhara
+## Pokhara
 After some haggling, we too a cab to our Hostel. Pokhara stood in stark contrast to the chaotic Kathmandu, people seemed relatively relaxed, pace was slow, roads were relatively empty and the air was fresh. Our hostel was close to the Phewa lake with paddy farming around our premises looking onto the Phewa lake. It's funny how I'm able to recall how I exactly felt at the place looking at the picture below roughly 3 years later. The chill early morning breeze, the sound of the hills further out back, and the stillness of the water. It somewhat resembled the slow life Thoreau came around to appreciate while living next to [Walden](/reading/walden), you could spend your day looking out the window, or sitting by the lake and that would still constitute a day well spent. Which seems a bit hard to comprehend nowadays where there's a risk of being chastised if even a single minute of your day goes by unproductive.
 
 <img src="./../../static/img/posts/nepal/pokhara-lake.png"/>
@@ -53,7 +53,7 @@ Putting that single bad experience with the locals aside, we went to this place 
 
 The next day as we checked out of the hostel, the adventure sports shop guy called us and asked us whether we want to partake in paragliding. So next thing we know, we were in a cab hailing us from Baidam Road to the top of a hill.
 
-### pokhara -> kathmandu
+## Pokhara -> Kathmandu
 The paragliding was a good experience overall but it also meant we were late for the last flight out of Pokhara for the day. We did squander around the airport trying to see if another flight would be scheduled but nope. The next best option was to take a local cab from right outisde the airport to Kathmandu. 
 
 <img src="./../../static/img/posts/nepal/cab-pokhara-accident.png">
@@ -61,7 +61,7 @@ The paragliding was a good experience overall but it also meant we were late for
 
 So we hopped onto the most normal looking cab and took our seats at the back. It was a 6-seater cab, but the resourceful cabbies loaded upto 10-12 people inside the cab. It was packed to the brim with adults, kids, and lots of luggage. We weren't feeling so good and as luck would have it, a local doctor was also sitting next to us. He slipped us some tablets that he said were for headache. And next thing I personally remember is getting off in Kathmandu at midnight. I was dazed (and later confused) through the whole journey. It was only later that I came to know that the journey was arduous thanks to the terrible roads and that we even had an accident on the way which caused such a delay. Bottomline, there's no good way to travel between Kathmandu and Pokhara, unless of course you're driving on your own.
 
-### kathmandu
+## Kathmandu
 
 Fun fact: my friend carried a frog in one of his spare shoes in his bag from Pokhara(probably Phewa Lake) to Kathmandu. Poor lad must've been overwhelmed from the chaos of the city.
 
@@ -75,8 +75,6 @@ We spent the last day sightseeing the city; Swayambhu Temple, Buddha Stupa follo
 <img src="./../../static/img/posts/nepal/jhol-momo2.png">
 <img src="./../../static/img/posts/nepal/durbar.png">
 
-### closing
+## Closing
 
 I have a habit of jotting down observations when I travel, sometimes even in the most mundane of places and sometimes when there's nothing to observe. For whatever time I spent in Nepal, I noted how everybody was happy for the most part. But as the old adage goes, as a tourist, you only experience the good parts of the place you're visiting. But to lend some credibility to my observations, a taxi driver in Kathmandu told me that while you would find poor people here, you woulnd't find people who are sad. My view of Nepal, shaped from the [books](/reading/leaving-microsoft-to-change-the-world/) and media coverage about the country I've come across admittedly conditioned me to have a dismissive view about Nepal as a country but It's safe to say that's not the case anymore, in fact, I'm much in awe of the country and the people and would hope to go back again.
-
-:wq

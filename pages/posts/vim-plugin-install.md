@@ -12,14 +12,15 @@ to install a plugin which turned out to be quite easy.
 Up until recently, while working on a personal project of mine, I came across an issue
 of manually installing a plugin which intrigued me quite a bit.
 
+## Introduction
+
 First, let's understand some of the terms used in this context.
 
-**1. Vim directory** - For GNU/Linux and macOS, it's generally `~/.vim`.
+1. Vim directory - For GNU/Linux and macOS, it's generally `~/.vim`.
 This is where vim plugins and autoload files are stored just to make everything
 more organized and easy to use. Your colorschemes, plugins, and even plugin
 managers are kept in this directory.
-
-**2. `runtimepath`** - If you are familiar with what `$PYTHONPATH` in python dev environment does or
+2. `runtimepath` - If you are familiar with what `$PYTHONPATH` in python dev environment does or
 what `$PATH` in Unix does, then this is quite similar to these two. The `runtimepath`
 or `rtp` is where vim looks for commands which are not defined natively such as plugin
 commands or auto commands.

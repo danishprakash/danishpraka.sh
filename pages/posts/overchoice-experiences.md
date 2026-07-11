@@ -48,6 +48,3 @@ But..I still have to ask someone which gift card they'd like to have because the
 This topic has been bothering me for a while and I have a lot more examples of activities or experiences that are seemingly affected by having to choose from a number of options. But the point of this essay isn't really to keep blabbering but to put my thoughts out there giving the chance to the reader to think about the topic too. The topic of choice overload has generally been of interest for people but I rarely see it being discussed with respect to things that we come across daily and how they compare with the times when we weren't required to choose from so many options.
 
 This essay, on a broader level, discussed only the situations and not the solutions, even though there are a few suggestions. This is deliberately left as a thinking exercise for the reader because every single topic discussed in this essay includes high level of subjectivity and therefore proposing a solution wouldn't have made any sense. So think about it and reach out if you feel there's more to it than I have tried to cover and I'll be happy to discuss further.
-
-
-:wq

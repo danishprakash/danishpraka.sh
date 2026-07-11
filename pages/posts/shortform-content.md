@@ -31,5 +31,3 @@ Is there a way out? At the risk of sounding pessimistic, I'd say nothing's going
 So bottomline, our time has been taken over, more often than not, we are no longer in control of our own state of mind, we're losing out on crucial cognitive development benefits, and the very fabric of our social interaction is being changed ever so slightly. Situation is so dire, the kids are refusing to have food without their phones.
 
 Stay tuned for a shortform version of this post.
-
-:wq

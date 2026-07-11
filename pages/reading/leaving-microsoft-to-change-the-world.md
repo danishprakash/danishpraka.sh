@@ -1,6 +1,6 @@
 ---
 layout: book
-title: Leaving Microsoft to Change the World - An Entrepreneur's Odyssey to Educate the World's Children
+title: Leaving Microsoft to Change the World
 date: 2021-05-29
 author: John Wood
 format: Hardcover
