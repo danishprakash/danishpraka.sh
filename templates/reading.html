@@ -42,7 +42,13 @@
                                     {{- end }}
                                 </td>
                                 <td>{{ index $book "author" }}</td>
-                                <td>{{ index $book "status" }}</td>
+                                <td>
+                                    {{- if index $book "rating" }}
+                                    {{ index $book "rating" }}
+                                    {{- else }}
+                                    <i>{{ index $book "status" }}</i>
+                                    {{- end }}
+                                </td>
                             </tr>
                             {{- end }}
                         </tbody>

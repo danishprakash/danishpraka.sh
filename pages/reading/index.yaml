@@ -2,7 +2,7 @@
 layout: reading
 title: Reading
 intro: |
-    Here's a list of all the books I've read or am reading. You can read my summary of the book by clicking on the title. This page is supposed to mirror my [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash) account or vice versa.
+    A digital bookshelf consisting of books I've read or reading; click on a title to read what I feel about the book. I tend to keep this in sync with [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash).
 books:
   - 2026:
     - title: गोदान
@@ -23,27 +23,27 @@ books:
 
     - title: Forbidden Nation
       author: Jonathan Manthorpe
-      status: ★★★★
+      rating: ★★★★
       slug: forbidden-nation
 
     - title: Troy
       author: Stephen Fry
-      status: ★★★★★
+      rating: ★★★★★
       slug: troy
 
     - title: Heroes
       author: Stephen Fry
-      status: ★★★★★
+      rating: ★★★★★
       slug: heroes
 
     - title: Hong Kong - Culture Smart!
       author: Clare Vickers & Vickie Chan
-      status: ★★★
+      rating: ★★★
       slug: hong-kong-culture-smart
 
     - title: Mythos
       author: Stephen Fry
-      status: ★★★★★
+      rating: ★★★★★
       slug: mythos
 
     - title: Overcoming Gravity
@@ -52,69 +52,69 @@ books:
 
     - title: The Mahabharata
       author: Sudipta Bhawmik
-      status: ★★★★
+      rating: ★★★★
       slug: the-mahabharata
 
 
   - 2025:
     - title: Why the Poor Don't Kill Us
       author: Manu Joseph
-      status: ★★★★★
+      rating: ★★★★★
       slug: why-the-poor-dont-kill-us
 
     - title: To Kill a Mockingbird
       author: Harper Lee
-      status: ★★★★★
+      rating: ★★★★★
       slug: to-kill-a-mockingbird
 
     - title: "City of Djinns: A Year in Delhi"
       author: William Dalrymple
-      status: ★★★★★
+      rating: ★★★★★
       slug: city-of-djinns
 
     - title: The Great Gatsby
       author: F. Scott Fitzgerald
-      status: ★★★
+      rating: ★★★
       slug: the-great-gatsby
 
     - title: Pride & Prejudice
       author: Jane Austen
-      status: ★★★★
+      rating: ★★★★
       slug: pride-and-prejudice
 
     - title: Road to Mussoorie
       author: Ruskin Bond
-      status: ★★★★
+      rating: ★★★★
       slug: road-to-mussoorie
 
     - title: Friends, Lovers, and the Big Terrible Thing
       author: Matthew Perry
-      status: ★★★
+      rating: ★★★
       slug: friends-lovers-and-the-big-terrible-thing
 
     - title: Into The Wild
       author: Jon Krakauer
-      status: ★★★
+      rating: ★★★
       slug: into-the-wild
 
     - title: CODE
       author: Charles Petzold
-      status: ★★★★★
+      rating: ★★★★★
       slug: code
 
     - title: Kazakhstan - Culture Smart!
       author: Dina Zhansagimova
-      status: ★★★★
+      rating: ★★★★
       slug: kazakhstan-culture-smart
 
     - title: The Anxious Generation
       author: Jonathan Haidt
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-anxious-generation
 
     - title: Bhutan - Culture Smart!
       author: Karma Choden
-      status: ★★★
+      rating: ★★★
       slug: bhutan-culture-smart
 
     - title: Sixteen Stormy Days
@@ -123,7 +123,7 @@ books:
 
     - title: Meditations
       author: Marcus Aurelius
-      status: ★★★
+      rating: ★★★
       slug: meditations
 
   - 2024:
@@ -133,904 +133,904 @@ books:
 
     - title: The Lady and the Monk
       author: Pico Iyer
-      status: ★★★★
+      rating: ★★★★
       slug: the-lady-and-the-monk
 
     - title: Einstein
       author: Walter Isaacson
-      status: ★★★★
+      rating: ★★★★
       slug: einstein
 
     - title: The Outsider
       author: Albert Camus
-      status: ★★★★
+      rating: ★★★★
       slug: the-outsider
 
     - title: Letters to a Young Contrarian
       author: Christopher Hitchens
-      status: ★★★
+      rating: ★★★
       slug: letters-to-a-young-contrarian
 
     - title: Born to Run
       author: Christopher McDougall
-      status: ★★★★★
+      rating: ★★★★★
       slug: born-to-run
 
     - title: Linux System Programming
       author: Robert Love
-      status: ★★★★★
+      rating: ★★★★★
       slug: linux-system-programming
 
     - title: The First and Last Freedom
       author: J. Krishnamurti
-      status: ★★★★
+      rating: ★★★★
       slug: the-first-and-last-freedom
 
     - title: Pale Blue Dot
       author: Carl Sagan
-      status: ★★★★
+      rating: ★★★★
       slug: pale-blue-dot
 
     - title: The Last Lecture
       author: Randy Pausch
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-last-lecture
 
     - title: Horrors and Absurdities of Religion
       author: Arthur Schopenhauer
-      status: ★★★
+      rating: ★★★
       slug: horrors-and-absurdities-of-religion
 
     - title: Predictably Irrational
       author: Dr. Dan Ariely
-      status: ★★★★
+      rating: ★★★★
       slug: predictably-irrational
 
     - title: The Joy of X
       author: Steven H. Strogatz
-      status: ★★★
+      rating: ★★★
       slug: the-joy-of-x
 
     - title: Prisoner's Dilemma
       author: William Poundstone
-      status: ★★★
+      rating: ★★★
       slug: prisoners-dilemma
 
   - 2023:
     - title: Indonesia - Culture Smart!
       author: Graham Saunders
-      status: ★★★
+      rating: ★★★
       slug: indonesia-culture-smart
 
     - title: Atlas of the Heart
       author: Brené Brown
-      status: ★★★★★
+      rating: ★★★★★
       slug: atlas-of-the-heart
 
     - title: Nationalism
       author: Rabindranath Tagore
-      status: ★★★
+      rating: ★★★
       slug: nationalism
 
     - title: Four Thousand Weeks
       author: Oliver Burkeman
-      status: ★★★
+      rating: ★★★
       slug: four-thousand-weeks
 
     - title: Kabuliwala, Selected Plays and Stories
       author: Rabindranath Tagore
-      status: ★★★★
+      rating: ★★★★
       slug: kabuliwala
 
     - title: Home in the World
       author: Amartya Sen
-      status: ★★★★
+      rating: ★★★★
       slug: home-in-the-world
 
     - title: The Renaissance Diet 2.0
       author: Mike Israetel
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-renaissance-diet
 
     - title: The Simple Path to Wealth
       author: J. L. Collins
-      status: ★★★
+      rating: ★★★
       slug: the-simple-path-to-wealth
 
     - title: The Demon-Haunted World
       author: Carl Sagan
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-demon-haunted-world
 
     - title: Where India Goes
       author: Diane Coffe, Dean Spears
-      status: ★★★★★
+      rating: ★★★★★
       slug: where-india-goes
 
     - title: Enlightenment Now
       author: Steven Pinker
-      status: ★★★★
+      rating: ★★★★
       slug: enlightenment-now
 
     - title: Malaysia - Culture Smart!
       author: Victor King
-      status: ★★★
+      rating: ★★★
       slug: malaysia-culture-smart
 
     - title: Singapore - Culture Smart!
       author: Angela Milligan
-      status: ★★★
+      rating: ★★★
       slug: singapore-culture-smart
 
     - title: This Is What Inequality Looks Like
       author: Teo You Yenn
-      status: ★★★★
+      rating: ★★★★
       slug: this-is-what-inequality-looks-like
 
     - title: The Prophet
       author: Kahlil Gibran
-      status: ★
+      rating: ★
       slug: the-prophet
 
     - title: Fooled by Randomness
       author: Nassim Nicholas Taleb
-      status: ★★★★
+      rating: ★★★★
       slug: fooled-by-randomness
 
     - title: The Righteous Mind
       author: Jonathan Haidt
-      status: ★★★★
+      rating: ★★★★
       slug: the-righteous-mind
 
     - title: The Anthropocene Reviewed
       author: John Green
-      status: ★★★★
+      rating: ★★★★
       slug: the-anthropocene-reviewed
 
     - title: Sapiens
       author: Yuval Noah Harari
-      status: ★★★★★
+      rating: ★★★★★
       slug: sapiens
 
     - title: Indistractable
       author: Nir Eyal
-      status: ★★★★
+      rating: ★★★★
       slug: indistractable
 
     - title: Kitchen Confidential
       author: Anthony Bourdain
-      status: ★★★★★
+      rating: ★★★★★
       slug: kitchen-confidential
 
     - title: Anna Karenina
       author: Leo Tolstoy
-      status: ★★★★
+      rating: ★★★★
       slug: anna-karenina
 
     - title: The Art of Lifting
       author: Greg Nuckols, Omar Isuf
-      status: ★★★★
+      rating: ★★★★
       slug: the-art-of-lifting
 
     - title: The Primal Blueprint
       author: Mark Sisson
-      status: ★★★
+      rating: ★★★
       slug: the-primal-blueprint
 
     - title: Learning Modern Linux
       author: Michael Hausenblas
-      status: ★★
+      rating: ★★
       slug: learning-modern-linux
 
     - title: Container Security
       author: Liz Rice
-      status: ★★★★
+      rating: ★★★★
       slug: container-security
 
     - title: On Earth We're Briefly Gorgeous
       author: Ocean Vuong
-      status: ★★★
+      rating: ★★★
       slug: on-earth-were-briefly-gorgeous
 
     - title: The Great Mental Models
       author: Shane Parrish
-      status: ★★★★
+      rating: ★★★★
       slug: the-great-mental-models
 
     - title: Prisoners of Geography
       author: Tim Marshal
-      status: ★★★★
+      rating: ★★★★
       slug: prisoners-of-geography
 
   - 2022:
     - title: The Year of Less
       author: Cait Flanders
-      status: ★★★
+      rating: ★★★
       slug: the-year-of-less
 
     - title: Quiet
       author: Susan Cain
-      status: ★★★★
+      rating: ★★★★
       slug: quiet
 
     - title: Bhais of Bengaluru
       author: Jyoti Shelar
-      status: ★★★★
+      rating: ★★★★
       slug: bhais-of-bengaluru
 
     - title: Algorithms to Live By
       author: Brian Christian
-      status: ★★★★
+      rating: ★★★★
       slug: algorithms-to-live-by
 
     - title: Society Without God
       author: Phil Zuckerman
-      status: ★★★
+      rating: ★★★
       slug: society-without-god
 
     - title: "Vietnam: Rising Dragon"
       author: Bill Hayton
-      status: ★★★
+      rating: ★★★
       slug: vietnam-rising-dragon
 
     - title: Annihilation of Caste
       author: Dr. B R Ambedkar
-      status: ★★★★
+      rating: ★★★★
       slug: annihilation-of-caste
 
     - title: The Doctor and the Saint
       author: Arundhati Roy
-      status: ★★★★
+      rating: ★★★★
       slug: the-doctor-and-the-saint
 
     - title: The Paleo Manifesto
       author: John Durant
-      status: ★★★
+      rating: ★★★
       slug: the-paleo-manifesto
 
     - title: Nepal - Culture Smart!
       author: Tessa Feller
-      status: ★★★★
+      rating: ★★★★
       slug: nepal-culture-smart
 
     - title: A Tokyo Romance
       author: Ian Buruma
-      status: ★★★★
+      rating: ★★★★
       slug: a-tokyo-romance
 
     - title: Digital Minimalism
       author: Cal Newport
-      status: ★★★★★
+      rating: ★★★★★
       slug: digital-minimalism
 
     - title: Four Seasons in Rome
       author: Anthony Doerr
-      status: ★★★★
+      rating: ★★★★
       slug: four-seasons-in-rome
 
     - title: On Tyranny
       author: Timothy Snyder
-      status: ★★★★
+      rating: ★★★★
       slug: on-tyranny
 
     - title: The Courage to Be Disliked
       author: Ichiro Kishimi
-      status: ★★★★
+      rating: ★★★★
       slug: the-courage-to-be-disliked
 
     - title: Walden
       author: Thoreau
-      status: ★★★★★
+      rating: ★★★★★
       slug: walden
 
     - title: Never Split the Difference
       author: Chris Voss
-      status: ★★★★★
+      rating: ★★★★★
       slug: never-split-the-difference
 
     - title: Everything That Remains
       author: Joshua Millburn
-      status: ★★★
+      rating: ★★★
       slug: everything-that-remains
 
     - title: The Beauty of All My Days
       author: Ruskin Bond
-      status: ★★★★
+      rating: ★★★★
       slug: the-beauty-of-all-my-days
 
     - title: The God Delusion
       author: Richard Dawkins
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-god-delusion
 
     - title: So You Want to Talk About Race
       author: Ijeoma Oluo
-      status: ★★★★★
+      rating: ★★★★★
       slug: so-you-want-to-talk-about-race
 
     - title: Lean In
       author: Sheryl Sandberg
-      status: ★★★★★
+      rating: ★★★★★
       slug: lean-in
 
     - title: Goodbye Things
       author: Fumio Sasaki
-      status: ★★★★
+      rating: ★★★★
       slug: goodbye-things
 
     - title: Man's Search for Meaning
       author: Viktor E. Frankl
-      status: ★★★★★
+      rating: ★★★★★
       slug: mans-search-for-meaning
 
     - title: Autumn Light
       author: Pico Iyer
-      status: ★★★★
+      rating: ★★★★
       slug: autumn-light
 
   - 2021:
     - title: The Bookseller of Kabul
       author: Åsne Seierstad
-      status: ★★★★
+      rating: ★★★★
       slug: the-bookseller-of-kabul
 
     - title: The Pragmatic Programmer
       author: Andy Hunt
-      status: ★★★
+      rating: ★★★
       slug: the-pragmatic-programmer
 
     - title: The Office
       author: Andy Greene
-      status: ★★★
+      rating: ★★★
       slug: the-office
 
     - title: The Almanack of Naval Ravikant
       author: Eric Jorgensen
-      status: ★★★★
+      rating: ★★★★
 
     - title: The Abundance of Less
       author: Andy Courturier
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-abundance-of-less
 
     - title: The Diving Pool
       author: Yoko Ogawa
-      status: ★★★
+      rating: ★★★
 
     - title: Principles
       author: Ray Dalio
-      status: ★★
+      rating: ★★
       slug: principles
 
     - title: What the Most Successful People Do Before Breakfast
       author: Laura Vanderkam
-      status: ★★★
+      rating: ★★★
 
     - title: Thinking, Fast and Slow
       author: Daniel Kahneman
-      status: ★★★
+      rating: ★★★
 
     - title: Confessions of a Yakuza
       author: Junichi Saga
-      status: ★★★★
+      rating: ★★★★
       slug: confessions-of-a-yakuza
 
     - title: Steve Jobs
       author: Walter Isaacson
-      status: ★★★★
+      rating: ★★★★
       slug: steve-jobs
 
     - title: Hiroshima
       author: John Hersey
-      status: ★★★★★
+      rating: ★★★★★
       slug: hiroshima
 
     - title: The Decision Checklist
       author: Sam Kyle
-      status: ★★★
+      rating: ★★★
       slug: the-decision-checklist
 
     - title: "Underground: The Tokyo Gas Attack"
       author: Haruki Murakami
-      status: ★★★★
+      rating: ★★★★
       slug: underground
 
     - title: Outliers
       author: Malcolm Gladwell
-      status: ★★★★★
+      rating: ★★★★★
       slug: outliers
 
     - title: A Mind for Numbers
       author: Barbara Oakley
-      status: ★★★★
+      rating: ★★★★
 
     - title: When A Tree Shook Delhi
       author: Manoj Mitta
-      status: ★★★★★
+      rating: ★★★★★
       slug: when-a-tree-shook-delhi
 
     - title: Stoner
       author: John Williams
-      status: ★★★★★
+      rating: ★★★★★
       slug: stoner
 
     - title: Leaving Microsoft to Change the World
       author: John Wood
-      status: ★★★
+      rating: ★★★
       slug: leaving-microsoft-to-change-the-world
 
     - title: Practical Vim
       author: Drew Neil
-      status: ★★★★
+      rating: ★★★★
       slug: practical-vim
 
     - title: Perfect Health Diet
       author: Paul Jaminet
-      status: ★★★★
+      rating: ★★★★
       slug: perfect-health-diet
 
     - title: A Short History of Nearly Everything
       author: Bill Bryson
-      status: ★★★
+      rating: ★★★
       slug: a-short-history-of-nearly-everything
 
     - title: Shoe Dog
       author: Phil Knight
-      status: ★★★★★
+      rating: ★★★★★
       slug: shoe-dog
 
     - title: Kim Jiyoung, Born 1982
       author: Nam-Joo Cho
-      status: ★★★★
+      rating: ★★★★
       slug: kim-jiyoung-born-1982
 
     - title: Indra Nooyi - A Biography
       author: Annapoorna
-      status: ★★★★
+      rating: ★★★★
       slug: indra-nooyi-a-biography
 
     - title: Greenlights
       author: Matthew McConaughey
-      status: ★★★★
+      rating: ★★★★
       slug: greenlights
 
     - title: What I Wish I Knew When I Was 20
       author: Tina Seelig
-      status: ★★★
+      rating: ★★★
       slug: what-i-wish-i-knew-when-i-was-20
 
     - title: Eat Sleep Work Repeat
       author: Bruce Daisley
-      status: ★★★★
+      rating: ★★★★
       slug: eat-sleep-work-repeat
 
     - title: The AWK Programming Language
       author: Aflred V. Aho
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-awk-programming-language
 
     - title: Untangling My Chopsticks
       author: Abbott Riccardi
-      status: ★★★
+      rating: ★★★
       slug: untangling-my-chopsticks
 
     - title: You Need A Budget
       author: Jesse Mecham
-      status: ★★★
+      rating: ★★★
       slug: you-need-a-budget
 
     - title: The Psychology of Money
       author: Morgan Housel
-      status: ★★★★
+      rating: ★★★★
       slug: the-psychology-of-money
 
     - title: A Promised Land
       author: Barack Obama
-      status: ★★★★
+      rating: ★★★★
       slug: a-promised-land
 
     - title: Kubernetes in Action
       author: Marko Luksa
-      status: ★★★★★
+      rating: ★★★★★
       slug: kubernetes-in-action
 
     - title: In the Beginning...Was the Command Line
       author: Neal Stephenson
-      status: ★★
+      rating: ★★
       slug: in-the-beginning-was-the-command-line
 
   - 2020:
     - title: Let's Talk Money
       author: Monika Halan
-      status: ★★★★★
+      rating: ★★★★★
       slug: lets-talk-money
 
     - title: The Courtesan, the Mahatma and the Italian Brahmin
       author: Manu S. Pillai
-      status: ★★★★
+      rating: ★★★★
 
     - title: Rich Dad, Poor Dad
       author: Robert Kiyosaki
-      status: ★
+      rating: ★
       slug: rich-dad-poor-dad
 
     - title: Atomic Habits
       author: James Clear
-      status: ★★★★
+      rating: ★★★★
       slug: atomic-habits
 
     - title: The 4-Hour Workweek
       author: Tim Ferris
-      status: ★★
+      rating: ★★
       slug: the-4-hour-work-week
 
     - title: How Google Works
       author: Eric Schmidt
-      status: ★★★
+      rating: ★★★
       slug: how-google-works
 
     - title: The God of Small Things
       author: Arundhati Roy
-      status: ★★★★
+      rating: ★★★★
       slug: the-god-of-small-things
 
     - title: Why I Am An Atheist
       author: Bhagat Singh
-      status: ★★★★
+      rating: ★★★★
       slug: why-i-am-an-atheist
 
     - title: Remnants of a Separation
       author: Aanchal Malhotra
-      status: ★★★★★
+      rating: ★★★★★
       slug: remnants-of-a-separation
 
     - title: "Buried Seeds: Story of Vikas Khanna"
       author: Karan Bellani
-      status: ★★★★
+      rating: ★★★★
 
     - title: How Fascism Works
       author: Jason Stanley
-      status: ★★★★★
+      rating: ★★★★★
       slug: how-fascism-works
 
     - title: The Little Book of Common Sense Investing
       author: John C. Bogle
-      status: ★★★★
+      rating: ★★★★
       slug: the-little-book-of-common-sense-investing
 
     - title: Wise and Otherwise
       author: Sudha Murty
-      status: ★★★★★
+      rating: ★★★★★
       slug: wise-and-otherwise
 
     - title: "Kishore Kumar: Method in Madness"
       author: Derek Bose
-      status: ★★★★
+      rating: ★★★★
       slug: kishore-kumar
 
     - title: Deep Nutrition
       author: Catherine Shanahan
-      status: ★★★★★
+      rating: ★★★★★
       slug: deep-nutrition
 
     - title: Hillbilly Elegy
       author: J.D. Vance
-      status: ★★★★
+      rating: ★★★★
       slug: hillbilly-elegy
 
     - title: Talking to Strangers
       author: Malcolm Gladwell
-      status: ★★★★★
+      rating: ★★★★★
       slug: talking-to-strangers
 
     - title: The Go Programming Language
       author: Alan Donovan
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-go-programming-language
 
     - title: Convenience Store Woman
       author: Sayaka Murata
-      status: ★★★
+      rating: ★★★
       slug: convenience-store-woman
 
     - title: Educated
       author: Tara Westover
-      status: ★★★★★
+      rating: ★★★★★
       slug: educated
 
     - title: The Total Money Makeover
       author: Dave Ramsey
-      status: ★★★
+      rating: ★★★
       slug: the-total-money-makeover
 
     - title: How to Keep Your Cool
       author: Seneca
-      status: ★★★★★
+      rating: ★★★★★
       slug: how-to-keep-your-cool
 
     - title: The Bhagavad Gita
       author: Dwaipayana-Krishna Vyasa
-      status: ★★★
+      rating: ★★★
       slug: the-bhagavad-gita
 
     - title: Tokyo Vice
       author: Jake Adelstein
-      status: ★★★★
+      rating: ★★★★
       slug: tokyo-vice
 
     - title: Gandhi Before India
       author: Ramachandra Guha
-      status: ★★★★★
+      rating: ★★★★★
       slug: gandhi-before-india
 
     - title: A Man Called Ove
       author: Fredrik Backman
-      status: ★★★★★
+      rating: ★★★★★
       slug: a-man-called-ove
 
     - title: The Case Against Sugar
       author: Gary Taubes
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-case-against-sugar
 
     - title: Mindfulness in Plain English
       author: Henepola Gunaratna
-      status: ★★★
+      rating: ★★★
       slug: mindfulness-in-plain-english
 
     - title: A Guide to the Good Life (Stoicism)
       author: William B. Irvine
-      status: ★★★★★
+      rating: ★★★★★
       slug: a-guide-to-the-good-life
 
     - title: Can't Hurt Me
       author: David Goggins
-      status: ★★★★★
+      rating: ★★★★★
 
     - title: The Story Of Tea
       author: Jaiwant Paul
-      status: ★★★★
+      rating: ★★★★
       slug: the-story-of-tea
 
   - 2019:
     - title: What I Talk About When I Talk About Running
       author: Haruki Murakami
-      status: ★★★★
+      rating: ★★★★
       slug: what-i-talk-about-when-i-talk-about-running
 
     - title: 84, Charing Cross Road
       author: Helene Hanff
-      status: ★★★★★
+      rating: ★★★★★
       slug: 84-charing-cross-road
 
     - title: The Life-Changing Magic of Tidying Up
       author: Marie Kondo
-      status: ★★
+      rating: ★★
       slug: the-life-changing-magic-of-tidying-up
 
     - title: Becoming
       author: Michelle Obama
-      status: ★★★★★
+      rating: ★★★★★
       slug: becoming
 
     - title: Seven Brief Lessons on Physics
       author: Carlo Rovelli
-      status: ★★★★
+      rating: ★★★★
       slug: seven-brief-lessons-on-physics
 
     - title: Siddhartha
       author: Hermann Hesse
-      status: ★★★
+      rating: ★★★
       slug: siddhartha
 
     - title: Ikigai
       author: Hector Garcia
-      status: ★★★
+      rating: ★★★
       slug: ikigai
 
     - title: I Will Teach You to Be Rich
       author: Ramit Sethi
-      status: ★★★★
+      rating: ★★★★
       slug: i-will-teach-you-to-be-rich
 
     - title: 36 Views of Mount Fuji
       author: Cathy Davidson
-      status: ★★★★
+      rating: ★★★★
       slug: 36-views-of-mount-fuji
 
     - title: Why We Sleep
       author: Matthew Walker
-      status: ★★★★★
+      rating: ★★★★★
       slug: why-we-sleep
 
     - title: Chronicles of My Life
       author: Donald Keene
-      status: ★★★★
+      rating: ★★★★
       slug: chronicles-of-my-life
 
     - title: The Year of Living Danishly
       author: Helen Russel
-      status: ★★★★
+      rating: ★★★★
       slug: the-year-of-living-danishly
 
     - title: In Other Words
       author: Jhumpa Lahiri
-      status: ★★★
+      rating: ★★★
       slug: in-other-words
 
     - title: Deep Work
       author: Cal Newport
-      status: ★★★
+      rating: ★★★
 
     - title: Surely You're Joking, Mr. Feynman!
       author: Richard Feynman
-      status: ★★★★
+      rating: ★★★★
 
     - title: Food Rules
       author: Michael Pollan
-      status: ★★★★
+      rating: ★★★★
       slug: food-rules
 
     - title: Benjamin Franklin
       author: Isaacson Walter
-      status: ★★★★
+      rating: ★★★★
       slug: benjamin-franklin
 
     - title: Factfulness
       author: Hans Rosling
-      status: ★★★★★
+      rating: ★★★★★
       slug: factfulness
 
   - 2018:
     - title: Milk and Honey
       author: Rupi Kaur
-      status: ★★★
+      rating: ★★★
       slug: milk-and-honey
 
     - title: "Indira: The Life of Indira Gandhi"
       author: Katherine Frank
-      status: ★★★★★
+      rating: ★★★★★
       slug: indira
 
     - title: The Linux Command Line
       author: Williams E. Shotts
-      status: ★★★★
+      rating: ★★★★
       slug: the-linux-command-line
 
     - title: The Little Book of Hygge
       author: Meik Wiking
-      status: ★★★
+      rating: ★★★
       slug: the-little-book-of-hygge
 
     - title: When Breath Becomes Air
       author: Paul Kalanithi
-      status: ★★★★★
+      rating: ★★★★★
       slug: when-breath-becomes-air
 
     - title: Norwegian Wood
       author: Haruki Murakami
-      status: ★★★★
+      rating: ★★★★
       slug: norwegian-wood
 
     - title: "The Subtle Art of Not Giving a F\\*ck"
       author: Mark Manson
-      status: ★★
+      rating: ★★
       slug: the-subtle-art-of-not-giving-a-fuck
 
     - title: Hit Refresh
       author: Satya Nadella
-      status: ★★★
+      rating: ★★★
       slug: hit-refresh
 
     - title: "Gandhi: An Autobiography"
       author: Mahatma Gandhi
-      status: ★★★★★
+      rating: ★★★★★
 
     - title: 1984
       author: George Orwell
-      status: ★★★★
+      rating: ★★★★
       slug: 1984
 
     - title: Free as in Freedome (2.0)
       author: Sam Williams
-      status: ★★★★
+      rating: ★★★★
 
     - title: How to Win Friends and Influence People
       author: Dale Carnegie
-      status: ★★★★
+      rating: ★★★★
 
     - title: 5/3/1
       author: Jim Wendler
-      status: ★★★
+      rating: ★★★
 
     - title: Functional Programming in Python
       author: David Mertz
-      status: ★★★
+      rating: ★★★
       slug: functional-programming-in-python
 
     - title: The Ramayana
       author: R.K. Narayan
-      status: ★★★
+      rating: ★★★
       slug: the-ramayana
 
   - 2017:
     - title: Animal Farm
       author: George Orwell
-      status: ★★★★
+      rating: ★★★★
       slug: animal-farm
 
     - title: And Then There Were None
       author: Agatha Christie
-      status: ★★★★
+      rating: ★★★★
       slug: and-then-there-were-none
 
     - title: The Girl on the Train
       author: Paula Hawkins
-      status: ★★★
+      rating: ★★★
       slug: the-girl-on-the-train
 
     - title: The Google Story
       author: David A. Vise
-      status: ★★★★
+      rating: ★★★★
       slug: the-google-story
 
     - title: Automate the Boring Stuff
       author: Al Sweigart
-      status: ★★★★
+      rating: ★★★★
       slug: automate-the-boring-stuff-with-python
 
     - title: The 7 Habits of Highly Effective People
       author: Stephen R. Covey
-      status: ★★★
+      rating: ★★★
 
     - title: Turning Points
       author: A.P.J Abdul Kalam
-      status: ★★★
+      rating: ★★★
 
   - 2016:
     - title: Ghost in the Wires
       author: Kevin Mitnick
-      status: ★★★★
+      rating: ★★★★
       slug: ghost-in-the-wires
 
     - title: Wings of Fire
       author: A.P.J Abdul Kalam
-      status: ★★★
+      rating: ★★★
 
     - title: The Girl Who Played With Fire
       author: Stieg Larsson
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-girl-who-played-with-fire
 
     - title: The Alchemist
       author: Paulo Coelho
-      status: ★★★
+      rating: ★★★
       slug: the-alchemist
 
     - title: The Girl with the Dragon Tattoo
       author: Stieg Larsson
-      status: ★★★★★
+      rating: ★★★★★
       slug: the-girl-with-the-dragon-tattoo
 
     - title: The Monk Who Sold His Ferrari
       author: Robin Sharma
-      status: ★★★
+      rating: ★★★
       slug: the-monk-who-sold-his-ferrari
 
   - 2015:
     - title: iWoz
       author: Steve Wozniak
-      status: ★★★★
+      rating: ★★★★
       slug: iwoz
 
     - title: A Thousand Splendid Suns
       author: Khaled Hosseini
-      status: ★★★★
+      rating: ★★★★
       slug: a-thousand-splendid-suns
 
   - 2010:
     - title: Charlie and the Chocolate Factory
       author: Roald Dahl
-      status: ★★★★★
+      rating: ★★★★★
       slug: charlie-and-the-chocolate-factory
 ---
