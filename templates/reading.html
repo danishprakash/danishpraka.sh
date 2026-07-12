@@ -7,10 +7,7 @@
             <div class="post">
                 {{ template "analytics.html" }}
 
-                <title>
-                    {{ index .Frontmatter "title" }}
-                </title>
-                <h1> {{ index .Frontmatter "title" }} </h1>
+                <h1 class="reading__title"> {{ index .Frontmatter "title" }} </h1>
 
                 {{ if index .Frontmatter "date_read" }}
                     <p class="post__date">{{ index .Frontmatter "date_read" }}</p>

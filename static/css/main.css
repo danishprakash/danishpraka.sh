@@ -12,10 +12,19 @@
     margin-top: 48px;
 }
 
+.footer p {
+    font-size: 12px;
+    padding-left: 35px;
+    padding-top: 16px;
+}
+
 @media only screen and (max-width: 768px) {
     .footer {
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .footer p {
         padding-left: 16px;
     }
 }
@@ -24,15 +33,12 @@
     .footer {
         margin-right: 0;
         margin-left: 0;
-        padding-left: 16px;
         padding-bottom: 24px;
     }
-}
 
-.footer p {
-    font-size: 12px;
-    padding-left: 35px;
-    padding-top: 16px;
+    .footer p {
+        padding-left: 16px;
+    }
 }
 
 .footer a {
@@ -46,7 +52,7 @@ table {
     margin-right: -32px;
     line-height: 12px;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0;
     border-collapse: collapse;
 }
 
@@ -88,8 +94,9 @@ table strong {
         padding-top: 0;
     }
 
-    table h2 {
+    .post__content > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h2:nth-child(1) {
         margin: 0 !important;
+        padding-top: 0px;
     }
 
     table tr:has(h2) td {
@@ -135,6 +142,22 @@ table tr td:last-child {
     }
 }
 
+@media (max-width: 500px) {
+    table {
+        line-height: 20px;
+    }
+
+    table tr td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    table tbody tr td h2 {
+        margin: 0 !important;
+        padding-top: 0px;
+    }
+}
+
 .page {
     font-size: 1rem;
     margin-left: 32px;
@@ -159,8 +182,7 @@ table tr td:last-child {
 .header {
     display: inline-flex;
     width: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     font-size: 12pt;
     padding-top: 20px;
     justify-content: space-between;
@@ -175,14 +197,12 @@ table tr td:last-child {
 
 @media only screen and (max-width: 768px) {
     .header {
-        display: block;
         padding-bottom: 10px;
     }
 }
 
 @media (max-width: 500px) {
     .header {
-        display: block;
         padding-bottom: 5px;
     }
 }
@@ -211,14 +231,7 @@ table tr td:last-child {
 
     .header .title {
         padding-left: 0;
-        margin-left: 0;
-        text-align: center;
-        margin-bottom: 0;
-        padding-bottom: 16px;
-    }
-
-    .header .nav {
-        padding-top: 16px;
+        margin-left: 16px;
     }
 }
 
@@ -230,17 +243,9 @@ table tr td:last-child {
 @media only screen and (max-width: 768px) {
     .header .nav {
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 16px;
         padding-left: 0;
         padding-right: 0;
-        width: 100%;
-        clip-path: inset(0 0 -17px 0);
-    }
-
-    .header .nav ul {
-        justify-content: center;
-        padding-left: 0;
-        width: 100%;
     }
 }
 
@@ -248,14 +253,7 @@ table tr td:last-child {
     .header .nav {
         padding-left: 0;
         margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .header .nav ul {
-        justify-content: center;
-        padding-left: 0;
-        width: 100%;
+        margin-right: 16px;
     }
 }
 
@@ -280,6 +278,12 @@ table tr td:last-child {
     .nav ul {
         padding-left: 0;
         gap: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav ul {
+        gap: 0;
     }
 }
 
@@ -313,48 +317,6 @@ table tr td:last-child {
     .page .cont {
         padding-left: 16px;
         padding-right: 16px;
-    }
-}
-
-@media (max-width: 500px) {
-    .page {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav {
-        width: 65%;
-    }
-
-    .nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .page .cont {
-        margin-left: 120px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .page {
-        display: inline-block;
-    }
-
-    .page .cont {
-        margin-left: 0px;
-    }
-
-    .nav {
-        margin-left: 0px;
-        position: relative;
-    }
-
-    .page .nav ul li {
-        padding-bottom: 10px;
-        padding-right: 10px;
     }
 }
 
@@ -494,8 +456,7 @@ i {
 }
 
 .desc {
-    max-width: auto;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
 }
 
 .desc h2 {
@@ -507,7 +468,8 @@ i {
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: 16px;
     justify-items: center;
 }
 
@@ -543,6 +505,16 @@ i {
 .blog li {
     list-style: none;
     padding: 10px 0;
+}
+
+@media (max-width: 500px) {
+    .blog {
+        line-height: 20px;
+    }
+
+    .blog li {
+        padding: 6px 0;
+    }
 }
 
 .blog__row {
@@ -1027,6 +999,10 @@ a {
     font-size: 0.85rem;
     color: #666;
     margin: 0;
+}
+
+.reading__title {
+    padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 768px) {
