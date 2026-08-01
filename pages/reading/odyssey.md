@@ -1,0 +1,16 @@
+---
+layout: book
+title: Odyssey
+started: 2026-06-18
+finished: 2026-07-26
+author: Stephen Fry
+format: Audiobook
+---
+
+When I started reading [Stephen Fry's Great Mythology](/reading/mythos) series, my original plan was to finish the last book in the series, Odyssey, just in time for the theatrical release. I finished this book last week and watched Nolan's Odyssey in theatre the next day. I'll spare you the [details](https://letterboxd.com/danishprakash/film/the-odyssey-2026/) but it was an absolute disappointment and I'm glad I got to experience it in what I think is one of the best and most enjoyable retellings of the Homeric epic.
+
+Back to the book. The story of Odysseus picks up from where the [Iliad](/reading/troy) ends, the Greeks having won and plundered Troy, finally start returning to their homes. The plunder is so gruesome even the Gods that sided with the Greeks are appalled and decide to punish them. We follow Odysseus and his crew. Courtesy of the God's wrath, they lose their way and encounter various monsters and creatures along the way on the various islands they stopped at. It's your typical adventurous heroic homecoming journey where, at the end of it, he conquers his kingdom back and lives happily ever after. More than the journey itself, I enjoyed the Olympians mingling with the mortals, pushing them around, cursing them, and protecting them. This dynamic is the core tenet of all Greek mythology and it came to a conclusion in the Odyssey in that the Gods finally decided to let go of the reins. But one might wonder, did they really do so? Throughout the story, there's humour, betrayal, fights, adultery. Fry sprinkles in meta information between the stories, making it a joyful experience.
+
+I've heard of Troy, Achilles, even Odysseus in mainstream media over the years but never got around to knowing the story around them. So in that sense, it was pleasant to fill that void and complete the characters I hear about every now and then. But more than the story itself, I was more fascinated by the provenance of these Homeric epics. To write such complex characters, godly and often ungodly wisdom, battles, love, etc, and then to perfect them over generations, and to still have people rave about it thousands of years later. It reminds us how important stories are, they're not merely entertainment. They tell of times that were great and otherwise. The art of storytelling then is elevated from a mode of entertainment to a way of preserving history and culture through the ages. For it is predominantly through Homer (plural) and other Greek poets that we know so much about Greek culture, their Gods, their wars, their morals, and between it all, their failures and mistakes. The same applies to other historical epics such as [The Mahabharata](/reading/the-mahabharata), [The Ramayana](/reading/the-ramayana) and effectively any other written material that has survived generations and those that will do so in the future.
+
+Last but not the least, I couldn't praise enough Fry's narrative abilities. They are second to none and I could listen to him all day talking about Greek mythology, or any topic for that matter. If at all you're interested in Greek mythology, I would strongly recommend this series of Fry's, in either paperback or audiobook mode.

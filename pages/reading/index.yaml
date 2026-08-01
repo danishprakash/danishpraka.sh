@@ -5,13 +5,13 @@ intro: |
     A digital bookshelf consisting of books I've read or reading; click on a title to read what I feel about the book. I tend to keep this in sync with [Goodreads](https://www.goodreads.com/user/show/68951276-danish-prakash).
 books:
   - 2026:
+    - title: Shantaram
+      author: Gregory David Roberts
+      status: listening
+
     - title: गोदान
       author: Premchand
       status: reading
-
-    - title: Odyssey
-      author: Stephen Fry
-      status: listening
 
     - title: The Life of Greece
       author: Will Durant
@@ -20,6 +20,11 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: Odyssey
+      author: Stephen Fry
+      rating: ★★★★★
+      slug: odyssey
 
     - title: Forbidden Nation
       author: Jonathan Manthorpe
@@ -912,7 +917,7 @@ books:
       rating: ★★★★
       slug: norwegian-wood
 
-    - title: "The Subtle Art of Not Giving a F\\*ck"
+    - title: "The Subtle Art of Not Giving a F*ck"
       author: Mark Manson
       rating: ★★
       slug: the-subtle-art-of-not-giving-a-fuck
