@@ -8,192 +8,160 @@ photos:
     slug: kasauli-india-2026
     date: October, 2026
     cover: https://photos.danishpraka.sh/2026/Kasauli/DSCF2381.webp
-    count: 16
 
   - title: Mumbai, India
     slug: mumbai-india-2026
     date: June, 2026
     cover: https://photos.danishpraka.sh/2026/Mumbai/DSCF2219.webp
-    count: 9
 
   - title: Taiwan
     slug: taiwan-2026
     date: April, 2026
     cover: https://photos.danishpraka.sh/2026/Taiwan/DSCF1943.webp
-    count: 34
 
   - title: Hong Kong
     slug: hong-kong-2026
     date: April, 2026
     cover: https://photos.danishpraka.sh/2026/Hong%20Kong/DSCF1081.webp
-    count: 44
 
   - title: Côte d'Azur, France
     slug: cote-d-azur-france-2025
     date: September, 2025
     cover: https://photos.danishpraka.sh/2025/C%C3%B4te%20d'Azur/DSCF0591.webp
-    count: 32
 
   - title: Paris, France
     slug: paris-france-2025
     date: September, 2025
     cover: https://photos.danishpraka.sh/Paris/DSCF0089.webp
-    count: 24
 
   - title: Belgium
     slug: belgium-2025
     date: August, 2025
     cover: https://photos.danishpraka.sh/2025/Belgium/DSCF9950.webp
-    count: 26
 
   - title: Amsterdam, Netherlands
     slug: amsterdam-netherlands-2025
     date: August, 2025
     cover: https://photos.danishpraka.sh/Amsterdam/DSCF9489.webp
-    count: 14
 
   - title: Astana, Kazakhstan
     slug: astana-kazakhstan-2025
     date: June, 2025
     cover: https://photos.danishpraka.sh/Astana/DSCF9155.webp
-    count: 9
 
   - title: Almaty, Kazakhstan
     slug: almaty-kazakhstan-2025
     date: June, 2025
     cover: https://photos.danishpraka.sh/Almaty/DSCF9118.webp
-    count: 17
 
   - title: Bhutan
     slug: bhutan-2025
     date: May, 2025
     cover: https://photos.danishpraka.sh/Bhutan/ui4OuiEmH7c.webp
-    count: 25
 
   - title: Mangalore, India
     slug: mangalore-india-2025
     date: April, 2025
     cover: https://photos.danishpraka.sh/Mangalore/f77utx1gcu4.webp
-    count: 19
 
   - title: Arashiyama, Japan
     slug: arashiyama-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/2024/Arashiyama/DSCF7004.webp
-    count: 22
 
   - title: Hiroshima, Japan
     slug: hiroshima-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/2024/Hiroshima/DSCF7813.webp
-    count: 10
 
   - title: Kyoto, Japan
     slug: kyoto-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/2024/Kyoto/DSCF7933.webp
-    count: 16
 
   - title: Uji, Japan
     slug: uji-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/Uji/DSCF7566.webp
-    count: 15
 
   - title: Nara, Japan
     slug: nara-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/Nara/DSCF7426.webp
-    count: 25
 
   - title: Kamakura, Japan
     slug: kamakura-japan-2024
     date: November, 2024
     cover: https://photos.danishpraka.sh/Kamakura/yT1wZHiEabs.webp
-    count: 22
 
   - title: Rishikesh, India
     slug: rishikesh-india-2023
     date: December, 2023
     cover: https://photos.danishpraka.sh/Rishikesh/Ou1hdpaqAwM.webp
-    count: 18
 
   - title: Kuala Lumpur, Malacca & Port Dickson, Malaysia
     slug: malaysia-2023
     date: July, 2023
     cover: https://photos.danishpraka.sh/Malaysia/7CL2rGtND8w.webp
-    count: 13
 
   - title: Singapore
     slug: singapore-2023
     date: June, 2023
     cover: https://photos.danishpraka.sh/Singapore/5DmuwnJjyrI.webp
-    count: 44
 
   - title: Hampi, India
     slug: hampi-india-2023
     date: June, 2023
     cover: https://photos.danishpraka.sh/Hampi/danish-prakash-nLFk8bXouJU-unsplash.webp
-    count: 7
 
   - title: Bangalore, India
     slug: bangalore-india-2023
     date: February, 2023
     cover: https://photos.danishpraka.sh/Bangalore/qoC8GRThto.webp
-    count: 16
 
   - title: Coorg, India
     slug: coorg-india-2023
     date: April, 2023
     cover: https://photos.danishpraka.sh/Coorg/vCJrx1wGZnw.webp
-    count: 9
 
   - title: Indonesia
     slug: indonesia-2023
     date: October, 2023
     cover: https://photos.danishpraka.sh/Indonesia/ZwUZvlk6svQ.webp
-    count: 22
 
   - title: Aero India
     slug: aero-india-2023
     date: February, 2023
     cover: https://photos.danishpraka.sh/Aero%20India%202023/0ZnAfk3XeNs.webp
-    count: 11
 
   - title: Vietnam
     slug: vietnam-2022
     date: October, 2022
     cover: https://photos.danishpraka.sh/Vietnam/yJIxnzrEUUQ.webp
-    count: 26
 
   - title: Delhi, India
     slug: delhi-india-2022
     date: April, 2022
     cover: https://photos.danishpraka.sh/Delhi/MBZ7ceeYPp0.webp
-    count: 8
 
   - title: Andaman and Nicobar Islands, India
     slug: andaman-india-2021
     date: February, 2021
     cover: https://photos.danishpraka.sh/Andaman/Kb53rjHNrRI.webp
-    count: 3
 
   - title: Tokyo, Osaka & Kyoto, Japan
     slug: japan-2019
     date: October, 2019
     cover: https://photos.danishpraka.sh/Japan-2019/qP7Ug7xkGFk.webp
-    count: 25
 
   - title: Berlin, Germany
     slug: berlin-germany-2019
     date: May, 2019
     cover: https://photos.danishpraka.sh/Germany/mwWyhzvC5J8.webp
-    count: 6
 
   - title: Pondicherry, India
     slug: pondicherry-india-2019
     date: April, 2019
     cover: https://photos.danishpraka.sh/Pondicherry/oJeAykVwiio.webp
-    count: 5
 
 ---
