@@ -102,7 +102,7 @@ Grimmory also supports physical books but I haven't managed to import or add my 
 
 Air pollution is a problem in Delhi especially during winters and I wanted a way to track it. That was the primary reason I set HA up. I was able to hook my Mi Air Purifier into HA, and along with it, I added lighting and some read-only metrics. I also had some basic automations set up which would turn off or reduce the speed of my air purifier if the AQI in my area is below a certain threshold. Or it would light up the room shortly after sunrise, or notify me if one of my devices is running low on battery. I would also frequently use it to turn on the lights in my house and the air purifier on full blast 3-4 minutes before I'm supposed to reach my home.
 
-<img src="./../../static/img/posts/self-hosting/ha.webp"/>
+<img src="./../../static/img/posts/self-hosting/ha.webp" width="1280" height="559" loading="lazy"/>
 
 Unfortunately, as I mentioned previously, the ThinkPad has trouble booting on AC and sometimes dies if there's a power failure or if I'm not home and so I have not really used this for the time being (it also helps that the AQI has been good past couple of months so I'm not using my air purifier either) but I need to figure something out soon because winter is around the corner, and so is pollution season.
 

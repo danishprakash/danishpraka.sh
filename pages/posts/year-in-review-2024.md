@@ -5,14 +5,14 @@ title: Year In Review (2024)
 Date: 20th January 2025
 ---
 
-<img src="./../../static/img/posts/year-in-review-2024/cover1.webp"/>
+<img src="./../../static/img/posts/year-in-review-2024/cover1.webp" width="1791" height="1194" loading="lazy"/>
 
 It's been roughly two weeks since I actually started the draft for this article. I guess I wanted some more time to gather what has happened this past year, summarise it and put it in words here.
 
 ## Personal (Health & Fitness)
 2023, in hindsight was quite good in this category. 2024 started out with a serious ankle injury while playing badminton which meant little to no movement for a good part of January and some of February. I did continue to lift throughout the year when I wasn't travelling or out of town. I reached my bodyweight goal of 72kg but realized it's not cutting it, and upped the goal weight to 75kg. But this meant that I wasn't able to achieve my goal of reaching sub-15% bodyfat.
 
-<img src="./../../static/img/posts/year-in-review-2024/bodyweight.webp"/>
+<img src="./../../static/img/posts/year-in-review-2024/bodyweight.webp" width="466" height="748" loading="lazy"/>
 
 In terms of sports, I mostly played badminton and started running as part of my ankle injury rehab. Nutrition was quite a success, I continued to cook and track everything I ate and that has been quite helpful in the whole journey, I plan to continue doing that for as long as feasible.
 
@@ -33,8 +33,8 @@ I travelled quite a bit this year, as usual. Partly because 4 of my friends got 
 
 I travelled to Rishikesh, Dehradun, Palwancha, Jaipur, Japan, Tungnath, and Mysore. A good thing about travel I realized lately, especially solo, is the time you get to simply think about things. I spent so much time on some of my travels in 2024 taking personal--dare I say philosophical--notes that I was quite surprised at the amount of stuff I had jotted down in random places and about random observations.
 
-<img src="./../../static/img/posts/year-in-review-2024/tungnath.webp"/>
-<img src="./../../static/img/posts/year-in-review-2024/kyoto.webp"/>
+<img src="./../../static/img/posts/year-in-review-2024/tungnath.webp" width="1345" height="1009" loading="lazy"/>
+<img src="./../../static/img/posts/year-in-review-2024/kyoto.webp" width="1345" height="1009" loading="lazy"/>
 
 ## Productivity
 I think I've cured myself of the curse of [social media](/posts/shortform-content) a couple years back. There's still the occasional reddit binge which I'm trying to also bring into a routine but I'm quite happy with what I have so far. Social media isn't an impediment to the work that's actually important to me anymore.

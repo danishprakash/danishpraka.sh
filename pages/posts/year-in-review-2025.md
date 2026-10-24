@@ -4,7 +4,7 @@ date: 2026-01-02
 title: Year In Review (2025)
 ---
 
-<img src="./../../static/img/posts/year-in-review-2025/cover.webp"/>
+<img src="./../../static/img/posts/year-in-review-2025/cover.webp" width="694" height="899" loading="lazy"/>
 
 Fifth anniversary of the Year in Review series, and I'm happy I stuck with it for so long. The structure remains the same, barring the change in ordering of the sections that I feel is now more appropriate.
 
@@ -23,7 +23,7 @@ This year has been the worst when it comes to consistency surrounding health and
 
 Second was dealing with injuries and moving back to Delhi. Things were going well till the air quality dropped down to hazardous levels in October. I had to stop running, productivity dropped, focus took a hit. It didn't help that I met with a lot of injuries as the year came to a close, thanks in part to Delhi winters.
 
-<img src="./../../static/img/posts/year-in-review-2025/rhr.webp"/>
+<img src="./../../static/img/posts/year-in-review-2025/rhr.webp" width="625" height="804" loading="lazy"/>
 
 It was shocking, though not surprising to see the metrics tell the same story. The graph above shows the Resting Heart Rate (RHR) Baselines. So while I was in the fair category and was well on the way to improve my cardiovascular health by getting into regular running, life happened and here we are. But I'm hopeful for what's to come in this new year.
 

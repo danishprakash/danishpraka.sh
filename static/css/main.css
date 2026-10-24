@@ -751,6 +751,7 @@ a {
 .post__content img {
     margin: 8px auto;
     width: calc(100% + 64px);
+    height: auto;
     margin-left: -32px;
     margin-right: -32px;
     border-radius: 0;

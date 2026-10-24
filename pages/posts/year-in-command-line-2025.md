@@ -28,7 +28,7 @@ This post will only use data for the year 2025. A new section comparing the insi
 
 ### Weekly Usage
 
-<img src="./../../static/img/posts/year-in-command-line-2025/weekly_freq.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/weekly_freq.webp" width="1780" height="880" loading="lazy"/>
 
 The year didn't start off CLI-heavy but then it picked up. There's a positive upward trend throughout the year. The most notable dip just before October was when I was travelling. I mostly did meta work while I travelled, preparing slides for a conference I was attending, and spent little time on the command line.
 
@@ -36,7 +36,7 @@ One thing that surprised me is how the adoption of AI didn't seem to show up as 
 
 ### Day of the week
 
-<img src="./../../static/img/posts/year-in-command-line-2025/day_of_the_week.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/day_of_the_week.webp" width="1780" height="881" loading="lazy"/>
 
 Looks like the blues have been hitting me hard. I recall Monday being the highest in weekly frequency but it seems to have taken a slight dip. Though I will chalk that up to meta work and catching up on communication in the past week.
 
@@ -44,7 +44,7 @@ The fall on weekends is comparatively sharper, Since 2022, I've stopped spending
 
 ### Hourly Usage
 
-<img src="./../../static/img/posts/year-in-command-line-2025/hourly_freq.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/hourly_freq.webp" width="1780" height="880" loading="lazy"/>
 
 This is fun, mostly because the graph clearly depicts the change in my routine between 2022 and 2025. Starting January 2023, about the same time I started at SUSE, I also moved to an active-evening routine. This means I no longer hit the gym in the morning; instead, I spend my time on cognitive tasks--mostly reading, but also researching and often getting a head start on something important and interesting at work.
 
@@ -52,7 +52,7 @@ So the graph shows that I now start working much earlier than I used to back in 
 
 ### Activity Heatmap
 
-<img src="./../../static/img/posts/year-in-command-line-2025/heatmap_activity.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/heatmap_activity.webp" width="1663" height="1151" loading="lazy"/>
 
 This graph is a new addition. It shows the activity heatmap and shows the day-time combo when I was the most active on the command line. I'm slightly skeptical of the insights here because Wednesday is the day I have most, if not all, my meetings and so for Wednesday noon to be the most active seems weird.
 
@@ -62,7 +62,7 @@ Saturday is also interesting, that's the day I spend on catching up on pending p
 
 Moving on to the actual commands, the following treemap shows the top 10 commands of 2025, this doesn't include coreutils or built-in commands, those are discussed in the next section.
 
-<img src="./../../static/img/posts/year-in-command-line-2025/top_20_cmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/top_20_cmds.webp" width="1780" height="1060" loading="lazy"/>
 
 There are quite a few things going on here:
 
@@ -76,7 +76,7 @@ There are quite a few things going on here:
 
 ### Top Coreutils
 
-<img src="./../../static/img/posts/year-in-command-line-2025/top_coreutils.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/top_coreutils.webp" width="1780" height="2230" loading="lazy"/>
 
 There's little to be said for this graph, however there are some interesting insights:
 
@@ -87,7 +87,7 @@ Not much else seems to be going on apart from the fact that the reliable coreuti
 
 ## Git
 
-<img src="./../../static/img/posts/year-in-command-line-2025/git-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/git-subcmds.webp" width="1777" height="2230" loading="lazy"/>
 
 There are 3 new commands that made it to this year's list, namely:
 
@@ -101,13 +101,13 @@ It's funny how workflows change over time, I thought I would only use a handful 
 
 ## Docker
 
-<img src="./../../static/img/posts/year-in-command-line-2025/docker-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/docker-subcmds.webp" width="1780" height="2230" loading="lazy"/>
 
 Docker usage has reduced a little, given that I'm focusing more on Podman. Docker still finds use as a lot of applications still default to docker as their container engine of choice. More often than not, this comes by way of Docker Compose since it makes it easier to distribute a container stack for applications. Additionally, I use docker as a reference as I develop for and contribute to podman. It's also funny how a few typos also made it to the list.
 
 ## Podman
 
-<img src="./../../static/img/posts/year-in-command-line-2025/podman-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/podman-subcmds.webp" width="1780" height="2230" loading="lazy"/>
 
 Podman has been one of my primary focuses this past year. I've developed various features, debugged issues, backported security patches, etc. `run` takes the lead because that's been the entrypoint to testing most of the features or bugs I work on, `--push`, `-p`, etc. Please note that `podman` here also includes `./bin/podman` or the development build.
 
@@ -115,7 +115,7 @@ Beyond `run`, the distribution is fairly linear. The workflow is quite simple, r
 
 ## Switching Directories
 
-<img src="./../../static/img/posts/year-in-command-line-2025/cd_switching.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/cd_switching.webp" width="1417" height="1481" loading="lazy"/>
 
 There are many ways to switch directories on a command line. There are inefficient ways, and then there are more efficient ways. I've mostly grown habitual to using `z` to switch directories majority of the time, it's a nifty little bash program that does its job really well, highly recommended.
 
@@ -125,7 +125,7 @@ Lastly, modern shells also support switching to the parent directory using `..` 
 
 ## Evolution and Reflection
 
-<img src="./../../static/img/posts/year-in-command-line-2025/yearly_trends.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/yearly_trends.webp" width="1780" height="879" loading="lazy"/>
 
 Looking at the year-on-year trend from when I first started tracking the data back in 2021 to now, we can see the dip in 2022, that was the time I got into a little bit of meta or leading the project work, so there were lots more discussions, planning, and delegating. End of 2022 was me switching jobs so there's that. Post that, there's steady increase in the total commands graph.
 
@@ -133,7 +133,7 @@ It's interesting that the distinct commands and average commands per day remains
 
 ### 2022 vs 2025: What Changed?
 
-<img src="./../../static/img/posts/year-in-command-line-2025/slope_chart_comparison.webp"/>
+<img src="./../../static/img/posts/year-in-command-line-2025/slope_chart_comparison.webp" width="1780" height="2500" loading="lazy"/>
 
 I think the biggest change is the disappearance of `kubectl` and the adoption of podman. You can see the spike in usage of podman, and at the same time, how docker and podman converge in numbers.
 

@@ -29,7 +29,7 @@ Before diving into the actual commands, let's take a look at the kind of usage p
 ### Weekly Usage
 The graph below shows my command line usage on a weekly basis for the past 12 months:
 
-<img src="./../../static/img/posts/year-in-command-line/weekly_freq.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/weekly_freq.webp" width="624" height="420" loading="lazy"/>
 
 That one huge spike in March-April was when I was working on a feature I had to push which involved a fair bit of programming and infrastructure work.
 
@@ -39,7 +39,7 @@ The two dips in July and October correspond with my vacations where I did some w
 
 Is there a day on which I've been programming or hitting the terminal the most, due to a reason?
 
-<img src="./../../static/img/posts/year-in-command-line/day_of_the_week.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/day_of_the_week.webp" width="807" height="419" loading="lazy"/>
 
 Turns out that's not the case. Saturday and Sunday lines up just fine, I do some [open source](../../../software) work on weekends. And then weekdays were expected to have taken up the majority share. One surprising observation here is how Tuesday is on par with Thursday considering that the latter is the day in my week with the most meetings.
 
@@ -47,7 +47,7 @@ Turns out that's not the case. Saturday and Sunday lines up just fine, I do some
 ### Hourly Usage
 Finally, let's take a look at how the usage is distributed when it comes to the time of day:
 
-<img src="./../../static/img/posts/year-in-command-line/hourly_freq.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/hourly_freq.webp" width="721" height="423" loading="lazy"/>
 
 Aligns quite nicely with my natural circadian rhythm. I'm most productive in the mornings/first half. I tend to block time for focused work (read time spent on the terminal or thinking) in the first half and then move as many meetings/ad-hoc items to the second half, post lunch.
 
@@ -59,7 +59,7 @@ Lastly, I can count the number of instances where I had been on the terminal pos
 
 Let's now move to the actual commands. The graph below lists the top 13 (odd I know, metabase resize ftw) commands in the past 1 year, ordered by frequency. These are just the base commands, we'll dig deeper into some of these commands in separate sections where we'll talk about the subcommands and arguments.
 
-<img src="./../../static/img/posts/year-in-command-line/top_20_cmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/top_20_cmds.webp" width="668" height="420" loading="lazy"/>
 
 I had an inkling that the top 3 would be a combination of `git`, `kubectl` and `docker` but not in that order. We'll dig deeper into each of these top 3 commands in later sections to understand how my usage varied over time.
 
@@ -82,7 +82,7 @@ Let us now pick each of the top 3 commands and see how the usage is and how it d
 ## Git
 Below are the top `git` subcommands ordered by frequency in descending order. It shows the most commonly used commands on top and groups a few at the end of the top 20 spectrum:
 
-<img src="./../../static/img/posts/year-in-command-line/git-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/git-subcmds.webp" width="694" height="321" loading="lazy"/>
 
 As is evident from the graph above, I'm obsessed with checking the repository status. Everytime I'm away from the editor for a while and get back to it, I instinctively hit `git status` to see how I had left things.
 
@@ -93,7 +93,7 @@ A note I'd like to make here is that I don't type these sub-commands every time 
 ## Kubectl
 Let's look at how I've been using `kubectl` for the past one year so far. The following graph shows the top sub-commands I've used with `kubectl` ordered by frequency:
 
-<img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds.webp" width="658" height="268" loading="lazy"/>
 
 Naturally, I mostly use `kubectl` client to get resources deployed in the cluster. Digging further into `get`, we can see how skewed the distribution is. Majority of the time, I'm dealing with Pods, HPAs or Deployments.
 
@@ -109,7 +109,7 @@ Also, the `-n` is again, specifying namespace for the command to follow. This de
 Let's now explore the usage for `get` and `edit`.
 
 ### kubectl get
-<img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-arg.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-arg.webp" width="668" height="416" loading="lazy"/>
 
 I mostly work across a bunch of different clusters under different projects and cloud providers, namely GCP and AWS. Different projects call for debugging/operations/monitoring on different resources but the common theme across all of them are, unsurprisingly, Pods, HPAs and Deployments.
 
@@ -117,7 +117,7 @@ I've seen other engineers at work using graphical interface tools such as [Lens]
 
 ### kubectl edit
 <figure>
-    <img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-edit.webp"/>
+    <img src="./../../static/img/posts/year-in-command-line/kubectl-subcmds-edit.webp" width="690" height="369" loading="lazy"/>
   <!-- <figcaption>kubectl edit</figcaption> -->
 </figure>
 
@@ -127,7 +127,7 @@ I've spent a lot more time _editing_ HPAs than any other resource. At work, I've
 
 Last of the top commands, let's take a look at the sub commands which I've been using the most with `docker`:
 
-<img src="./../../static/img/posts/year-in-command-line/docker-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/docker-subcmds.webp" width="677" height="423" loading="lazy"/>
 
 I knew `ps` would be on top. This is akin to my usage of `git status`. I'm a sucker for checking status and keeping things clean.
 
@@ -158,7 +158,7 @@ But I really like how git allows you to configure this and much more to make you
 
 Another interesting observation was when I tried to map out the arguments for `cd`. Out of a total of 1347 matches, the distribution for the top 3 arguments to `cd` are as follows(refer to the legend):
 
-<img src="./../../static/img/posts/year-in-command-line/cd-subcmds.webp"/>
+<img src="./../../static/img/posts/year-in-command-line/cd-subcmds.webp" width="553" height="444" loading="lazy"/>
 
 Again, an obvious change here could be to just alias `..` and `-` to do their jobs without using `cd`. I know some shells support this out of the box, I just need to configure this and I believe it'll help consderably.
 
