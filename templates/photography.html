@@ -1,7 +1,11 @@
 <!doctype html>
+<html>
+<head>
+{{ template "head.html" . }}
+</head>
+<body>
 <div class=wrapper>
     {{ template "header.html" . }}
-    <title> {{ index .Frontmatter "title" }} — Danish Prakash </title>
     <div class="page">
         <div class="cont">
             <div class="post">
@@ -37,3 +41,5 @@
     </div>
     {{ template "footer.html" }}
 </div>
+</body>
+</html>
