@@ -5,14 +5,14 @@ title: Year In Review (2023)
 Date: 6th January 2024
 ---
 
-<img src="./../../static/img/posts/year-in-review-2023/cover.png"/>
+<img src="./../../static/img/posts/year-in-review-2023/cover.webp"/>
 
 3rd iteration in the series calls for some changes, namely, the category headers are changing but the content remains the same more or less. This is done in order to keep articles in this series in sync with my private goal planning. Let's begin.
 
 ## Personal (Health & Fitness)
 One of my most important health goals this year was to reach an acceptable(to me) bodyfat percentage. I managed to get my bodyfat down from 23% at 72kg body weight to ~14% at 65kg body weight in the span of roughly 10 months. I did however made some mistakes in order to reach this target but it was all worthwhile at the end.
 
-<img src="./../../static/img/posts/year-in-review-2023/stats.png"/>
+<img src="./../../static/img/posts/year-in-review-2023/stats.webp"/>
 
 Bodyfat stats on the left, bodyweight on the right, with roughly the same x-axis scale denoting the time in weeks. That last blip at the end in the BF stats and the stagnation was when I went on a vacation and simulataneously went on a maintenance phase.
 
@@ -39,8 +39,8 @@ Can't share the exact details here for reasons but I index invested consistently
 ## Travel
 It was a good year for travel for me, I travelled to Hampi, Coorg, Shantiniketan, Singapore, Malaysia and Indonesia. I learnt so much from all these travels, and perhaps I'll be writing about my experiences in some of these places some day. I worked remotely on some trips, was with a group on some and solo on others, it was a healthy mixture of experiences. Despite sounding like a broken record, I'd like to emphasize again the fact that I'm grateful and lucky enough to be able to make travel plans and execute them.
 
-<img src="./../../static/img/posts/year-in-review-2023/indo.png"/>
-<img src="./../../static/img/posts/year-in-review-2023/singapore.png"/>
+<img src="./../../static/img/posts/year-in-review-2023/indo.webp"/>
+<img src="./../../static/img/posts/year-in-review-2023/singapore.webp"/>
 
 ## Productivity
 My only plan in this category was to cut down on social media. I brought down the consumption to only my laptop and that too only on Sundays. And in so doing, I could feel no tangible difference between when I was all over social media and this past year when I reduced it to, essentially 52 times a year, technically. I could safely say I didn't miss anything major or life changing that one of my friends wouldn't later talk to me about. I've written about this [before](/posts/directed-undirected-consumption) and I still believe that social media is predominantly a waste of time, not even considering the other more psychologically damning issues.

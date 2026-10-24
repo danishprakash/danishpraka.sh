@@ -8,7 +8,7 @@ I bought a mechanical keyboard when I first started working remotely back in 202
 
 I got the Kinesis Advantage2 Quiet LF (the Cherry MX Silent Linear Red version) from a friend of mine who was visiting the US. It's not cheap by any standards especially if you plan to have it shipped outside of the US from Kinesis themselves.
 
-<img src="./../../static/img/posts/kinesis-advantage2/board.png"/>
+<img src="./../../static/img/posts/kinesis-advantage2/board.webp"/>
 
 ## First impressions
 The keyboard felt extremely light and hollow which is a common sentiment amongst KA2 users. It is divided into two splits, the left and right wells, as they call it. These keywells allow you to keep your hands in a naturally rested position without any undue strain on your wrists. There are two thumb clusters that make use of your thumbs more efficiently, unlike traditional keyboards where both the thumbs tag team on the single long spacebar key. This allows you to quickly hit Return, Backspace or Modifier keys without moving your thumbs much. It's a great concept that is used in various different kinds of keyboards, some implementing it even more efficiently than Kinesis, the Glove80 for instance.
@@ -79,7 +79,7 @@ I reached out to Kinesis and they suggested a few troubleshooting steps. I tried
 ### KinT
 I purchased all the required parts mentioned in the project BoM, and soldered them onto the PCB. It had been a while since I had done soldering, so while I was able to solder the majority of the board (MOLEX, etc.), I had to take a little bit of help to solder the Teensy microcontroller onto the PCB. I inserted the new controller into the keyboard, and after a little bit of resoldering, tightening the screws and reseating ribbon connectors for the umpteenth time, I managed to flash QMK on the Teensy and voila! I've been using the keyboard with the new controller for roughly 2 days and haven't had any ghosting issues yet.
 
-<img src="./../../static/img/posts/kinesis-advantage2/kint.jpg"/>
+<img src="./../../static/img/posts/kinesis-advantage2/kint.webp"/>
 
 ### QMK
 

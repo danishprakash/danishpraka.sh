@@ -9,15 +9,15 @@ Last month I had the privilege and opportunity to travel to Japan for a [confere
 ## Tokyo
 I flew from New Delhi to Narita with a short layover in Hong Kong. It was a nice comfy flight on a Boeing 777-300ER, one massive and majestic piece of engineering. I landed in Tokyo shortly after noon and then took an express train to the city center from where I took the Ginza line to Akihabara. I took in the bigger than life skyscrapers with the latest and greatest anime characters plastered on each and every one of them. It was shortly before I was supposed to leave for Japan when a friend of mine told me that Akihabara is apparently the anime city.
 
-<img src="./../../static/img/posts/japan-2019/narita.png"/>
-<img src="./../../static/img/posts/japan-2019/aki-2.png"/>
-<img src="./../../static/img/posts/japan-2019/akihabara.png"/>
+<img src="./../../static/img/posts/japan-2019/narita.webp"/>
+<img src="./../../static/img/posts/japan-2019/aki-2.webp"/>
+<img src="./../../static/img/posts/japan-2019/akihabara.webp"/>
 <br>
 
 I checked into my hostel, [Hiromas](https://www.agoda.com/hiromas-hostel-akihabara/hotel/tokyo-jp.html?cid=1844104), and then proceed to head out to have some quick bite at the local 7/11. It was soon dark and it was then that Akihabara truly shines, quite literally. All the billboards come alive with character moving around with grace on the brightly lit mini LED bulbs. It was nothing short of a sensory overload.
 
-<img src="./../../static/img/posts/japan-2019/aki-3.png"/>
-<img src="./../../static/img/posts/japan-2019/aki-5.png"/>
+<img src="./../../static/img/posts/japan-2019/aki-3.webp"/>
+<img src="./../../static/img/posts/japan-2019/aki-5.webp"/>
 
 The next day was the conference, VimConf 2019, I was busy the whole day. I've written more about the conference in a [separate post](). Got to meet lots of Vim enthusiasts with an energy I've personally not seen before for an editor, it was infectious.
 
@@ -25,47 +25,47 @@ During the conference, the locals from as far as Kansai gave me hints on how and
 
 First stop was the famous Shinjuku Gyoen, it's a vast expanse of greenery bang in the middle of the city. It wasn't long after I saw something similar in Osaka that I realized how great of a job the Japanese have done preserving natural and historical lands while building a metropolitan city all around. Throngs of people on a weekday were there with their families having a good time. Old folks clicking photographs on their shiny cameras and people finding a shade to read under. I had my first real matcha with daifuku in the old tea house within the garden premises.
 
-<img src="./../../static/img/posts/japan-2019/gyoen-2.png"/>
-<img src="./../../static/img/posts/japan-2019/gyoen.png"/>
-<img src="./../../static/img/posts/japan-2019/matcha.png"/>
+<img src="./../../static/img/posts/japan-2019/gyoen-2.webp"/>
+<img src="./../../static/img/posts/japan-2019/gyoen.webp"/>
+<img src="./../../static/img/posts/japan-2019/matcha.webp"/>
 
 I then walked around the residential areas and clicked as many photographs of the clean and aesthetic alleys as I could. Eventually I reached the famous Meiji Jingu Temple. It had an eery silence to it which is quite difficult to shake off, I thoroughly enjoyed it. After this, in quick succession, I visited piss alley, Shibuya and then back to Akihabara to call it a night.
 
-<img src="./../../static/img/posts/japan-2019/tokyo-1.png"/>
-<img src="./../../static/img/posts/japan-2019/tokyo-2.png"/>
-<!-- <img src="./../../static/img/posts/japan-2019/shibuya.png"/> -->
+<img src="./../../static/img/posts/japan-2019/tokyo-1.webp"/>
+<img src="./../../static/img/posts/japan-2019/tokyo-2.webp"/>
+<!-- <img src="./../../static/img/posts/japan-2019/shibuya.webp"/> -->
 
 ## Osaka
 Early int the morning, I took the Shinkansen from Tokyo to Osaka where I'd spend the next 3 nights. It is customary to buy bento from the station and have it onboard the Shinkansen, and I did the same with a shot of Suntory coffee. The train had great wifi and I spent some time working on the way. The Salaryman(サラリーマン) next to me pointed out Fuji San when it passed by, It was majestic.
 
-<img src="./../../static/img/posts/japan-2019/shinkansen.png"/>
+<img src="./../../static/img/posts/japan-2019/shinkansen.webp"/>
 
 I checked in to my hostel, [CharinCo](https://www.agoda.com/bike-bed-charin-co-hostel-osaka/hotel/osaka-jp.html?cid=1844104) and then headed out to walk around the area. It was close to a residential area and was relatively quieter than usual. Japan is an extermely walkable place, almost every city there is so friendly to both pedestrians and bikers, it was honestly surprising. Sequestered away in the middle of a shopping street is the Hozenji Temple. As I mentioned, Japan does an commendable job blending the past and present and even future in some cases (Akihabara). The temple entrance was so unassuming, I passed it thrice without realizing while having Google Maps open the whole time until an elderly hunched Japanese grandpa smiled and directed me towards the place, as he must've had done for countless such visitors.
 
-<img src="./../../static/img/posts/japan-2019/osaka-1.png"/>
-<img src="./../../static/img/posts/japan-2019/osaka-2.png"/>
+<img src="./../../static/img/posts/japan-2019/osaka-1.webp"/>
+<img src="./../../static/img/posts/japan-2019/osaka-2.webp"/>
 
 To end the day, I travelled far out of the city center to the famous collosus Tempozan Giant Ferris Wheel and the famous acquarium nearby. I had no intention of riding it or even going inside the acquarium but I ended up doing the latter just because I had some time and it was freezing cold outside.
 
-<img src="./../../static/img/posts/japan-2019/osaka-ferris.png"/>
-<img src="./../../static/img/posts/japan-2019/osaka-acquarium.png"/>
+<img src="./../../static/img/posts/japan-2019/osaka-ferris.webp"/>
+<img src="./../../static/img/posts/japan-2019/osaka-acquarium.webp"/>
 
 Next morning, I visited the Osaka Castle, Shitennoji Temple, Tennoji, Osaka zoo. A lot of walking, I wonder how much steps I clocked that day. But it was a pleasant sunny day, perfect for exploring the city. Shitennoji also had a stillness in the atmosphere similar to Senso-Ji which I had come to really like. In Tennoji shopping district, I also saw some Geisha or Kabuki performers roaming around while tourists hogged them for photos.
 
-<img src="./../../static/img/posts/japan-2019/osaka-street.png"/>
-<img src="./../../static/img/posts/japan-2019/osaka-castle.png"/>
-<img src="./../../static/img/posts/japan-2019/osaka-street-2.png"/>
+<img src="./../../static/img/posts/japan-2019/osaka-street.webp"/>
+<img src="./../../static/img/posts/japan-2019/osaka-castle.webp"/>
+<img src="./../../static/img/posts/japan-2019/osaka-street-2.webp"/>
 
 ## Kyoto
 Kyoto is close enough to Osaka for it to be a day long trip. So I took the express train from Osaka to Kyoto and reached within 1.5 hours I guess. I first went to the Fushimi Inari shrine. It's a long long way up to the top with lots of stairs and Torii gates all the way up to the top. The hike itself is calming, albeit a little tiring because of the 12000 steps in total. Everybody was walking up to the Shrine in good spirits and it was a fun, cheery atmosphere.
 
-<img src="./../../static/img/posts/japan-2019/fushimi.png"/>
-<img src="./../../static/img/posts/japan-2019/lady-bike.png"/>
+<img src="./../../static/img/posts/japan-2019/fushimi.webp"/>
+<img src="./../../static/img/posts/japan-2019/lady-bike.webp"/>
 
 Coming back from the shrine, I roamed around the residential area surrounding it and appreciate the quaint little homes with properly trimmed bonsais out in front or in the yard behind the gates. I then took the local bus to Ryōan-ji Zen temple, which, honestly was one of the most peaceful places I've ever been to anywhere so far. There were lots of tourists around but apparently there was no sign of any noise apart from the one that that light breeze that evening was producing. It was surreal, to sit around the rock garden and just not think about anything else, nothing short of magical.
 
-<img src="./../../static/img/posts/japan-2019/ryoanji.png"/>
-<img src="./../../static/img/posts/japan-2019/kyoto-1.png"/>
+<img src="./../../static/img/posts/japan-2019/ryoanji.webp"/>
+<img src="./../../static/img/posts/japan-2019/kyoto-1.webp"/>
 
 It was almost sundown when I headed out of the temple, I took the crowded bus to the city center and by the time I reached, It was dark but the streets were glowing courtesy of the countless stores out there. It was quite nice to walk around. I also realized what a grave mistake I did by not staying in Kyoto for longer, definitely another reason for me to go back soon.
 
@@ -86,6 +86,6 @@ Obligatory disclaimer that I was just there for around 10 days and almost everyt
 ## Conclusion
 I personally am someone who believes in a society where people follow rules for the sake of others. I'm not referring to being a conformist but rather being a responsible citizen and thus making the society better for the rest. After visiting Japan, I tell everyone how a society should function. Now of course, there are concepts such as the pervasive drinking culture or death by overworking (Karoshi) and many more. But ammortized benefits of the structure in Japanese society, imo, still makes it one of the best places in the world.
 
-<img src="./../../static/img/posts/japan-2019/kyoto-2.png"/>
+<img src="./../../static/img/posts/japan-2019/kyoto-2.webp"/>
 
 :wq

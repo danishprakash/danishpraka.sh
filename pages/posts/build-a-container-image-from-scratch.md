@@ -13,7 +13,7 @@ Little bit of history before we proceed. Up until roughly 10 years back, docker-
 
 An OCI image consists of four core components--layer, config, manifest and index:
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/oci2.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/oci2.webp"/>
 
 We'll understand each of the above components and build a "hello" image from scratch to practically understand all these components. If we had a Containerfile for our "hello" image, it would look like the following:
 
@@ -77,7 +77,7 @@ Notice the `.wh` which means whiteout to denote deleted files. The changeset abo
 
 Now we have created a layer. A container engine takes multiple layers and creates a complete filesystem for the resulting container.
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/creating-the-filesystem.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/creating-the-filesystem.webp"/>
 
 Let's say we have 3 layers, an empty layer with no filesystem--the starting changeset. Then we create a changeset and add two binaries, `/bin/ash` and `/bin/bash`. Then a final layer deletes `/bin/ash` and modifies `/bin/bash`.
 
@@ -93,7 +93,7 @@ So far we've understood:
 
 How does this all play together when you employ containers in your daily workflow? Consider the lifecycle of a container image, from a Containerfile to a Container image and finally to a running container:
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/layer-lifecycle.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/layer-lifecycle.webp"/>
 
 You use `podman build` and pass in the Containerfile, podman would then create various layers, and package that as a "container image". When you use `podman run` with this image, the engine would combine all the various layers part of the image and create the root filesystem for the container being run.
 
@@ -208,7 +208,7 @@ The manifest mentions the config and the layer in the above snippet along with a
 ### 3.1 Content addressability
 In order to allow for efficiency and integrity, OCI requires components in the OCI image to be identified based on their content i.e. you can identify data based on their content rather than its location (filepath, etc). To achive this in the case of an OCI image, a unique identifier (generally a cryptographic hash) is used as the filename. This is known as _content addressability_.
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/cas.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/cas.webp"/>
 
 It helps with deduplication, layer sharing leading to reduced memory and performance overhead, and ensuring data integrity.
 
@@ -295,7 +295,7 @@ So far, our unpacked OCI "hello" image has a single layer archive consisting of 
 ## 4. index — _manifest for manifests_
 index.json file acts as an index for a set of images that can span different architectures and operating systems.
 
-<img src="./../../static/img/posts/build-oci-image-from-scratch/index.png"/>
+<img src="./../../static/img/posts/build-oci-image-from-scratch/index.webp"/>
 
 An example could be having images for two different architectures in one OCI image, a linux/arm64 and a linux/amd64 variant. In this case, the index.json would contain two entries pointing to the two variants of the image via their manifests that in turn would contain image specific metadata as shown in the diagram above.
 

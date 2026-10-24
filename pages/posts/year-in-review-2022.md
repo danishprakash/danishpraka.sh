@@ -5,7 +5,7 @@ title: Year In Review (2022)
 Date: 6th January 2023
 ---
 
-<img src="./../../static/img/posts/year-in-review-2022/cover.png"/>
+<img src="./../../static/img/posts/year-in-review-2022/cover.webp"/>
 
 Second coming of the yearly review. I really enjoyed doing this the [first time](/posts/year-in-review-2021) and I'm guessing it'll be an yearly ritual I'll follow from here on out. Especially after following last year's writing goals, I've come to quite enjoy the cathartic experience that writing is. Again, no fixed structure to this post, but building upon last year's post as we go.
 
@@ -42,12 +42,12 @@ I have some ambitious health goals for 2023, such as reaching a certain bodyfat 
 
 
 ## Travel
-<img src="./../../static/img/posts/year-in-review-2022/goa.png"/>
+<img src="./../../static/img/posts/year-in-review-2022/goa.webp"/>
 
 I was able to overshoot my travel plans after so long. Early on, I went on a workcation to [Goa](/posts/south-goa) and then to Nepal and ended the year with a trip to [Vietnam](/posts/vietnam). Travel, to me, is explorative and not just a means to turn the dials off. It is another excuse for me to keep learning about different cultures which I find satisfying and satiating. I'm grateful to be in a place where I can make travel plans and execute them.
 
-<img src="./../../static/img/posts/year-in-review-2022/nepal.png"/>
-<img src="./../../static/img/posts/year-in-review-2022/vietnam.png"/>
+<img src="./../../static/img/posts/year-in-review-2022/nepal.webp"/>
+<img src="./../../static/img/posts/year-in-review-2022/vietnam.webp"/>
 
 ## Other
 
