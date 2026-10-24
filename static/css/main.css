@@ -943,7 +943,7 @@ a {
 }
 
 .post__content img.grid-cover {
-    margin: 8px auto;
+    margin: 0;
     width: 100%;
     border-radius: 0;
 }
@@ -966,7 +966,7 @@ a {
     width: 100%;
     height: 470px;
     overflow: hidden;
-    background: transparent;
+    background: #eee;
     border-radius: 0;
 }
 
