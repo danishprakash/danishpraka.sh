@@ -4,6 +4,12 @@ title: Photos
 intro: |
     My experiments with photography. I used to upload photographs to Unsplash in the past, you can still find higher resolution versions of some of the photos listed here over at [Unsplash](https://unsplash.com/@danishprakash).
 photos:
+  - title: Kasauli, India
+    slug: kasauli-india-2026
+    date: October, 2026
+    cover: https://photos.danishpraka.sh/2026/Kasauli/DSCF2381.webp
+    count: 16
+
   - title: Mumbai, India
     slug: mumbai-india-2026
     date: June, 2026
