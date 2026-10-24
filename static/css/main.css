@@ -920,8 +920,7 @@ a {
     width: 100%;
     height: auto;
     display: block;
-    content-visibility: auto;
-    contain-intrinsic-size: 300px auto;
+    background: #eee;
     margin-bottom: 1rem;
 }
 
