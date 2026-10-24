@@ -1,8 +1,24 @@
+@font-face {
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/static/fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/static/fonts/Inter-Italic.woff2') format('woff2');
+}
+
 :root {
     --headertextcolor: #373737;
     --textcolor: #000000;
     --linkcolor: #0404c7;
-    --textfont:  'inter';
+    --textfont:  'inter', system-ui, sans-serif;
 }
 
 .footer {
