@@ -9,10 +9,6 @@ books:
       author: Thomas de Waal
       status: reading
 
-    - title: Shantaram
-      author: Gregory David Roberts
-      status: listening
-
     - title: गोदान
       author: Premchand
       status: reading
@@ -24,6 +20,11 @@ books:
     - title: "Operating Systems: Three Easy Pieces"
       author: Arpaci-Dusseau
       status: reading
+
+    - title: Shantaram
+      author: Gregory David Roberts
+      rating: ★★★½
+      slug: shantaram
 
     - title: Odyssey
       author: Stephen Fry
