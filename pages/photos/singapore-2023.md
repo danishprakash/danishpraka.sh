@@ -7,15 +7,12 @@ images:
   - https://photos.danishpraka.sh/Singapore/ZLSQN80oEE8.webp
   - https://photos.danishpraka.sh/Singapore/z8yhxYiAc44.webp
   - https://photos.danishpraka.sh/Singapore/XPo3AeEaHss.webp
-  - https://photos.danishpraka.sh/Singapore/xcG9BmgVcEs.webp
   - https://photos.danishpraka.sh/Singapore/ucOuyxnuHMU.webp
   - https://photos.danishpraka.sh/Singapore/TRKH4s8wliQ.webp
-  - https://photos.danishpraka.sh/Singapore/sQfLrm5qFPk.webp
   - https://photos.danishpraka.sh/Singapore/sHTisigMCas.webp
   - https://photos.danishpraka.sh/Singapore/ri8uFAetgKQ.webp
   - https://photos.danishpraka.sh/Singapore/qsn1Y2ep5yU.webp
   - https://photos.danishpraka.sh/Singapore/QMthMwRbjVk.webp
-  - https://photos.danishpraka.sh/Singapore/ORN2UPwVN90.webp
   - https://photos.danishpraka.sh/Singapore/Nq1Wxp8Cwjw.webp
   - https://photos.danishpraka.sh/Singapore/nOrYSl0CUps.webp
   - https://photos.danishpraka.sh/Singapore/njtWEGlvCPw.webp
@@ -23,9 +20,7 @@ images:
   - https://photos.danishpraka.sh/Singapore/mCRhGqDhcW0.webp
   - https://photos.danishpraka.sh/Singapore/LtluI6w54M.webp
   - https://photos.danishpraka.sh/Singapore/lP3JtGcj578.webp
-  - https://photos.danishpraka.sh/Singapore/l4dhjj6EoxE.webp
   - https://photos.danishpraka.sh/Singapore/KPOsz4Yr83o.webp
-  - https://photos.danishpraka.sh/Singapore/JrC30OmErU.webp
   - https://photos.danishpraka.sh/Singapore/_jraf8VTuf0.webp
   - https://photos.danishpraka.sh/Singapore/JMKPueucLww.webp
   - https://photos.danishpraka.sh/Singapore/IvewzFhyxG0.webp
@@ -35,7 +30,6 @@ images:
   - https://photos.danishpraka.sh/Singapore/G1YDdP6e2Ds.webp
   - https://photos.danishpraka.sh/Singapore/ERt_5guhimM.webp
   - https://photos.danishpraka.sh/Singapore/eLGM9MxJPsM.webp
-  - https://photos.danishpraka.sh/Singapore/DptNEJ84ESs.webp
   - https://photos.danishpraka.sh/Singapore/cWDPdMPRR0M.webp
   - https://photos.danishpraka.sh/Singapore/bu22SpjTsj8.webp
   - https://photos.danishpraka.sh/Singapore/bejD8fJchvM.webp
@@ -46,7 +40,6 @@ images:
   - https://photos.danishpraka.sh/Singapore/4Wx1Wl7spz4.webp
   - https://photos.danishpraka.sh/Singapore/1kXsTjpnNUs.webp
   - https://photos.danishpraka.sh/Singapore/13UyBsulMLs.webp
-  - https://photos.danishpraka.sh/Singapore/1bUaXrc_Cmo.webp
   - https://photos.danishpraka.sh/Singapore/0hZJFZ8KJv4.webp
 og_image: https://photos.danishpraka.sh/Singapore/5DmuwnJjyrI.webp
 ---
